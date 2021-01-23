@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Mr.哈利-南山不寒</title>
+    <link>https://HarryQing.github.io/blog/</link>
+    <description>Recent content in Blogs on Mr.哈利-南山不寒</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 23 Jan 2021 23:06:06 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Hugo搭建个人博客（一）</title>
+      <link>https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
+      <pubDate>Sat, 23 Jan 2021 23:06:06 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
+      <description>安装Hugo 1.从 hugo 的GitHub 仓库下载安装包，使用即可。我使用的是hugo_0.80.0_Windows-64bit.zip这个版本。
+2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
+3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
+4.打开系统的cmd（命令提示符），输入
+ hugo version
+ 5.显示Hugo版本信息。
+ C:\Users\A&amp;gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
+ 6.Hugo安装完成
+创建一个站点 1.在cmd（命令提示符）输入
+ hogo new site yourname.com(yourname自定义)
+ 2.创建完成即生成你的博客目录，目录如下：
+ ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
+ 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
+2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
+3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
+调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
+2.使用VS Studio打开站点文件夹（yourname.com）
+3.在其终端输入命令
+ hugo server
+ 得到结果
+ C:\Users\A\foreversnow.com&amp;gt; hugo server Start building sites …
+ | EN  &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;ndash; Pages | 15 Paginator pages | 0 Non-page files | 0</description>
+    </item>
+    
+  </channel>
+</rss>

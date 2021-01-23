@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://HarryQing.github.io/blog/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/tags/hugo/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/tags/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</loc>
+    <lastmod>2021-01-23T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/posts/</loc>
+    <lastmod>2020-12-25T11:36:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/posts/%E5%9B%BD%E5%86%85%E5%8A%A0%E9%80%9F%E8%AE%BF%E9%97%AE-github/</loc>
+    <lastmod>2020-12-25T11:36:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/posts/sql-server-2008-r2-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2020-11-27T06:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/about-hugo/</loc>
+    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/tags/sqlsever-2008/</loc>
+    <lastmod>2020-11-08T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/posts/sqlsever-2008%E5%AE%89%E8%A3%85%E6%97%B6%E5%87%BA%E7%8E%B0%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2020-11-08T23:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://HarryQing.github.io/tags/%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2020-11-08T23:06:06+08:00</lastmod>
+  </url>
+  
+</urlset>

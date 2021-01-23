@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="使用Hugo搭建个人博客（一）">
+<meta itemprop="description" content="安装Hugo 1.从 hugo 的GitHub 仓库下载安装包，使用即可。我使用的是hugo_0.80.0_Windows-64bit.zip这个版本。
+2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
+3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
+4.打开系统的cmd（命令提示符），输入
+ hugo version
+ 5.显示Hugo版本信息。
+ C:\Users\A&gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
+ 6.Hugo安装完成
+创建一个站点 1.在cmd（命令提示符）输入
+ hogo new site yourname.com(yourname自定义)
+ 2.创建完成即生成你的博客目录，目录如下：
+ ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
+ 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
+2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
+3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
+调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
+2.使用VS Studio打开站点文件夹（yourname.com）
+3.在其终端输入命令
+ hugo server
+ 得到结果
+ C:\Users\A\foreversnow.com&gt; hugo server Start building sites …
+ | EN  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-&#43;&mdash;&ndash; Pages | 15 Paginator pages | 0 Non-page files | 0">
+<meta itemprop="datePublished" content="2021-01-23T23:06:06+08:00" />
+<meta itemprop="dateModified" content="2021-01-23T23:06:06+08:00" />
+<meta itemprop="wordCount" content="143">
+
+
+
+<meta itemprop="keywords" content="Hugo,个人博客," />
+<meta property="og:title" content="使用Hugo搭建个人博客（一）" />
+<meta property="og:description" content="安装Hugo 1.从 hugo 的GitHub 仓库下载安装包，使用即可。我使用的是hugo_0.80.0_Windows-64bit.zip这个版本。
+2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
+3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
+4.打开系统的cmd（命令提示符），输入
+ hugo version
+ 5.显示Hugo版本信息。
+ C:\Users\A&gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
+ 6.Hugo安装完成
+创建一个站点 1.在cmd（命令提示符）输入
+ hogo new site yourname.com(yourname自定义)
+ 2.创建完成即生成你的博客目录，目录如下：
+ ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
+ 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
+2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
+3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
+调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
+2.使用VS Studio打开站点文件夹（yourname.com）
+3.在其终端输入命令
+ hugo server
+ 得到结果
+ C:\Users\A\foreversnow.com&gt; hugo server Start building sites …
+ | EN  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-&#43;&mdash;&ndash; Pages | 15 Paginator pages | 0 Non-page files | 0" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/" />
+<meta property="article:published_time" content="2021-01-23T23:06:06+08:00" />
+<meta property="article:modified_time" content="2021-01-23T23:06:06+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用Hugo搭建个人博客（一）"/>
+<meta name="twitter:description" content="安装Hugo 1.从 hugo 的GitHub 仓库下载安装包，使用即可。我使用的是hugo_0.80.0_Windows-64bit.zip这个版本。
+2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
+3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
+4.打开系统的cmd（命令提示符），输入
+ hugo version
+ 5.显示Hugo版本信息。
+ C:\Users\A&gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
+ 6.Hugo安装完成
+创建一个站点 1.在cmd（命令提示符）输入
+ hogo new site yourname.com(yourname自定义)
+ 2.创建完成即生成你的博客目录，目录如下：
+ ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
+ 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
+2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
+3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
+调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
+2.使用VS Studio打开站点文件夹（yourname.com）
+3.在其终端输入命令
+ hugo server
+ 得到结果
+ C:\Users\A\foreversnow.com&gt; hugo server Start building sites …
+ | EN  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-&#43;&mdash;&ndash; Pages | 15 Paginator pages | 0 Non-page files | 0"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>使用Hugo搭建个人博客（一）</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">知识能量站</a>
+				<a href="https://HarryQing.github.io/blog/">天马行空</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">知识能量站</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">天马行空</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>使用Hugo搭建个人博客（一）</h1>
+		<div class="content">
+			<h2 id="安装hugo">安装Hugo<a href="#安装hugo" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>1.从 hugo 的<a href="https://github.com/gohugoio/hugo/releases"><strong>GitHub 仓库</strong></a>下载安装包，使用即可。我使用的是<strong>hugo_0.80.0_Windows-64bit.zip</strong>这个版本。</p>
+<p>2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是<strong>H:\boke\bin</strong>。</p>
+<p>3.打开<strong>控制面板</strong>，打开<strong>查看高级系统设置</strong>，点击里面的<strong>环境变量</strong>，在<strong>A的用户变量（U</strong>里面找到<strong>path</strong>变量，双击在里面添加之前复制的全链接<strong>H:\boke\bin</strong>，之后点确定；下面的<strong>系统变量（S</strong>同上。</p>
+<p>4.打开系统的cmd（命令提示符），输入</p>
+<blockquote>
+<p><strong>hugo version</strong></p>
+</blockquote>
+<p>5.显示Hugo版本信息。</p>
+<blockquote>
+<p>C:\Users\A&gt;hugo version
+Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z</p>
+</blockquote>
+<p>6.Hugo安装完成</p>
+<h2 id="创建一个站点">创建一个站点<a href="#创建一个站点" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>1.在cmd（命令提示符）输入</p>
+<blockquote>
+<p>hogo new site yourname.com(yourname自定义)</p>
+</blockquote>
+<p>2.创建完成即生成你的博客目录，目录如下：</p>
+<blockquote>
+<p>├─archetypes
+├─content
+├─data
+├─layouts
+├─static
+├─themes
+└─config.toml</p>
+</blockquote>
+<h2 id="挑选一个主题">挑选一个主题<a href="#挑选一个主题" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>1.在Hugo的 主题网站<a href="https://themes.gohugo.io/"><strong>https://themes.gohugo.io/</strong></a>中挑选一款你喜欢的主题。</p>
+<p>2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）</p>
+<p>3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。</p>
+<h2 id="调试并实现本地查看">调试并实现本地查看<a href="#调试并实现本地查看" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>1.下载一个VS Studio网址<a href="https://code.visualstudio.com/"><strong>https://code.visualstudio.com/</strong></a>。</p>
+<p>2.使用VS Studio打开站点文件夹（yourname.com）</p>
+<p>3.在其终端输入命令</p>
+<blockquote>
+<p>hugo server</p>
+</blockquote>
+<p>得到结果</p>
+<blockquote>
+<p>C:\Users\A\foreversnow.com&gt; hugo server
+Start building sites …</p>
+<pre><code>              | EN  
+</code></pre>
+<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&ndash;
+Pages            | 15
+Paginator pages  |  0
+Non-page files   |  0<br>
+Static files     | 10
+Processed images |  0
+Aliases          |  0
+Sitemaps         |  1<br>
+Cleaned          |  0</p>
+<p>Built in 187 ms
+Watching for changes in C:\Users\A\foreversnow.com{archetypes,content,data,layouts,static,themes}
+Watching for config changes in C:\Users\A\foreversnow.com\config.toml
+Environment: &ldquo;development&rdquo;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server &ndash;disableFastRender
+Web Server is available at **http://localhost:1313/ **(bind address 127.0.0.1)
+Press Ctrl+C to stop</p>
+</blockquote>
+<p>http://localhost:1313/ 本地博客模样</p>
+<p>4.可以对配置文件进行修改让其真正属于你！</p>
+<h2 id="帮助网址">帮助网址<a href="#帮助网址" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Hugo官网: <a href="https://gohugo.io"><strong>https://gohugo.io</strong></a></p>
+<p>Hugo中文文档： <a href="https://www.gohugo.org/"><strong>https://www.gohugo.org/</strong></a></p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

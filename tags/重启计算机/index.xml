@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>重启计算机 on Mr.哈利-南山不寒</title>
+    <link>https://HarryQing.github.io/tags/%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 重启计算机 on Mr.哈利-南山不寒</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 08 Nov 2020 23:06:06 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sqlsever 2008安装时出现“重启计算机”问题</title>
+      <link>https://HarryQing.github.io/posts/sqlsever-2008%E5%AE%89%E8%A3%85%E6%97%B6%E5%87%BA%E7%8E%B0%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 08 Nov 2020 23:06:06 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/posts/sqlsever-2008%E5%AE%89%E8%A3%85%E6%97%B6%E5%87%BA%E7%8E%B0%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%97%AE%E9%A2%98/</guid>
+      <description> 笔者最近在帮助小伙伴们安装SqlServer 2008时遇到了好几个“重启计算机”问题（详细如下图），通过一番查找和探索终于是解决了这个问题，现在把方法分享给大家。
+ 操作方法 1.第一步  在开始菜单中找到运行，如下图，在打开中，输入“regedit”，按回车，打开注册表编辑器，如第二步。
+ 2.第二步  在打开的注册表编辑器中按照下图红色方框标记的路径对应的找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager这个文件夹
+ 3.第三步  在上面找到的Session Manager上单击，右边窗口出现一系列注册表，在这些注册表中找到 PendingFileRenameOperations这个注册表，右击鼠标，选择删除。然后再点击SqlServer的安装文件，进行安装，你就会发现，上面的问题已经解决了。
+ 结束了喔，快不快！！！ </description>
+    </item>
+    
+  </channel>
+</rss>
