@@ -1,43 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mr.哈利-南山不寒</title>
-    <link>https://HarryQing.github.io/</link>
-    <description>Recent content on Mr.哈利-南山不寒</description>
+    <title>Javas on Mr.哈利-南山不寒</title>
+    <link>https://HarryQing.github.io/java/</link>
+    <description>Recent content in Javas on Mr.哈利-南山不寒</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 23 Jan 2021 23:06:06 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>使用Hugo搭建个人博客（一）</title>
-      <link>https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
-      <pubDate>Sat, 23 Jan 2021 23:06:06 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/blog/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
-      <description>安装Hugo 1.从 hugo 的GitHub 仓库下载安装包，使用即可。我使用的是hugo_0.80.0_Windows-64bit.zip这个版本。
-2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
-3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
-4.打开系统的cmd（命令提示符），输入
- hugo version
- 5.显示Hugo版本信息。
- C:\Users\A&amp;gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
- 6.Hugo安装完成
-创建一个站点 1.在cmd（命令提示符）输入
- hogo new site yourname.com(yourname自定义)
- 2.创建完成即生成你的博客目录，目录如下：
- ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
- 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
-2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
-3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
-调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
-2.使用VS Studio打开站点文件夹（yourname.com）
-3.在其终端输入命令
- hugo server
- 得到结果
- C:\Users\A\foreversnow.com&amp;gt; hugo server Start building sites …
- | EN  &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;ndash; Pages | 15 Paginator pages | 0 Non-page files | 0</description>
-    </item>
-    
+    <lastBuildDate>Tue, 05 Jan 2021 14:14:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第二章 数据类型和运算符</title>
       <link>https://HarryQing.github.io/java/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
@@ -174,6 +144,20 @@ NetBeans 官方网址：https://netbeans.org/</description>
 10.Java中每个语句必须以分号结束，回车不是语句的结束标志，所以一个语句可以跨多行。
 老鸟建议： ·编程时，一定要注意缩进规范；
 ·在写括号、引号时，一定是成对编写，然后再往里插入内容。</description>
+    </item>
+    
+    <item>
+      <title>1.5.2 第一个程序常见错误</title>
+      <link>https://HarryQing.github.io/java/1.5.2-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Sun, 03 Jan 2021 18:00:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/1.5.2-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</guid>
+      <description>·常见问题-1：提示“javac不是内部或外部命令……” 出错原因：Path变量配置错误导致没有找到javac命令
+解决方案：参考1.4.2 &amp;lt;环境变量Path的配置&amp;gt;，细心重新设置Path，配置完成后需要重新输入cmd打开命令行窗口。
+·常见问题-2：文件夹中可以看到Welcome.java文件，在编译时出现’javac 找不到文件……’ 出错原因：可能是操作系统显示设置的问题，隐藏了文件的扩展名。
+解决方案：打开我的电脑窗口,选择【组织】【文件夹和搜索选项】【查看】，如图1-24所示，去掉“隐藏已知文件夹类型的扩展名”复选框中的对勾，看到文件的实际名称为Welcome.java.txt，将后缀后.txt去掉。
+·常见问题-3：NoSuchMethodError：main 出错原因：找不到main方法，应该是main方法书写有误。
+解决方案：检查public static void main(String [] args){}是否有误。</description>
     </item>
     
   </channel>
