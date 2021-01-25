@@ -39,6 +39,48 @@
     </item>
     
     <item>
+      <title>2.3 Java中的关键字/保留字</title>
+      <link>https://HarryQing.github.io/java/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/</link>
+      <pubDate>Sat, 09 Jan 2021 12:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/</guid>
+      <description>Java关键字是Java语言保留供内部使用的，如class用于定义类。 关键字也可以称为保留字，它们的意思是一样的，我们不能使用关键字作为变量名或方法名。
+abstract assert boolean break byte case
+catch char class const continue default
+do double else extends final finally
+float for goto if implements import
+instanceof int interface long native new
+菜鸟雷区 出于应试教育的惯性思维，很多新手很可能去背上面的单词，从实战思维出发，我们不需要刻意去记！随着学习的深入，自然就非常熟悉了。</description>
+    </item>
+    
+    <item>
+      <title>2.2 标识符</title>
+      <link>https://HarryQing.github.io/java/2.2-%E6%A0%87%E8%AF%86%E7%AC%A6/</link>
+      <pubDate>Sat, 09 Jan 2021 09:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.2-%E6%A0%87%E8%AF%86%E7%AC%A6/</guid>
+      <description>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：
+1.标识符必须以字母、下划线_、美元符号$开头。 2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。 3.Java 标识符大小写敏感，且长度无限制。 4.标识符不可以是Java的关键字。 标识符的使用规范 1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan
+2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()
+【注意】：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！
+【示例2-2】合法的标识符
+int a = 3;int _123 = 3;int $12aa = 3;int 变量1 = 55; //合法，但是不建议使用中文命名的标识符 【示例2-3】不合法的标识符
+int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊字符int int = 3; //不能使用关键字 测试代码：
+/*** 测试标识符的用法* @author 王雪庆**/public class TestIdentifer {//能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！public static void main(String[] args) {int a123 = 1;//int 123abc = 2; //数字不能开头int $a = 3;int _abc = 4;//int #abc = 5;int 年龄 = 18; //可以使用汉字，但是一般不建议//int class = 2; //关键字不能作为标识符}} </description>
+    </item>
+    
+    <item>
+      <title>2.1 注释</title>
+      <link>https://HarryQing.github.io/java/2.1-%E6%B3%A8%E9%87%8A/</link>
+      <pubDate>Sat, 09 Jan 2021 05:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.1-%E6%B3%A8%E9%87%8A/</guid>
+      <description>为了方便程序的阅读，Java语言允许程序员在程序中写上一些说明性的文字，用来提高程序的可读性，这些文字性的说明就称为注释。 注释不会出现在字节码文件中，即Java编译器编译时会跳过注释语句。 在Java中根据注释的功能不同，主要分为单行注释、多行注释和文档注释。
+单行注释： 使用“//”开头，“//”后面的单行内容均为注释。 多行注释： 以“/* ”开头以“* /”结尾，在“/* ”和“* /”之间的内容为注释，我们也可以使用多行注释作为行内注释。但是在使用时要注意，多行注释不能嵌套使用。 文档注释： 以“/** ”开头以“* /”结尾，注释中包含一些说明性的文字及一些JavaDoc标签(后期写项目时，可以生成项目的API) 【示例2-1】认识Java的三种注释类型
+/*** Welcome类（我是文档注释）* @author 王雪庆* @version 1.0*/public class Welcome {//我是单行注释public static void main(String[] args/*我是行内注释 */) {System.out.println(&amp;quot;Hello World!&amp;quot;);}/*我是多行注释！我是多行注释！*/} </description>
+    </item>
+    
+    <item>
       <title>第二章 数据类型和运算符</title>
       <link>https://HarryQing.github.io/java/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Tue, 05 Jan 2021 14:14:00 +0800</pubDate>
@@ -123,57 +165,6 @@ public class Welcome {public static void main(String[] args) {System.out.print
       <description>在开发工具匮乏的年代，第一代Java程序员都是从文本编辑器开始训练自己的代码，从而一步步成为高手，这是一种无奈，而不是一种必须。
 我们认为，现在横在入门初学者最大的障碍在于“是否能激发兴趣，解决问题，体验到编程的快乐”，而不是讨论是该用记事本还是eclipse集成开发环境。
 是否使用或坚持记事本编程不是成为高手的必要条件，而“激发兴趣，保持兴趣”确是成为高手的必要条件。也基于我们的理念“快速入门，快速实战”，我们一开始就引入eclipse，让初学者更容易的激发兴趣，体验学习的快乐。</description>
-    </item>
-    
-    <item>
-      <title>1.6 常用Java开发工具</title>
-      <link>https://HarryQing.github.io/java/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Mon, 04 Jan 2021 09:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid>
-      <description>入门学习时，进行简单的Java程序编写，我们可以使用文本编辑器，比如：记事本。但是，记事本功能不够强大，我们可以考虑使用“更加强大的记事本”，常见的有如下三种软件：
-1.Notepad++
-2.UltraEdit
-3.EditPlus
-在我们真正学习开发中，包括以后在企业中从事软件开发时，一般使用集成开发环境（IDE）， 如下三种软件是最常见的，尤其是eclipse。 我们只选一个作为入门使用，其他两种大家自行举一反三，使用很简单。
-eclipse官方网址：http://www.eclipse.org
-IntelliJ IDE官方网址:http://www.jetbrains.com/idea/
-NetBeans 官方网址：https://netbeans.org/</description>
-    </item>
-    
-    <item>
-      <title>1.5.4 最常用DOS命令</title>
-      <link>https://HarryQing.github.io/java/1.5.4-%E6%9C%80%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 04 Jan 2021 05:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.5.4-%E6%9C%80%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/</guid>
-      <description>DOS命令已经基本退出普通使用者的历史舞台了，但是仍然有必要掌握几个常用的命令，便于在某些情况下更顺畅的操作程序。
-1.cd 目录路径	进入一个目录
-2.cd ..	进入父目录
-3.dir	查看本目录下的文件和子目录列表
-4.cls 清楚屏幕命令
-5.上下键	查找敲过的命令
-6.Tab键	自动补齐命令</description>
-    </item>
-    
-    <item>
-      <title>1.5.3 第一个Java程序的总结和提升</title>
-      <link>https://HarryQing.github.io/java/1.5.3-%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%8F%90%E5%8D%87/</link>
-      <pubDate>Sun, 03 Jan 2021 21:00:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.5.3-%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%8F%90%E5%8D%87/</guid>
-      <description>1.Java对大小写敏感，如果出现了大小写拼写错误，程序无法运行。
-2.关键字public被称作访问修饰符(access modifier)，用于控制程序的其它部分对这段代码的访问级别。
-3.关键字class 的意思是类。Java是面向对象的语言，所有代码必须位于类里面。
-4.一个源文件中至多只能声明一个public的类，其它类的个数不限，如果源文件中包含一个public 类，源文件名必须和其中定义的public的类名相同，且以“.java”为扩展名。
-5.一个源文件可以包含多个类class。
-6.正确编译后的源文件，会得到相应的字节码文件，编译器为每个类生成独立的字节码文件，且将字节码文件自动命名为类的名字且以“.class”为扩展名。
-7.main方法是Java应用程序的入口方法，它有固定的书写格式：
-8.public static void main(String[] args) {…}
-9.在Java中，用花括号划分程序的各个部分，任何方法的代码都必须以“{”开始，以“}”结束， 由于编译器忽略空格，所以花括号风格不受限制。
-10.Java中每个语句必须以分号结束，回车不是语句的结束标志，所以一个语句可以跨多行。
-老鸟建议： ·编程时，一定要注意缩进规范；
-·在写括号、引号时，一定是成对编写，然后再往里插入内容。</description>
     </item>
     
   </channel>

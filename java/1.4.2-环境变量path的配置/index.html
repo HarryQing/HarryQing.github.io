@@ -10,15 +10,31 @@
 <meta itemprop="name" content="1.4.2 环境变量Path的配置">
 <meta itemprop="description" content="环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。
 Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。
-·设置Path环境变量的步骤如下 1.右键计算机——&gt;属性——&gt;高级系统设置，出现图1-14所示界面。
-2.单击环境变量按钮，进入图1-15所示环境变量操作主界面：
-3.单击新建按钮，新建JAVA_HOME变量（用于说明JDK的安装目录），如图1-16所示。
-4.修改系统环境变量Path，在最前面追加%JAVA_HOME%\bin 并以;和原路径分隔。再增加:&quot;.;&quot;。这是表示当前目录的意思。
-菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
-注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件">
+·设置Path环境变量的步骤如下 1.在电脑桌面 右键点击 “此电脑”的“属性”选项。
+2.选择“高级系统设置”选项
+3.点击下面的“环境变量”选项
+4. 新建JAVA_HOME 变量 点击 New（新建）&hellip; 按钮
+输入:
+ 变量名：JAVA_HOME
+变量值：电脑上JDK安装的绝对路径
+ JDK 路径下必须能够看到如下的文件。
+输入完毕后点击 OK。
+5.新建/修改 CLASSPATH 变量 如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。
+如果没有，点击 New（新建）&hellip; 新建。
+输入/在已有的变量值后面添加：
+ 变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+ 点击 OK 保存。
+6.修改Path 变量 由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。
+新建两条路径：
+ %JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+ 菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
+注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件
+写在最后 第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！ ">
 <meta itemprop="datePublished" content="2021-01-03T05:20:06+08:00" />
 <meta itemprop="dateModified" content="2021-01-03T05:20:06+08:00" />
-<meta itemprop="wordCount" content="13">
+<meta itemprop="wordCount" content="59">
 
 
 
@@ -26,12 +42,28 @@ Path是一个常见的环境变量，它告诉操作系统，当要求系统运�
 <meta property="og:title" content="1.4.2 环境变量Path的配置" />
 <meta property="og:description" content="环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。
 Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。
-·设置Path环境变量的步骤如下 1.右键计算机——&gt;属性——&gt;高级系统设置，出现图1-14所示界面。
-2.单击环境变量按钮，进入图1-15所示环境变量操作主界面：
-3.单击新建按钮，新建JAVA_HOME变量（用于说明JDK的安装目录），如图1-16所示。
-4.修改系统环境变量Path，在最前面追加%JAVA_HOME%\bin 并以;和原路径分隔。再增加:&quot;.;&quot;。这是表示当前目录的意思。
-菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
-注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件" />
+·设置Path环境变量的步骤如下 1.在电脑桌面 右键点击 “此电脑”的“属性”选项。
+2.选择“高级系统设置”选项
+3.点击下面的“环境变量”选项
+4. 新建JAVA_HOME 变量 点击 New（新建）&hellip; 按钮
+输入:
+ 变量名：JAVA_HOME
+变量值：电脑上JDK安装的绝对路径
+ JDK 路径下必须能够看到如下的文件。
+输入完毕后点击 OK。
+5.新建/修改 CLASSPATH 变量 如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。
+如果没有，点击 New（新建）&hellip; 新建。
+输入/在已有的变量值后面添加：
+ 变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+ 点击 OK 保存。
+6.修改Path 变量 由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。
+新建两条路径：
+ %JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+ 菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
+注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件
+写在最后 第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/java/1.4.2-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8Fpath%E7%9A%84%E9%85%8D%E7%BD%AE/" />
 <meta property="article:published_time" content="2021-01-03T05:20:06+08:00" />
@@ -40,12 +72,28 @@ Path是一个常见的环境变量，它告诉操作系统，当要求系统运�
 <meta name="twitter:title" content="1.4.2 环境变量Path的配置"/>
 <meta name="twitter:description" content="环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。
 Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。
-·设置Path环境变量的步骤如下 1.右键计算机——&gt;属性——&gt;高级系统设置，出现图1-14所示界面。
-2.单击环境变量按钮，进入图1-15所示环境变量操作主界面：
-3.单击新建按钮，新建JAVA_HOME变量（用于说明JDK的安装目录），如图1-16所示。
-4.修改系统环境变量Path，在最前面追加%JAVA_HOME%\bin 并以;和原路径分隔。再增加:&quot;.;&quot;。这是表示当前目录的意思。
-菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
-注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件"/>
+·设置Path环境变量的步骤如下 1.在电脑桌面 右键点击 “此电脑”的“属性”选项。
+2.选择“高级系统设置”选项
+3.点击下面的“环境变量”选项
+4. 新建JAVA_HOME 变量 点击 New（新建）&hellip; 按钮
+输入:
+ 变量名：JAVA_HOME
+变量值：电脑上JDK安装的绝对路径
+ JDK 路径下必须能够看到如下的文件。
+输入完毕后点击 OK。
+5.新建/修改 CLASSPATH 变量 如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。
+如果没有，点击 New（新建）&hellip; 新建。
+输入/在已有的变量值后面添加：
+ 变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+ 点击 OK 保存。
+6.修改Path 变量 由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。
+新建两条路径：
+ %JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+ 菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
+注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件
+写在最后 第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！ "/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -97,17 +145,48 @@ Path是一个常见的环境变量，它告诉操作系统，当要求系统运�
 			<p>环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。</p>
 <p>Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。</p>
 <h3 id="设置path环境变量的步骤如下">·设置Path环境变量的步骤如下<a href="#设置path环境变量的步骤如下" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<p>1.右键计算机——&gt;属性——&gt;高级系统设置，出现图1-14所示界面。</p>
-<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838772220505.png" alt=""></p>
-<p>2.单击环境变量按钮，进入图1-15所示环境变量操作主界面：</p>
-<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838780549127.png" alt=""></p>
-<p>3.单击新建按钮，新建JAVA_HOME变量（用于说明JDK的安装目录），如图1-16所示。</p>
-<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838787522279.png" alt=""></p>
-<p>4.修改系统环境变量Path，在最前面追加%JAVA_HOME%\bin  并以;和原路径分隔。再增加:&quot;.;&quot;。这是表示当前目录的意思。</p>
-<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838936169679.png" alt=""></p>
+<p>1.在电脑桌面 右键点击 “此电脑”的“属性”选项。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410870-6587-3932295-dd57a38934b0c1af.png" alt=""></p>
+<p>2.选择“高级系统设置”选项</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410904-3787-3932295-4ab4c5e4655e83ff.png" alt=""></p>
+<p>3.点击下面的“环境变量”选项</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410952-9821-3932295-53c3abde864d63a7.png" alt=""></p>
+<h3 id="4-新建java_home-变量">4. 新建JAVA_HOME 变量<a href="#4-新建java_home-变量" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>点击 New（新建）&hellip; 按钮</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411060-2131-3932295-ef08fb7d0ef0760f.png" alt=""></p>
+<p>输入:</p>
+<blockquote>
+<p>变量名：JAVA_HOME</p>
+<p>变量值：电脑上JDK安装的绝对路径</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411114-3840-3932295-73be617cffdac223.png" alt=""></p>
+<p>JDK 路径下必须能够看到如下的文件。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411157-4157-3932295-b821f0e17887bcdf.png" alt=""></p>
+<p>输入完毕后点击 OK。</p>
+<h3 id="5新建修改-classpath-变量">5.新建/修改 CLASSPATH 变量<a href="#5新建修改-classpath-变量" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。</p>
+<p>如果没有，点击 New（新建）&hellip; 新建。</p>
+<p>输入/在已有的变量值后面添加：</p>
+<blockquote>
+<p>变量名：CLASSPATH</p>
+<p>变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</p>
+</blockquote>
+<p>点击 OK 保存。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411198-2259-3932295-afe57d1caf93277c.png" alt=""></p>
+<h3 id="6修改path-变量">6.修改Path 变量<a href="#6修改path-变量" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。</p>
+<p>新建两条路径：</p>
+<blockquote>
+<p>%JAVA_HOME%\bin</p>
+<p>%JAVA_HOME%\jre\bin</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411240-7448-3932295-515fd020c1e2fc4a.png" alt=""></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411281-6565-3932295-08d84d125c71d0a8.png" alt=""></p>
 <h3 id="菜鸟雷区">菜鸟雷区<a href="#菜鸟雷区" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。</p>
 <p><strong>注</strong>：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件</p>
+<h2 id="写在最后">写在最后<a href="#写在最后" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h3 id="第一次更改于2021年1月25日-由于雪儿的使用不便霍霍霍">第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！<a href="#第一次更改于2021年1月25日-由于雪儿的使用不便霍霍霍" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 
 		</div>
 	</main>
