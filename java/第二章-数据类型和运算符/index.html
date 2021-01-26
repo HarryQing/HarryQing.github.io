@@ -8,23 +8,23 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="第二章 数据类型和运算符">
-<meta itemprop="description" content="欲知后事如何，等着吧您！ ">
+<meta itemprop="description" content="目录 2.1 注释 2.2 标识符 2.3 Java中的关键字/保留字 2.4.1 变量的本质 2.4.2 变量的分类 2.5 常量(Constant) 2.6 基本数据类型(primitive data type) 2.6.1 整型变量/常量 2.6.2 浮点型变量/常量 ">
 <meta itemprop="datePublished" content="2021-01-05T14:14:00+08:00" />
 <meta itemprop="dateModified" content="2021-01-05T14:14:00+08:00" />
-<meta itemprop="wordCount" content="1">
+<meta itemprop="wordCount" content="21">
 
 
 
 <meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
 <meta property="og:title" content="第二章 数据类型和运算符" />
-<meta property="og:description" content="欲知后事如何，等着吧您！ " />
+<meta property="og:description" content="目录 2.1 注释 2.2 标识符 2.3 Java中的关键字/保留字 2.4.1 变量的本质 2.4.2 变量的分类 2.5 常量(Constant) 2.6 基本数据类型(primitive data type) 2.6.1 整型变量/常量 2.6.2 浮点型变量/常量 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/java/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/" />
 <meta property="article:published_time" content="2021-01-05T14:14:00+08:00" />
 <meta property="article:modified_time" content="2021-01-05T14:14:00+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="第二章 数据类型和运算符"/>
-<meta name="twitter:description" content="欲知后事如何，等着吧您！ "/>
+<meta name="twitter:description" content="目录 2.1 注释 2.2 标识符 2.3 Java中的关键字/保留字 2.4.1 变量的本质 2.4.2 变量的分类 2.5 常量(Constant) 2.6 基本数据类型(primitive data type) 2.6.1 整型变量/常量 2.6.2 浮点型变量/常量 "/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -73,7 +73,16 @@
 	<main class="site-main section-inner thin animated fadeIn faster">
 		<h1>第二章 数据类型和运算符</h1>
 		<div class="content">
-			<h1 id="欲知后事如何等着吧您">欲知后事如何，等着吧您！<a href="#欲知后事如何等着吧您" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+			<h1 id="目录">目录<a href="#目录" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+<h2 id="21-注释">2.1 注释<a href="#21-注释" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="22-标识符">2.2 标识符<a href="#22-标识符" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="23-java中的关键字保留字">2.3 Java中的关键字/保留字<a href="#23-java中的关键字保留字" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="241-变量的本质">2.4.1 变量的本质<a href="#241-变量的本质" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="242-变量的分类">2.4.2 变量的分类<a href="#242-变量的分类" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="25-常量constant">2.5 常量(Constant)<a href="#25-常量constant" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="26-基本数据类型primitive-data-type">2.6 基本数据类型(primitive data type)<a href="#26-基本数据类型primitive-data-type" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="261-整型变量常量">2.6.1 整型变量/常量<a href="#261-整型变量常量" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="262-浮点型变量常量">2.6.2 浮点型变量/常量<a href="#262-浮点型变量常量" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
 		</div>
 	</main>

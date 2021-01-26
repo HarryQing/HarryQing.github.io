@@ -7,7 +7,98 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 12:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 16:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.6.2 浮点型变量/常量</title>
+      <link>https://HarryQing.github.io/java/2.6.2-%E6%B5%AE%E7%82%B9%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</link>
+      <pubDate>Mon, 11 Jan 2021 16:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.6.2-%E6%B5%AE%E7%82%B9%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</guid>
+      <description>带小数的数据在Java中称为浮点型。浮点型可分为float类型和double类型。
+   类型 占用存储空间 表数范围     float 4字节 -3.403E38~3.403E38   double 8字节 -1.798E308~1.798E308    float类型又被称作单精度类型，尾数可以精确到7位有效数字，在很多情况下，float类型的精度很难满足需求。而double表示这种类型的数值精度约是float类型的两倍，又被称作双精度类型，绝大部分应用程序都采用double类型。浮点型常量默认类型也是double。
+Java浮点类型常量有两种表示形式 十进制数形式，例如:3.14 314.0 0.314 科学记数法形式，如314e2 314E2 314E-2 【示例2-11】 使用科学记数法给浮点型变量赋值
+double f = 314e2; //314*10^2--&amp;gt;31400.0double f2 = 314e-2; //314*10^(-2)--&amp;gt;3.14 float类型的数值有一个后缀F或者f ，没有后缀F/f的浮点数值默认为double类型。也可以在浮点数值后添加后缀D或者d， 以明确其为double类型。
+【示例2-12】 float类型赋值时需要添加后缀F/f
+float f = 3.14F;double d1 = 3.14;double d2 = 3.14D; 老鸟建议 浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类。
+【示例2-13】 浮点数的比较一
+float f = 0.1f;double d = 1.</description>
+    </item>
+    
+    <item>
+      <title>2.6.1 整型变量/常量</title>
+      <link>https://HarryQing.github.io/java/2.6.1-%E6%95%B4%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</link>
+      <pubDate>Mon, 11 Jan 2021 12:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.6.1-%E6%95%B4%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</guid>
+      <description>整型用于表示没有小数部分的数值，它允许是负数。整型的范围与运行Java代码的机器无关，这正是Java程序具有很强移植能力的原因之一。与此相反，C和C++程序需要针对不同的处理器选择最有效的整型。
+   类型 占用存储空间 表数范围     byte 1字节 -2^7 ~ 2^7-1（-128~127）   short 2字节 -2^15 ~ 2^15-1（-32768~32767）   int 4字节 -2^31 ~ 2^31-1 (-2147483648~2147483647)约21   long 8字节 -2^63 ~ 2^63-1    Java 语言整型常量的四种表示形式 十进制整数，如：99, -500, 0 八进制整数，要求以 0 开头，如：015 十六进制数，要求 0x 或 0X 开头，如：0x15 二进制数，要求0b或0B开头，如：0b01110011 Java语言的整型常数默认为int型，声明long型常量可以后加‘ l ’或‘ L ’ 。
+【示例2-10】 长整型常数的声明
+long a = 55555555; //编译成功，在int表示的范围内(21亿内)。long b = 55555555555;//不加L编译错误，已经超过int表示的范围。 我们修改成long类型的常量即可：</description>
+    </item>
+    
+    <item>
+      <title>2.6 基本数据类型(primitive data type)</title>
+      <link>https://HarryQing.github.io/java/2.6-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bprimitive-data-type/</link>
+      <pubDate>Mon, 11 Jan 2021 09:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.6-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bprimitive-data-type/</guid>
+      <description>Java是一种强类型语言，每个变量都必须声明其数据类型。 Java的数据类型可分为两大类：基本数据类型（primitive data type）和引用数据类型（reference data type）。
+Java中定义了3类8种基本数据类型 数值型－ byte、 short、int、 long、float、 double 字符型－ char 布尔型－boolean 注意事项 1.引用数据类型的大小统一为4个字节，记录的是其引用对象的地址！
+2.本章只讲解基本数据类型。引用数据类型在后续数组和面向对象章节讲解。</description>
+    </item>
+    
+    <item>
+      <title>2.5 常量(Constant)</title>
+      <link>https://HarryQing.github.io/java/2.5-%E5%B8%B8%E9%87%8Fconstant/</link>
+      <pubDate>Mon, 11 Jan 2021 05:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.5-%E5%B8%B8%E9%87%8Fconstant/</guid>
+      <description>常量通常指的是一个固定的值，例如：1、2、3、’a’、’b’、true、false、”helloWorld”等。
+在Java语言中，主要是利用关键字final来定义一个常量。 常量一旦被初始化后不能再更改其值。
+声明格式为： final type varName = value; 【示例2-9】 常量的声明及使用
+public class TestConstants {public static void main(String[] args) {final double PI = 3.14;// PI = 3.15; //编译错误，不能再被赋值！ double r = 4;double area = PI * r * r;double circle = 2 * PI * r;System.out.println(&amp;quot;area = &amp;quot; + area);System.out.println(&amp;quot;circle = &amp;quot; + circle);}} 为了更好的区分和表述，一般将1、2、3、’a’、’b’、true、false、”helloWorld”等称为字面常量，而使用final修饰的PI等称为符号常量。
+老鸟建议 变量和常量命名规范（规范是程序员的基本准则，不规范会直接损害你的个人形象）：
+1.所有变量、方法、类名：见名知意
+2.类成员变量：首字母小写和驼峰原则: monthSalary</description>
+    </item>
+    
+    <item>
+      <title>2.4.2 变量的分类</title>
+      <link>https://HarryQing.github.io/java/2.4.2-%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Sat, 09 Jan 2021 19:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.4.2-%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</guid>
+      <description>从整体上可将变量划分为局部变量、成员变量(也称为实例变量)和静态变量。
+   类型 声明位置 从属于 生命周期     局部变量 方法或语句块内部 方法/语句块 从声明位置开始，直到方法或语句块执行完毕，局部变量消失   成员变量(实例变量) 类内部，方法外部 对象 对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失；   静态变量(类变量) 类内部，static修饰 类 类被加载，静态变量就有效；类被卸载，静态变量消失。    老鸟建议 成员变量和静态变量不是目前重点，不要过多纠结理解与否。我们学习面向对象时，再重点讲解成员变量和静态变量
+· 局部变量(local variable) 方法或语句块内部定义的变量。生命周期是从声明位置开始到到方法或语句块执行完毕为止。局部变量在使用前必须先声明、初始化(赋初值)再使用。
+【示例2-7】 局部变量
+public void test() {int i;int j = i+5 ; // 编译出错，变量i还未被初始化 } public void test() {int i;i=10;int j = i+5 ; // 编译正确} · 成员变量（也叫实例变量 member variable） 方法外部、类的内部定义的变量。从属于对象，生命周期伴随对象始终。如果不自行初始化，它会自动初始化成该类型的默认初始值。</description>
+    </item>
+    
+    <item>
+      <title>2.4.1 变量的本质</title>
+      <link>https://HarryQing.github.io/java/2.4.1-%E5%8F%98%E9%87%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
+      <pubDate>Sat, 09 Jan 2021 15:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/java/2.4.1-%E5%8F%98%E9%87%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
+      <description>变量本质上就是代表一个”可操作的存储空间”，空间位置是确定的，但是里面放置什么值不确定。我们可通过变量名来访问“对应的存储空间”，从而操纵这个“存储空间”存储的值。
+Java是一种强类型语言，每个变量都必须声明其数据类型。变量的数据类型决定了变量占据存储空间的大小。 比如，int a=3; 表示a变量的空间大小为4个字节。
+变量作为程序中最基本的存储单元，其要素包括变量名，变量类型和作用域。变量在使用前必须对其声明, 只有在变量声明以后，才能为其分配相应长度的存储空间。
+·变量的声明 格式为：
+ type varName [=value][,varName[=value]&amp;hellip;];
+//[]中的内容为可选项，即可有可无
+数据类型 变量名 [=初始值] [,变量名 [=初始值]…];
+ 【示例2-4】 声明变量：
+double salary;long earthPopulation;int age; 不同数据类型的常量会在内存中分配不同的空间，如图所示。
+注意事项 1.每个变量都有类型，类型可以是基本类型，也可以是引用类型。
+2.变量名必须是合法的标识符
+3.变量声明是一条完整的语句，因此每一个声明都必须以分号结束
+【示例2-5】 在一行中声明多个变量
+int i ,j; // 两个变量的数据类型都是int 老鸟建议 不提倡这种&amp;quot;一行声明多个变量&amp;quot;风格，逐一声明每一个变量可以提高程序可读性。
+【示例2-6】 可以将变量的声明和初始化放在同一行中
+int age = 18; double e = 2.718281828; </description>
+    </item>
+    
     <item>
       <title>2.3 Java中的关键字/保留字</title>
       <link>https://HarryQing.github.io/java/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/</link>
@@ -56,101 +147,7 @@ int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊�
       <pubDate>Tue, 05 Jan 2021 14:14:00 +0800</pubDate>
       
       <guid>https://HarryQing.github.io/java/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-      <description>欲知后事如何，等着吧您！ </description>
-    </item>
-    
-    <item>
-      <title>1.8 30分钟完成桌球小游戏项目</title>
-      <link>https://HarryQing.github.io/java/1.8-30%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E6%A1%8C%E7%90%83%E5%B0%8F%E6%B8%B8%E6%88%8F%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Tue, 05 Jan 2021 09:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.8-30%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E6%A1%8C%E7%90%83%E5%B0%8F%E6%B8%B8%E6%88%8F%E9%A1%B9%E7%9B%AE/</guid>
-      <description>如下的小项目，对于第一次接触编程的朋友从理解上会有难度。但是，我们这个项目不在于让大家理解代码本身，而是让大家“重在体验敲代码的感觉”。
-【项目】桌球游戏小项目 练习目标： 1.找到敲代码的感觉
-2.收获敲代码的兴趣
-3.作出效果，找到自信
-4.从一开始就学会调试错误
-5.掌握Java代码基本结构
-项目需求： 桌球在球桌中按照一定线路和角度移动，遇到边框会自动弹回。
-要求： 即使看不太懂，也要照着敲如下游戏代码，至少5遍。要求所有字符和源文件一致。如果报异常，请细心看所在行和老师代码有何区别。现阶段不需要理解代码的语法功能，只要按照代码结构输入代码，能够经过调试实现代码的正常运行即可。
-项目中用到的两个小图片，如下：
-开发步骤： 版本1： 目标：创建项目、创建窗口。
-创建项目并拷贝图片：
-在项目名MyPro01上单击右键，在菜单中依次选择new&amp;mdash;Folder，创建一个名称是images的文件夹，并复制两 张图片到该目录下。并在src下创建类BallGame.java。eclipse下项目的最终结构如图所示。
-代码：
-import java.awt.*;import javax.swing.*;public class BallGame extends JFrame {//窗口加载void launchFrame(){setSize(300,300);setLocation(400,400);setVisible(true);}//main方法是程序执行的入口public static void main(String[] args){System.out.println(&amp;quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&amp;quot;);BallGame game = new BallGame();game.launchFrame();}} 运行效果：
-版本2： 目标：加载两个图片
-代码：
-import java.awt.*;import javax.swing.*;public class BallGame extends JFrame {Image ball = Toolkit.</description>
-    </item>
-    
-    <item>
-      <title>1.7.3 使用eclipse开发和运行Java程序</title>
-      <link>https://HarryQing.github.io/java/1.7.3-%E4%BD%BF%E7%94%A8eclipse%E5%BC%80%E5%8F%91%E5%92%8C%E8%BF%90%E8%A1%8Cjava%E7%A8%8B%E5%BA%8F/</link>
-      <pubDate>Tue, 05 Jan 2021 05:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.7.3-%E4%BD%BF%E7%94%A8eclipse%E5%BC%80%E5%8F%91%E5%92%8C%E8%BF%90%E8%A1%8Cjava%E7%A8%8B%E5%BA%8F/</guid>
-      <description>·使用eclipse开发第一个程序 我们在上一节建好的Java项目中，开始开发Java程序。首先，新建一个Java类。在src目录上右键单击，建立一个Java类。如图1-32所示。
-出现新建类的开始界面，如图所示。我们只需输入类名即可，其他不需做任何设置：
-点击Finish后，新建Java类成功，出现如图所示
-在src下面出现了Welcome.java文件。点击该文件后，出现该文件的代码编辑，我们开发Eclipse下的第一个Java程序。
-【示例1-2】使用eclipse开发Java程序
-public class Welcome {public static void main(String[] args) {System.out.println(&amp;quot;我是尚学堂的高淇！&amp;quot;);}} 运行该程序： 在代码上单击右键后，点击Run as Java application。如图所示。也可以使用快捷键“ctrl+F11”，直接实现运行。或者直接点击工具栏的中运行按钮。
-界面下方的控制台（console）出现运行结果，如图所示。
-至此，我们成功在eclipse中开发了我们的第一个Java程序！
-·eclipse自动编译 eclipse会自动执行javac进行编译，并且会将编译错误直接给出提示，一目了然，非常便于我们调试。
-·Java项目的src目录和bin目录 src用于存放源代码，bin用于存放生成的class文件。
-在eclipse视图里我们只看到了src目录，eclipse隐藏了bin目录。进入我的电脑，打开Java项目目录，我们可以看到src和bin目录：</description>
-    </item>
-    
-    <item>
-      <title>1.7.2 在eclipse中创建Java项目</title>
-      <link>https://HarryQing.github.io/java/1.7.2-%E5%9C%A8eclipse%E4%B8%AD%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Mon, 04 Jan 2021 22:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.7.2-%E5%9C%A8eclipse%E4%B8%AD%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE/</guid>
-      <description>在界面左侧的“Package Explorer”视图中右键单击，在快捷菜单中依次选择new——&amp;gt; Java Project，开始新建Java项目。如图所示。 输入项目名称MyPro01，点击Finish 完成即可。如图所示。
-新建项目完成，项目结构如图所示。其中的src文件夹用于存放源代码。显示JDK版本是JavaSE-1.8。</description>
-    </item>
-    
-    <item>
-      <title>1.7.1 下载和安装eclipse</title>
-      <link>https://HarryQing.github.io/java/1.7.1-%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85eclipse/</link>
-      <pubDate>Mon, 04 Jan 2021 18:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.7.1-%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85eclipse/</guid>
-      <description>下载地址：https://www.eclipse.org/downloads/packages/
-出现图所示下载界面。选择Eclipse IDE for Java Developers，根据自己安装的JDK, 决定是下载32位还是64位。下载完成后，直接解压。进入目录，双击eclipse.exe即可使用。
-启动时会先出现设置工作空间界面，如图所示。工作空间指Java项目存储的目录，一般采用默认工作空间目录即可。
-点击OK后，会进入欢迎界面，如图所示。
-关闭欢迎界面，即可进入开发主界面，如图所示。</description>
-    </item>
-    
-    <item>
-      <title>1.7 eclipse使用10分钟入门</title>
-      <link>https://HarryQing.github.io/java/1.7-eclipse%E4%BD%BF%E7%94%A810%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Mon, 04 Jan 2021 13:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.7-eclipse%E4%BD%BF%E7%94%A810%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8/</guid>
-      <description>在开发工具匮乏的年代，第一代Java程序员都是从文本编辑器开始训练自己的代码，从而一步步成为高手，这是一种无奈，而不是一种必须。
-我们认为，现在横在入门初学者最大的障碍在于“是否能激发兴趣，解决问题，体验到编程的快乐”，而不是讨论是该用记事本还是eclipse集成开发环境。
-是否使用或坚持记事本编程不是成为高手的必要条件，而“激发兴趣，保持兴趣”确是成为高手的必要条件。也基于我们的理念“快速入门，快速实战”，我们一开始就引入eclipse，让初学者更容易的激发兴趣，体验学习的快乐。</description>
-    </item>
-    
-    <item>
-      <title>1.6 常用Java开发工具</title>
-      <link>https://HarryQing.github.io/java/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Mon, 04 Jan 2021 09:14:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/java/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid>
-      <description>入门学习时，进行简单的Java程序编写，我们可以使用文本编辑器，比如：记事本。但是，记事本功能不够强大，我们可以考虑使用“更加强大的记事本”，常见的有如下三种软件：
-1.Notepad++
-2.UltraEdit
-3.EditPlus
-在我们真正学习开发中，包括以后在企业中从事软件开发时，一般使用集成开发环境（IDE）， 如下三种软件是最常见的，尤其是eclipse。 我们只选一个作为入门使用，其他两种大家自行举一反三，使用很简单。
-eclipse官方网址：http://www.eclipse.org
-IntelliJ IDE官方网址:http://www.jetbrains.com/idea/
-NetBeans 官方网址：https://netbeans.org/</description>
+      <description>目录 2.1 注释 2.2 标识符 2.3 Java中的关键字/保留字 2.4.1 变量的本质 2.4.2 变量的分类 2.5 常量(Constant) 2.6 基本数据类型(primitive data type) 2.6.1 整型变量/常量 2.6.2 浮点型变量/常量 </description>
     </item>
     
   </channel>
