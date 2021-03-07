@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 17 Feb 2021 18:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>第四章 Java面对对象基础</title>
-      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Wed, 17 Feb 2021 18:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</guid>
-      <description>敬请期待 </description>
-    </item>
-    
+    <lastBuildDate>Wed, 17 Feb 2021 16:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.6 递归结构</title>
       <link>https://HarryQing.github.io/posts/3.6-%E9%80%92%E5%BD%92%E7%BB%93%E6%9E%84/</link>
@@ -126,6 +117,19 @@ public class Test15 {public static void main(String args[]) {for (int i = 1; i
 【示例3-8】 do-while循环结构：1-100之间的累加和
 public class Test8 {public static void main(String[] args) {int i = 0;int sum = 0;do {sum += i; // sum = sum + ii++;} while (i &amp;lt;= 100);//此处的；不能省略System.out.println(&amp;quot;Sum= &amp;quot; + sum);}} 　【示例3-9】 while与do-while的区别
 public class Test9 {public static void main(String[] args) {//while循环：先判断再执行int a = 0;while (a &amp;lt; 0) {System.</description>
+    </item>
+    
+    <item>
+      <title>3.2.1 while循环</title>
+      <link>https://HarryQing.github.io/posts/3.2.1-while%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Mon, 08 Feb 2021 16:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/posts/3.2.1-while%E5%BE%AA%E7%8E%AF/</guid>
+      <description>语法结构：　 while (布尔表达式) {循环体;} 在循环刚开始时，会计算一次“布尔表达式”的值，若条件为真，执行循环体。而对于后来每一次额外的循环，都会在开始前重新计算一次。
+语句中应有使循环趋向于结束的语句，否则会出现无限循环–––&amp;ldquo;死&amp;quot;循环。
+while循环结构流程图如图3.13所示。
+【示例3-7】 while循环结构：求1到100之间的累加和
+public class Test7 {public static void main(String[] args) {int i = 0;int sum = 0;// 1+2+3+…+100=?while (i &amp;lt;= 100) {sum += i;//相当于sum = sum+i;i++;}System.out.println(&amp;quot;Sum= &amp;quot; + sum);}} </description>
     </item>
     
   </channel>

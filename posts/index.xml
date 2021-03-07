@@ -6,19 +6,8 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 17 Feb 2021 18:20:00 +0800</lastBuildDate>
+		<lastBuildDate>Wed, 17 Feb 2021 16:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>第四章 Java面对对象基础</title>
-			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</link>
-			<pubDate>Wed, 17 Feb 2021 18:20:00 +0800</pubDate>
-			
-			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</guid>
-			<description>敬请期待 </description>
-			<content type="html"><![CDATA[<h2 id="敬请期待">敬请期待</h2>
-]]></content>
-		</item>
 		
 		<item>
 			<title>3.6 递归结构</title>
