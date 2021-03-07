@@ -7,123 +7,125 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 03 Feb 2021 16:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Feb 2021 18:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3.1.1 if单选择结构</title>
-      <link>https://HarryQing.github.io/posts/3.1.1-if%E5%8D%95%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</link>
-      <pubDate>Wed, 03 Feb 2021 16:20:00 +0800</pubDate>
+      <title>第四章 Java面对对象基础</title>
+      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 17 Feb 2021 18:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/3.1.1-if%E5%8D%95%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</guid>
-      <description>语法结构: if(布尔表达式){语句块} if语句对布尔表达式进行一次判定，若判定为真，则执行{}中的语句块，否则跳过该语句块。流程图如图3-1所示。
-【示例3-1】 if单选择结构
-public class Test1 {public static void main(String[] args) {//通过掷三个骰子看看今天的手气如何？int i = (int)(6 * Math.random()) + 1;//通过Math.random()产生随机数int j = (int)(6 * Math.random()) + 1;int k = (int)(6 * Math.random()) + 1;int count = i + j + k;//如果三个骰子之和大于15，则手气不错if(count &amp;gt; 15) {System.out.println(&amp;quot;今天手气不错&amp;quot;);}//如果三个骰子之和在10到15之间，则手气一般if(count &amp;gt;= 10 &amp;amp;&amp;amp; count &amp;lt;= 15) { //错误写法：10&amp;lt;=count&amp;lt;=15System.out.println(&amp;quot;今天手气很一般&amp;quot;);}//如果三个骰子之和小于10，则手气不怎么样if(count &amp;lt; 10) {System.</description>
+      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</guid>
+      <description>敬请期待 </description>
     </item>
     
     <item>
-      <title>3.0 控制语句</title>
-      <link>https://HarryQing.github.io/posts/3.0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Tue, 02 Feb 2021 16:20:00 +0800</pubDate>
+      <title>3.6 递归结构</title>
+      <link>https://HarryQing.github.io/posts/3.6-%E9%80%92%E5%BD%92%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Wed, 17 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/3.0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</guid>
-      <description>本章开始我们需要学习流程控制语句，流程控制语句是用来控制程序中各语句执行顺序的语句，可以把语句组合成能完成一定功能的小逻辑模块。控制语句分为三类：顺序、选择和循环。
-“顺序结构”代表“先执行a，再执行b”的逻辑。比如，先找个女朋友，再给女朋友打电话；先订婚，再结婚；
-“选择结构”代表“如果…，则…”的逻辑。比如，如果女朋友来电，则迅速接电话；如果看到红灯，则停车；
-“循环结构”代表“如果…，则再继续…”的逻辑。比如，如果没打通女朋友电话，则再继续打一次； 如果没找到喜欢的人，则再继续找。
-前面两章讲解的程序都是顺序结构，即按照书写顺序执行每一条语句，这并不是我们的重点，因此本章研究的重点是“选择结构”和“循环结构”。
-很神奇的是，三种流程控制语句就能表示所有的事情！不信，你可以试试拆分你遇到的各种事情。实际上，任何软件和程序，小到一个练习，大到一个操作系统，本质上都是由“变量、选择语句、循环语句”组成。
-这三种基本逻辑结构是相互支撑的，它们共同构成了算法的基本结构，无论怎样复杂的逻辑结构，都可以通过它们来表达。上述两种结构组成的程序可以解决全部的问题，所以任何一种高级语言都具备上述两种结构。
-因此，本章是大家真正跨入编程界的“门槛”，是成为“程序猿”的“门票”。 本章后面会附加大量的练习，供大家提升自我。</description>
+      <guid>https://HarryQing.github.io/posts/3.6-%E9%80%92%E5%BD%92%E7%BB%93%E6%9E%84/</guid>
+      <description>递归是一种常见的解决问题的方法，即把问题逐渐简单化。递归的基本思想就是“自己调用自己”，一个使用递归技术的方法将会直接或者间接的调用自己。
+利用递归可以用简单的程序来解决一些复杂的问题。比如：斐波那契数列的计算、汉诺塔、快排等问题。
+递归结构包括两个部分： 1.定义递归头。解答：什么时候不调用自身方法。如果没有头，将陷入死循环，也就是递归的结束条件。
+2.递归体。解答：什么时候需要调用自身方法。
+【示例3-22】 递归：计算n!　public class Test22 {public static void main(String[] args) {long d1 = System.currentTimeMillis(); System.out.printf(&amp;quot;%d阶乘的结果:%s%n&amp;quot;, 10, factorial(10));long d2 = System.currentTimeMillis();System.out.printf(&amp;quot;递归费时：%s%n&amp;quot;, d2-d1); //耗时：32ms}/** 求阶乘的方法*/static long factorial(int n){if(n==1){//递归头return 1;}else{//递归体return n*factorial(n-1);//n! = n * (n-1)!}}} 图3-27 示例3-22运行效果图
+图3-28 递归原理分析图
+递归的缺陷 1.简单的程序是递归的优点之一。但是递归调用会占用大量的系统堆栈，内存耗用多，在递归调用层次多时速度要比循环慢的多，所以在使用递归时要慎重。
+2.比如上面的递归耗时558ms。但是用普通循环的话快得多，如示例3-23所示。
+【示例3-23】 使用循环求n!　public class Test23 {public static void main(String[] args) {long d3 = System.</description>
     </item>
     
     <item>
-      <title>3.1 选择结构</title>
-      <link>https://HarryQing.github.io/posts/3.1-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</link>
-      <pubDate>Tue, 02 Feb 2021 16:20:00 +0800</pubDate>
+      <title>3.5 方法的重载(overload)</title>
+      <link>https://HarryQing.github.io/posts/3.5-%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BDoverload/</link>
+      <pubDate>Tue, 16 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/3.1-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</guid>
-      <description>在还没有知道Java选择结构的时候，我们编写的程序总是从程序入口开始，顺序执行每一条语句直到执行完最后一条语句结束，但是生活中经常需要进行条件判断，根据判断结果决定是否做一件事情，这就需要选择结构。
-选择结构用于判断给定的条件，然后根据判断的结果来控制程序的流程。
-主要的选择结构有：if选择结构和switch多选择结构。有如下结构：
- 1.if单选择结构2.if-else双选择结构3.if-else if-else多选择结构4.switch结构 </description>
+      <guid>https://HarryQing.github.io/posts/3.5-%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BDoverload/</guid>
+      <description>方法的重载是指一个类中可以定义多个方法名相同，但参数不同的方法。 调用时，会根据不同的参数自动匹配对应的方法。
+雷区  重载的方法，实际是完全不同的方法，只是名称相同而已!构成方法重载的条件：1.不同的含义：形参类型、形参个数、形参顺序不同2.只有返回值不同不构成方法的重载如：int a(String str){}与 void a(String str){}不构成方法重载3.只有形参的名称不同，不构成方法的重载如：int a(String str){}与int a(String s){}不构成方法重载 【示例3-21】 方法重载
+public class Test21 {public static void main(String[] args) {System.out.println(add(3, 5));// 8System.out.println(add(3, 5, 10));// 18System.out.println(add(3.0, 5));// 8.0System.out.println(add(3, 5.0));// 8.0// 我们已经见过的方法的重载System.out.println();// 0个参数System.out.println(1);// 参数是1个intSystem.out.println(3.0);// 参数是1个double}/** 求和的方法 */public static int add(int n1, int n2) {int sum = n1 + n2;return sum;}// 方法名相同，参数个数不同，构成重载public static int add(int n1, int n2, int n3) {int sum = n1 + n2 + n3;return sum;}// 方法名相同，参数类型不同，构成重载public static double add(double n1, int n2) {double sum = n1 + n2;return sum;}// 方法名相同，参数顺序不同，构成重载public static double add(int n1, double n2) {double sum = n1 + n2;return sum;}//编译错误：只有返回值不同，不构成方法的重载public static double add(int n1, int n2) {double sum = n1 + n2;return sum;}//编译错误：只有参数名称不同，不构成方法的重载public static int add(int n2, int n1) {double sum = n1 + n2; return sum;} } </description>
     </item>
     
     <item>
-      <title>第三章 控制语句</title>
-      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Mon, 01 Feb 2021 17:20:00 +0800</pubDate>
+      <title>3.4 方法</title>
+      <link>https://HarryQing.github.io/posts/3.4-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 15 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</guid>
-      <description>目录 3.0 控制语句 </description>
+      <guid>https://HarryQing.github.io/posts/3.4-%E6%96%B9%E6%B3%95/</guid>
+      <description>方法就是一段用来完成特定功能的代码片段，类似于其它语言的函数。
+方法用于定义该类或该类的实例的行为特征和功能实现。 方法是类和对象行为特征的抽象。方法很类似于面向过程中的函数。面向过程中，函数是最基本单位，整个程序由一个个函数调用组成。面向对象中，整个程序的基本单位是类，方法是从属于类和对象的。
+方法声明格式： [修饰符1 修饰符2 …] 返回值类型 方法名(形式参数列表){Java语句；… … …} 方法的调用方式：  对象名.方法名(实参列表)方法的详细说明1. 形式参数：在方法声明时用于接收外界传入的数据。2. 实参：调用方法时实际传给方法的数据。3. 返回值：方法在执行完毕后返还给调用它的环境的数据。4. 返回值类型：事先约定的返回值的数据类型，如无返回值，必须显示指定为为void。 【示例3-20】 方法的声明及调用
+public class Test20 {/** main方法：程序的入口 */public static void main(String[] args) {int num1 = 10;int num2 = 20;//调用求和的方法：将num1与num2的值传给add方法中的n1与n2// 求完和后将结果返回，用sum接收结果int sum = add(num1, num2);System.out.println(&amp;quot;sum = &amp;quot; + sum);//输出：sum = 30//调用打印的方法：该方法没有返回值print();}/** 求和的方法 */public static int add(int n1, int n2) {int sum = n1 + n2;return sum;//使用return返回计算的结果}/** 打印的方法 */public static void print() {System.</description>
     </item>
     
     <item>
-      <title>2.9 简单的键盘输入和输出</title>
-      <link>https://HarryQing.github.io/posts/2.9-%E7%AE%80%E5%8D%95%E7%9A%84%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA/</link>
-      <pubDate>Mon, 01 Feb 2021 16:20:00 +0800</pubDate>
+      <title>3.3 语句块</title>
+      <link>https://HarryQing.github.io/posts/3.3-%E8%AF%AD%E5%8F%A5%E5%9D%97/</link>
+      <pubDate>Sun, 14 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.9-%E7%AE%80%E5%8D%95%E7%9A%84%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA/</guid>
-      <description>为了我们能写出更加复杂的程序，可以让我们的程序和用户可以通过键盘交互，我们先学习一下简单的键盘输入和输出。
-【示例2-31】 使用Scanner获取键盘输入
-import java.util.Scanner;/*** 测试获得键盘输入* @author 高**/public class TestScanner {public static void main(String[] args) {Scanner scanner = new Scanner(System.in);System.out.println(&amp;quot;请输入名字：&amp;quot;);String name = scanner.nextLine();System.out.println(&amp;quot;请输入你的爱好：&amp;quot;);String favor = scanner.nextLine();System.out.println(&amp;quot;请输入你的年龄：&amp;quot;);int age = scanner.nextInt();System.out.println(&amp;quot;###############&amp;quot;);System.out.println(name);System.out.println(favor);System.out.println(&amp;quot;来到地球的天数：&amp;quot;+age*365);System.out.println(&amp;quot;离开地球的天数：&amp;quot;+(72-age)*365);}} 运行结果如图所示 </description>
+      <guid>https://HarryQing.github.io/posts/3.3-%E8%AF%AD%E5%8F%A5%E5%9D%97/</guid>
+      <description>语句块(有时叫做复合语句)，是用花括号扩起的任意数量的简单Java语句。块确定了局部变量的作用域。块中的程序代码，作为一个整体，是要被一起执行的。块可以被嵌套在另一个块中，但是不能在两个嵌套的块内声明同名的变量。语句块可以使用外部的变量，而外部不能使用语句块中定义的变量，因为语句块中定义的变量作用域只限于语句块。
+【示例3-19】 语句块　public class Test19 {public static void main(String[] args) {int n;int a;{int k;int n; //编译错误：不能重复定义变量n} //变量k的作用域到此为止}} </description>
     </item>
     
     <item>
-      <title>2.8.3 基本类型转化时常见错误和问题</title>
-      <link>https://HarryQing.github.io/posts/2.8.3-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E8%BD%AC%E5%8C%96%E6%97%B6%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%92%8C%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Sun, 31 Jan 2021 16:20:00 +0800</pubDate>
+      <title>3.2.6 带标签的break和continue</title>
+      <link>https://HarryQing.github.io/posts/3.2.6-%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84break%E5%92%8Ccontinue/</link>
+      <pubDate>Sat, 13 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.8.3-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E8%BD%AC%E5%8C%96%E6%97%B6%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%92%8C%E9%97%AE%E9%A2%98/</guid>
-      <description>操作比较大的数时，要留意是否溢出，尤其是整数操作时。
-【示例2-29】 常见问题一
-int money = 1000000000; //10亿int years = 20;//返回的total是负数，超过了int的范围int total = money*years;System.out.println(&amp;quot;total=&amp;quot;+total);//返回的total仍然是负数。默认是int，因此结果会转成int值，再转成long。但是已经发生//了数据丢失long total1 = money*years; System.out.println(&amp;quot;total1=&amp;quot;+total1);//返回的total2正确:先将一个因子变成long，整个表达式发生提升。全部用long来计算。long total2 = money*((long)years); System.out.println(&amp;quot;total2=&amp;quot;+total2); 运行结果如图所示。 L和l 的问题： 不要命名名字为l的变量，l容易和1混淆。long类型使用大写L不要用小写。
-【示例2-30】 常见问题二
- int l = 2; //分不清是L还是1,long a = 23451l;//建议使用大写LSystem.out.println(l+1); </description>
+      <guid>https://HarryQing.github.io/posts/3.2.6-%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84break%E5%92%8Ccontinue/</guid>
+      <description>goto关键字很早就在程序设计语言中出现。尽管goto仍是Java的一个保留字，但并未在Java语言中得到正式使用;Java没有goto语句。然而，在break和continue这两个关键字的身上，我们仍然能看出一些goto的影子&amp;mdash;带标签的break和continue。
+“标签”是指后面跟一个冒号的标识符，例如：“label:”。对Java来说唯一用到标签的地方是在循环语句之前。而在循环之前设置标签的唯一理由是：我们希望在其中嵌套另一个循环，由于break和continue关键字通常只中断当前循环，但若随同标签使用，它们就会中断到存在标签的地方。
+在 “goto有害”论中，最有问题的就是标签，而非goto， 随着标签在一个程序里数量的增多，产生错误的机会也越来越多。 但Java标签不会造成这方面的问题，因为它们的活动场所已被限死，不可通过特别的方式到处传递程序的控制权。由此也引出了一个有趣的问题：通过限制语句的能力，反而能使一项语言特性更加有用。
+【示例3-18】 带标签break和continue：控制嵌套循环跳转(打印101-150之间所有的质数)
+public class Test18 {public static void main(String args[]) {outer: for (int i = 101; i &amp;lt; 150; i++) {for (int j = 2; j &amp;lt; i / 2; j++) {if (i % j == 0){continue outer;}}System.out.print(i + &amp;quot; &amp;quot;);}}} </description>
     </item>
     
     <item>
-      <title>2.8.2 强制类型转换</title>
-      <link>https://HarryQing.github.io/posts/2.8.2-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
-      <pubDate>Sat, 30 Jan 2021 16:20:00 +0800</pubDate>
+      <title>3.2.5 break语句和continue语句</title>
+      <link>https://HarryQing.github.io/posts/3.2.5-break%E8%AF%AD%E5%8F%A5%E5%92%8Ccontinue%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Fri, 12 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.8.2-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
-      <description>强制类型转换，又被称为造型，用于显式的转换一个数值的类型。在有可能丢失信息的情况下进行的转换是通过造型来完成的，但可能造成精度降低或溢出。
-语法格式： (type)var 运算符“()”中的type表示将值var想要转换成的目标数据类型。
-【示例2-27】 强制类型转换
-double x = 3.14; int nx = (int)x; //值为3char c = &#39;a&#39;;int d = c+1;System.out.println(nx);System.out.println(d);System.out.println((char)d); 运行结果如图所示。 当将一种类型强制转换成另一种类型，而又超出了目标类型的表数范围，就会被截断成为一个完全不同的值。
-【示例2-28】 强制类型转换特例
-int x = 300;byte bx = (byte)x; //值为44 新手雷区 不能在布尔类型和任何数值类型之间做强制类型转换</description>
+      <guid>https://HarryQing.github.io/posts/3.2.5-break%E8%AF%AD%E5%8F%A5%E5%92%8Ccontinue%E8%AF%AD%E5%8F%A5/</guid>
+      <description>在任何循环语句的主体部分，均可用break控制循环的流程。break用于强行退出循环，不执行循环中剩余的语句。
+【示例3-16】 break语句
+public class Test16 {public static void main(String[] args) {int total = 0;//定义计数器System.out.println(&amp;quot;Begin&amp;quot;);while (true) {total++;//每循环一次计数器加1int i = (int) Math.round(100 * Math.random());//当i等于88时，退出循环if (i == 88) {break;}}//输出循环的次数System.out.println(&amp;quot;Game over， used &amp;quot; + total + &amp;quot; times.&amp;quot;);}} 　continue 语句用在循环语句体中，用于终止某次循环过程，即跳过循环体中尚未执行的语句，接着进行下一次是否执行循环的判定。
+注意事项   continue用在while，do-while中，continue 语句立刻跳到循环首部，越过了当前循环的其余部分。
+  continue用在for循环中，跳到for循环的迭代因子部分。
+  【示例3-17】 continue语句：把100~150之间不能被3整除的数输出，并且每行输出5个
+public class Test17 {public static void main(String[] args) {int count = 0;//定义计数器for (int i = 100; i &amp;lt; 150; i++) {//如果是3的倍数，则跳过本次循环，继续进行下一次循环if (i % 3 == 0){continue;}//否则（不是3的倍数），输出该数System.</description>
     </item>
     
     <item>
-      <title>2.8.1 自动类型转换</title>
-      <link>https://HarryQing.github.io/posts/2.8.1-%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
-      <pubDate>Fri, 29 Jan 2021 16:20:00 +0800</pubDate>
+      <title>3.2.4 嵌套循环</title>
+      <link>https://HarryQing.github.io/posts/3.2.4-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Thu, 11 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.8.1-%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
-      <description>自动类型转换指的是容量小的数据类型可以自动转换为容量大的数据类型。如图2-6所示，黑色的实线表示无数据丢失的自动类型转换，而虚线表示在转换时可能会有精度的损失。
-图 自动类型转换 可以将整型常量直接赋值给byte、 short、 char等类型变量，而不需要进行强制类型转换，只要不超出其表数范围即可。
-【示例2-26】 自动类型转换特例
-short b = 12; //合法short b = 1234567;//非法，1234567超出了short的表数范围 </description>
+      <guid>https://HarryQing.github.io/posts/3.2.4-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF/</guid>
+      <description>在一个循环语句内部再嵌套一个或多个循环，称为嵌套循环。while、do-while与for循环可以任意嵌套多层。
+【示例3-14】 嵌套循环　public class Test14 {public static void main(String args[]) {for (int i=1; i &amp;lt;=5; i++) {for(int j=1; j&amp;lt;=5; j++){System.out.print(i+&amp;quot; &amp;quot;);}System.out.println();}}} 【示例3-15】 使用嵌套循环实现九九乘法表
+public class Test15 {public static void main(String args[]) {for (int i = 1; i &amp;lt; 10; i++) { // i是一个乘数for (int j = 1; j &amp;lt;= i; j++) { // j是另一个乘数System.out.print(j + &amp;quot;*&amp;quot; + i + &amp;quot;=&amp;quot; + (i * j &amp;lt; 10 ?</description>
     </item>
     
     <item>
-      <title>2.7.8 运算符优先级的问题</title>
-      <link>https://HarryQing.github.io/posts/2.7.8-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Thu, 28 Jan 2021 16:20:00 +0800</pubDate>
+      <title>3.2.3 for循环</title>
+      <link>https://HarryQing.github.io/posts/3.2.3-for%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Wed, 10 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.7.8-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-      <description>表 运算符的优先级    优先级 运算符 类 结合性     1 () 括号运算符 由左至右   2 !、+（正号）、-（负号） 一元运算符 由左至右   2 ~ 位逻辑运算符 由右至左   2 ++、&amp;ndash; 递增与递减运算符 由右至左   3 *、/、% 算术运算符 由左至右   4 +、- 算术运算符 由左至右   5 &amp;laquo;、&amp;raquo; 位左移、右移运算符 由左至右   6 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;= 关系运算符 由左至右   7 ==、!= 关系运算符 由左至右   8 &amp;amp; 位运算符、逻辑运算符 由左至右   9 ^ 位运算符、逻辑运算符 由左至右   10 | 位运算符、逻辑运算符 由左至右   11 &amp;amp;&amp;amp; 逻辑运算符 由左至右   12 || 逻辑运算符 由左至右   13 ?</description>
+      <guid>https://HarryQing.github.io/posts/3.2.3-for%E5%BE%AA%E7%8E%AF/</guid>
+      <description>语法结构：　 for (初始表达式; 布尔表达式; 迭代因子) {循环体;} for循环语句是支持迭代的一种通用结构，是最有效、最灵活的循环结构。for循环在第一次反复之前要进行初始化，即执行初始表达式;随后，对布尔表达式进行判定，若判定结果为true，则执行循环体，否则，终止循环;最后在每一次反复的时候，进行某种形式的“步进”，即执行迭代因子。
+ A. 初始化部分设置循环变量的初值B. 条件判断部分为任意布尔表达式C. 迭代因子控制循环变量的增减for循环在执行条件判定后，先执行的循环体部分，再执行步进。for循环结构的流程图如图3-18所示。 【示例3-10】 for循环　public class Test10 {public static void main(String args[]) {int sum = 0;//1.求1-100之间的累加和for (int i = 0; i &amp;lt;= 100; i++) {sum += i;}System.out.println(&amp;quot;Sum= &amp;quot; + sum);//2.循环输出9-1之间的数for(int i=9;i&amp;gt;0;i--){System.out.print(i+&amp;quot;、&amp;quot;);}System.out.println();//3.输出90-1之间能被3整除的数for(int i=90;i&amp;gt;0;i-=3){System.out.print(i+&amp;quot;、&amp;quot;);}System.out.println();}} Java里能用到逗号运算符的地方屈指可数，其中一处就是for循环的控制表达式。在控制表达式的初始化和步进控制部分，我们可以使用一系列由逗号分隔的表达式，而且那些表达式均会独立执行。</description>
     </item>
     
     <item>
-      <title>2.7.7 条件运算符</title>
-      <link>https://HarryQing.github.io/posts/2.7.7-%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
-      <pubDate>Wed, 27 Jan 2021 16:20:00 +0800</pubDate>
+      <title>3.2.2 do-while循环</title>
+      <link>https://HarryQing.github.io/posts/3.2.2-do-while%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Tue, 09 Feb 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/2.7.7-%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-      <description>语法格式： x ? y : z 其中 x 为 boolean 类型表达式，先计算 x 的值，若为true，则整个运算的结果为表达式 y 的值，否则整个运算结果为表达式 z 的值。
-【示例2-25】 三目条件运算符
- int score = 80; int x = -100;String type =score&amp;lt;60?&amp;quot;不及格&amp;quot;:&amp;quot;及格&amp;quot;; int flag = x &amp;gt; 0 ? 1 : (x == 0 ? 0 : -1);System.out.println(&amp;quot;type= &amp;quot; + type);System.out.println(&amp;quot;flag= &amp;quot;+ flag); </description>
+      <guid>https://HarryQing.github.io/posts/3.2.2-do-while%E5%BE%AA%E7%8E%AF/</guid>
+      <description>语法结构： do {循环体;} while(布尔表达式) ; do-while循环结构会先执行循环体，然后再判断布尔表达式的值，若条件为真，执行循环体，当条件为假时结束循环。do-while循环的循环体至少执行一次。do-while循环结构流程图如图3.15所示。
+【示例3-8】 do-while循环结构：1-100之间的累加和
+public class Test8 {public static void main(String[] args) {int i = 0;int sum = 0;do {sum += i; // sum = sum + ii++;} while (i &amp;lt;= 100);//此处的；不能省略System.out.println(&amp;quot;Sum= &amp;quot; + sum);}} 　【示例3-9】 while与do-while的区别
+public class Test9 {public static void main(String[] args) {//while循环：先判断再执行int a = 0;while (a &amp;lt; 0) {System.</description>
     </item>
     
   </channel>

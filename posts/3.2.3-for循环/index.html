@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="3.2.3 for循环">
+<meta itemprop="description" content="语法结构：　 for (初始表达式; 布尔表达式; 迭代因子) {循环体;} for循环语句是支持迭代的一种通用结构，是最有效、最灵活的循环结构。for循环在第一次反复之前要进行初始化，即执行初始表达式;随后，对布尔表达式进行判定，若判定结果为true，则执行循环体，否则，终止循环;最后在每一次反复的时候，进行某种形式的“步进”，即执行迭代因子。
+ A. 初始化部分设置循环变量的初值B. 条件判断部分为任意布尔表达式C. 迭代因子控制循环变量的增减for循环在执行条件判定后，先执行的循环体部分，再执行步进。for循环结构的流程图如图3-18所示。 【示例3-10】 for循环　public class Test10 {public static void main(String args[]) {int sum = 0;//1.求1-100之间的累加和for (int i = 0; i &lt;= 100; i&#43;&#43;) {sum &#43;= i;}System.out.println(&quot;Sum= &quot; &#43; sum);//2.循环输出9-1之间的数for(int i=9;i&gt;0;i--){System.out.print(i&#43;&quot;、&quot;);}System.out.println();//3.输出90-1之间能被3整除的数for(int i=90;i&gt;0;i-=3){System.out.print(i&#43;&quot;、&quot;);}System.out.println();}} Java里能用到逗号运算符的地方屈指可数，其中一处就是for循环的控制表达式。在控制表达式的初始化和步进控制部分，我们可以使用一系列由逗号分隔的表达式，而且那些表达式均会独立执行。">
+<meta itemprop="datePublished" content="2021-02-10T16:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-02-10T16:20:00+08:00" />
+<meta itemprop="wordCount" content="145">
+
+
+
+<meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
+<meta property="og:title" content="3.2.3 for循环" />
+<meta property="og:description" content="语法结构：　 for (初始表达式; 布尔表达式; 迭代因子) {循环体;} for循环语句是支持迭代的一种通用结构，是最有效、最灵活的循环结构。for循环在第一次反复之前要进行初始化，即执行初始表达式;随后，对布尔表达式进行判定，若判定结果为true，则执行循环体，否则，终止循环;最后在每一次反复的时候，进行某种形式的“步进”，即执行迭代因子。
+ A. 初始化部分设置循环变量的初值B. 条件判断部分为任意布尔表达式C. 迭代因子控制循环变量的增减for循环在执行条件判定后，先执行的循环体部分，再执行步进。for循环结构的流程图如图3-18所示。 【示例3-10】 for循环　public class Test10 {public static void main(String args[]) {int sum = 0;//1.求1-100之间的累加和for (int i = 0; i &lt;= 100; i&#43;&#43;) {sum &#43;= i;}System.out.println(&quot;Sum= &quot; &#43; sum);//2.循环输出9-1之间的数for(int i=9;i&gt;0;i--){System.out.print(i&#43;&quot;、&quot;);}System.out.println();//3.输出90-1之间能被3整除的数for(int i=90;i&gt;0;i-=3){System.out.print(i&#43;&quot;、&quot;);}System.out.println();}} Java里能用到逗号运算符的地方屈指可数，其中一处就是for循环的控制表达式。在控制表达式的初始化和步进控制部分，我们可以使用一系列由逗号分隔的表达式，而且那些表达式均会独立执行。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/3.2.3-for%E5%BE%AA%E7%8E%AF/" />
+<meta property="article:published_time" content="2021-02-10T16:20:00+08:00" />
+<meta property="article:modified_time" content="2021-02-10T16:20:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="3.2.3 for循环"/>
+<meta name="twitter:description" content="语法结构：　 for (初始表达式; 布尔表达式; 迭代因子) {循环体;} for循环语句是支持迭代的一种通用结构，是最有效、最灵活的循环结构。for循环在第一次反复之前要进行初始化，即执行初始表达式;随后，对布尔表达式进行判定，若判定结果为true，则执行循环体，否则，终止循环;最后在每一次反复的时候，进行某种形式的“步进”，即执行迭代因子。
+ A. 初始化部分设置循环变量的初值B. 条件判断部分为任意布尔表达式C. 迭代因子控制循环变量的增减for循环在执行条件判定后，先执行的循环体部分，再执行步进。for循环结构的流程图如图3-18所示。 【示例3-10】 for循环　public class Test10 {public static void main(String args[]) {int sum = 0;//1.求1-100之间的累加和for (int i = 0; i &lt;= 100; i&#43;&#43;) {sum &#43;= i;}System.out.println(&quot;Sum= &quot; &#43; sum);//2.循环输出9-1之间的数for(int i=9;i&gt;0;i--){System.out.print(i&#43;&quot;、&quot;);}System.out.println();//3.输出90-1之间能被3整除的数for(int i=90;i&gt;0;i-=3){System.out.print(i&#43;&quot;、&quot;);}System.out.println();}} Java里能用到逗号运算符的地方屈指可数，其中一处就是for循环的控制表达式。在控制表达式的初始化和步进控制部分，我们可以使用一系列由逗号分隔的表达式，而且那些表达式均会独立执行。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>3.2.3 for循环</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">知识能量站</a>
+				<a href="https://HarryQing.github.io/blog/">天马行空</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">知识能量站</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">天马行空</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 10, 2021</span></div>
+				<h1>3.2.3 for循环</h1>
+			</header>
+			<div class="content">
+				<h2 id="语法结构">语法结构：　　<a href="#语法结构" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<pre><code>for (初始表达式; 布尔表达式; 迭代因子) {
+      循环体;
+}
+</code></pre>
+<p>for循环语句是支持迭代的一种通用结构，是最有效、最灵活的循环结构。for循环在第一次反复之前要进行初始化，即执行初始表达式;随后，对布尔表达式进行判定，若判定结果为true，则执行循环体，否则，终止循环;最后在每一次反复的时候，进行某种形式的“步进”，即执行迭代因子。</p>
+<pre><code>  A. 初始化部分设置循环变量的初值
+
+  B. 条件判断部分为任意布尔表达式
+
+  C. 迭代因子控制循环变量的增减
+
+  for循环在执行条件判定后，先执行的循环体部分，再执行步进。
+
+  for循环结构的流程图如图3-18所示。
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494919708427157.png" alt="enter description here"></p>
+<p><strong>【示例3-10】</strong> for循环　　</p>
+<pre><code>public class Test10 {
+    public static void main(String args[]) {
+        int sum = 0;
+        //1.求1-100之间的累加和
+        for (int i = 0; i &lt;= 100; i++) {
+            sum += i;
+        }
+        System.out.println(&quot;Sum= &quot; + sum);
+        //2.循环输出9-1之间的数
+        for(int i=9;i&gt;0;i--){
+            System.out.print(i+&quot;、&quot;);
+        }
+        System.out.println();
+        //3.输出90-1之间能被3整除的数
+        for(int i=90;i&gt;0;i-=3){
+            System.out.print(i+&quot;、&quot;);
+        }
+        System.out.println();
+    }
+}
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494919882344126.png" alt="enter description here"></p>
+<p>Java里能用到逗号运算符的地方屈指可数，其中一处就是for循环的控制表达式。在控制表达式的初始化和步进控制部分，我们可以使用一系列由逗号分隔的表达式，而且那些表达式均会独立执行。</p>
+<p><strong>【示例3-11】</strong> 逗号运算符　</p>
+<pre><code>public class Test11 {
+    public static void main(String[] args) { 
+        for(int i = 1, j = i + 10; i &lt; 5; i++, j = i * 2) {
+            System.out.println(&quot;i= &quot; + i + &quot; j= &quot; + j); 
+        } 
+    }
+}
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494919920133938.png" alt="enter description here"></p>
+<ol>
+<li>
+<p>无论在初始化还是在步进部分，语句都是顺序执行的。</p>
+</li>
+<li>
+<p>尽管初始化部分可设置任意数量的定义，但都属于同一类型。</p>
+</li>
+<li>
+<p>约定:只在for语句的控制表达式中写入与循环变量初始化，条件判断和迭代因子相关的表达式。</p>
+</li>
+</ol>
+<p>初始化部分、条件判断部分和迭代因子可以为空语句，但必须以“;”分开，如示例3-12所示。</p>
+<p><strong>【示例3-12】</strong> 无限循环</p>
+<pre><code>public class Test12 {
+    public static void main(String[] args) { 
+        for ( ; ; ) {    // 无限循环: 相当于 while(true)
+            System.out.println(&quot;北京尚学堂&quot;);
+        }
+    }
+}
+</code></pre>
+<p>编译器将while(true)与for(;;)看作同一回事，都指的是无限循环。</p>
+<p>在for语句的初始化部分声明的变量，其作用域为整个for循环体，不能在循环外部使用该变量。如示例3-13所示。</p>
+<p><strong>【示例3-13】</strong> 初始化变量的作用域</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494920002726434.png" alt="enter description here"></p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>145 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-02-10 16:20 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://HarryQing.github.io/posts/3.2.4-%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>3.2.4 嵌套循环</span>
+			</a>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/3.2.2-do-while%E5%BE%AA%E7%8E%AF/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>3.2.2 do-while循环</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
