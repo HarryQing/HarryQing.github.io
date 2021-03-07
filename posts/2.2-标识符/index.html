@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="2.2 标识符">
+<meta itemprop="description" content="标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：
+1.标识符必须以字母、下划线_、美元符号$开头。 2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。 3.Java 标识符大小写敏感，且长度无限制。 4.标识符不可以是Java的关键字。 标识符的使用规范 1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan
+2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()
+【注意】：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！
+【示例2-2】合法的标识符
+int a = 3;int _123 = 3;int $12aa = 3;int 变量1 = 55; //合法，但是不建议使用中文命名的标识符 【示例2-3】不合法的标识符
+int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊字符int int = 3; //不能使用关键字 测试代码：
+/*** 测试标识符的用法* @author 王雪庆**/public class TestIdentifer {//能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！public static void main(String[] args) {int a123 = 1;//int 123abc = 2; //数字不能开头int $a = 3;int _abc = 4;//int #abc = 5;int 年龄 = 18; //可以使用汉字，但是一般不建议//int class = 2; //关键字不能作为标识符}} ">
+<meta itemprop="datePublished" content="2021-01-09T09:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-01-09T09:20:00+08:00" />
+<meta itemprop="wordCount" content="99">
+
+
+
+<meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
+<meta property="og:title" content="2.2 标识符" />
+<meta property="og:description" content="标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：
+1.标识符必须以字母、下划线_、美元符号$开头。 2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。 3.Java 标识符大小写敏感，且长度无限制。 4.标识符不可以是Java的关键字。 标识符的使用规范 1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan
+2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()
+【注意】：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！
+【示例2-2】合法的标识符
+int a = 3;int _123 = 3;int $12aa = 3;int 变量1 = 55; //合法，但是不建议使用中文命名的标识符 【示例2-3】不合法的标识符
+int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊字符int int = 3; //不能使用关键字 测试代码：
+/*** 测试标识符的用法* @author 王雪庆**/public class TestIdentifer {//能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！public static void main(String[] args) {int a123 = 1;//int 123abc = 2; //数字不能开头int $a = 3;int _abc = 4;//int #abc = 5;int 年龄 = 18; //可以使用汉字，但是一般不建议//int class = 2; //关键字不能作为标识符}} " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/2.2-%E6%A0%87%E8%AF%86%E7%AC%A6/" />
+<meta property="article:published_time" content="2021-01-09T09:20:00+08:00" />
+<meta property="article:modified_time" content="2021-01-09T09:20:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2.2 标识符"/>
+<meta name="twitter:description" content="标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：
+1.标识符必须以字母、下划线_、美元符号$开头。 2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。 3.Java 标识符大小写敏感，且长度无限制。 4.标识符不可以是Java的关键字。 标识符的使用规范 1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan
+2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()
+【注意】：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！
+【示例2-2】合法的标识符
+int a = 3;int _123 = 3;int $12aa = 3;int 变量1 = 55; //合法，但是不建议使用中文命名的标识符 【示例2-3】不合法的标识符
+int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊字符int int = 3; //不能使用关键字 测试代码：
+/*** 测试标识符的用法* @author 王雪庆**/public class TestIdentifer {//能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！public static void main(String[] args) {int a123 = 1;//int 123abc = 2; //数字不能开头int $a = 3;int _abc = 4;//int #abc = 5;int 年龄 = 18; //可以使用汉字，但是一般不建议//int class = 2; //关键字不能作为标识符}} "/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>2.2 标识符</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">知识能量站</a>
+				<a href="https://HarryQing.github.io/blog/">天马行空</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">知识能量站</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">天马行空</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 9, 2021</span></div>
+				<h1>2.2 标识符</h1>
+			</header>
+			<div class="content">
+				<p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p>
+<h3 id="1标识符必须以字母下划线_美元符号开头">1.标识符必须以字母、下划线_、美元符号$开头。<a href="#1标识符必须以字母下划线_美元符号开头" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h3 id="2标识符其它部分可以是字母下划线_美元符和数字的任意组合">2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。<a href="#2标识符其它部分可以是字母下划线_美元符和数字的任意组合" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h3 id="3java-标识符大小写敏感且长度无限制">3.Java 标识符大小写敏感，且长度无限制。<a href="#3java-标识符大小写敏感且长度无限制" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h3 id="4标识符不可以是java的关键字">4.标识符不可以是Java的关键字。<a href="#4标识符不可以是java的关键字" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="标识符的使用规范">标识符的使用规范<a href="#标识符的使用规范" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan</p>
+<p>2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()</p>
+<p><strong>【注意】</strong>：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！</p>
+<p>【示例2-2】合法的标识符</p>
+<pre><code>int  a = 3;
+int  _123 = 3;
+int  $12aa = 3;
+int  变量1 = 55;  //合法，但是不建议使用中文命名的标识符
+</code></pre>
+<p>【示例2-3】不合法的标识符</p>
+<pre><code>int  1a = 3;   //不能用数字开头
+int  a# = 3;   //不能包含#这样的特殊字符
+int  int = 3;  //不能使用关键字
+</code></pre>
+<p><strong>测试代码</strong>：</p>
+<pre><code>/**
+ * 测试标识符的用法
+ * @author 王雪庆
+ *
+ */
+public class TestIdentifer {
+
+    //能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！
+    public static void main(String[] args) {
+        int  a123 = 1;
+        //int  123abc = 2;        //数字不能开头
+        int  $a = 3;
+        int  _abc = 4;
+        //int  #abc = 5;
+
+        int  年龄 = 18;        //可以使用汉字，但是一般不建议
+
+        //int class = 2;        //关键字不能作为标识符
+
+    }
+}</code></pre>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>99 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-01-09 09:20 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://HarryQing.github.io/posts/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>2.3 Java中的关键字/保留字</span>
+			</a>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/2.1-%E6%B3%A8%E9%87%8A/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>2.1 注释</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

@@ -6,191 +6,2346 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Fri, 25 Dec 2020 11:36:33 +0800</lastBuildDate>
+		<lastBuildDate>Wed, 03 Feb 2021 16:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>国内加速访问 GitHub</title>
-			<link>https://HarryQing.github.io/posts/%E5%9B%BD%E5%86%85%E5%8A%A0%E9%80%9F%E8%AE%BF%E9%97%AE-github/</link>
-			<pubDate>Fri, 25 Dec 2020 11:36:33 +0800</pubDate>
+			<title>3.1.1 if单选择结构</title>
+			<link>https://HarryQing.github.io/posts/3.1.1-if%E5%8D%95%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</link>
+			<pubDate>Wed, 03 Feb 2021 16:20:00 +0800</pubDate>
 			
-			<guid>https://HarryQing.github.io/posts/%E5%9B%BD%E5%86%85%E5%8A%A0%E9%80%9F%E8%AE%BF%E9%97%AE-github/</guid>
-			<description>一，国内加速访问 GitHub 中国访问 GitHub 的速度不忍直视，那就叫一个慢！
- Q: 为什么访问速度会很慢？
-A: GitHub 在国内访问速度慢的问题原因有很多，但最直接和最主要的原因是 GitHub 的分发加速网络的域名遭到 dns 污染。
-  Q: 如何解决 DNS 污染？
-A: 通过修改 hosts 解决污染问题。
-  二，解决方法  不需要科（）学（）上网，也不需要开代理加速器。
- 1.查询网址对应的 IP 地址 查询地址： https://www.ipaddress.com/ 
-点击下面 域名（domain）自动跳转到 ipaddress.com 查询结果页面：
-（1）github.com （2）assets-cdn.github.com （3）github.global.ssl.fastly.net 2.修改本地系统 hosts 文件  hosts 文件路径：C:\Windows\System32\drivers\etc\hosts
- 以管理员身份打开 CMD 终端，并输入 notepad ，会打开一个记事本。 打开文件，输入 hosts 文件路径，选择所有文件，最后点击 hosts 自动打开该文件。 修改 hosts 文件，将查询到的 IP 和 域名写在 hosts 文件的最后即可  192.</description>
-			<content type="html"><![CDATA[<h2 id="一国内加速访问-github">一，国内加速访问 GitHub</h2>
-<p><strong>中国访问 GitHub 的速度不忍直视，那就叫一个慢！</strong></p>
-<blockquote>
-<p>Q: 为什么访问速度会很慢？</p>
-<p>A: GitHub 在国内访问速度慢的问题原因有很多，但最直接和最主要的原因是 GitHub 的分发加速网络的域名遭到 dns 污染。</p>
-</blockquote>
-<blockquote>
-<p>Q: 如何解决 DNS 污染？</p>
-<p>A: 通过修改 hosts 解决污染问题。</p>
-</blockquote>
-<hr>
-<h2 id="二解决方法">二，解决方法</h2>
-<blockquote>
-<p>不需要科（）学（）上网，也不需要开代理加速器。</p>
-</blockquote>
-<h3 id="1查询网址对应的-ip-地址">1.查询网址对应的 IP 地址</h3>
-<p>查询地址： <a href="https://www.ipaddress.com/">https://www.ipaddress.com/ </a></p>
-<p>点击下面 域名（domain）自动跳转到 ipaddress.com 查询结果页面：</p>
-<h4 id="1githubcomhttpsgithubcomipaddresscom">（1）<a href="https://github.com.ipaddress.com/">github.com</a></h4>
-<h4 id="2assets-cdngithubcomhttpsgithubcomipaddresscomassets-cdngithubcom">（2）<a href="https://github.com.ipaddress.com/assets-cdn.github.com">assets-cdn.github.com</a></h4>
-<h4 id="3githubglobalsslfastlynethttpsfastlynetipaddresscomgithubglobalsslfastlynet">（3）<a href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net">github.global.ssl.fastly.net</a></h4>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns0.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns1.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns2.png" alt=""></p>
-<h3 id="2修改本地系统-hosts-文件">2.修改本地系统 hosts 文件</h3>
-<blockquote>
-<p>hosts 文件路径：C:\Windows\System32\drivers\etc\hosts</p>
-</blockquote>
-<h4 id="以管理员身份打开-cmd-终端并输入-notepad-会打开一个记事本">以管理员身份打开 CMD 终端，并输入 notepad ，会打开一个记事本。</h4>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns3.png" alt=""></p>
-<h4 id="打开文件输入-hosts-文件路径选择所有文件最后点击-hosts-自动打开该文件">打开文件，输入 hosts 文件路径，选择所有文件，最后点击 hosts 自动打开该文件。</h4>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns4.png" alt=""></p>
-<h4 id="修改-hosts-文件将查询到的-ip-和-域名写在-hosts-文件的最后即可">修改 hosts 文件，将查询到的 IP 和 域名写在 hosts 文件的最后即可</h4>
-<blockquote>
-<p>192.30.253.112    github.com</p>
-<p>185.199.108.153   assets-cdn.github.com</p>
-<p>185.199.109.153   assets-cdn.github.com</p>
-<p>185.199.110.153   assets-cdn.github.com</p>
-<p>185.199.111.153   assets-cdn.github.com</p>
-<p>199.232.5.194     github.global.ssl.fastly.net</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns5.png" alt=""></p>
-<h3 id="3刷新本地系统-dns-缓存">3.刷新本地系统 dns 缓存</h3>
-<p>用 WIN + R 快捷键打开运行窗口，输入命令：cmd 并回车进入命令行窗口。
-接着输入命令：</p>
-<blockquote>
-<p>ipconfig /flushdns</p>
-</blockquote>
-<p>回车后执行刷新本地 dns 缓存数据即可。
-<img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns6.png" alt=""></p>
+			<guid>https://HarryQing.github.io/posts/3.1.1-if%E5%8D%95%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</guid>
+			<description>语法结构: if(布尔表达式){语句块} if语句对布尔表达式进行一次判定，若判定为真，则执行{}中的语句块，否则跳过该语句块。流程图如图3-1所示。
+【示例3-1】 if单选择结构
+public class Test1 {public static void main(String[] args) {//通过掷三个骰子看看今天的手气如何？int i = (int)(6 * Math.random()) + 1;//通过Math.random()产生随机数int j = (int)(6 * Math.random()) + 1;int k = (int)(6 * Math.random()) + 1;int count = i + j + k;//如果三个骰子之和大于15，则手气不错if(count &amp;gt; 15) {System.out.println(&amp;quot;今天手气不错&amp;quot;);}//如果三个骰子之和在10到15之间，则手气一般if(count &amp;gt;= 10 &amp;amp;&amp;amp; count &amp;lt;= 15) { //错误写法：10&amp;lt;=count&amp;lt;=15System.out.println(&amp;quot;今天手气很一般&amp;quot;);}//如果三个骰子之和小于10，则手气不怎么样if(count &amp;lt; 10) {System.</description>
+			<content type="html"><![CDATA[<h2 id="语法结构">语法结构:</h2>
+<pre><code>if(布尔表达式){
+    语句块
+}
+</code></pre>
+<p>if语句对布尔表达式进行一次判定，若判定为真，则执行{}中的语句块，否则跳过该语句块。流程图如图3-1所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494915015552935.png" alt="enter description here"></p>
+<p><strong>【示例3-1】</strong> if单选择结构</p>
+<pre><code>public class Test1 {
+    public static void main(String[] args) {
+        //通过掷三个骰子看看今天的手气如何？
+        int i = (int)(6 * Math.random()) + 1;//通过Math.random()产生随机数
+        int j = (int)(6 * Math.random()) + 1;
+        int k = (int)(6 * Math.random()) + 1;
+        int count = i + j + k;
+        //如果三个骰子之和大于15，则手气不错
+        if(count &gt; 15) {
+            System.out.println(&quot;今天手气不错&quot;);
+        }
+        //如果三个骰子之和在10到15之间，则手气一般
+        if(count &gt;= 10 &amp;&amp; count &lt;= 15) { //错误写法：10&lt;=count&lt;=15
+            System.out.println(&quot;今天手气很一般&quot;);
+        }
+        //如果三个骰子之和小于10，则手气不怎么样
+        if(count &lt; 10) {
+            System.out.println(&quot;今天手气不怎么样&quot;);
+        }
+        System.out.println(&quot;得了&quot; + count + &quot;分&quot;);
+    }
+}
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170517/1494983790710364.png" alt="enter description here"></p>
+<h2 id="math类的使用">Math类的使用</h2>
+<p>1.java.lang包中的Math类提供了一些用于数学计算的方法。</p>
+<p>2.Math.random()该方法用于产生一个0到1区间的double类型的随机数，但是不包括1。</p>
+<p>int i = (int) (6 * Math.random()); //产生：[0，5]之间的随机整数</p>
+<h2 id="新手雷区">新手雷区</h2>
+<p>1.如果if语句不写{}，则只能作用于后面的第一条语句。</p>
+<p>2.强烈建议，任何时候都写上{}，即使里面只有一句话！</p>
 ]]></content>
 		</item>
 		
 		<item>
-			<title>SQL Server 2008 R2 安装教程</title>
-			<link>https://HarryQing.github.io/posts/sql-server-2008-r2-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
-			<pubDate>Fri, 27 Nov 2020 06:06:06 +0800</pubDate>
+			<title>3.0 控制语句</title>
+			<link>https://HarryQing.github.io/posts/3.0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</link>
+			<pubDate>Tue, 02 Feb 2021 16:20:00 +0800</pubDate>
 			
-			<guid>https://HarryQing.github.io/posts/sql-server-2008-r2-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
-			<description>SQL Server 2008 R2 安装资源  链接: https://pan.baidu.com/s/193h2Bw3wpX2-g1ew4pzfig 
-提取码: x4eb
- 安装步骤：  注意：安装过程需要电脑连接网络，中途不能断网。
- 1.首先双击下载好的安装文件setup.exe，打开安装包 2.然后点击左侧栏目“安装” 3.点击如图的“全新安装或向现有安装添加功能”按钮 4.接下来勾选我接受许可条款，然后进入下一步 5.选择输入产品密钥，并输入密钥。密钥会自动填入，如果没有自动填入则需要手动输入。密钥：JD8Y6-MQG69-P9M84-XDTPG-34MBB。输入好后。点击“下一步”  sql server 2008 密钥
-developer PTTFM-X467G-P7RH2-3Q6CG-4DMYB
-enterprise JD8Y6-HQG69-P9H84-XDTPG-34MBB
- 6.然后点击安装 7.选中默认sql server 功能安装，并点击下一步 8.点击全选按钮并点击下一步 9.等待一分钟左右 10.如果目录需要修改可以更改下其他路径，然后点击下一步 11.出现如图信息，接着下一步操作 12. 如图修改下账户名，然后点击下一步  13.输入密码和确认密码，点击“添加当前用户”按钮（密码可以不用） 14.数据目录默认保存在c盘，建议修改保存目标路径，点击下一步 15.出现如同信息，接着往下操作  16.点击下一步 17.然后继续往下操作 18.点击安装 19.然后会显示正在安装中 20.安装完成就可以直接使用了 21.点击“开始”图标。找到“SQL Server Man…….“点击运行  SQL Server 2008 R2 到这里就安装结束了喔 （假如你命硬，电脑不克你的情况下）！！！ 下一期我会举一些下载过程中可能遇到的阻碍 </description>
-			<content type="html"><![CDATA[<h2 id="sql-server-2008-r2-安装资源">SQL Server 2008 R2 安装资源</h2>
-<blockquote>
-<p>链接: <a href="https://pan.baidu.com/s/193h2Bw3wpX2-g1ew4pzfig">https://pan.baidu.com/s/193h2Bw3wpX2-g1ew4pzfig  </a></p>
-<p>提取码: x4eb</p>
-</blockquote>
-<h2 id="安装步骤">安装步骤：</h2>
-<blockquote>
-<p><strong>注意：安装过程需要电脑连接网络，中途不能断网。</strong></p>
-</blockquote>
-<h4 id="1首先双击下载好的安装文件setupexe打开安装包">1.首先双击下载好的安装文件setup.exe，打开安装包</h4>
-<p><img src="http://p5.qhimg.com/t013992a8d1c3feeaa5.png" alt=""></p>
-<h4 id="2然后点击左侧栏目安装">2.然后点击左侧栏目“安装”</h4>
-<p><img src="http://p9.qhimg.com/t01071506c1efc373d3.png" alt=""></p>
-<h4 id="3点击如图的全新安装或向现有安装添加功能按钮">3.点击如图的“全新安装或向现有安装添加功能”按钮</h4>
-<p><img src="http://p7.qhimg.com/t0197ecaf7743d1eb93.png" alt=""></p>
-<h4 id="4接下来勾选我接受许可条款然后进入下一步">4.接下来勾选我接受许可条款，然后进入下一步</h4>
-<p><img src="http://p5.qhimg.com/t01a9baa95b9d1cb1f9.png" alt=""></p>
-<h4 id="5选择输入产品密钥并输入密钥密钥会自动填入如果没有自动填入则需要手动输入密钥jd8y6-mqg69-p9m84-xdtpg-34mbb输入好后点击下一步">5.选择输入产品密钥，并输入密钥。密钥会自动填入，如果没有自动填入则需要手动输入。密钥：JD8Y6-MQG69-P9M84-XDTPG-34MBB。输入好后。点击“下一步”</h4>
-<blockquote>
-<p>sql server 2008 密钥</p>
-<p>developer  PTTFM-X467G-P7RH2-3Q6CG-4DMYB</p>
-<p>enterprise JD8Y6-HQG69-P9H84-XDTPG-34MBB</p>
-</blockquote>
-<p><img src="http://p5.qhimg.com/t0147ad1c7e037196c1.png" alt=""></p>
-<h4 id="6然后点击安装">6.然后点击安装</h4>
-<p><img src="http://p8.qhimg.com/t016d49e4572729a1ee.png" alt=""></p>
-<h4 id="7选中默认sql-server-功能安装并点击下一步">7.选中默认sql server 功能安装，并点击下一步</h4>
-<p><img src="http://p8.qhimg.com/t0140d572650f5c1bb7.png" alt=""></p>
-<h4 id="8点击全选按钮并点击下一步">8.点击全选按钮并点击下一步</h4>
-<p><img src="http://p1.qhimg.com/t01843281f8e0feb280.png" alt=""></p>
-<h4 id="9等待一分钟左右">9.等待一分钟左右</h4>
-<p><img src="http://p6.qhimg.com/t01c01b7639b97818b7.png" alt=""></p>
-<h4 id="10如果目录需要修改可以更改下其他路径然后点击下一步">10.如果目录需要修改可以更改下其他路径，然后点击下一步</h4>
-<p><img src="http://p7.qhimg.com/t013959d0c0aadb1f32.png" alt=""></p>
-<h4 id="11出现如图信息接着下一步操作">11.出现如图信息，接着下一步操作</h4>
-<p><img src="http://p6.qhimg.com/t013f894f907d0df9a6.png" alt=""></p>
-<h4 id="12-如图修改下账户名然后点击下一步">12. 如图修改下账户名，然后点击下一步</h4>
-<p><img src="http://p0.qhimg.com/t01308ec74ff3172285.png" alt=""></p>
-<h1 id="heading"></h1>
-<p><img src="https://img-blog.csdnimg.cn/20181106203313391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FjdGl2ZTI0ODk1OTU5NzA=,size_16,color_FFFFFF,t_70" alt=""></p>
-<h4 id="13输入密码和确认密码点击添加当前用户按钮密码可以不用">13.输入密码和确认密码，点击“添加当前用户”按钮（密码可以不用）</h4>
-<p><img src="http://p4.qhimg.com/t0176d85971a92aff3b.png" alt=""></p>
-<h4 id="14数据目录默认保存在c盘建议修改保存目标路径点击下一步">14.数据目录默认保存在c盘，建议修改保存目标路径，点击下一步</h4>
-<p><img src="http://p7.qhimg.com/t0150f7c5045e64b24a.png" alt=""></p>
-<h4 id="15出现如同信息接着往下操作">15.出现如同信息，接着往下操作</h4>
-<p><img src="https://img-blog.csdnimg.cn/20181106203744710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FjdGl2ZTI0ODk1OTU5NzA=,size_16,color_FFFFFF,t_70" alt=""></p>
-<h1 id="heading-1"></h1>
-<p><img src="http://p0.qhimg.com/t01045ae183451ad81a.png" alt=""></p>
-<h4 id="16点击下一步">16.点击下一步</h4>
-<p><img src="http://p6.qhimg.com/t01527d7cc9c3130b11.png" alt=""></p>
-<h4 id="17然后继续往下操作">17.然后继续往下操作</h4>
-<p><img src="http://p5.qhimg.com/t01bb945b6f5cf14832.png" alt=""></p>
-<h4 id="18点击安装">18.点击安装</h4>
-<p><img src="http://p6.qhimg.com/t01fae04c409c3c6f65.png" alt=""></p>
-<h4 id="19然后会显示正在安装中">19.然后会显示正在安装中</h4>
-<p><img src="http://p2.qhimg.com/t01feb08f989ceaebb0.png" alt=""></p>
-<h4 id="20安装完成就可以直接使用了">20.安装完成就可以直接使用了</h4>
-<p><img src="http://p2.qhimg.com/t015eafb4947b58770c.png" alt=""></p>
-<h4 id="21点击开始图标找到sql-server-man点击运行">21.点击“开始”图标。找到“SQL Server Man…….“点击运行</h4>
-<h1 id="heading-2"></h1>
-<h2 id="sql-server-2008-r2-到这里就安装结束了喔">SQL Server 2008 R2 到这里就安装结束了喔</h2>
-<h2 id="假如你命硬电脑不克你的情况下">（假如你命硬，电脑不克你的情况下）！！！</h2>
-<h3 id="下一期我会举一些下载过程中可能遇到的阻碍">下一期我会举一些下载过程中可能遇到的阻碍</h3>
+			<guid>https://HarryQing.github.io/posts/3.0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</guid>
+			<description>本章开始我们需要学习流程控制语句，流程控制语句是用来控制程序中各语句执行顺序的语句，可以把语句组合成能完成一定功能的小逻辑模块。控制语句分为三类：顺序、选择和循环。
+“顺序结构”代表“先执行a，再执行b”的逻辑。比如，先找个女朋友，再给女朋友打电话；先订婚，再结婚；
+“选择结构”代表“如果…，则…”的逻辑。比如，如果女朋友来电，则迅速接电话；如果看到红灯，则停车；
+“循环结构”代表“如果…，则再继续…”的逻辑。比如，如果没打通女朋友电话，则再继续打一次； 如果没找到喜欢的人，则再继续找。
+前面两章讲解的程序都是顺序结构，即按照书写顺序执行每一条语句，这并不是我们的重点，因此本章研究的重点是“选择结构”和“循环结构”。
+很神奇的是，三种流程控制语句就能表示所有的事情！不信，你可以试试拆分你遇到的各种事情。实际上，任何软件和程序，小到一个练习，大到一个操作系统，本质上都是由“变量、选择语句、循环语句”组成。
+这三种基本逻辑结构是相互支撑的，它们共同构成了算法的基本结构，无论怎样复杂的逻辑结构，都可以通过它们来表达。上述两种结构组成的程序可以解决全部的问题，所以任何一种高级语言都具备上述两种结构。
+因此，本章是大家真正跨入编程界的“门槛”，是成为“程序猿”的“门票”。 本章后面会附加大量的练习，供大家提升自我。</description>
+			<content type="html"><![CDATA[<p>本章开始我们需要学习流程控制语句，流程控制语句是用来控制程序中各语句执行顺序的语句，可以把语句组合成能完成一定功能的小逻辑模块。控制语句分为三类：顺序、选择和循环。</p>
+<p>“顺序结构”代表“先执行a，再执行b”的逻辑。比如，先找个女朋友，再给女朋友打电话；先订婚，再结婚；</p>
+<p>“选择结构”代表“如果…，则…”的逻辑。比如，如果女朋友来电，则迅速接电话；如果看到红灯，则停车；</p>
+<p>“循环结构”代表“如果…，则再继续…”的逻辑。比如，如果没打通女朋友电话，则再继续打一次； 如果没找到喜欢的人，则再继续找。</p>
+<p>前面两章讲解的程序都是顺序结构，即按照书写顺序执行每一条语句，这并不是我们的重点，因此本章研究的重点是“选择结构”和“循环结构”。</p>
+<p>很神奇的是，三种流程控制语句就能表示所有的事情！不信，你可以试试拆分你遇到的各种事情。实际上，任何软件和程序，小到一个练习，大到一个操作系统，本质上都是由“变量、选择语句、循环语句”组成。</p>
+<p>这三种基本逻辑结构是相互支撑的，它们共同构成了算法的基本结构，无论怎样复杂的逻辑结构，都可以通过它们来表达。上述两种结构组成的程序可以解决全部的问题，所以任何一种高级语言都具备上述两种结构。</p>
+<p>因此，本章是大家真正跨入编程界的“门槛”，是成为“程序猿”的“门票”。 本章后面会附加大量的练习，供大家提升自我。</p>
 ]]></content>
 		</item>
 		
 		<item>
-			<title>Sqlsever 2008安装时出现“重启计算机”问题</title>
-			<link>https://HarryQing.github.io/posts/sqlsever-2008%E5%AE%89%E8%A3%85%E6%97%B6%E5%87%BA%E7%8E%B0%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%97%AE%E9%A2%98/</link>
-			<pubDate>Sun, 08 Nov 2020 23:06:06 +0800</pubDate>
+			<title>3.1 选择结构</title>
+			<link>https://HarryQing.github.io/posts/3.1-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</link>
+			<pubDate>Tue, 02 Feb 2021 16:20:00 +0800</pubDate>
 			
-			<guid>https://HarryQing.github.io/posts/sqlsever-2008%E5%AE%89%E8%A3%85%E6%97%B6%E5%87%BA%E7%8E%B0%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%97%AE%E9%A2%98/</guid>
-			<description> 笔者最近在帮助小伙伴们安装SqlServer 2008时遇到了好几个“重启计算机”问题（详细如下图），通过一番查找和探索终于是解决了这个问题，现在把方法分享给大家。
- 操作方法 1.第一步  在开始菜单中找到运行，如下图，在打开中，输入“regedit”，按回车，打开注册表编辑器，如第二步。
- 2.第二步  在打开的注册表编辑器中按照下图红色方框标记的路径对应的找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager这个文件夹
- 3.第三步  在上面找到的Session Manager上单击，右边窗口出现一系列注册表，在这些注册表中找到 PendingFileRenameOperations这个注册表，右击鼠标，选择删除。然后再点击SqlServer的安装文件，进行安装，你就会发现，上面的问题已经解决了。
- 结束了喔，快不快！！！ </description>
-			<content type="html"><![CDATA[<blockquote>
-<p>笔者最近在帮助小伙伴们安装SqlServer 2008时遇到了好几个“重启计算机”问题（详细如下图），通过一番查找和探索终于是解决了这个问题，现在把方法分享给大家。</p>
-</blockquote>
-<p><img src="https://img03.sogoucdn.com/v2/thumb/retype/ext/auto/q/90/?appid=200698&amp;name=500_300_20190320195510-1334246838" alt=""></p>
-<h2 id="操作方法">操作方法</h2>
-<h3 id="1第一步">1.第一步</h3>
+			<guid>https://HarryQing.github.io/posts/3.1-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/</guid>
+			<description>在还没有知道Java选择结构的时候，我们编写的程序总是从程序入口开始，顺序执行每一条语句直到执行完最后一条语句结束，但是生活中经常需要进行条件判断，根据判断结果决定是否做一件事情，这就需要选择结构。
+选择结构用于判断给定的条件，然后根据判断的结果来控制程序的流程。
+主要的选择结构有：if选择结构和switch多选择结构。有如下结构：
+ 1.if单选择结构2.if-else双选择结构3.if-else if-else多选择结构4.switch结构 </description>
+			<content type="html"><![CDATA[<p>在还没有知道Java选择结构的时候，我们编写的程序总是从程序入口开始，顺序执行每一条语句直到执行完最后一条语句结束，但是生活中经常需要进行条件判断，根据判断结果决定是否做一件事情，这就需要选择结构。</p>
+<p>选择结构用于判断给定的条件，然后根据判断的结果来控制程序的流程。</p>
+<p>主要的选择结构有：if选择结构和switch多选择结构。有如下结构：</p>
+<pre><code>   1.if单选择结构
+
+   2.if-else双选择结构
+
+   3.if-else if-else多选择结构
+
+   4.switch结构</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第三章 控制语句</title>
+			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</link>
+			<pubDate>Mon, 01 Feb 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</guid>
+			<description>目录 3.0 控制语句 </description>
+			<content type="html"><![CDATA[<h1 id="目录">目录</h1>
+<h2 id="30-控制语句">3.0 控制语句</h2>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.9 简单的键盘输入和输出</title>
+			<link>https://HarryQing.github.io/posts/2.9-%E7%AE%80%E5%8D%95%E7%9A%84%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA/</link>
+			<pubDate>Mon, 01 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.9-%E7%AE%80%E5%8D%95%E7%9A%84%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA/</guid>
+			<description>为了我们能写出更加复杂的程序，可以让我们的程序和用户可以通过键盘交互，我们先学习一下简单的键盘输入和输出。
+【示例2-31】 使用Scanner获取键盘输入
+import java.util.Scanner;/*** 测试获得键盘输入* @author 高**/public class TestScanner {public static void main(String[] args) {Scanner scanner = new Scanner(System.in);System.out.println(&amp;quot;请输入名字：&amp;quot;);String name = scanner.nextLine();System.out.println(&amp;quot;请输入你的爱好：&amp;quot;);String favor = scanner.nextLine();System.out.println(&amp;quot;请输入你的年龄：&amp;quot;);int age = scanner.nextInt();System.out.println(&amp;quot;###############&amp;quot;);System.out.println(name);System.out.println(favor);System.out.println(&amp;quot;来到地球的天数：&amp;quot;+age*365);System.out.println(&amp;quot;离开地球的天数：&amp;quot;+(72-age)*365);}} 运行结果如图所示 </description>
+			<content type="html"><![CDATA[<p>为了我们能写出更加复杂的程序，可以让我们的程序和用户可以通过键盘交互，我们先学习一下简单的键盘输入和输出。</p>
+<p><strong>【示例2-31】</strong> 使用Scanner获取键盘输入</p>
+<pre><code>import  java.util.Scanner;
+/**
+ * 测试获得键盘输入
+ * @author 高
+ *
+ */
+public class TestScanner {
+    public static void main(String[] args) {
+        Scanner   scanner =  new Scanner(System.in);
+        System.out.println(&quot;请输入名字：&quot;);
+        String   name =  scanner.nextLine();
+        System.out.println(&quot;请输入你的爱好：&quot;);
+        String  favor = scanner.nextLine();
+        System.out.println(&quot;请输入你的年龄：&quot;);
+        int   age = scanner.nextInt();
+
+        System.out.println(&quot;###############&quot;);
+        System.out.println(name);
+        System.out.println(favor);
+        System.out.println(&quot;来到地球的天数：&quot;+age*365);
+        System.out.println(&quot;离开地球的天数：&quot;+(72-age)*365);
+
+    }
+}
+</code></pre>
+<h2 id="运行结果如图所示">运行结果如图所示</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20171018/1508314351247501.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.8.3 基本类型转化时常见错误和问题</title>
+			<link>https://HarryQing.github.io/posts/2.8.3-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E8%BD%AC%E5%8C%96%E6%97%B6%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%92%8C%E9%97%AE%E9%A2%98/</link>
+			<pubDate>Sun, 31 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.8.3-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E8%BD%AC%E5%8C%96%E6%97%B6%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%92%8C%E9%97%AE%E9%A2%98/</guid>
+			<description>操作比较大的数时，要留意是否溢出，尤其是整数操作时。
+【示例2-29】 常见问题一
+int money = 1000000000; //10亿int years = 20;//返回的total是负数，超过了int的范围int total = money*years;System.out.println(&amp;quot;total=&amp;quot;+total);//返回的total仍然是负数。默认是int，因此结果会转成int值，再转成long。但是已经发生//了数据丢失long total1 = money*years; System.out.println(&amp;quot;total1=&amp;quot;+total1);//返回的total2正确:先将一个因子变成long，整个表达式发生提升。全部用long来计算。long total2 = money*((long)years); System.out.println(&amp;quot;total2=&amp;quot;+total2); 运行结果如图所示。 L和l 的问题： 不要命名名字为l的变量，l容易和1混淆。long类型使用大写L不要用小写。
+【示例2-30】 常见问题二
+ int l = 2; //分不清是L还是1,long a = 23451l;//建议使用大写LSystem.out.println(l+1); </description>
+			<content type="html"><![CDATA[<p>操作比较大的数时，要留意是否溢出，尤其是整数操作时。</p>
+<p><strong>【示例2-29】</strong> 常见问题一</p>
+<pre><code>int money = 1000000000; //10亿
+int years = 20;
+//返回的total是负数，超过了int的范围
+int total = money*years;
+System.out.println(&quot;total=&quot;+total);
+//返回的total仍然是负数。默认是int，因此结果会转成int值，再转成long。但是已经发生//了数据丢失
+long total1 = money*years; 
+System.out.println(&quot;total1=&quot;+total1);
+//返回的total2正确:先将一个因子变成long，整个表达式发生提升。全部用long来计算。
+long total2 = money*((long)years); 
+System.out.println(&quot;total2=&quot;+total2);
+</code></pre>
+<h2 id="运行结果如图所示">运行结果如图所示。</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494906673550331.png" alt="1.png"></p>
+<h2 id="l和l-的问题">L和l 的问题：</h2>
+<p>不要命名名字为l的变量，l容易和1混淆。long类型使用大写L不要用小写。</p>
+<p><strong>【示例2-30】</strong> 常见问题二</p>
+<pre><code>    int l = 2; //分不清是L还是1,
+    long a = 23451l;//建议使用大写L
+    System.out.println(l+1);
+</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.8.2 强制类型转换</title>
+			<link>https://HarryQing.github.io/posts/2.8.2-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
+			<pubDate>Sat, 30 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.8.2-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
+			<description>强制类型转换，又被称为造型，用于显式的转换一个数值的类型。在有可能丢失信息的情况下进行的转换是通过造型来完成的，但可能造成精度降低或溢出。
+语法格式： (type)var 运算符“()”中的type表示将值var想要转换成的目标数据类型。
+【示例2-27】 强制类型转换
+double x = 3.14; int nx = (int)x; //值为3char c = &#39;a&#39;;int d = c+1;System.out.println(nx);System.out.println(d);System.out.println((char)d); 运行结果如图所示。 当将一种类型强制转换成另一种类型，而又超出了目标类型的表数范围，就会被截断成为一个完全不同的值。
+【示例2-28】 强制类型转换特例
+int x = 300;byte bx = (byte)x; //值为44 新手雷区 不能在布尔类型和任何数值类型之间做强制类型转换</description>
+			<content type="html"><![CDATA[<p>强制类型转换，又被称为造型，用于显式的转换一个数值的类型。在有可能丢失信息的情况下进行的转换是通过造型来完成的，但可能造成精度降低或溢出。</p>
+<h3 id="语法格式">语法格式：</h3>
+<pre><code>(type)var
+</code></pre>
+<p>运算符“()”中的type表示将值var想要转换成的目标数据类型。</p>
+<p><strong>【示例2-27】</strong> 强制类型转换</p>
+<pre><code>double x  = 3.14; 
+int nx = (int)x;   //值为3
+char c = 'a';
+int d = c+1;
+System.out.println(nx);
+System.out.println(d);
+System.out.println((char)d);
+</code></pre>
+<h2 id="运行结果如图所示">运行结果如图所示。</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494906447385004.png" alt="enter description here"></p>
+<p>当将一种类型强制转换成另一种类型，而又超出了目标类型的表数范围，就会被截断成为一个完全不同的值。</p>
+<p><strong>【示例2-28】</strong> 强制类型转换特例</p>
+<pre><code>int x = 300;
+byte bx = (byte)x;    //值为44
+</code></pre>
+<h2 id="新手雷区">新手雷区</h2>
+<p>不能在布尔类型和任何数值类型之间做强制类型转换</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.8.1 自动类型转换</title>
+			<link>https://HarryQing.github.io/posts/2.8.1-%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
+			<pubDate>Fri, 29 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.8.1-%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
+			<description>自动类型转换指的是容量小的数据类型可以自动转换为容量大的数据类型。如图2-6所示，黑色的实线表示无数据丢失的自动类型转换，而虚线表示在转换时可能会有精度的损失。
+图 自动类型转换 可以将整型常量直接赋值给byte、 short、 char等类型变量，而不需要进行强制类型转换，只要不超出其表数范围即可。
+【示例2-26】 自动类型转换特例
+short b = 12; //合法short b = 1234567;//非法，1234567超出了short的表数范围 </description>
+			<content type="html"><![CDATA[<p>自动类型转换指的是容量小的数据类型可以自动转换为容量大的数据类型。如图2-6所示，黑色的实线表示无数据丢失的自动类型转换，而虚线表示在转换时可能会有精度的损失。</p>
+<h2 id="图-自动类型转换">图 自动类型转换</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494906265693111.png" alt="enter description here"></p>
+<p>可以将整型常量直接赋值给byte、 short、 char等类型变量，而不需要进行强制类型转换，只要不超出其表数范围即可。</p>
+<p><strong>【示例2-26】</strong> 自动类型转换特例</p>
+<pre><code>short  b = 12;  //合法
+short  b = 1234567;//非法，1234567超出了short的表数范围</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.8 运算符优先级的问题</title>
+			<link>https://HarryQing.github.io/posts/2.7.8-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+			<pubDate>Thu, 28 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.8-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+			<description>表 运算符的优先级    优先级 运算符 类 结合性     1 () 括号运算符 由左至右   2 !、+（正号）、-（负号） 一元运算符 由左至右   2 ~ 位逻辑运算符 由右至左   2 ++、&amp;ndash; 递增与递减运算符 由右至左   3 *、/、% 算术运算符 由左至右   4 +、- 算术运算符 由左至右   5 &amp;laquo;、&amp;raquo; 位左移、右移运算符 由左至右   6 &amp;gt;、&amp;gt;=、&amp;lt;、&amp;lt;= 关系运算符 由左至右   7 ==、!= 关系运算符 由左至右   8 &amp;amp; 位运算符、逻辑运算符 由左至右   9 ^ 位运算符、逻辑运算符 由左至右   10 | 位运算符、逻辑运算符 由左至右   11 &amp;amp;&amp;amp; 逻辑运算符 由左至右   12 || 逻辑运算符 由左至右   13 ?</description>
+			<content type="html"><![CDATA[<h2 id="表--运算符的优先级">表  运算符的优先级</h2>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>运算符</th>
+<th>类</th>
+<th>结合性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>()</td>
+<td>括号运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>2</td>
+<td>!、+（正号）、-（负号）</td>
+<td>一元运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>2</td>
+<td>~</td>
+<td>位逻辑运算符</td>
+<td>由右至左</td>
+</tr>
+<tr>
+<td>2</td>
+<td>++、&ndash;</td>
+<td>递增与递减运算符</td>
+<td>由右至左</td>
+</tr>
+<tr>
+<td>3</td>
+<td>*、/、%</td>
+<td>算术运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>4</td>
+<td>+、-</td>
+<td>算术运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&laquo;、&raquo;</td>
+<td>位左移、右移运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&gt;、&gt;=、&lt;、&lt;=</td>
+<td>关系运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>7</td>
+<td>==、!=</td>
+<td>关系运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>8</td>
+<td>&amp;</td>
+<td>位运算符、逻辑运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>9</td>
+<td>^</td>
+<td>位运算符、逻辑运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>10</td>
+<td>|</td>
+<td>位运算符、逻辑运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&amp;&amp;</td>
+<td>逻辑运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>12</td>
+<td>||</td>
+<td>逻辑运算符</td>
+<td>由左至右</td>
+</tr>
+<tr>
+<td>13</td>
+<td>? :</td>
+<td>条件运算符</td>
+<td>由右至左</td>
+</tr>
+<tr>
+<td>14</td>
+<td>=、+=、-=、*=、/=、%=</td>
+<td>赋值运算符、扩展运算符</td>
+<td>由右至左</td>
+</tr>
+</tbody>
+</table>
+<h2 id="老鸟建议">老鸟建议</h2>
+<p>1.大家不需要去刻意的记这些优先级，表达式里面优先使用小括号来组织！！</p>
+<p>2.逻辑与、逻辑或、逻辑非的优先级一定要熟悉！（逻辑非&gt;逻辑与&gt;逻辑或）。如：</p>
+<p>3.a||b&amp;&amp;c的运算结果是：a||(b&amp;&amp;c)，而不是(a||b)&amp;&amp;c</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.7 条件运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.7-%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Wed, 27 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.7-%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>语法格式： x ? y : z 其中 x 为 boolean 类型表达式，先计算 x 的值，若为true，则整个运算的结果为表达式 y 的值，否则整个运算结果为表达式 z 的值。
+【示例2-25】 三目条件运算符
+ int score = 80; int x = -100;String type =score&amp;lt;60?&amp;quot;不及格&amp;quot;:&amp;quot;及格&amp;quot;; int flag = x &amp;gt; 0 ? 1 : (x == 0 ? 0 : -1);System.out.println(&amp;quot;type= &amp;quot; + type);System.out.println(&amp;quot;flag= &amp;quot;+ flag); </description>
+			<content type="html"><![CDATA[<h2 id="语法格式">语法格式：</h2>
+<pre><code>x ? y : z
+</code></pre>
+<p>其中 x 为 boolean 类型表达式，先计算 x 的值，若为true，则整个运算的结果为表达式 y 的值，否则整个运算结果为表达式 z 的值。</p>
+<p><strong>【示例2-25】</strong> 三目条件运算符</p>
+<pre><code>    int score = 80; 
+    int x = -100;
+    String type =score&lt;60?&quot;不及格&quot;:&quot;及格&quot;; 
+    int flag = x &gt; 0 ? 1 : (x == 0 ? 0 : -1);
+    System.out.println(&quot;type= &quot; + type);
+    System.out.println(&quot;flag= &quot;+ flag);
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494905474866571.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.5 位运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.5-%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Tue, 26 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.5-%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>位运算指的是进行二进制位的运算，常用的位运算符如表2-11所示。
+表位运算符    位运算符 说明     ~ 取反   &amp;amp; 按位与   | 按位或   ^ 按位异或   &amp;laquo; 左移运算符，左移1位相当于乘2   &amp;raquo; 右移运算符，右移1位相当于除2取商    【示例2-23】 左移运算和右移运算
+int a = 3*2*2;int b = 3&amp;lt;&amp;lt;2; //相当于：3*2*2;int c = 12/2/2;int d = 12&amp;gt;&amp;gt;2; //相当于12/2/2; 雷区  &amp;amp;和|既是逻辑运算符，也是位运算符。如果两侧操作数都是boolean类型，就作为逻辑运算符。如果两侧的操作数是整数类型，就是位运算符。 不要把“^”当做数学运算“乘方”，是“位的异或”操作。  </description>
+			<content type="html"><![CDATA[<p>位运算指的是进行二进制位的运算，常用的位运算符如表2-11所示。</p>
+<h2 id="表位运算符">表位运算符</h2>
+<table>
+<thead>
+<tr>
+<th>位运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~</td>
+<td>取反</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>按位与</td>
+</tr>
+<tr>
+<td>|</td>
+<td>按位或</td>
+</tr>
+<tr>
+<td>^</td>
+<td>按位异或</td>
+</tr>
+<tr>
+<td>&laquo;</td>
+<td>左移运算符，左移1位相当于乘2</td>
+</tr>
+<tr>
+<td>&raquo;</td>
+<td>右移运算符，右移1位相当于除2取商</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【示例2-23】</strong> 左移运算和右移运算</p>
+<pre><code>int a = 3*2*2;
+int b = 3&lt;&lt;2; //相当于：3*2*2;
+int c = 12/2/2;
+int d = 12&gt;&gt;2; //相当于12/2/2;
+</code></pre>
+<h2 id="雷区">雷区</h2>
+<ol>
+<li>&amp;和|既是逻辑运算符，也是位运算符。如果两侧操作数都是boolean类型，就作为逻辑运算符。如果两侧的操作数是整数类型，就是位运算符。</li>
+<li>不要把“^”当做数学运算“乘方”，是“位的异或”操作。</li>
+</ol>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.6 字符串连接符</title>
+			<link>https://HarryQing.github.io/posts/2.7.6-%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5%E7%AC%A6/</link>
+			<pubDate>Tue, 26 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.6-%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5%E7%AC%A6/</guid>
+			<description>“+”运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接。
+【示例2-24】 连接符“+”
+ int a=12;System.out.println(&amp;quot;a=&amp;quot;+a);//输出结果: a=12 </description>
+			<content type="html"><![CDATA[<p>“+”运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接。</p>
+<p><strong>【示例2-24】</strong> 连接符“+”</p>
+<pre><code> int a=12;
+ System.out.println(&quot;a=&quot;+a);//输出结果: a=12</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.4 逻辑运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.4-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Mon, 25 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.4-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>Java中的逻辑运算符如表2-10所示。逻辑运算的操作数和运算结果都是boolean值。
+表逻辑运算符    运算符  说明     逻辑与 &amp;amp;( 与) 两个操作数为true，结果才是true，否则是false   逻辑或 |(或) 两个操作数有一个是true，结果就是true   短路与 &amp;amp;&amp;amp;( 与) 只要有一个为false，则直接返回false   短路或 ||(或) 只要有一个为true， 则直接返回true   逻辑非 !（非） 取反：!false为true，!true为false   逻辑异或 ^（异或） 相同为false，不同为true    短路与和短路或采用短路的方式。从左到右计算，如果只通过运算符左边的操作数就能够确定该逻辑表达式的值，则不会继续计算运算符右边的操作数，提高效率。
+【示例2-22】 短路与和逻辑与
+//1&amp;gt;2的结果为false，那么整个表达式的结果即为false，将不再计算2&amp;gt;(3/0)boolean c = 1&amp;gt;2 &amp;amp;&amp;amp; 2&amp;gt;(3/0);System.out.println(c);//1&amp;gt;2的结果为false，那么整个表达式的结果即为false，还要计算2&amp;gt;(3/0)，0不能做除数，//会输出异常信息boolean d = 1&amp;gt;2 &amp;amp; 2&amp;gt;(3/0);System.out.println(d); </description>
+			<content type="html"><![CDATA[<p>Java中的逻辑运算符如表2-10所示。逻辑运算的操作数和运算结果都是boolean值。</p>
+<h2 id="表逻辑运算符">表逻辑运算符</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th></th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>逻辑与</td>
+<td>&amp;( 与)</td>
+<td>两个操作数为true，结果才是true，否则是false</td>
+</tr>
+<tr>
+<td>逻辑或</td>
+<td>|(或)</td>
+<td>两个操作数有一个是true，结果就是true</td>
+</tr>
+<tr>
+<td>短路与</td>
+<td>&amp;&amp;( 与)</td>
+<td>只要有一个为false，则直接返回false</td>
+</tr>
+<tr>
+<td>短路或</td>
+<td>||(或)</td>
+<td>只要有一个为true， 则直接返回true</td>
+</tr>
+<tr>
+<td>逻辑非</td>
+<td>!（非）</td>
+<td>取反：!false为true，!true为false</td>
+</tr>
+<tr>
+<td>逻辑异或</td>
+<td>^（异或）</td>
+<td>相同为false，不同为true</td>
+</tr>
+</tbody>
+</table>
+<p>短路与和短路或采用短路的方式。从左到右计算，如果只通过运算符左边的操作数就能够确定该逻辑表达式的值，则不会继续计算运算符右边的操作数，提高效率。</p>
+<p><strong>【示例2-22】</strong> 短路与和逻辑与</p>
+<pre><code>//1&gt;2的结果为false，那么整个表达式的结果即为false，将不再计算2&gt;(3/0)
+boolean c = 1&gt;2 &amp;&amp; 2&gt;(3/0);
+System.out.println(c);
+//1&gt;2的结果为false，那么整个表达式的结果即为false，还要计算2&gt;(3/0)，0不能做除数，//会输出异常信息
+boolean d = 1&gt;2 &amp; 2&gt;(3/0);
+System.out.println(d);</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.3 关系运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.3-%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Sun, 24 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.3-%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>关系运算符用来进行比较运算，如表2-9所示。关系运算的结果是布尔值：true/false；
+表关系运算符    运算符 含义 示例     == 等于 a==b   != 不等于 a!=b   &amp;gt; 大于 a&amp;gt;b   &amp;lt; 小于 a&amp;lt;b   &amp;gt;= 大于或等于 a&amp;gt;=b   &amp;lt;= 小于或等于 a&amp;lt;=b    注意事项 =是赋值运算符，而真正的判断两个操作数是否相等的运算符是==。==、!= 是所有（基本和引用）数据类型都可以使用&amp;gt; 、&amp;gt;=、 &amp;lt;、 &amp;lt;= 仅针对数值类型（byte/short/int/long, float/double。以及char） </description>
+			<content type="html"><![CDATA[<p>关系运算符用来进行比较运算，如表2-9所示。关系运算的结果是布尔值：true/false；</p>
+<h2 id="表关系运算符">表关系运算符</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>含义</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>等于</td>
+<td>a==b</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不等于</td>
+<td>a!=b</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+<td>a&gt;b</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+<td>a&lt;b</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于或等于</td>
+<td>a&gt;=b</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于或等于</td>
+<td>a&lt;=b</td>
+</tr>
+</tbody>
+</table>
+<h2 id="注意事项">注意事项</h2>
+<pre><code>=是赋值运算符，而真正的判断两个操作数是否相等的运算符是==。
+
+==、!= 是所有（基本和引用）数据类型都可以使用
+
+&gt; 、&gt;=、 &lt;、 &lt;= 仅针对数值类型（byte/short/int/long,  float/double。以及char）</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.2 赋值及其扩展赋值运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.2-%E8%B5%8B%E5%80%BC%E5%8F%8A%E5%85%B6%E6%89%A9%E5%B1%95%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Sat, 23 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.2-%E8%B5%8B%E5%80%BC%E5%8F%8A%E5%85%B6%E6%89%A9%E5%B1%95%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>赋值及其扩展运算符    运算符 用法举例 等效的表达式     += a += b a = a+b   -= a -= b a = a-b   *= a *= b a = a*b   /= a /= b a = a/b   %= a%= b a = a%b    【示例2-21】 扩展运算符
+int a=3;int b=4;a+=b;//相当于a=a+b;System.out.println(&amp;quot;a=&amp;quot;+a+&amp;quot;\nb=&amp;quot;+b);a=3;a*=b+3;//相当于a=a*(b+3)System.out.println(&amp;quot;a=&amp;quot;+a+&amp;quot;\nb=&amp;quot;+b); </description>
+			<content type="html"><![CDATA[<h2 id="赋值及其扩展运算符">赋值及其扩展运算符</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>用法举例</th>
+<th>等效的表达式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+=</td>
+<td>a += b</td>
+<td>a = a+b</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>a -= b</td>
+<td>a = a-b</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>a *= b</td>
+<td>a = a*b</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>a /= b</td>
+<td>a = a/b</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>a%= b</td>
+<td>a = a%b</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【示例2-21】</strong> 扩展运算符</p>
+<pre><code>int a=3;
+int b=4;
+a+=b;//相当于a=a+b;
+System.out.println(&quot;a=&quot;+a+&quot;\nb=&quot;+b);
+a=3;
+a*=b+3;//相当于a=a*(b+3)
+System.out.println(&quot;a=&quot;+a+&quot;\nb=&quot;+b);
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494930157621902.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7 运算符(operator) </title>
+			<link>https://HarryQing.github.io/posts/2.7-%E8%BF%90%E7%AE%97%E7%AC%A6operator/</link>
+			<pubDate>Fri, 22 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7-%E8%BF%90%E7%AE%97%E7%AC%A6operator/</guid>
+			<description>计算机的最基本用途之一就是执行数学运算，作为一门计算机语言，Java也提供了一套丰富的运算符来操作变量。
+运算符分类 算术运算符	二元运算符	+，-，*，/，% 算术运算符	一元运算符	++，--|赋值运算符	= 扩展运算符	+=，-=，*=，/=|关系运算符	&amp;gt;，&amp;lt;，&amp;gt;=，&amp;lt;=，==，!= instanceof逻辑运算符	&amp;amp;&amp;amp;，||，!，^ 位运算符	&amp;amp;，|，^，~ ， &amp;gt;&amp;gt;，&amp;lt;&amp;lt;，&amp;gt;&amp;gt;&amp;gt;条件运算符	? :字符串连接符	+ </description>
+			<content type="html"><![CDATA[<p>计算机的最基本用途之一就是执行数学运算，作为一门计算机语言，Java也提供了一套丰富的运算符来操作变量。</p>
+<h2 id="运算符分类">运算符分类</h2>
+<pre><code>算术运算符	 二元运算符	+，-，*，/，% 
+算术运算符	一元运算符	++，--|
+
+赋值运算符		= 
+扩展运算符		+=，-=，*=，/=|
+关系运算符		&gt;，&lt;，&gt;=，&lt;=，==，!=  instanceof
+逻辑运算符		&amp;&amp;，||，!，^ 
+位运算符			&amp;，|，^，~ ， &gt;&gt;，&lt;&lt;，&gt;&gt;&gt;
+条件运算符		? :
+字符串连接符		+
+</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.7.1 算术运算符</title>
+			<link>https://HarryQing.github.io/posts/2.7.1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Fri, 22 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.7.1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>算术运算符中+，-，*，/，%属于二元运算符，二元运算符指的是需要两个操作数才能完成运算的运算符。其中的%是取模运算符，就是我们常说的求余数操作。
+二元运算符的运算规则： 整数运算：    如果两个操作数有一个为Long, 则结果也为long。
+  没有long时，结果为int。即使操作数全为short，byte，结果也是int。
+   浮点运算：   如果两个操作数有一个为double，则结果为double。
+  只有两个操作数都是float，则结果才为float。
+   取模运算： 1.其操作数可以为浮点数,一般使用整数，结果是“余数”，“余数”符号和左边操作数相同，如：7%3=1，-7%3=-1，7%-3=1。
+算术运算符中++，&amp;ndash;属于一元运算符，该类运算符只需要一个操作数。
+【示例2-20】 一元运算符++与&amp;ndash;
+int a = 3;int b = a++; //执行完后,b=3。先给b赋值，再自增。System.out.println(&amp;quot;a=&amp;quot;+a+&amp;quot;\nb=&amp;quot;+b);a = 3;b = ++a; //执行完后,c=5。a先自增，再给c赋值System.out.println(&amp;quot;a=&amp;quot;+a+&amp;quot;\nb=&amp;quot;+b); </description>
+			<content type="html"><![CDATA[<p>算术运算符中+，-，*，/，%属于二元运算符，二元运算符指的是需要两个操作数才能完成运算的运算符。其中的%是取模运算符，就是我们常说的求余数操作。</p>
+<h2 id="二元运算符的运算规则">二元运算符的运算规则：</h2>
+<h3 id="整数运算">整数运算：</h3>
 <blockquote>
-<p>在开始菜单中找到运行，如下图，在打开中，输入“regedit”，按回车，打开注册表编辑器，如第二步。</p>
+<ol>
+<li>
+<p>如果两个操作数有一个为Long, 则结果也为long。</p>
+</li>
+<li>
+<p>没有long时，结果为int。即使操作数全为short，byte，结果也是int。</p>
+</li>
+</ol>
 </blockquote>
-<p><img src="https://img01.sogoucdn.com/v2/thumb/retype/ext/auto/q/90/?appid=200698&amp;name=413_161_20190320195512-380815514" alt=""></p>
-<h3 id="2第二步">2.第二步</h3>
+<h3 id="浮点运算">浮点运算：</h3>
 <blockquote>
-<p>在打开的注册表编辑器中按照下图红色方框标记的路径对应的找到
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager这个文件夹</p>
+<ol start="3">
+<li>
+<p>如果两个操作数有一个为double，则结果为double。</p>
+</li>
+<li>
+<p>只有两个操作数都是float，则结果才为float。</p>
+</li>
+</ol>
 </blockquote>
-<p><img src="https://img02.sogoucdn.com/v2/thumb/retype/ext/auto/q/90/?appid=200698&amp;name=500_187_20190320195517-1852683262" alt=""></p>
-<h3 id="3第三步">3.第三步</h3>
+<h2 id="取模运算">取模运算：</h2>
+<p>1.其操作数可以为浮点数,一般使用整数，结果是“余数”，“余数”符号和左边操作数相同，如：7%3=1，-7%3=-1，7%-3=1。</p>
+<p>算术运算符中++，&ndash;属于一元运算符，该类运算符只需要一个操作数。</p>
+<p><strong>【示例2-20】</strong> 一元运算符++与&ndash;</p>
+<pre><code>int a = 3;
+int b = a++;   //执行完后,b=3。先给b赋值，再自增。
+System.out.println(&quot;a=&quot;+a+&quot;\nb=&quot;+b);
+a = 3;
+b = ++a;   //执行完后,c=5。a先自增，再给c赋值
+System.out.println(&quot;a=&quot;+a+&quot;\nb=&quot;+b);
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170608/1496920717563184.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.6.4 boolean类型变量/常量</title>
+			<link>https://HarryQing.github.io/posts/2.6.4-boolean%E7%B1%BB%E5%9E%8B%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F/</link>
+			<pubDate>Thu, 21 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.6.4-boolean%E7%B1%BB%E5%9E%8B%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F/</guid>
+			<description>boolean类型有两个常量值，true和false，在内存中占一位（不是一个字节），不可以使用 0 或非 0 的整数替代 true 和 false ，这点和C语言不同。 boolean 类型用来判断逻辑条件，一般用于程序流程控制 。
+【示例2-19】 boolean类型
+ boolean flag ;flag = true; //或者flag=false;if(flag) {// true分支} else {// false分支} 老鸟建议 Less is More！！请不要这样写：if ( flag == true )，只有新手才那么写。关键也很容易写错成if(flag=true)，这样就变成赋值flag 为true而不是判断！老鸟的写法是if ( flag )或者if ( !flag)</description>
+			<content type="html"><![CDATA[<p>boolean类型有两个常量值，true和false，在内存中占一位（不是一个字节），不可以使用 0 或非 0 的整数替代 true 和 false ，这点和C语言不同。 boolean 类型用来判断逻辑条件，一般用于程序流程控制 。</p>
+<p><strong>【示例2-19】</strong> boolean类型</p>
+<pre><code>    boolean flag ;
+    flag = true;   //或者flag=false;
+    if(flag) {
+             // true分支
+    } else {
+             //  false分支
+    }
+</code></pre>
+<h2 id="老鸟建议">老鸟建议</h2>
+<p>Less is More！！请不要这样写：if ( flag == true )，只有新手才那么写。关键也很容易写错成if(flag=true)，这样就变成赋值flag 为true而不是判断！老鸟的写法是if ( flag )或者if ( !flag)</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.6.3 字符型变量/常量</title>
+			<link>https://HarryQing.github.io/posts/2.6.3-%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F/</link>
+			<pubDate>Wed, 20 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.6.3-%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F/</guid>
+			<description>字符型在内存中占2个字节，在Java中使用单引号来表示字符常量。例如’A’是一个字符，它与”A”是不同的，”A”表示含有一个字符的字符串。
+char 类型用来表示在Unicode编码表中的字符。Unicode编码被设计用来处理各种语言的文字，它占2个字节，可允许有65536个字符。
+【示例2-16】 字符型举例
+char eChar = &#39;a&#39;; char cChar =&#39;中&#39;; Unicode具有从0到65535之间的编码，他们通常用从’\u0000’到’\uFFFF’之间的十六进制值来表示（前缀为u表示Unicode）
+【示例2-17】 字符型的十六进制值表示方法
+char c = &#39;\u0061&#39;; Java 语言中还允许使用转义字符 ‘\’ 来将其后的字符转变为其它的含义。常用的转义字符及其含义和Unicode值如表2-6所示。
+【示例2-18】 转义字符
+char c2 = &#39;\n&#39;; //代表换行符    转义符 含义 Unicode值     \b 退格（backspace） \u0008   \n 换行 \u000a   \r 回车 \u000d   \t 制表符（tab） \u0009   \“ 双引号 \u0022   \‘ 单引号 \u0027   \ 反斜杠 \u005c    注意事项 以后我们学的String类，其实是字符序列(char sequence)。</description>
+			<content type="html"><![CDATA[<p>字符型在内存中占2个字节，在Java中使用单引号来表示字符常量。例如’A’是一个字符，它与”A”是不同的，”A”表示含有一个字符的字符串。</p>
+<p>char 类型用来表示在Unicode编码表中的字符。Unicode编码被设计用来处理各种语言的文字，它占2个字节，可允许有65536个字符。</p>
+<p><strong>【示例2-16】</strong> 字符型举例</p>
+<pre><code>char eChar = 'a'; 
+char cChar ='中';
+</code></pre>
+<p>Unicode具有从0到65535之间的编码，他们通常用从’\u0000’到’\uFFFF’之间的十六进制值来表示（前缀为u表示Unicode）</p>
+<p><strong>【示例2-17】</strong> 字符型的十六进制值表示方法</p>
+<pre><code>char c = '\u0061';
+</code></pre>
+<p>Java 语言中还允许使用转义字符 ‘\’ 来将其后的字符转变为其它的含义。常用的转义字符及其含义和Unicode值如表2-6所示。</p>
+<p><strong>【示例2-18】</strong> 转义字符</p>
+<pre><code>char c2 = '\n';  //代表换行符
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>转义符</th>
+<th>含义</th>
+<th>Unicode值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\b</td>
+<td>退格（backspace）</td>
+<td>\u0008</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行</td>
+<td>\u000a</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车</td>
+<td>\u000d</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符（tab）</td>
+<td>\u0009</td>
+</tr>
+<tr>
+<td>\“</td>
+<td>双引号</td>
+<td>\u0022</td>
+</tr>
+<tr>
+<td>\‘</td>
+<td>单引号</td>
+<td>\u0027</td>
+</tr>
+<tr>
+<td>\</td>
+<td>反斜杠</td>
+<td>\u005c</td>
+</tr>
+</tbody>
+</table>
+<h2 id="注意事项">注意事项</h2>
+<p>以后我们学的String类，其实是字符序列(char sequence)。</p>
+<h2 id="课堂代码">课堂代码</h2>
+<pre><code>/**
+ * 测试字符类型
+ * @author 高淇
+ *
+ */
+public class TestPrimitiveDataType3 {
+    public static void main(String[] args) {
+        char  a = 'T';
+        char  b = '雪';
+        char c = '\u0061';
+        System.out.println(c);
+
+        //转义字符
+        System.out.println(&quot;&quot;+'a'+'\n'+'b'); 
+        System.out.println(&quot;&quot;+'a'+'\t'+'b'); 
+        System.out.println(&quot;&quot;+'a'+'\''+'b');        //a'b 
+
+
+        //String就是字符序列
+        String  d = &quot;abc&quot;;
+
+    }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.6.2 浮点型变量/常量</title>
+			<link>https://HarryQing.github.io/posts/2.6.2-%E6%B5%AE%E7%82%B9%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</link>
+			<pubDate>Mon, 11 Jan 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.6.2-%E6%B5%AE%E7%82%B9%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</guid>
+			<description>带小数的数据在Java中称为浮点型。浮点型可分为float类型和double类型。
+   类型 占用存储空间 表数范围     float 4字节 -3.403E38~3.403E38   double 8字节 -1.798E308~1.798E308    float类型又被称作单精度类型，尾数可以精确到7位有效数字，在很多情况下，float类型的精度很难满足需求。而double表示这种类型的数值精度约是float类型的两倍，又被称作双精度类型，绝大部分应用程序都采用double类型。浮点型常量默认类型也是double。
+Java浮点类型常量有两种表示形式 十进制数形式，例如:3.14 314.0 0.314 科学记数法形式，如314e2 314E2 314E-2 【示例2-11】 使用科学记数法给浮点型变量赋值
+double f = 314e2; //314*10^2--&amp;gt;31400.0double f2 = 314e-2; //314*10^(-2)--&amp;gt;3.14 float类型的数值有一个后缀F或者f ，没有后缀F/f的浮点数值默认为double类型。也可以在浮点数值后添加后缀D或者d， 以明确其为double类型。
+【示例2-12】 float类型赋值时需要添加后缀F/f
+float f = 3.14F;double d1 = 3.14;double d2 = 3.14D; 老鸟建议 浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类。
+【示例2-13】 浮点数的比较一
+float f = 0.1f;double d = 1.</description>
+			<content type="html"><![CDATA[<p>带小数的数据在Java中称为浮点型。浮点型可分为float类型和double类型。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>占用存储空间</th>
+<th>表数范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>4字节</td>
+<td>-3.403E38~3.403E38</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8字节</td>
+<td>-1.798E308~1.798E308</td>
+</tr>
+</tbody>
+</table>
+<p>float类型又被称作单精度类型，尾数可以精确到7位有效数字，在很多情况下，float类型的精度很难满足需求。而double表示这种类型的数值精度约是float类型的两倍，又被称作双精度类型，绝大部分应用程序都采用double类型。浮点型常量默认类型也是double。</p>
+<h2 id="java浮点类型常量有两种表示形式">Java浮点类型常量有两种表示形式</h2>
+<h3 id="十进制数形式例如314-------3140------0314">十进制数形式，例如:3.14       314.0      0.314</h3>
+<h3 id="科学记数法形式如314e2------314e2------314e-2">科学记数法形式，如314e2      314E2      314E-2</h3>
+<p><strong>【示例2-11】</strong> 使用科学记数法给浮点型变量赋值</p>
+<pre><code>double f = 314e2;  //314*10^2--&gt;31400.0
+double f2 = 314e-2; //314*10^(-2)--&gt;3.14
+</code></pre>
+<p>float类型的数值有一个后缀F或者f ，没有后缀F/f的浮点数值默认为double类型。也可以在浮点数值后添加后缀D或者d， 以明确其为double类型。</p>
+<p><strong>【示例2-12】</strong> float类型赋值时需要添加后缀F/f</p>
+<pre><code>float  f = 3.14F;
+double d1  = 3.14;
+double d2 = 3.14D;
+</code></pre>
+<h3 id="老鸟建议">老鸟建议</h3>
+<p>浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类。</p>
+<p><strong>【示例2-13】</strong> 浮点数的比较一</p>
+<pre><code>float f = 0.1f;
+double d = 1.0/10;
+System.out.println(f==d);//结果为false
+</code></pre>
+<p><strong>【示例2-14】</strong> 浮点数的比较二</p>
+<pre><code>float d1 = 423432423f;
+float d2 = d1+1;
+if(d1==d2){
+   System.out.println(&quot;d1==d2&quot;);//输出结果为d1==d2
+}else{
+    System.out.println(&quot;d1!=d2&quot;);
+}
+</code></pre>
+<p>运行以上两个示例，发现示例2-13的结果是“false”，而示例2-14的输出结果是“d1==d2”。这是因为由于字长有限，浮点数能够精确表示的数是有限的，因而也是离散的。 浮点数一般都存在舍入误差，很多数字无法精确表示(例如0.1)，其结果只能是接近， 但不等于。二进制浮点数不能精确的表示0.1、0.01、0.001这样10的负次幂。并不是所有的小数都能可以精确的用二进制浮点数表示。</p>
+<p>java.math包下面的两个有用的类：BigInteger和BigDecimal，这两个类可以处理任意长度的数值。BigInteger实现了任意精度的整数运算。BigDecimal实现了任意精度的浮点运算。</p>
+<h3 id="菜鸟雷区">菜鸟雷区</h3>
+<p>1.不要使用浮点数进行比较！很多新人甚至很多理论不扎实的有工作经验的程序员也会犯这个错误！需要比较请使用BigDecimal类</p>
+<p><strong>【示例2-15】</strong> 使用BigDecimal进行浮点数的比较</p>
+<pre><code>import java.math.BigDecimal;
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal bd = BigDecimal.valueOf(1.0);
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        System.out.println(bd);//0.5
+        System.out.println(1.0 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1);//0.5000000000000001
+    }
+}
+</code></pre>
+<h2 id="浮点数使用总结">浮点数使用总结</h2>
+<p>1.默认是double类型</p>
+<p>2.浮点数存在舍入误差，数字不能精确表示。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类。</p>
+<p>3.避免比较中使用浮点数，需要比较请使用BigDecimal类</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.6.1 整型变量/常量</title>
+			<link>https://HarryQing.github.io/posts/2.6.1-%E6%95%B4%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</link>
+			<pubDate>Mon, 11 Jan 2021 12:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.6.1-%E6%95%B4%E5%9E%8B%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</guid>
+			<description>整型用于表示没有小数部分的数值，它允许是负数。整型的范围与运行Java代码的机器无关，这正是Java程序具有很强移植能力的原因之一。与此相反，C和C++程序需要针对不同的处理器选择最有效的整型。
+   类型 占用存储空间 表数范围     byte 1字节 -2^7 ~ 2^7-1（-128~127）   short 2字节 -2^15 ~ 2^15-1（-32768~32767）   int 4字节 -2^31 ~ 2^31-1 (-2147483648~2147483647)约21   long 8字节 -2^63 ~ 2^63-1    Java 语言整型常量的四种表示形式 十进制整数，如：99, -500, 0 八进制整数，要求以 0 开头，如：015 十六进制数，要求 0x 或 0X 开头，如：0x15 二进制数，要求0b或0B开头，如：0b01110011 Java语言的整型常数默认为int型，声明long型常量可以后加‘ l ’或‘ L ’ 。
+【示例2-10】 长整型常数的声明
+long a = 55555555; //编译成功，在int表示的范围内(21亿内)。long b = 55555555555;//不加L编译错误，已经超过int表示的范围。 我们修改成long类型的常量即可：</description>
+			<content type="html"><![CDATA[<p>整型用于表示没有小数部分的数值，它允许是负数。整型的范围与运行Java代码的机器无关，这正是Java程序具有很强移植能力的原因之一。与此相反，C和C++程序需要针对不同的处理器选择最有效的整型。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>占用存储空间</th>
+<th>表数范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>1字节</td>
+<td>-2^7 ~   2^7-1（-128~127）</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2字节</td>
+<td>-2^15 ~   2^15-1（-32768~32767）</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4字节</td>
+<td>-2^31 ~   2^31-1 (-2147483648~2147483647)约21</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8字节</td>
+<td>-2^63 ~   2^63-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="java-语言整型常量的四种表示形式">Java 语言整型常量的四种表示形式</h2>
+<h3 id="十进制整数如99--500-0">十进制整数，如：99, -500, 0</h3>
+<h3 id="八进制整数要求以-0-开头如015">八进制整数，要求以 0 开头，如：015</h3>
+<h3 id="十六进制数要求-0x-或-0x-开头如0x15">十六进制数，要求 0x 或 0X 开头，如：0x15</h3>
+<h3 id="二进制数要求0b或0b开头如0b01110011">二进制数，要求0b或0B开头，如：0b01110011</h3>
+<p>Java语言的整型常数默认为int型，声明long型常量可以后加‘ l ’或‘ L ’ 。</p>
+<p><strong>【示例2-10】</strong> 长整型常数的声明</p>
+<pre><code>long a = 55555555;  //编译成功，在int表示的范围内(21亿内)。
+long b = 55555555555;//不加L编译错误，已经超过int表示的范围。
+</code></pre>
+<p>我们修改成long类型的常量即可：</p>
+<pre><code>long b = 55555555555L;</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.6 基本数据类型(primitive data type)</title>
+			<link>https://HarryQing.github.io/posts/2.6-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bprimitive-data-type/</link>
+			<pubDate>Mon, 11 Jan 2021 09:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.6-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bprimitive-data-type/</guid>
+			<description>Java是一种强类型语言，每个变量都必须声明其数据类型。 Java的数据类型可分为两大类：基本数据类型（primitive data type）和引用数据类型（reference data type）。
+Java中定义了3类8种基本数据类型 数值型－ byte、 short、int、 long、float、 double 字符型－ char 布尔型－boolean 注意事项 1.引用数据类型的大小统一为4个字节，记录的是其引用对象的地址！
+2.本章只讲解基本数据类型。引用数据类型在后续数组和面向对象章节讲解。</description>
+			<content type="html"><![CDATA[<p>Java是一种强类型语言，每个变量都必须声明其数据类型。 Java的数据类型可分为两大类：基本数据类型（primitive data type）和引用数据类型（reference data type）。</p>
+<h2 id="java中定义了3类8种基本数据类型">Java中定义了3类8种基本数据类型</h2>
+<h3 id="数值型-byte-shortint-longfloat-double">数值型－ byte、 short、int、 long、float、 double</h3>
+<h3 id="字符型-char">字符型－ char</h3>
+<h3 id="布尔型boolean">布尔型－boolean</h3>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496834727293971.png" alt=""></p>
+<h2 id="注意事项">注意事项</h2>
+<p>1.引用数据类型的大小统一为4个字节，记录的是其引用对象的地址！</p>
+<p>2.本章只讲解基本数据类型。引用数据类型在后续数组和面向对象章节讲解。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.5 常量(Constant)</title>
+			<link>https://HarryQing.github.io/posts/2.5-%E5%B8%B8%E9%87%8Fconstant/</link>
+			<pubDate>Mon, 11 Jan 2021 05:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.5-%E5%B8%B8%E9%87%8Fconstant/</guid>
+			<description>常量通常指的是一个固定的值，例如：1、2、3、’a’、’b’、true、false、”helloWorld”等。
+在Java语言中，主要是利用关键字final来定义一个常量。 常量一旦被初始化后不能再更改其值。
+声明格式为： final type varName = value; 【示例2-9】 常量的声明及使用
+public class TestConstants {public static void main(String[] args) {final double PI = 3.14;// PI = 3.15; //编译错误，不能再被赋值！ double r = 4;double area = PI * r * r;double circle = 2 * PI * r;System.out.println(&amp;quot;area = &amp;quot; + area);System.out.println(&amp;quot;circle = &amp;quot; + circle);}} 为了更好的区分和表述，一般将1、2、3、’a’、’b’、true、false、”helloWorld”等称为字面常量，而使用final修饰的PI等称为符号常量。
+老鸟建议 变量和常量命名规范（规范是程序员的基本准则，不规范会直接损害你的个人形象）：
+1.所有变量、方法、类名：见名知意
+2.类成员变量：首字母小写和驼峰原则: monthSalary</description>
+			<content type="html"><![CDATA[<p>常量通常指的是一个固定的值，例如：1、2、3、’a’、’b’、true、false、”helloWorld”等。</p>
+<p>在Java语言中，主要是利用关键字final来定义一个常量。 常量一旦被初始化后不能再更改其值。</p>
+<h3 id="声明格式为">声明格式为：</h3>
+<pre><code>final  type  varName = value;
+</code></pre>
+<p><strong>【示例2-9】</strong> 常量的声明及使用</p>
+<pre><code>public class TestConstants {
+    public static void main(String[] args) {
+        final double PI = 3.14;
+        // PI = 3.15; //编译错误，不能再被赋值！ 
+        double r = 4;
+        double area = PI * r * r;
+        double circle = 2 * PI * r;
+        System.out.println(&quot;area = &quot; + area);
+        System.out.println(&quot;circle = &quot; + circle);
+    }
+}
+</code></pre>
+<p>为了更好的区分和表述，一般将1、2、3、’a’、’b’、true、false、”helloWorld”等称为字面常量，而使用final修饰的PI等称为符号常量。</p>
+<h2 id="老鸟建议">老鸟建议</h2>
+<p>变量和常量命名规范（规范是程序员的基本准则，不规范会直接损害你的个人形象）：</p>
+<p>1.所有变量、方法、类名：见名知意</p>
+<p>2.类成员变量：首字母小写和驼峰原则:  monthSalary</p>
+<p>3.局部变量：首字母小写和驼峰原则</p>
+<p>4.常量：大写字母和下划线：MAX_VALUE</p>
+<p>5.类名：首字母大写和驼峰原则:  Man, GoodMan</p>
+<p>6.方法名：首字母小写和驼峰原则: run(), runRun()</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.4.2 变量的分类</title>
+			<link>https://HarryQing.github.io/posts/2.4.2-%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</link>
+			<pubDate>Sat, 09 Jan 2021 19:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.4.2-%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</guid>
+			<description>从整体上可将变量划分为局部变量、成员变量(也称为实例变量)和静态变量。
+   类型 声明位置 从属于 生命周期     局部变量 方法或语句块内部 方法/语句块 从声明位置开始，直到方法或语句块执行完毕，局部变量消失   成员变量(实例变量) 类内部，方法外部 对象 对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失；   静态变量(类变量) 类内部，static修饰 类 类被加载，静态变量就有效；类被卸载，静态变量消失。    老鸟建议 成员变量和静态变量不是目前重点，不要过多纠结理解与否。我们学习面向对象时，再重点讲解成员变量和静态变量
+· 局部变量(local variable) 方法或语句块内部定义的变量。生命周期是从声明位置开始到到方法或语句块执行完毕为止。局部变量在使用前必须先声明、初始化(赋初值)再使用。
+【示例2-7】 局部变量
+public void test() {int i;int j = i+5 ; // 编译出错，变量i还未被初始化 } public void test() {int i;i=10;int j = i+5 ; // 编译正确} · 成员变量（也叫实例变量 member variable） 方法外部、类的内部定义的变量。从属于对象，生命周期伴随对象始终。如果不自行初始化，它会自动初始化成该类型的默认初始值。</description>
+			<content type="html"><![CDATA[<p>从整体上可将变量划分为局部变量、成员变量(也称为实例变量)和静态变量。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>声明位置</th>
+<th>从属于</th>
+<th>生命周期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局部变量</td>
+<td>方法或语句块内部</td>
+<td>方法/语句块</td>
+<td>从声明位置开始，直到方法或语句块执行完毕，局部变量消失</td>
+</tr>
+<tr>
+<td>成员变量(实例变量)</td>
+<td>类内部，方法外部</td>
+<td>对象</td>
+<td>对象创建，成员变量也跟着创建。对象消失，成员变量也跟着消失；</td>
+</tr>
+<tr>
+<td>静态变量(类变量)</td>
+<td>类内部，static修饰</td>
+<td>类</td>
+<td>类被加载，静态变量就有效；类被卸载，静态变量消失。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="老鸟建议">老鸟建议</h3>
+<p>成员变量和静态变量不是目前重点，不要过多纠结理解与否。我们学习面向对象时，再重点讲解成员变量和静态变量</p>
+<h2 id="-局部变量local--variable">· 局部变量(local  variable)</h2>
+<p>方法或语句块内部定义的变量。生命周期是从声明位置开始到到方法或语句块执行完毕为止。局部变量在使用前必须先声明、初始化(赋初值)再使用。</p>
+<p><strong>【示例2-7】</strong> 局部变量</p>
+<pre><code>public void test() {
+   int i;
+   int j = i+5 ; // 编译出错，变量i还未被初始化 
+} 
+
+public void test() {
+   int i;
+   i=10;
+   int j = i+5 ; // 编译正确
+}
+</code></pre>
+<h2 id="-成员变量也叫实例变量--member-variable">· 成员变量（也叫实例变量  member variable）</h2>
+<p>方法外部、类的内部定义的变量。从属于对象，生命周期伴随对象始终。如果不自行初始化，它会自动初始化成该类型的默认初始值。</p>
+<table>
+<thead>
+<tr>
+<th>实例变量的默认初始值</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据类型</td>
+<td>实始值</td>
+</tr>
+<tr>
+<td>int</td>
+<td>0</td>
+</tr>
+<tr>
+<td>double</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>char</td>
+<td>‘\u0000’</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【示例2-8】</strong> 实例变量的声明</p>
+<pre><code>public class Test {
+    int i;
+}
+</code></pre>
+<h2 id="--静态变量类变量-static-variable">·  静态变量（类变量 static variable）</h2>
+<p>使用static定义。 从属于类，生命周期伴随类始终，从类加载到卸载。 (注：讲完内存分析后我们再深入！先放一放这个概念！)如果不自行初始化，与成员变量相同会自动初始化成该类型的默认初始值，如表 2-3所示。</p>
+<h3 id="课堂练习1变量的声明并赋值">课堂练习1：变量的声明并赋值</h3>
+<pre><code>public class LocalVariableTest {
+  public static void main(String[ ] args) {
+      boolean flag = true;  // 声明boolean型变量并赋值
+       char c1, c2;   // 声明char型变量
+       c1 = '\u0041';   // 为char型变量赋值
+      c2 = 'B';   // 为char型变量赋值
+      int x;   // 声明int型变量
+      x = 9;  //为int型变量赋值  
+       int y = x;  // 声明并初始化int型变量
+       float f = 3.15f;   // 声明float型变量并赋值
+      double d = 3.1415926;  //声明double型变量并赋值
+         }
+}
+</code></pre>
+<h3 id="课堂代码">课堂代码：</h3>
+<pre><code>/**
+ * 测试变量
+ * 
+ * @author 王雪庆
+ *
+ */
+public class TestVariable {
+
+    int a;            //成员变量, 从属于对象； 成员变量会自动被初始化
+    static  int  size;   //静态变量，从属于类
+
+    public static void main(String[] args) {
+
+        {
+            int age;        //局部变量，从属于语句块；
+            age = 18;
+        }
+
+        int salary = 3000;    //局部变量，从属于方法
+
+        int gao = 13;
+        System.out.println(gao);
+
+        int i;
+    //    int j = i + 5; // 编译出错，变量i还未被初始化
+
+    }
+}
+</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.4.1 变量的本质</title>
+			<link>https://HarryQing.github.io/posts/2.4.1-%E5%8F%98%E9%87%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
+			<pubDate>Sat, 09 Jan 2021 15:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.4.1-%E5%8F%98%E9%87%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
+			<description>变量本质上就是代表一个”可操作的存储空间”，空间位置是确定的，但是里面放置什么值不确定。我们可通过变量名来访问“对应的存储空间”，从而操纵这个“存储空间”存储的值。
+Java是一种强类型语言，每个变量都必须声明其数据类型。变量的数据类型决定了变量占据存储空间的大小。 比如，int a=3; 表示a变量的空间大小为4个字节。
+变量作为程序中最基本的存储单元，其要素包括变量名，变量类型和作用域。变量在使用前必须对其声明, 只有在变量声明以后，才能为其分配相应长度的存储空间。
+·变量的声明 格式为：
+ type varName [=value][,varName[=value]&amp;hellip;];
+//[]中的内容为可选项，即可有可无
+数据类型 变量名 [=初始值] [,变量名 [=初始值]…];
+ 【示例2-4】 声明变量：
+double salary;long earthPopulation;int age; 不同数据类型的常量会在内存中分配不同的空间，如图所示。
+注意事项 1.每个变量都有类型，类型可以是基本类型，也可以是引用类型。
+2.变量名必须是合法的标识符
+3.变量声明是一条完整的语句，因此每一个声明都必须以分号结束
+【示例2-5】 在一行中声明多个变量
+int i ,j; // 两个变量的数据类型都是int 老鸟建议 不提倡这种&amp;quot;一行声明多个变量&amp;quot;风格，逐一声明每一个变量可以提高程序可读性。
+【示例2-6】 可以将变量的声明和初始化放在同一行中
+int age = 18; double e = 2.718281828; </description>
+			<content type="html"><![CDATA[<p>变量本质上就是代表一个”可操作的存储空间”，空间位置是确定的，但是里面放置什么值不确定。我们可通过变量名来访问“对应的存储空间”，从而操纵这个“存储空间”存储的值。</p>
+<p>Java是一种强类型语言，每个变量都必须声明其数据类型。变量的数据类型决定了变量占据存储空间的大小。 比如，int a=3; 表示a变量的空间大小为4个字节。</p>
+<p>变量作为程序中最基本的存储单元，其要素包括变量名，变量类型和作用域。变量在使用前必须对其声明, 只有在变量声明以后，才能为其分配相应长度的存储空间。</p>
+<h2 id="变量的声明">·变量的声明</h2>
+<p>格式为：</p>
 <blockquote>
-<p>在上面找到的Session Manager上单击，右边窗口出现一系列注册表，在这些注册表中找到
-PendingFileRenameOperations这个注册表，右击鼠标，选择删除。然后再点击SqlServer的安装文件，进行安装，你就会发现，上面的问题已经解决了。</p>
+<p>type  varName [=value][,varName[=value]&hellip;];</p>
+<p>//[]中的内容为可选项，即可有可无</p>
+<p>数据类型  变量名  [=初始值] [,变量名  [=初始值]…];</p>
 </blockquote>
-<p><img src="https://img03.sogoucdn.com/v2/thumb/retype/ext/auto/q/90/?appid=200698&amp;name=500_187_20190320195518-54487273" alt=""></p>
-<h2 id="结束了喔快不快">结束了喔，快不快！！！</h2>
+<p><strong>【示例2-4】</strong> 声明变量：</p>
+<pre><code>double  salary;
+long  earthPopulation;
+int  age;
+</code></pre>
+<p>不同数据类型的常量会在内存中分配不同的空间，如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494899385622782.png" alt=""></p>
+<h3 id="注意事项">注意事项</h3>
+<p>1.每个变量都有类型，类型可以是基本类型，也可以是引用类型。</p>
+<p>2.变量名必须是合法的标识符</p>
+<p>3.变量声明是一条完整的语句，因此每一个声明都必须以分号结束</p>
+<p><strong>【示例2-5】</strong> 在一行中声明多个变量</p>
+<pre><code>int  i ,j; // 两个变量的数据类型都是int
+</code></pre>
+<h3 id="老鸟建议">老鸟建议</h3>
+<p>不提倡这种&quot;一行声明多个变量&quot;风格，逐一声明每一个变量可以提高程序可读性。</p>
+<p><strong>【示例2-6】</strong> 可以将变量的声明和初始化放在同一行中</p>
+<pre><code>int  age = 18;    
+double  e = 2.718281828;</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.3 Java中的关键字/保留字</title>
+			<link>https://HarryQing.github.io/posts/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/</link>
+			<pubDate>Sat, 09 Jan 2021 12:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.3-java%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97~%E4%BF%9D%E7%95%99%E5%AD%97/</guid>
+			<description>Java关键字是Java语言保留供内部使用的，如class用于定义类。 关键字也可以称为保留字，它们的意思是一样的，我们不能使用关键字作为变量名或方法名。
+abstract assert boolean break byte case
+catch char class const continue default
+do double else extends final finally
+float for goto if implements import
+instanceof int interface long native new
+菜鸟雷区 出于应试教育的惯性思维，很多新手很可能去背上面的单词，从实战思维出发，我们不需要刻意去记！随着学习的深入，自然就非常熟悉了。</description>
+			<content type="html"><![CDATA[<p>Java关键字是Java语言保留供内部使用的，如class用于定义类。 关键字也可以称为保留字，它们的意思是一样的，我们不能使用关键字作为变量名或方法名。</p>
+<p>abstract assert boolean break byte case</p>
+<p>catch char class const continue default</p>
+<p>do double else extends final finally</p>
+<p>float for goto if implements import</p>
+<p>instanceof int interface long native new</p>
+<h3 id="菜鸟雷区">菜鸟雷区</h3>
+<p>出于应试教育的惯性思维，很多新手很可能去背上面的单词，从实战思维出发，我们不需要刻意去记！随着学习的深入，自然就非常熟悉了。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.2 标识符</title>
+			<link>https://HarryQing.github.io/posts/2.2-%E6%A0%87%E8%AF%86%E7%AC%A6/</link>
+			<pubDate>Sat, 09 Jan 2021 09:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.2-%E6%A0%87%E8%AF%86%E7%AC%A6/</guid>
+			<description>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：
+1.标识符必须以字母、下划线_、美元符号$开头。 2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。 3.Java 标识符大小写敏感，且长度无限制。 4.标识符不可以是Java的关键字。 标识符的使用规范 1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan
+2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()
+【注意】：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！
+【示例2-2】合法的标识符
+int a = 3;int _123 = 3;int $12aa = 3;int 变量1 = 55; //合法，但是不建议使用中文命名的标识符 【示例2-3】不合法的标识符
+int 1a = 3; //不能用数字开头int a# = 3; //不能包含#这样的特殊字符int int = 3; //不能使用关键字 测试代码：
+/*** 测试标识符的用法* @author 王雪庆**/public class TestIdentifer {//能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！public static void main(String[] args) {int a123 = 1;//int 123abc = 2; //数字不能开头int $a = 3;int _abc = 4;//int #abc = 5;int 年龄 = 18; //可以使用汉字，但是一般不建议//int class = 2; //关键字不能作为标识符}} </description>
+			<content type="html"><![CDATA[<p>标识符是用来给变量、类、方法以及包进行命名的，如Welcome、main、System、age、name、gender等。标识符需要遵守一定的规则：</p>
+<h3 id="1标识符必须以字母下划线_美元符号开头">1.标识符必须以字母、下划线_、美元符号$开头。</h3>
+<h3 id="2标识符其它部分可以是字母下划线_美元符和数字的任意组合">2.标识符其它部分可以是字母、下划线“_”、美元符“$”和数字的任意组合。</h3>
+<h3 id="3java-标识符大小写敏感且长度无限制">3.Java 标识符大小写敏感，且长度无限制。</h3>
+<h3 id="4标识符不可以是java的关键字">4.标识符不可以是Java的关键字。</h3>
+<h2 id="标识符的使用规范">标识符的使用规范</h2>
+<p>1.表示类名的标识符：每个单词的首字母大写，如Man, GoodMan</p>
+<p>2.表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，我们称之为“驼峰原则”，如eat(), eatFood()</p>
+<p><strong>【注意】</strong>：Java不采用通常语言使用的ASCII字符集，而是采用Unicode这样标准的国际字符集。因此，这里字母的含义不仅仅是英文，还包括汉字等等。但是不建议大家使用汉字来定义标识符！</p>
+<p>【示例2-2】合法的标识符</p>
+<pre><code>int  a = 3;
+int  _123 = 3;
+int  $12aa = 3;
+int  变量1 = 55;  //合法，但是不建议使用中文命名的标识符
+</code></pre>
+<p>【示例2-3】不合法的标识符</p>
+<pre><code>int  1a = 3;   //不能用数字开头
+int  a# = 3;   //不能包含#这样的特殊字符
+int  int = 3;  //不能使用关键字
+</code></pre>
+<p><strong>测试代码</strong>：</p>
+<pre><code>/**
+ * 测试标识符的用法
+ * @author 王雪庆
+ *
+ */
+public class TestIdentifer {
+
+    //能力是练出来的，不是看书看出来的。对于初学者来说，再简单的代码也一定要敲一下！
+    public static void main(String[] args) {
+        int  a123 = 1;
+        //int  123abc = 2;        //数字不能开头
+        int  $a = 3;
+        int  _abc = 4;
+        //int  #abc = 5;
+
+        int  年龄 = 18;        //可以使用汉字，但是一般不建议
+
+        //int class = 2;        //关键字不能作为标识符
+
+    }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>2.1 注释</title>
+			<link>https://HarryQing.github.io/posts/2.1-%E6%B3%A8%E9%87%8A/</link>
+			<pubDate>Sat, 09 Jan 2021 05:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/2.1-%E6%B3%A8%E9%87%8A/</guid>
+			<description>为了方便程序的阅读，Java语言允许程序员在程序中写上一些说明性的文字，用来提高程序的可读性，这些文字性的说明就称为注释。 注释不会出现在字节码文件中，即Java编译器编译时会跳过注释语句。 在Java中根据注释的功能不同，主要分为单行注释、多行注释和文档注释。
+单行注释： 使用“//”开头，“//”后面的单行内容均为注释。 多行注释： 以“/* ”开头以“* /”结尾，在“/* ”和“* /”之间的内容为注释，我们也可以使用多行注释作为行内注释。但是在使用时要注意，多行注释不能嵌套使用。 文档注释： 以“/** ”开头以“* /”结尾，注释中包含一些说明性的文字及一些JavaDoc标签(后期写项目时，可以生成项目的API) 【示例2-1】认识Java的三种注释类型
+/*** Welcome类（我是文档注释）* @author 王雪庆* @version 1.0*/public class Welcome {//我是单行注释public static void main(String[] args/*我是行内注释 */) {System.out.println(&amp;quot;Hello World!&amp;quot;);}/*我是多行注释！我是多行注释！*/} </description>
+			<content type="html"><![CDATA[<p>为了方便程序的阅读，Java语言允许程序员在程序中写上一些说明性的文字，用来提高程序的可读性，这些文字性的说明就称为注释。 注释不会出现在字节码文件中，即Java编译器编译时会跳过注释语句。 在Java中根据注释的功能不同，主要分为单行注释、多行注释和文档注释。</p>
+<h4 id="单行注释--使用开头后面的单行内容均为注释">单行注释：  使用“//”开头，“//”后面的单行内容均为注释。</h4>
+<h4 id="多行注释---以-开头以-结尾在-和-之间的内容为注释我们也可以使用多行注释作为行内注释但是在使用时要注意多行注释不能嵌套使用">多行注释：   以“/* ”开头以“* /”结尾，在“/* ”和“* /”之间的内容为注释，我们也可以使用多行注释作为行内注释。但是在使用时要注意，多行注释不能嵌套使用。</h4>
+<h4 id="文档注释---以-开头以-结尾注释中包含一些说明性的文字及一些javadoc标签后期写项目时可以生成项目的api">文档注释：   以“/** ”开头以“* /”结尾，注释中包含一些说明性的文字及一些JavaDoc标签(后期写项目时，可以生成项目的API)</h4>
+<p>【示例2-1】认识Java的三种注释类型</p>
+<pre><code>/**
+ * Welcome类（我是文档注释）
+ * @author 王雪庆
+ * @version 1.0
+ */
+public class Welcome {
+    //我是单行注释
+    public static void main(String[] args/*我是行内注释 */) {
+        System.out.println(&quot;Hello World!&quot;);
+    }
+    /*
+       我是多行注释！
+       我是多行注释！
+     */
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第二章 数据类型和运算符</title>
+			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Tue, 05 Jan 2021 14:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>目录 2.1 注释 2.2 标识符 2.3 Java中的关键字/保留字 2.4.1 变量的本质 2.4.2 变量的分类 2.5 常量(Constant) 2.6 基本数据类型(primitive data type) 2.6.1 整型变量/常量 2.6.2 浮点型变量/常量 2.6.3 字符型变量/常量 2.6.4 boolean类型变量/常量 2.7 运算符(operator) 2.7.1 算术运算符 2.7.2 赋值及其扩展赋值运算符 2.7.3 关系运算符 2.7.4 逻辑运算符 2.7.5 位运算符 2.7.6 字符串连接符 2.7.7 条件运算符 2.7.8 运算符优先级的问题 2.8.1 自动类型转换 2.8.2 强制类型转换 2.8.3 基本类型转化时常见错误和问题 2.9 简单的键盘输入和输出 </description>
+			<content type="html"><![CDATA[<h1 id="目录">目录</h1>
+<h2 id="21-注释">2.1 注释</h2>
+<h2 id="22-标识符">2.2 标识符</h2>
+<h2 id="23-java中的关键字保留字">2.3 Java中的关键字/保留字</h2>
+<h2 id="241-变量的本质">2.4.1 变量的本质</h2>
+<h2 id="242-变量的分类">2.4.2 变量的分类</h2>
+<h2 id="25-常量constant">2.5 常量(Constant)</h2>
+<h2 id="26-基本数据类型primitive-data-type">2.6 基本数据类型(primitive data type)</h2>
+<h2 id="261-整型变量常量">2.6.1 整型变量/常量</h2>
+<h2 id="262-浮点型变量常量">2.6.2 浮点型变量/常量</h2>
+<h2 id="263-字符型变量常量">2.6.3 字符型变量/常量</h2>
+<h2 id="264-boolean类型变量常量">2.6.4 boolean类型变量/常量</h2>
+<h2 id="27-运算符operator">2.7 运算符(operator)</h2>
+<h2 id="271-算术运算符">2.7.1 算术运算符</h2>
+<h2 id="272-赋值及其扩展赋值运算符">2.7.2 赋值及其扩展赋值运算符</h2>
+<h2 id="273-关系运算符">2.7.3 关系运算符</h2>
+<h2 id="274-逻辑运算符">2.7.4 逻辑运算符</h2>
+<h2 id="275-位运算符">2.7.5 位运算符</h2>
+<h2 id="276-字符串连接符">2.7.6 字符串连接符</h2>
+<h2 id="277-条件运算符">2.7.7 条件运算符</h2>
+<h2 id="278-运算符优先级的问题">2.7.8 运算符优先级的问题</h2>
+<h2 id="281-自动类型转换">2.8.1 自动类型转换</h2>
+<h2 id="282-强制类型转换">2.8.2 强制类型转换</h2>
+<h2 id="283-基本类型转化时常见错误和问题">2.8.3 基本类型转化时常见错误和问题</h2>
+<h2 id="29-简单的键盘输入和输出">2.9 简单的键盘输入和输出</h2>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.8 30分钟完成桌球小游戏项目</title>
+			<link>https://HarryQing.github.io/posts/1.8-30%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E6%A1%8C%E7%90%83%E5%B0%8F%E6%B8%B8%E6%88%8F%E9%A1%B9%E7%9B%AE/</link>
+			<pubDate>Tue, 05 Jan 2021 09:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.8-30%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E6%A1%8C%E7%90%83%E5%B0%8F%E6%B8%B8%E6%88%8F%E9%A1%B9%E7%9B%AE/</guid>
+			<description>如下的小项目，对于第一次接触编程的朋友从理解上会有难度。但是，我们这个项目不在于让大家理解代码本身，而是让大家“重在体验敲代码的感觉”。
+【项目】桌球游戏小项目 练习目标： 1.找到敲代码的感觉
+2.收获敲代码的兴趣
+3.作出效果，找到自信
+4.从一开始就学会调试错误
+5.掌握Java代码基本结构
+项目需求： 桌球在球桌中按照一定线路和角度移动，遇到边框会自动弹回。
+要求： 即使看不太懂，也要照着敲如下游戏代码，至少5遍。要求所有字符和源文件一致。如果报异常，请细心看所在行和老师代码有何区别。现阶段不需要理解代码的语法功能，只要按照代码结构输入代码，能够经过调试实现代码的正常运行即可。
+项目中用到的两个小图片，如下：
+开发步骤： 版本1： 目标：创建项目、创建窗口。
+创建项目并拷贝图片：
+在项目名MyPro01上单击右键，在菜单中依次选择new&amp;mdash;Folder，创建一个名称是images的文件夹，并复制两 张图片到该目录下。并在src下创建类BallGame.java。eclipse下项目的最终结构如图所示。
+代码：
+import java.awt.*;import javax.swing.*;public class BallGame extends JFrame {//窗口加载void launchFrame(){setSize(300,300);setLocation(400,400);setVisible(true);}//main方法是程序执行的入口public static void main(String[] args){System.out.println(&amp;quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&amp;quot;);BallGame game = new BallGame();game.launchFrame();}} 运行效果：
+版本2： 目标：加载两个图片
+代码：
+import java.awt.*;import javax.swing.*;public class BallGame extends JFrame {Image ball = Toolkit.</description>
+			<content type="html"><![CDATA[<p>如下的小项目，对于第一次接触编程的朋友从理解上会有难度。但是，我们这个项目不在于让大家理解代码本身，而是让大家“重在体验敲代码的感觉”。</p>
+<h2 id="项目桌球游戏小项目">【项目】桌球游戏小项目</h2>
+<h3 id="练习目标">练习目标：</h3>
+<p>1.找到敲代码的感觉</p>
+<p>2.收获敲代码的兴趣</p>
+<p>3.作出效果，找到自信</p>
+<p>4.从一开始就学会调试错误</p>
+<p>5.掌握Java代码基本结构</p>
+<h3 id="项目需求">项目需求：</h3>
+<p>桌球在球桌中按照一定线路和角度移动，遇到边框会自动弹回。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496802487319356.png" alt=""></p>
+<h3 id="要求">要求：</h3>
+<p>即使看不太懂，也要照着敲如下游戏代码，至少5遍。要求所有字符和源文件一致。如果报异常，请细心看所在行和老师代码有何区别。现阶段不需要理解代码的语法功能，只要按照代码结构输入代码，能够经过调试实现代码的正常运行即可。</p>
+<p><strong>项目中用到的两个小图片，如下</strong>：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496797408773563.png" alt=""></p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496802557924525.jpg" alt=""></p>
+<h2 id="开发步骤">开发步骤：</h2>
+<h3 id="版本1">版本1：</h3>
+<p>目标：创建项目、创建窗口。</p>
+<p>创建项目并拷贝图片：</p>
+<p>在项目名MyPro01上单击右键，在菜单中依次选择new&mdash;Folder，创建一个名称是images的文件夹，并复制两  张图片到该目录下。并在src下创建类BallGame.java。eclipse下项目的最终结构如图所示。</p>
+<p><img src="http://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494925441201939.png" alt=""></p>
+<p><strong>代码</strong>：</p>
+<pre><code>import  java.awt.*;
+import javax.swing.*;
+
+public class BallGame extends JFrame {
+
+
+     //窗口加载
+     void launchFrame(){
+         setSize(300,300);
+         setLocation(400,400);
+         setVisible(true);
+
+     }
+
+     //main方法是程序执行的入口
+     public static void main(String[] args){
+         System.out.println(&quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&quot;);
+         BallGame game = new BallGame();
+         game.launchFrame();
+     }
+
+}
+</code></pre>
+<p><strong>运行效果</strong>：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496805215766450.png" alt=""></p>
+<h3 id="版本2">版本2：</h3>
+<p>目标：加载两个图片</p>
+<p>代码：</p>
+<pre><code>import  java.awt.*;
+import javax.swing.*;
+
+public class BallGame extends JFrame {
+
+    Image ball = Toolkit.getDefaultToolkit().getImage(&quot;images/ball.png&quot;);
+    Image desk = Toolkit.getDefaultToolkit().getImage(&quot;images/desk.jpg&quot;);
+
+    double  x=100;    //小球的横坐标
+    double  y=100; //小球的纵坐标
+    //画窗口的方法
+    public void paint(Graphics  g){
+        System.out.println(&quot;窗口被画了一次！&quot;);
+        g.drawImage(desk, 0, 0, null);
+        g.drawImage(ball, (int)x, (int)y, null);
+    }
+
+    //窗口加载
+    void launchFrame(){
+        setSize(856,500);
+        setLocation(50,50);
+        setVisible(true);
+    }
+
+    //main方法是程序执行的入口
+    public static void main(String[] args){
+        System.out.println(&quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&quot;);
+        BallGame game = new BallGame();
+        game.launchFrame();
+    }
+
+}
+</code></pre>
+<p><strong>运行效果</strong>：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496805504230973.png" alt=""></p>
+<h3 id="版本3">版本3：</h3>
+<p>目标：实现动画，小球沿着水平方向移动并做边界检测</p>
+<p><strong>代码</strong>：</p>
+<pre><code>import  java.awt.*;
+import javax.swing.*;
+
+public class BallGame extends JFrame {
+
+    Image ball = Toolkit.getDefaultToolkit().getImage(&quot;images/ball.png&quot;);
+    Image desk = Toolkit.getDefaultToolkit().getImage(&quot;images/desk.jpg&quot;);
+
+    double  x=100;    //小球的横坐标
+    double  y=100; //小球的纵坐标
+    boolean  right = true;   //方向
+    //画窗口的方法
+    public void paint(Graphics  g){
+        System.out.println(&quot;窗口被画了一次！&quot;);
+        g.drawImage(desk, 0, 0, null);
+        g.drawImage(ball, (int)x, (int)y, null);
+
+
+        if(right){
+            x = x +10;            
+        }else{
+            x = x - 10;
+        }
+
+        if(x&gt;856-40-30){    //856是窗口宽度，40是桌子边框的宽度，30是小球的直径
+            right = false;
+        }
+
+        if(x&lt;40){        //40是桌子边框的宽度
+            right = true;
+        }
+
+
+    }
+
+    //窗口加载
+    void launchFrame(){
+        setSize(856,500);
+        setLocation(50,50);
+        setVisible(true);
+
+        //重画窗口,每秒画25次
+        while(true){
+            repaint(); 
+            try{
+                Thread.sleep(40);   //40ms,   1秒=1000毫秒.  大约一秒画25次窗口
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+    }
+
+    //main方法是程序执行的入口
+    public static void main(String[] args){
+        System.out.println(&quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&quot;);
+        BallGame game = new BallGame();
+        game.launchFrame();
+    }
+
+}
+</code></pre>
+<h3 id="版本4">版本4：</h3>
+<p>目标：实现小球沿着任意角度飞行（会用到初中学习的三角函数，如果忘记了就想想你们的体育老师吧）</p>
+<p><strong>代码</strong>：（为了保存版本3的代码，我们新创建了一个类BallGame2）</p>
+<pre><code>import  java.awt.*;
+import javax.swing.*;
+
+public class BallGame2 extends JFrame {
+
+    Image ball = Toolkit.getDefaultToolkit().getImage(&quot;images/ball.png&quot;);
+    Image desk = Toolkit.getDefaultToolkit().getImage(&quot;images/desk.jpg&quot;);
+
+    double  x=100;    //小球的横坐标
+    double  y=100; //小球的纵坐标
+
+    double degree = 3.14/3;    //弧度。此处就是：60度
+
+    //画窗口的方法
+    public void paint(Graphics  g){
+        System.out.println(&quot;窗口被画了一次！&quot;);
+        g.drawImage(desk, 0, 0, null);
+        g.drawImage(ball,(int)x, (int)y, null);
+
+
+        x  = x+ 10*Math.cos(degree);
+        y  = y +10*Math.sin(degree); 
+
+        //碰到上下边界
+        if(y&gt;500-40-30||y&lt;40+40){//500是窗口高度；40是桌子边框，30是球直径；最后一个40是标题栏的高度
+            degree = -degree;
+        }
+
+        //碰到左右边界
+        if(x&lt;40||x&gt;856-40-30){
+            degree = 3.14 - degree;
+        }
+
+    }
+
+    //窗口加载
+    void launchFrame(){
+        setSize(856,500);
+        setLocation(50,50);
+        setVisible(true);
+
+        //重画窗口,每秒画25次
+        while(true){
+            repaint(); 
+            try{
+                Thread.sleep(40);   //40ms,   1秒=1000毫秒.  大约一秒画25次窗口
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+    }
+
+    //main方法是程序执行的入口
+    public static void main(String[] args){
+        System.out.println(&quot; 我是尚学堂高淇，这个游戏项目让大家体验编程的快感，寓教于乐！&quot;);
+        BallGame2 game = new BallGame2();
+        game.launchFrame();
+    }
+
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.7.3 使用eclipse开发和运行Java程序</title>
+			<link>https://HarryQing.github.io/posts/1.7.3-%E4%BD%BF%E7%94%A8eclipse%E5%BC%80%E5%8F%91%E5%92%8C%E8%BF%90%E8%A1%8Cjava%E7%A8%8B%E5%BA%8F/</link>
+			<pubDate>Tue, 05 Jan 2021 05:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.7.3-%E4%BD%BF%E7%94%A8eclipse%E5%BC%80%E5%8F%91%E5%92%8C%E8%BF%90%E8%A1%8Cjava%E7%A8%8B%E5%BA%8F/</guid>
+			<description>·使用eclipse开发第一个程序 我们在上一节建好的Java项目中，开始开发Java程序。首先，新建一个Java类。在src目录上右键单击，建立一个Java类。如图1-32所示。
+出现新建类的开始界面，如图所示。我们只需输入类名即可，其他不需做任何设置：
+点击Finish后，新建Java类成功，出现如图所示
+在src下面出现了Welcome.java文件。点击该文件后，出现该文件的代码编辑，我们开发Eclipse下的第一个Java程序。
+【示例1-2】使用eclipse开发Java程序
+public class Welcome {public static void main(String[] args) {System.out.println(&amp;quot;我是尚学堂的高淇！&amp;quot;);}} 运行该程序： 在代码上单击右键后，点击Run as Java application。如图所示。也可以使用快捷键“ctrl+F11”，直接实现运行。或者直接点击工具栏的中运行按钮。
+界面下方的控制台（console）出现运行结果，如图所示。
+至此，我们成功在eclipse中开发了我们的第一个Java程序！
+·eclipse自动编译 eclipse会自动执行javac进行编译，并且会将编译错误直接给出提示，一目了然，非常便于我们调试。
+·Java项目的src目录和bin目录 src用于存放源代码，bin用于存放生成的class文件。
+在eclipse视图里我们只看到了src目录，eclipse隐藏了bin目录。进入我的电脑，打开Java项目目录，我们可以看到src和bin目录：</description>
+			<content type="html"><![CDATA[<h2 id="使用eclipse开发第一个程序">·使用eclipse开发第一个程序</h2>
+<p>我们在上一节建好的Java项目中，开始开发Java程序。首先，新建一个Java类。在src目录上右键单击，建立一个Java类。如图1-32所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842405992839.png" alt=""></p>
+<p>出现新建类的开始界面，如图所示。我们只需输入类名即可，其他不需做任何设置：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842417827128.png" alt=""></p>
+<p>点击Finish后，新建Java类成功，出现如图所示</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842430268879.png" alt=""></p>
+<p>在src下面出现了Welcome.java文件。点击该文件后，出现该文件的代码编辑，我们开发Eclipse下的第一个Java程序。</p>
+<p>【示例1-2】使用eclipse开发Java程序</p>
+<pre><code>public class Welcome {
+    public static void main(String[] args) {
+        System.out.println(&quot;我是尚学堂的高淇！&quot;);
+    }
+}
+</code></pre>
+<p>运行该程序： 在代码上单击右键后，点击Run as  Java  application。如图所示。也可以使用快捷键“ctrl+F11”，直接实现运行。或者直接点击工具栏的中运行按钮。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842478482362.png" alt=""></p>
+<p>界面下方的控制台（console）出现运行结果，如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842500265687.png" alt=""></p>
+<p>至此，我们成功在eclipse中开发了我们的第一个Java程序！</p>
+<h2 id="eclipse自动编译">·eclipse自动编译</h2>
+<p>eclipse会自动执行javac进行编译，并且会将编译错误直接给出提示，一目了然，非常便于我们调试。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842517619975.png" alt=""></p>
+<h2 id="java项目的src目录和bin目录">·Java项目的src目录和bin目录</h2>
+<p>src用于存放源代码，bin用于存放生成的class文件。</p>
+<p>在eclipse视图里我们只看到了src目录，eclipse隐藏了bin目录。进入我的电脑，打开Java项目目录，我们可以看到src和bin目录：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842523614536.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.7.2 在eclipse中创建Java项目</title>
+			<link>https://HarryQing.github.io/posts/1.7.2-%E5%9C%A8eclipse%E4%B8%AD%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE/</link>
+			<pubDate>Mon, 04 Jan 2021 22:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.7.2-%E5%9C%A8eclipse%E4%B8%AD%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE/</guid>
+			<description>在界面左侧的“Package Explorer”视图中右键单击，在快捷菜单中依次选择new——&amp;gt; Java Project，开始新建Java项目。如图所示。 输入项目名称MyPro01，点击Finish 完成即可。如图所示。
+新建项目完成，项目结构如图所示。其中的src文件夹用于存放源代码。显示JDK版本是JavaSE-1.8。</description>
+			<content type="html"><![CDATA[<p>在界面左侧的“Package Explorer”视图中右键单击，在快捷菜单中依次选择new——&gt; Java  Project，开始新建Java项目。如图所示。
+<img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842173615423.png" alt=""></p>
+<p>输入项目名称MyPro01，点击Finish 完成即可。如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842184700790.png" alt=""></p>
+<p>新建项目完成，项目结构如图所示。其中的src文件夹用于存放源代码。显示JDK版本是JavaSE-1.8。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494842206589668.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.7.1 下载和安装eclipse</title>
+			<link>https://HarryQing.github.io/posts/1.7.1-%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85eclipse/</link>
+			<pubDate>Mon, 04 Jan 2021 18:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.7.1-%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85eclipse/</guid>
+			<description>下载地址：https://www.eclipse.org/downloads/packages/
+出现图所示下载界面。选择Eclipse IDE for Java Developers，根据自己安装的JDK, 决定是下载32位还是64位。下载完成后，直接解压。进入目录，双击eclipse.exe即可使用。
+启动时会先出现设置工作空间界面，如图所示。工作空间指Java项目存储的目录，一般采用默认工作空间目录即可。
+点击OK后，会进入欢迎界面，如图所示。
+关闭欢迎界面，即可进入开发主界面，如图所示。</description>
+			<content type="html"><![CDATA[<p><strong>下载地址</strong>：<a href="https://www.eclipse.org/downloads/packages/"><strong>https://www.eclipse.org/downloads/packages/</strong></a></p>
+<p>出现图所示下载界面。选择Eclipse IDE for Java Developers，根据自己安装的JDK, 决定是下载32位还是64位。下载完成后，直接解压。进入目录，双击eclipse.exe即可使用。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494841780284229.png" alt=""></p>
+<p>启动时会先出现设置工作空间界面，如图所示。工作空间指Java项目存储的目录，一般采用默认工作空间目录即可。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494841793427012.png" alt=""></p>
+<p>点击OK后，会进入欢迎界面，如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494841803281437.png" alt=""></p>
+<p>关闭欢迎界面，即可进入开发主界面，如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494841810434059.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.7 eclipse使用10分钟入门</title>
+			<link>https://HarryQing.github.io/posts/1.7-eclipse%E4%BD%BF%E7%94%A810%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8/</link>
+			<pubDate>Mon, 04 Jan 2021 13:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.7-eclipse%E4%BD%BF%E7%94%A810%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8/</guid>
+			<description>在开发工具匮乏的年代，第一代Java程序员都是从文本编辑器开始训练自己的代码，从而一步步成为高手，这是一种无奈，而不是一种必须。
+我们认为，现在横在入门初学者最大的障碍在于“是否能激发兴趣，解决问题，体验到编程的快乐”，而不是讨论是该用记事本还是eclipse集成开发环境。
+是否使用或坚持记事本编程不是成为高手的必要条件，而“激发兴趣，保持兴趣”确是成为高手的必要条件。也基于我们的理念“快速入门，快速实战”，我们一开始就引入eclipse，让初学者更容易的激发兴趣，体验学习的快乐。</description>
+			<content type="html"><![CDATA[<p>在开发工具匮乏的年代，第一代Java程序员都是从文本编辑器开始训练自己的代码，从而一步步成为高手，这是一种无奈，而不是一种必须。</p>
+<p>我们认为，现在横在入门初学者最大的障碍在于“是否能激发兴趣，解决问题，体验到编程的快乐”，而不是讨论是该用记事本还是eclipse集成开发环境。</p>
+<p>是否使用或坚持记事本编程不是成为高手的必要条件，而“激发兴趣，保持兴趣”确是成为高手的必要条件。也基于我们的理念“快速入门，快速实战”，我们一开始就引入eclipse，让初学者更容易的激发兴趣，体验学习的快乐。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.6 常用Java开发工具</title>
+			<link>https://HarryQing.github.io/posts/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
+			<pubDate>Mon, 04 Jan 2021 09:14:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.6-%E5%B8%B8%E7%94%A8java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid>
+			<description>入门学习时，进行简单的Java程序编写，我们可以使用文本编辑器，比如：记事本。但是，记事本功能不够强大，我们可以考虑使用“更加强大的记事本”，常见的有如下三种软件：
+1.Notepad++
+2.UltraEdit
+3.EditPlus
+在我们真正学习开发中，包括以后在企业中从事软件开发时，一般使用集成开发环境（IDE）， 如下三种软件是最常见的，尤其是eclipse。 我们只选一个作为入门使用，其他两种大家自行举一反三，使用很简单。
+eclipse官方网址：http://www.eclipse.org
+IntelliJ IDE官方网址:http://www.jetbrains.com/idea/
+NetBeans 官方网址：https://netbeans.org/</description>
+			<content type="html"><![CDATA[<p>入门学习时，进行简单的Java程序编写，我们可以使用文本编辑器，比如：记事本。但是，记事本功能不够强大，我们可以考虑使用“更加强大的记事本”，常见的有如下三种软件：</p>
+<p>1.Notepad++</p>
+<p>2.UltraEdit</p>
+<p>3.EditPlus</p>
+<p>在我们真正学习开发中，包括以后在企业中从事软件开发时，一般使用集成开发环境（IDE）， 如下三种软件是最常见的，尤其是eclipse。 我们只选一个作为入门使用，其他两种大家自行举一反三，使用很简单。</p>
+<p>eclipse官方网址：<a href="http://www.eclipse.org"><strong>http://www.eclipse.org</strong></a></p>
+<p>IntelliJ IDE官方网址:<a href="http://www.jetbrains.com/idea/"><strong>http://www.jetbrains.com/idea/</strong></a></p>
+<p>NetBeans 官方网址：<a href="https://netbeans.org/"><strong>https://netbeans.org/</strong></a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.5.4 最常用DOS命令</title>
+			<link>https://HarryQing.github.io/posts/1.5.4-%E6%9C%80%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/</link>
+			<pubDate>Mon, 04 Jan 2021 05:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.5.4-%E6%9C%80%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/</guid>
+			<description>DOS命令已经基本退出普通使用者的历史舞台了，但是仍然有必要掌握几个常用的命令，便于在某些情况下更顺畅的操作程序。
+1.cd 目录路径	进入一个目录
+2.cd ..	进入父目录
+3.dir	查看本目录下的文件和子目录列表
+4.cls 清楚屏幕命令
+5.上下键	查找敲过的命令
+6.Tab键	自动补齐命令</description>
+			<content type="html"><![CDATA[<p>DOS命令已经基本退出普通使用者的历史舞台了，但是仍然有必要掌握几个常用的命令，便于在某些情况下更顺畅的操作程序。</p>
+<p>1.cd  目录路径	进入一个目录</p>
+<p>2.cd ..	进入父目录</p>
+<p>3.dir	查看本目录下的文件和子目录列表</p>
+<p>4.cls  	清楚屏幕命令</p>
+<p>5.上下键	查找敲过的命令</p>
+<p>6.Tab键	自动补齐命令</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.5.3 第一个Java程序的总结和提升</title>
+			<link>https://HarryQing.github.io/posts/1.5.3-%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%8F%90%E5%8D%87/</link>
+			<pubDate>Sun, 03 Jan 2021 21:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.5.3-%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93%E5%92%8C%E6%8F%90%E5%8D%87/</guid>
+			<description>1.Java对大小写敏感，如果出现了大小写拼写错误，程序无法运行。
+2.关键字public被称作访问修饰符(access modifier)，用于控制程序的其它部分对这段代码的访问级别。
+3.关键字class 的意思是类。Java是面向对象的语言，所有代码必须位于类里面。
+4.一个源文件中至多只能声明一个public的类，其它类的个数不限，如果源文件中包含一个public 类，源文件名必须和其中定义的public的类名相同，且以“.java”为扩展名。
+5.一个源文件可以包含多个类class。
+6.正确编译后的源文件，会得到相应的字节码文件，编译器为每个类生成独立的字节码文件，且将字节码文件自动命名为类的名字且以“.class”为扩展名。
+7.main方法是Java应用程序的入口方法，它有固定的书写格式：
+8.public static void main(String[] args) {…}
+9.在Java中，用花括号划分程序的各个部分，任何方法的代码都必须以“{”开始，以“}”结束， 由于编译器忽略空格，所以花括号风格不受限制。
+10.Java中每个语句必须以分号结束，回车不是语句的结束标志，所以一个语句可以跨多行。
+老鸟建议： ·编程时，一定要注意缩进规范；
+·在写括号、引号时，一定是成对编写，然后再往里插入内容。</description>
+			<content type="html"><![CDATA[<p>1.Java对大小写敏感，如果出现了大小写拼写错误，程序无法运行。</p>
+<p>2.关键字public被称作访问修饰符(access modifier)，用于控制程序的其它部分对这段代码的访问级别。</p>
+<p>3.关键字class 的意思是类。Java是面向对象的语言，所有代码必须位于类里面。</p>
+<p>4.一个源文件中至多只能声明一个public的类，其它类的个数不限，如果源文件中包含一个public 类，源文件名必须和其中定义的public的类名相同，且以“.java”为扩展名。</p>
+<p>5.一个源文件可以包含多个类class。</p>
+<p>6.正确编译后的源文件，会得到相应的字节码文件，编译器为每个类生成独立的字节码文件，且将字节码文件自动命名为类的名字且以“.class”为扩展名。</p>
+<p>7.main方法是Java应用程序的入口方法，它有固定的书写格式：</p>
+<p>8.public static void main(String[]  args) {…}</p>
+<p>9.在Java中，用花括号划分程序的各个部分，任何方法的代码都必须以“{”开始，以“}”结束， 由于编译器忽略空格，所以花括号风格不受限制。</p>
+<p>10.Java中每个语句必须以分号结束，回车不是语句的结束标志，所以一个语句可以跨多行。</p>
+<h3 id="老鸟建议">老鸟建议：</h3>
+<p>·编程时，一定要注意缩进规范；</p>
+<p>·在写括号、引号时，一定是成对编写，然后再往里插入内容。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.5.2 第一个程序常见错误</title>
+			<link>https://HarryQing.github.io/posts/1.5.2-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</link>
+			<pubDate>Sun, 03 Jan 2021 18:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.5.2-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</guid>
+			<description>·常见问题-1：提示“javac不是内部或外部命令……” 出错原因：Path变量配置错误导致没有找到javac命令
+解决方案：参考1.4.2 &amp;lt;环境变量Path的配置&amp;gt;，细心重新设置Path，配置完成后需要重新输入cmd打开命令行窗口。
+·常见问题-2：文件夹中可以看到Welcome.java文件，在编译时出现’javac 找不到文件……’ 出错原因：可能是操作系统显示设置的问题，隐藏了文件的扩展名。
+解决方案：打开我的电脑窗口,选择【组织】【文件夹和搜索选项】【查看】，如图1-24所示，去掉“隐藏已知文件夹类型的扩展名”复选框中的对勾，看到文件的实际名称为Welcome.java.txt，将后缀后.txt去掉。
+·常见问题-3：NoSuchMethodError：main 出错原因：找不到main方法，应该是main方法书写有误。
+解决方案：检查public static void main(String [] args){}是否有误。</description>
+			<content type="html"><![CDATA[<h2 id="常见问题-1提示javac不是内部或外部命令">·常见问题-1：提示“javac不是内部或外部命令……”</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494840217176085.png" alt=""></p>
+<p><strong>出错原因</strong>：Path变量配置错误导致没有找到javac命令</p>
+<p><strong>解决方案</strong>：参考1.4.2 &lt;环境变量Path的配置&gt;，细心重新设置Path，配置完成后需要重新输入cmd打开命令行窗口。</p>
+<h2 id="常见问题-2文件夹中可以看到welcomejava文件在编译时出现javac-找不到文件">·常见问题-2：文件夹中可以看到Welcome.java文件，在编译时出现’javac 找不到文件……’</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494840205551048.png" alt=""></p>
+<p><strong>出错原因</strong>：可能是操作系统显示设置的问题，隐藏了文件的扩展名。</p>
+<p><strong>解决方案</strong>：打开我的电脑窗口,选择【组织】【文件夹和搜索选项】【查看】，如图1-24所示，去掉“隐藏已知文件夹类型的扩展名”复选框中的对勾，看到文件的实际名称为Welcome.java.txt，将后缀后.txt去掉。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494840197751869.png" alt=""></p>
+<h2 id="常见问题-3nosuchmethoderrormain">·常见问题-3：NoSuchMethodError：main</h2>
+<p><strong>出错原因</strong>：找不到main方法，应该是main方法书写有误。</p>
+<p><strong>解决方案</strong>：检查public static void main(String [] args){}是否有误。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.5.1 开发第一个Java程序</title>
+			<link>https://HarryQing.github.io/posts/1.5.1-%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F/</link>
+			<pubDate>Sun, 03 Jan 2021 13:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.5.1-%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AAjava%E7%A8%8B%E5%BA%8F/</guid>
+			<description>·使用记事本，编写代码 【示例1-1】使用记事本开发第一个Java程序
+public class Welcome{public static void main(String[] args){System.out.println(&amp;quot;Hello Java!我是雪儿的哥哥，王雪庆!&amp;quot;); } } 可在d盘下建立文件夹mycode，用于保存学习的代码。保存路径建议为：”d:/mycode”。保存为：Welcome.java （文件名必须为Welcome，大小写也必须一致）。如图所示。
+菜鸟雷区 1.代码中的引号、分号必须为英文引号和分号，不能是中文全角的引号和分号
+2.注意大小写
+·编译（编译器创建class字节码文件） 打开命令行窗口，进入Java文件所在目录；执行命令：javac Welcome.java，生成class文件。
+·解释并运行阶段 执行：”java Welcome”（就是运行编译生成的Welcome.class文件），输出执行结果。
+菜鸟雷区 修改完java源文件，一定要重新编译才能生效；</description>
+			<content type="html"><![CDATA[<h2 id="使用记事本编写代码">·使用记事本，编写代码</h2>
+<p>【示例1-1】使用记事本开发第一个Java程序</p>
+<pre><code>public  class  Welcome{
+    public static void main(String[] args){
+        System.out.println(&quot;Hello Java!我是雪儿的哥哥，王雪庆!&quot;); 
+    }       
+}
+</code></pre>
+<p>可在d盘下建立文件夹mycode，用于保存学习的代码。保存路径建议为：”d:/mycode”。保存为：Welcome.java  （文件名必须为Welcome，大小写也必须一致）。如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494839751861170.png" alt=""></p>
+<h3 id="菜鸟雷区">菜鸟雷区</h3>
+<p>1.代码中的引号、分号必须为英文引号和分号，不能是中文全角的引号和分号</p>
+<p>2.注意大小写</p>
+<h2 id="编译编译器创建class字节码文件">·编译（编译器创建class字节码文件）</h2>
+<p>打开命令行窗口，进入Java文件所在目录；执行命令：javac  Welcome.java，生成class文件。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494839822258615.png" alt=""></p>
+<h2 id="解释并运行阶段">·解释并运行阶段</h2>
+<p>执行：”java  Welcome”（就是运行编译生成的Welcome.class文件），输出执行结果。</p>
+<h3 id="菜鸟雷区-1">菜鸟雷区</h3>
+<p>修改完java源文件，一定要重新编译才能生效；</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.4.3 测试JDK安装成功</title>
+			<link>https://HarryQing.github.io/posts/1.4.3-%E6%B5%8B%E8%AF%95jdk%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F/</link>
+			<pubDate>Sun, 03 Jan 2021 09:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.4.3-%E6%B5%8B%E8%AF%95jdk%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F/</guid>
+			<description>进入命令行窗口，开始菜单搜索框输入“cmd”即可，如图所示。在窗口中输入命令“java -version ”，回车。出现如下结果，则说明JDK安装成功。
+设置环境变量——验证JDK安装和配置是否成功 </description>
+			<content type="html"><![CDATA[<p>进入命令行窗口，开始菜单搜索框输入“cmd”即可，如图所示。在窗口中输入命令“java  -version ”，回车。出现如下结果，则说明JDK安装成功。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494839221232267.png" alt=""></p>
+<h3 id="设置环境变量验证jdk安装和配置是否成功">设置环境变量——验证JDK安装和配置是否成功</h3>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.4.2 环境变量Path的配置</title>
+			<link>https://HarryQing.github.io/posts/1.4.2-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8Fpath%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
+			<pubDate>Sun, 03 Jan 2021 05:20:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.4.2-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8Fpath%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
+			<description>环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。
+Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。
+·设置Path环境变量的步骤如下 1.在电脑桌面 右键点击 “此电脑”的“属性”选项。
+2.选择“高级系统设置”选项
+3.点击下面的“环境变量”选项
+4. 新建JAVA_HOME 变量 点击 New（新建）&amp;hellip; 按钮
+输入:
+ 变量名：JAVA_HOME
+变量值：电脑上JDK安装的绝对路径
+ JDK 路径下必须能够看到如下的文件。
+输入完毕后点击 OK。
+5.新建/修改 CLASSPATH 变量 如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。
+如果没有，点击 New（新建）&amp;hellip; 新建。
+输入/在已有的变量值后面添加：
+ 变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+ 点击 OK 保存。
+6.修改Path 变量 由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。
+新建两条路径：
+ %JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+ 菜鸟雷区 1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。
+注：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件
+写在最后 第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！ </description>
+			<content type="html"><![CDATA[<p>环境变量是在操作系统中一个具有特定名字的对象， 它包含了一个或者多个应用程序所将使用到的信息。</p>
+<p>Path是一个常见的环境变量，它告诉操作系统，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还应到哪些目录下寻找。</p>
+<h3 id="设置path环境变量的步骤如下">·设置Path环境变量的步骤如下</h3>
+<p>1.在电脑桌面 右键点击 “此电脑”的“属性”选项。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410870-6587-3932295-dd57a38934b0c1af.png" alt=""></p>
+<p>2.选择“高级系统设置”选项</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410904-3787-3932295-4ab4c5e4655e83ff.png" alt=""></p>
+<p>3.点击下面的“环境变量”选项</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534410952-9821-3932295-53c3abde864d63a7.png" alt=""></p>
+<h3 id="4-新建java_home-变量">4. 新建JAVA_HOME 变量</h3>
+<p>点击 New（新建）&hellip; 按钮</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411060-2131-3932295-ef08fb7d0ef0760f.png" alt=""></p>
+<p>输入:</p>
+<blockquote>
+<p>变量名：JAVA_HOME</p>
+<p>变量值：电脑上JDK安装的绝对路径</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411114-3840-3932295-73be617cffdac223.png" alt=""></p>
+<p>JDK 路径下必须能够看到如下的文件。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411157-4157-3932295-b821f0e17887bcdf.png" alt=""></p>
+<p>输入完毕后点击 OK。</p>
+<h3 id="5新建修改-classpath-变量">5.新建/修改 CLASSPATH 变量</h3>
+<p>如果存在 CLASSPATH 变量，选中点击 Edit(编辑)。</p>
+<p>如果没有，点击 New（新建）&hellip; 新建。</p>
+<p>输入/在已有的变量值后面添加：</p>
+<blockquote>
+<p>变量名：CLASSPATH</p>
+<p>变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</p>
+</blockquote>
+<p>点击 OK 保存。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411198-2259-3932295-afe57d1caf93277c.png" alt=""></p>
+<h3 id="6修改path-变量">6.修改Path 变量</h3>
+<p>由于 win10 的不同，当选中 Path 变量的时候，系统会很方便的把所有不同路径都分开了，不会像 win7 或者 win8 那样连在一起。</p>
+<p>新建两条路径：</p>
+<blockquote>
+<p>%JAVA_HOME%\bin</p>
+<p>%JAVA_HOME%\jre\bin</p>
+</blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411240-7448-3932295-515fd020c1e2fc4a.png" alt=""></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/08/1534411281-6565-3932295-08d84d125c71d0a8.png" alt=""></p>
+<h3 id="菜鸟雷区">菜鸟雷区</h3>
+<p>1.此处一定是英文分号而不是中文分号！ 大家以后设置相关配置时也要注意中英文符号的区别。</p>
+<p><strong>注</strong>：classpath配置问题：如果使用JDK1.5以上就不需要配置这个环境变量！JRE会自动搜索当前路径下的类文件及相关jar文件</p>
+<h2 id="写在最后">写在最后</h2>
+<h3 id="第一次更改于2021年1月25日-由于雪儿的使用不便霍霍霍">第一次更改于2021年1月25日 由于雪儿的使用不便，霍霍霍！！！</h3>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.4.1 JDK下载和安装 </title>
+			<link>https://HarryQing.github.io/posts/1.4.1-jdk%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85-/</link>
+			<pubDate>Sat, 02 Jan 2021 22:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.4.1-jdk%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85-/</guid>
+			<description>·下载JDK 1.下载地址，点击进入：https://www.oracle.com/java/technologies/javase-downloads.html
+2.点击下载JDK，会出现图所示的下载列表界面。首先，点击”Accept License Agreement”，然后选择对应的版本，下载即可。
+注: 如果您无法确定您的windows版本，可以右键点击“计算机属性”，即可查看系统信息：
+菜鸟雷区： 1.32位操作系统只能安装32位JDK； 2.64位操作系统可安装32位JDK，也可以安装64位JDK。
+·安装JDK 安装过程和普通软件安装没什么区别，过程中会让你选择JDK和JRE安装目录，采用默认即可。也就是说，通通点击“下一步”就能完成安装。
+出现如上画面代表，JDK安装成功。
+我们再进入JDK的安装目录C:\Program Files\Java\jdk1.8.0_131，可以看到如下的结构：
+其中：
+~bin目录是存储一些可执行的二进制文件；
+~lib存储相关jar包；
+~src.zip是JDK相关JAVA类的源代码。</description>
+			<content type="html"><![CDATA[<h2 id="下载jdk">·下载JDK</h2>
+<p>1.下载地址，点击进入：<a href="https://www.oracle.com/java/technologies/javase-downloads.html"><strong>https://www.oracle.com/java/technologies/javase-downloads.html</strong></a></p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838187142946.png" alt=""></p>
+<p>2.点击下载JDK，会出现图所示的下载列表界面。首先，点击”Accept License Agreement”，然后选择对应的版本，下载即可。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838226231899.png" alt=""></p>
+<p><strong>注:</strong> 如果您无法确定您的windows版本，可以右键点击“计算机属性”，即可查看系统信息：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838246860282.png" alt=""></p>
+<h3 id="菜鸟雷区">菜鸟雷区：</h3>
+<p>1.32位操作系统只能安装32位JDK； 
+2.64位操作系统可安装32位JDK，也可以安装64位JDK。</p>
+<h2 id="安装jdk">·安装JDK</h2>
+<p>安装过程和普通软件安装没什么区别，过程中会让你选择JDK和JRE安装目录，采用默认即可。也就是说，通通点击“下一步”就能完成安装。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838268176148.png" alt=""></p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838288350322.png" alt=""></p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494838308687920.png" alt=""></p>
+<p>出现如上画面代表，JDK安装成功。</p>
+<p>我们再进入JDK的安装目录C:\Program Files\Java\jdk1.8.0_131，可以看到如下的结构：</p>
+<p>其中：</p>
+<p>~bin目录是存储一些可执行的二进制文件；</p>
+<p>~lib存储相关jar包；</p>
+<p>~src.zip是JDK相关JAVA类的源代码。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170606/1496738387902099.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.6 JVM、JRE和JDK</title>
+			<link>https://HarryQing.github.io/posts/1.3.6-jvmjre%E5%92%8Cjdk/</link>
+			<pubDate>Sat, 02 Jan 2021 18:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.6-jvmjre%E5%92%8Cjdk/</guid>
+			<description>JVM(Java Virtual Machine)就是一个虚拟的用于执行bytecode字节码的”虚拟计算机”。他也定义了指令集、寄存器集、结构栈、垃圾收集堆、内存区域。JVM负责将Java字节码解释运行，边解释边运行，这样，速度就会受到一定的影响。
+不同的操作系统有不同的虚拟机。Java 虚拟机机制屏蔽了底层运行平台的差别，实现了“一次编译，随处运行”。 Java虚拟机是实现跨平台的核心机制。如图1-6所示。
+Java Runtime Environment (JRE) 包含：Java虚拟机、库函数、运行Java应用程序所必须的文件。
+Java Development Kit (JDK)包含：包含JRE，以及增加编译器和调试器等用于程序开发的文件。
+JDK、JRE和JVM的关系如图所示。
+老鸟建议： ·如果只是要运行Java程序，只需要JRE就可以。JRE通常非常小，其中包含了JVM。
+·如果要开发Java程序，就需要安装JDK。</description>
+			<content type="html"><![CDATA[<p>JVM(Java Virtual Machine)就是一个虚拟的用于执行bytecode字节码的”虚拟计算机”。他也定义了指令集、寄存器集、结构栈、垃圾收集堆、内存区域。JVM负责将Java字节码解释运行，边解释边运行，这样，速度就会受到一定的影响。</p>
+<p>不同的操作系统有不同的虚拟机。Java 虚拟机机制屏蔽了底层运行平台的差别，实现了“一次编译，随处运行”。 Java虚拟机是实现跨平台的核心机制。如图1-6所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494837984812122.png" alt=""></p>
+<p>Java Runtime Environment (JRE) 包含：Java虚拟机、库函数、运行Java应用程序所必须的文件。</p>
+<p>Java  Development Kit (JDK)包含：包含JRE，以及增加编译器和调试器等用于程序开发的文件。</p>
+<p>JDK、JRE和JVM的关系如图所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494837979897855.png" alt=""></p>
+<h3 id="老鸟建议">老鸟建议：</h3>
+<p>·如果只是要运行Java程序，只需要JRE就可以。JRE通常非常小，其中包含了JVM。</p>
+<p>·如果要开发Java程序，就需要安装JDK。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.5 Java应用程序的运行机制</title>
+			<link>https://HarryQing.github.io/posts/1.3.5-java%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/</link>
+			<pubDate>Sat, 02 Jan 2021 13:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.5-java%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/</guid>
+			<description>计算机高级语言的类型主要有编译型和解释型两种，而Java 语言是两种类型的结合。
+Java首先利用文本编辑器编写 Java源程序，源文件的后缀名为.java；再利用编译器（javac）将源程序编译成字节码文件，字节码文件的后缀名为.class； 最后利用虚拟机（解释器，java）解释执行。</description>
+			<content type="html"><![CDATA[<p>计算机高级语言的类型主要有编译型和解释型两种，而Java 语言是两种类型的结合。</p>
+<p>Java首先利用文本编辑器编写 Java源程序，源文件的后缀名为.java；再利用编译器（javac）将源程序编译成字节码文件，字节码文件的后缀名为.class； 最后利用虚拟机（解释器，java）解释执行。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494836063440655.png" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.4 Java的特性和优势</title>
+			<link>https://HarryQing.github.io/posts/1.3.4-java%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E4%BC%98%E5%8A%BF/</link>
+			<pubDate>Sat, 02 Jan 2021 09:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.4-java%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E4%BC%98%E5%8A%BF/</guid>
+			<description>·跨平台/可移植性 这是Java的核心优势。Java在设计时就很注重移植和跨平台性。比如：Java的int永远都是32位。不像C++可能是16，32，可能是根据编译器厂商规定的变化。这样的话程序的移植就会非常麻烦。
+·安全性 Java适合于网络/分布式环境，为了达到这个目标，在安全性方面投入了很大的精力，使Java可以很容易构建防病毒，防篡改的系统。
+·面向对象 面向对象是一种程序设计技术，非常适合大型软件的设计和开发。由于C++为了照顾大量C语言使用者而兼容了C，使得自身仅仅成为了带类的C语言，多少影响了其面向对象的彻底性！Java则是完全的面向对象语言。
+·简单性 Java就是C++语法的简化版，我们也可以将Java称之为“C++-”。跟我念“C加加减”，指的就是将C++的一些内容去掉；比如：头文件，指针运算，结构，联合，操作符重载，虚基类等等。同时，由于语法基于C语言，因此学习起来完全不费力。
+·高性能 Java最初发展阶段，总是被人诟病“性能低”；客观上，高级语言运行效率总是低于低级语言的，这个无法避免。Java语言本身发展中通过虚拟机的优化提升了几十倍运行效率。比如，通过JIT(JUST IN TIME)即时编译技术提高运行效率。 将一些“热点”字节码编译成本地机器码，并将结果缓存起来，在需要的时候重新调用。这样的话，使Java程序的执行效率大大提高，某些代码甚至接待C++的效率。
+因此，Java低性能的短腿，已经被完全解决了。业界发展上，我们也看到很多C++应用转到Java开发，很多C++程序员转型为Java程序员。
+·分布式 Java是为Internet的分布式环境设计的，因为它能够处理TCP/IP协议。事实上，通过URL访问一个网络资源和访问本地文件是一样简单的。Java还支持远程方法调用(RMI,Remote Method Invocation)，使程序能够通过网络调用方法。
+·多线程 多线程的使用可以带来更好的交互响应和实时行为。 Java多线程的简单性是Java成为主流服务器端开发语言的主要原因之一。
+·健壮性 Java是一种健壮的语言，吸收了C/C++ 语言的优点，但去掉了其影响程序健壮性的部分（如：指针、内存的申请与释放等）。Java程序不可能造成计算机崩溃。即使Java程序也可能有错误。如果出现某种出乎意料之事，程序也不会崩溃，而是把该异常抛出，再通过异常处理机制加以处理。</description>
+			<content type="html"><![CDATA[<h2 id="跨平台可移植性">·跨平台/可移植性</h2>
+<p>这是Java的核心优势。Java在设计时就很注重移植和跨平台性。比如：Java的int永远都是32位。不像C++可能是16，32，可能是根据编译器厂商规定的变化。这样的话程序的移植就会非常麻烦。</p>
+<h2 id="安全性">·安全性</h2>
+<p>Java适合于网络/分布式环境，为了达到这个目标，在安全性方面投入了很大的精力，使Java可以很容易构建防病毒，防篡改的系统。</p>
+<h2 id="面向对象">·面向对象</h2>
+<p>面向对象是一种程序设计技术，非常适合大型软件的设计和开发。由于C++为了照顾大量C语言使用者而兼容了C，使得自身仅仅成为了带类的C语言，多少影响了其面向对象的彻底性！Java则是完全的面向对象语言。</p>
+<h2 id="简单性">·简单性</h2>
+<p>Java就是C++语法的简化版，我们也可以将Java称之为“C++-”。跟我念“C加加减”，指的就是将C++的一些内容去掉；比如：头文件，指针运算，结构，联合，操作符重载，虚基类等等。同时，由于语法基于C语言，因此学习起来完全不费力。</p>
+<h2 id="高性能">·高性能</h2>
+<p>Java最初发展阶段，总是被人诟病“性能低”；客观上，高级语言运行效率总是低于低级语言的，这个无法避免。Java语言本身发展中通过虚拟机的优化提升了几十倍运行效率。比如，通过JIT(JUST IN TIME)即时编译技术提高运行效率。 将一些“热点”字节码编译成本地机器码，并将结果缓存起来，在需要的时候重新调用。这样的话，使Java程序的执行效率大大提高，某些代码甚至接待C++的效率。</p>
+<p>因此，Java低性能的短腿，已经被完全解决了。业界发展上，我们也看到很多C++应用转到Java开发，很多C++程序员转型为Java程序员。</p>
+<h2 id="分布式">·分布式</h2>
+<p>Java是为Internet的分布式环境设计的，因为它能够处理TCP/IP协议。事实上，通过URL访问一个网络资源和访问本地文件是一样简单的。Java还支持远程方法调用(RMI,Remote Method Invocation)，使程序能够通过网络调用方法。</p>
+<h2 id="多线程">·多线程</h2>
+<p>多线程的使用可以带来更好的交互响应和实时行为。 Java多线程的简单性是Java成为主流服务器端开发语言的主要原因之一。</p>
+<h2 id="健壮性">·健壮性</h2>
+<p>Java是一种健壮的语言，吸收了C/C++ 语言的优点，但去掉了其影响程序健壮性的部分（如：指针、内存的申请与释放等）。Java程序不可能造成计算机崩溃。即使Java程序也可能有错误。如果出现某种出乎意料之事，程序也不会崩溃，而是把该异常抛出，再通过异常处理机制加以处理。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.3 Java各版本的含义</title>
+			<link>https://HarryQing.github.io/posts/1.3.3-java%E5%90%84%E7%89%88%E6%9C%AC%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+			<pubDate>Sat, 02 Jan 2021 05:20:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.3-java%E5%90%84%E7%89%88%E6%9C%AC%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+			<description>JavaSE(Java Standard Edition)：标准版，定位在个人计算机上的应用。这个版本是Java平台的核心，它提供了非常丰富的API来开发一般个人计算机上的应用程序，包括用户界面接口AWT及Swing，网络功能与国际化、图像处理能力以及输入输出支持等。在上世纪90年代末互联网上大放异彩的Applet也属于这个版本。Applet后来为Flash取代，Flash即将被HTML5取代。
+JavaEE(Java Enterprise Edition)：企业版，定位在服务器端的应用。
+JavaEE是JavaSE的扩展，增加了用于服务器开发的类库。如：JDBC是让程序员能直接在Java内使用的SQL的语法来访问数据库内的数据;Servlet能够延伸服务器的功能，通过请求-响应的模式来处理客户端的请求;JSP是一种可以将Java程序代码内嵌在网页内的技术;
+JavaME(Java Micro Edition)：微型版，定位在消费性电子产品的应用上
+JavaME是JavaSE的内伸，包含J2SE的一部分核心类，也有自己的扩展类,增加了适合微小装置的类库：javax.microedition.io.* 等。该版本针对资源有限的电子消费产品的需求精简核心类库，并提供了模块化的架构让不同类型产品能够随时增加支持的能力。
+雷区： 很多人开始会误解为安卓开发就是JavaME，这两个是完全不同的内容。</description>
+			<content type="html"><![CDATA[<p>JavaSE(Java Standard Edition)：标准版，定位在个人计算机上的应用。这个版本是Java平台的核心，它提供了非常丰富的API来开发一般个人计算机上的应用程序，包括用户界面接口AWT及Swing，网络功能与国际化、图像处理能力以及输入输出支持等。在上世纪90年代末互联网上大放异彩的Applet也属于这个版本。Applet后来为Flash取代，Flash即将被HTML5取代。</p>
+<p>JavaEE(Java Enterprise Edition)：企业版，定位在服务器端的应用。</p>
+<p>JavaEE是JavaSE的扩展，增加了用于服务器开发的类库。如：JDBC是让程序员能直接在Java内使用的SQL的语法来访问数据库内的数据;Servlet能够延伸服务器的功能，通过请求-响应的模式来处理客户端的请求;JSP是一种可以将Java程序代码内嵌在网页内的技术;</p>
+<p>JavaME(Java Micro Edition)：微型版，定位在消费性电子产品的应用上</p>
+<p>JavaME是JavaSE的内伸，包含J2SE的一部分核心类，也有自己的扩展类,增加了适合微小装置的类库：javax.microedition.io.* 等。该版本针对资源有限的电子消费产品的需求精简核心类库，并提供了模块化的架构让不同类型产品能够随时增加支持的能力。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170606/1496714683708833.jpg" alt=""></p>
+<h3 id="雷区">雷区：</h3>
+<p>很多人开始会误解为安卓开发就是JavaME，这两个是完全不同的内容。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.2 Java的核心优势</title>
+			<link>https://HarryQing.github.io/posts/1.3.2-java%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BC%98%E5%8A%BF/</link>
+			<pubDate>Fri, 01 Jan 2021 21:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.2-java%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BC%98%E5%8A%BF/</guid>
+			<description>Java为消费类智能电子产品而设计，但智能家电产品并没有像最初想象的那样拥有大的发展。然而90年代，Internet却进入了爆发式发展阶段，一夜之间，大家都在忙着将自己的计算机连接到网络上。这个时侯，遇到了一个大的问题。人们发现连接到Internet的计算机各式各样，有IBM PC、苹果机、各种服务器等等，不仅硬件CPU不同，操作系统也不同，整个的网络环境非常复杂。这个时候，程序员们希望他们编写的程序能够运行在不同的机器，不同的环境中，这需要一种体系中立的语言(即跨平台)。Java的研发小组忽然发现他们用于小范围的语言也可以适应Internet这个大环境。
+跨平台是Java语言的核心优势，赶上最初互联网的发展，并随着互联网的发展而发展，建立了强大的生态体系，目前已经覆盖IT各行业的“第一大语言”，是计算机界的“英语”。
+虽然，目前也有很多跨平台的语言，但是已经失去先机，无法和Java强大的生态体系抗衡。Java仍将在未来几十年成为编程语言的主流语言。
+JAVA虚拟机是JAVA实现跨平台的核心。事实上，基于JAVA虚拟机(JVM)的编程语言还有很多种：
+基于JAVA生态建立的产品将会越来越多；基于JAVA虚拟机的编程语言也将会越来越多；生态系统的强大，是JAVA能长盛不衰的根本。 </description>
+			<content type="html"><![CDATA[<p>Java为消费类智能电子产品而设计，但智能家电产品并没有像最初想象的那样拥有大的发展。然而90年代，Internet却进入了爆发式发展阶段，一夜之间，大家都在忙着将自己的计算机连接到网络上。这个时侯，遇到了一个大的问题。人们发现连接到Internet的计算机各式各样，有IBM PC、苹果机、各种服务器等等，不仅硬件CPU不同，操作系统也不同，整个的网络环境非常复杂。这个时候，程序员们希望他们编写的程序能够运行在不同的机器，不同的环境中，这需要一种体系中立的语言(即跨平台)。Java的研发小组忽然发现他们用于小范围的语言也可以适应Internet这个大环境。</p>
+<p>跨平台是Java语言的核心优势，赶上最初互联网的发展，并随着互联网的发展而发展，建立了强大的生态体系，目前已经覆盖IT各行业的“第一大语言”，是计算机界的“英语”。</p>
+<p>虽然，目前也有很多跨平台的语言，但是已经失去先机，无法和Java强大的生态体系抗衡。Java仍将在未来几十年成为编程语言的主流语言。</p>
+<p>JAVA虚拟机是JAVA实现跨平台的核心。事实上，基于JAVA虚拟机(JVM)的编程语言还有很多种：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170606/1496713931611178.jpg" alt=""></p>
+<h3 id="基于java生态建立的产品将会越来越多基于java虚拟机的编程语言也将会越来越多生态系统的强大是java能长盛不衰的根本">基于JAVA生态建立的产品将会越来越多；基于JAVA虚拟机的编程语言也将会越来越多；生态系统的强大，是JAVA能长盛不衰的根本。</h3>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.3.1 Java发展简史</title>
+			<link>https://HarryQing.github.io/posts/1.3.1-java%E5%8F%91%E5%B1%95%E7%AE%80%E5%8F%B2/</link>
+			<pubDate>Fri, 01 Jan 2021 18:00:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.3.1-java%E5%8F%91%E5%B1%95%E7%AE%80%E5%8F%B2/</guid>
+			<description>1991年，James Gosling在SUN公司的工程师小组想要设计这样一种小型计算机语言。该语言主要用于像电视盒这样的消费类电子产品。另外，由于不同的厂商选择不同的CPU和操作系统，因此，要求该语言不能和特定的体系结构绑在一起，要求语言本身是中立的，也就是跨平台的。所以，将这个语言命名为“Green”，类似于绿色软件的意思。后来，改名为Oak，橡树的意思。改名后发现已经有一种语言叫这个名字了，再改名叫Java。Java语言发展到今天经历了一系列的过程：
+1991年，SUN公司的Green项目，Oak
+1995年，推出Java测试版
+1996年，JDK1.0
+1997年，JDK1.1
+1998年，JDK1.2，大大改进了早期版本缺陷，是一个革命性的版本，更名为Java2。
+2004年，J2SE 5.0 (1.5.0) Tiger老虎
+2006年，J2SE 6.0 (1.6.0) Mustang野马
+2011年，JavaSE7.0 Dolphin海豚
+2014年，JavaSE8.0</description>
+			<content type="html"><![CDATA[<p>1991年，James Gosling在SUN公司的工程师小组想要设计这样一种小型计算机语言。该语言主要用于像电视盒这样的消费类电子产品。另外，由于不同的厂商选择不同的CPU和操作系统，因此，要求该语言不能和特定的体系结构绑在一起，要求语言本身是中立的，也就是跨平台的。所以，将这个语言命名为“Green”，类似于绿色软件的意思。后来，改名为Oak，橡树的意思。改名后发现已经有一种语言叫这个名字了，再改名叫Java。Java语言发展到今天经历了一系列的过程：</p>
+<p>1991年，SUN公司的Green项目，Oak</p>
+<p>1995年，推出Java测试版</p>
+<p>1996年，JDK1.0</p>
+<p>1997年，JDK1.1</p>
+<p>1998年，JDK1.2，大大改进了早期版本缺陷，是一个革命性的版本，更名为Java2。</p>
+<p>2004年，J2SE 5.0 (1.5.0) Tiger老虎</p>
+<p>2006年，J2SE 6.0 (1.6.0) Mustang野马</p>
+<p>2011年，JavaSE7.0 Dolphin海豚</p>
+<p>2014年，JavaSE8.0</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.2 常见编程语言介绍</title>
+			<link>https://HarryQing.github.io/posts/1.2-%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D/</link>
+			<pubDate>Fri, 01 Jan 2021 13:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.2-%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D/</guid>
+			<description>C语言 C语言诞生于1972年，可以称之为现代高级语言的鼻祖，由著名的贝尔实验室发明。C语言是人们追求结构化、模块化、高效率的“语言之花”。在底层编程，比如嵌入式、病毒开发等应用，可以替代汇编语言来开发系统程序。在高层应用，也可以开发从操作系统(Unix/Linux/Windows都基于C语言开发)到各种应用软件。
+老鸟建议： 大学生朋友如果大学开这门课请一定认真学习，而不要觉得老套，那是经典；C语言在现代社会流行程度仍然排名前三。
+C++语言 作为C语言的扩展，C++是贝尔实验室于80年代推出的。C++是一种混合语言，既可以实现面向对象编程，也可以开发C语言面向过程风格的程序。
+C语言让程序员第一次可以通过结构化的理念编写出易于理解的复杂程序； 尽管C语言是一个伟大的语言，但是程序的代码量达到30000行以上时，程序员就不能很好的从总体上把握和控制这个程序。 因此，在80年代初期，很多软件项目都面临无法解决的问题而不能顺利进行。 1979年，贝尔实验室发明了C++。 C++最初的名字叫做“带类的C”，后来才改名叫C++。国内通用叫法：“C加加”,国际通用读法“C plus plus”。
+C++语言在科学计算、操作系统、网络通讯、系统开发、引擎开发中仍然被大量使用。
+Java语言 由美国SUN公司发明于1995年，是目前业界应用最广泛、使用人数最多的语言，连续多年排名世界第一，可以称之为“计算机语言界的英语”。
+Java广泛应用于企业级软件开发、安卓移动开发、大数据云计算等领域，几乎涉及IT所有行业。关于Java的发展历史和特性，将在后面专门介绍。
+PHP语言 PHP原始为Personal Home Page的缩写，已经正式更名为 &amp;ldquo;PHP: Hypertext Preprocessor&amp;rdquo;。PHP语言，一般用于WEB开发领域；大量的中小型网站以及某些大型网站使用PHP开发。
+Object-C和Swift语言 Object-C通常写作Objective-C或者Obj-C或OC，是根据C语言所衍生出来的语言，继承了C语言的特性，是扩充C的面向对象编程语言。OC主要用于苹果软件的开发。
+Swift，苹果于2014年WWDC（苹果开发者大会）发布的新开发语言，可与OC共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。
+JavaScript语言 JavaScript是一种脚本语言,已经被广泛用于Web应用开发；应用范围越来越大，重要性越来越高。目前，流行的H5开发的核心其实就是JavaScript语言。
+Python语言 Python发明于1989年，语法结构简单，易学易懂；Python具有丰富和强大的库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。Python广泛应用于：图形处理、科学计算、web编程、多媒体应用、引擎开发；尤其是在未来大热方向机器学习和人工智能上有非常大的潜力。
+C#语言 C#是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。C#在基于windows操作系统的应用开发这一领域在取代C++，占据主导地位。“成也萧何败也萧何”，C#的微软身份，也成为了发展的阻力，在其他IT领域应用较少。
+Fortran语言 世界上第一种高级语言， IBM公司在1954年提出的，主要用在需要复杂数学计算的科学和工程领域。现在仍然被广泛使用，尤其是工程领域。Fortran虽然适合编写科学计算方面的程序，但是不适于编写系统程序。
+Basic语言 虽然易学，但功能不够强大，应用到大程序的有效性令人怀疑。已经逐步退出历史舞台。
+COBOL语言 于1959年提出。主要用于大量精确处理数据的商业领域中，比如金融、银行。今天，仍然有超过一半的商业软件使用COBOL编写。有将近100万人使用COBOL编程。
+Pascal语言 Pascal的名称是为了纪念十七世纪法国著名哲学家和数学家Blaise Pascal而来的，它由瑞士Niklaus Wirth教授于六十年代末设计并创立的。Pascal语言语法严谨，层次分明，程序易写，可读性强，是第一个结构化编程语言。由于没有大厂商和政府的支持，只是限于大学教育这一块。</description>
+			<content type="html"><![CDATA[<h2 id="c语言">C语言</h2>
+<p>C语言诞生于1972年，可以称之为现代高级语言的鼻祖，由著名的贝尔实验室发明。C语言是人们追求结构化、模块化、高效率的“语言之花”。在底层编程，比如嵌入式、病毒开发等应用，可以替代汇编语言来开发系统程序。在高层应用，也可以开发从操作系统(Unix/Linux/Windows都基于C语言开发)到各种应用软件。</p>
+<h3 id="老鸟建议">老鸟建议：</h3>
+<p>大学生朋友如果大学开这门课请一定认真学习，而不要觉得老套，那是经典；C语言在现代社会流行程度仍然排名前三。</p>
+<h2 id="c语言-1">C++语言</h2>
+<p>作为C语言的扩展，C++是贝尔实验室于80年代推出的。C++是一种混合语言，既可以实现面向对象编程，也可以开发C语言面向过程风格的程序。</p>
+<p>C语言让程序员第一次可以通过结构化的理念编写出易于理解的复杂程序； 尽管C语言是一个伟大的语言，但是程序的代码量达到30000行以上时，程序员就不能很好的从总体上把握和控制这个程序。 因此，在80年代初期，很多软件项目都面临无法解决的问题而不能顺利进行。 1979年，贝尔实验室发明了C++。 C++最初的名字叫做“带类的C”，后来才改名叫C++。国内通用叫法：“C加加”,国际通用读法“C plus plus”。</p>
+<p>C++语言在科学计算、操作系统、网络通讯、系统开发、引擎开发中仍然被大量使用。</p>
+<h2 id="java语言">Java语言</h2>
+<p>由美国SUN公司发明于1995年，是目前业界应用最广泛、使用人数最多的语言，连续多年排名世界第一，可以称之为“计算机语言界的英语”。</p>
+<p>Java广泛应用于企业级软件开发、安卓移动开发、大数据云计算等领域，几乎涉及IT所有行业。关于Java的发展历史和特性，将在后面专门介绍。</p>
+<h2 id="php语言">PHP语言</h2>
+<p>PHP原始为Personal Home Page的缩写，已经正式更名为 &ldquo;PHP: Hypertext Preprocessor&rdquo;。PHP语言，一般用于WEB开发领域；大量的中小型网站以及某些大型网站使用PHP开发。</p>
+<h2 id="object-c和swift语言">Object-C和Swift语言</h2>
+<p>Object-C通常写作Objective-C或者Obj-C或OC，是根据C语言所衍生出来的语言，继承了C语言的特性，是扩充C的面向对象编程语言。OC主要用于苹果软件的开发。</p>
+<p>Swift，苹果于2014年WWDC（苹果开发者大会）发布的新开发语言，可与OC共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。</p>
+<h2 id="javascript语言">JavaScript语言</h2>
+<p>JavaScript是一种脚本语言,已经被广泛用于Web应用开发；应用范围越来越大，重要性越来越高。目前，流行的H5开发的核心其实就是JavaScript语言。</p>
+<h2 id="python语言">Python语言</h2>
+<p>Python发明于1989年，语法结构简单，易学易懂；Python具有丰富和强大的库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。Python广泛应用于：图形处理、科学计算、web编程、多媒体应用、引擎开发；尤其是在未来大热方向机器学习和人工智能上有非常大的潜力。</p>
+<h2 id="c语言-2">C#语言</h2>
+<p>C#是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。C#在基于windows操作系统的应用开发这一领域在取代C++，占据主导地位。“成也萧何败也萧何”，C#的微软身份，也成为了发展的阻力，在其他IT领域应用较少。</p>
+<h2 id="fortran语言">Fortran语言</h2>
+<p>世界上第一种高级语言， IBM公司在1954年提出的，主要用在需要复杂数学计算的科学和工程领域。现在仍然被广泛使用，尤其是工程领域。Fortran虽然适合编写科学计算方面的程序，但是不适于编写系统程序。</p>
+<h2 id="basic语言">Basic语言</h2>
+<p>虽然易学，但功能不够强大，应用到大程序的有效性令人怀疑。已经逐步退出历史舞台。</p>
+<h2 id="cobol语言">COBOL语言</h2>
+<p>于1959年提出。主要用于大量精确处理数据的商业领域中，比如金融、银行。今天，仍然有超过一半的商业软件使用COBOL编写。有将近100万人使用COBOL编程。</p>
+<h2 id="pascal语言">Pascal语言</h2>
+<p>Pascal的名称是为了纪念十七世纪法国著名哲学家和数学家Blaise Pascal而来的，它由瑞士Niklaus Wirth教授于六十年代末设计并创立的。Pascal语言语法严谨，层次分明，程序易写，可读性强，是第一个结构化编程语言。由于没有大厂商和政府的支持，只是限于大学教育这一块。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>1.1 计算机语言发展史以及未来方向</title>
+			<link>https://HarryQing.github.io/posts/1.1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2%E4%BB%A5%E5%8F%8A%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91/</link>
+			<pubDate>Fri, 01 Jan 2021 09:14:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/1.1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E5%8F%B2%E4%BB%A5%E5%8F%8A%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91/</guid>
+			<description>·计算机已经成为人大脑的延伸 计算机已经成为我们这个时代的核心设备，每时每刻都需要它。计算机也不再是大家以前印象中的台式机、服务器，已经演变成了我们身边随处可见的物体。比如：手机、平板电脑、笔记本，以及很多人没意识到，但实际上设备内部包含“计算机”的设备。比如：电视机、微波炉、汽车，甚至小孩玩的智能小机器人等。
+可以这么说，计算机已经成为了人类身体的延伸、大脑的延伸，成为不可或缺的一部分。未来，计算机将真的进入人体、进入大脑，真正成为人体的一部分。比如，在科幻电影《黑客帝国》中，主角被超级针头插在颈部后方，便能使他快速学习，改变大脑神经网络，几秒就成为功夫高手。
+·算法是计算机的灵魂，编程语言是塑造计算机灵魂的工具 计算机是如何工作的？对于普通人来说，这很神秘。让计算机具备“灵魂”，可以按照人的意志运行，甚至某天按照计算机自己的意志运行（如果这一天实现，科幻电影《终结者》中的场景也会成为人类社会的可能选项），其核心就是“算法”。 “算法就是计算机的灵魂”算法的实现又依赖于“计算机编程语言”。
+计算机编程语言的发展，是随着计算机本身硬件发展而发展的。硬件速度越快、体积越小、成本越低，应用到人类社会的场景就会越多，那么所需要的算法就会越复杂，也就要求计算机编程语言越高级。
+最初重达几十吨但一秒只能运算5000次的ENIAC(世界上第一台计算机)，只能做非常小的应用，比如：某些情况的弹道计算。现在任何一个人的手机运算能力都可以秒杀那个年代地球上所有计算机运算能力的总和。
+计算机编程语言的发展历经了从低级到高级发展。发展的核心思想就是“让人更容易编程”。越容易使用的语言，就有越多人使用；越多人使用，就有越多协作；越多协作，就可以创造越复杂的物体；现代社会，一个软件动辄几十人协作、几百人协作、甚至几千人协作也成为可能，这自然就为开发复杂软件提供了“人力基础”。这是一个人类普遍的社会现象，越容易使用的工具，通过使用数量，通过大量人的协作，彻底改变某个行业甚至人类社会。
+计算机语言经历了三代：第一代是机器语言，第二代是汇编语言，第三代是高级语言。 ·第一代语言：机器语言(相当于人类的原始阶段) 机器语言由数字组成所有指令。当让你使用数字编程，写几百个数字、甚至几千个数字，每天面对的是纯数字，我大胆预测：“程序员群体100%会有精神问题”。
+机器语言通常由数字串组成（最终被简化成01），对于人类来说，机器语言过于繁琐。使用机器语言，人类无法编出复杂的程序。如下为一段典型的机器码：
+ 1. 0000,0000,000000010000 代表 LOAD A, 162. 0000,0001,000000000001 代表 LOAD B, 13. 0001,0001,000000010000 代表 STORE B, 16 ·第二代语言：汇编语言（相当于人类的手工业阶段） 为了编程的方便，以及解决更加复杂的问题。程序员开始改进机器语言，使用英文缩写的助记符来表示基本的计算机操作。这些助记符构成了汇编语言的基础。如下是一些常见的汇编语言助记符(单词)比如：LOAD、MOVE之类，这样人更容易使用了。识别几百、几千个单词，感觉要比几百几千个数字，美妙多了。汇编语言相当于人类的手工业社会，需要技术极其娴熟的工匠，但是开发效率也非常低。
+汇编语言虽然能编写高效率的程序，但是学习和使用都不是易事，并且很难调试。另一个复杂的问题，汇编语言以及早期的计算机语言（Basic、Fortran等）没有考虑结构化设计原则，而是使用goto语句来作为程序流程控制的主要方法。这样做的后果是：一大堆混乱的调转语句使得程序几乎不可能被读懂。对于那个时代的程序员，能读懂上个月自己写的代码都成为一种挑战。
+汇编语言仍然应用于工业电子编程领域、软件的加密解密、计算机病毒分析等。
+·第三代：高级语言（相当于人类的工业阶段） 对于简单的任务，汇编语言可以胜任。但是随着计算机的发展，渗透到了工作生活的更多的方面，一些复杂的任务出现了，汇编语言就显得力不从心（应该说是程序员使用汇编语言解决复杂问题出现了瓶颈）。于是，出现了高级语言。像我们熟知的C、C++、Java等等都是高级语言。
+高级语言允许程序员使用接近日常英语的指令来编写程序。例如，实现一个简单的任务：A+B=C , 使用机器语言、汇编语言和高级语言的的实现如下图。
+从上面这个简单的加法计算，可以看出越到高级语言，越接近人的思维，人使用起来就越方便。
+高级语言的出现，尤其是面向对象语言的出现，相当于人类的工业社会，高级语言极其易用，编程门槛和难度大大降低，大量的人员进入软件开发行业，为软件爆发性的增长提供了充足的人力资源。目前以及可预见的将来，计算机语言仍然处于“第三代高级语言”阶段。
+·为什么担心软件开发人才饱和是多余的？ 很多未进入或刚进入软件行业的朋友，特别担心一个问题“这么多人学，会不会饱和？”。这其实是杞人忧天，越多人编程，才能为软件行业提供巨量的人力资源，才能实现我们以前都不敢想的应用开发。要以发展的眼光看问题，而不是静态的眼光。
+越多人编程，越多应用需要做，越多应用需要做，更需要越多人编程。这就像一个农夫刚刚进入工业社会，担心服装工厂工人招满了怎么办? 他没有想到工业发展后，钢铁厂也需要工人、汽车厂也需要工人。年轻朋友请记住“软件行业发展永无止境，将会整合人类现有所有行业，也会创造很多新的行业”。
+·未来30年必将是软件人才的世界 未来30年的世界必将是软件人才的世界；除了普通软件的应用，大批的人工智能应用也将出现；未来自动驾驶、自动翻译、机器人保姆甚至机器人女友都会进入我们的生活，甚至计算机编程和基因工程结合，长生不老都能实现；有兴趣的童鞋，推荐大家看《未来简史》这本书，把握一下未来的脉搏。
+请发挥我们年轻人的想象力，尽情的在IT的世界中挥洒吧！ </description>
+			<content type="html"><![CDATA[<h2 id="计算机已经成为人大脑的延伸">·计算机已经成为人大脑的延伸</h2>
+<p>计算机已经成为我们这个时代的核心设备，每时每刻都需要它。计算机也不再是大家以前印象中的台式机、服务器，已经演变成了我们身边随处可见的物体。比如：手机、平板电脑、笔记本，以及很多人没意识到，但实际上设备内部包含“计算机”的设备。比如：电视机、微波炉、汽车，甚至小孩玩的智能小机器人等。</p>
+<p>可以这么说，计算机已经成为了人类身体的延伸、大脑的延伸，成为不可或缺的一部分。未来，计算机将真的进入人体、进入大脑，真正成为人体的一部分。比如，在科幻电影《黑客帝国》中，主角被超级针头插在颈部后方，便能使他快速学习，改变大脑神经网络，几秒就成为功夫高手。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494834467868650.png" alt=""></p>
+<h2 id="算法是计算机的灵魂编程语言是塑造计算机灵魂的工具">·算法是计算机的灵魂，编程语言是塑造计算机灵魂的工具</h2>
+<p>计算机是如何工作的？对于普通人来说，这很神秘。让计算机具备“灵魂”，可以按照人的意志运行，甚至某天按照计算机自己的意志运行（如果这一天实现，科幻电影《终结者》中的场景也会成为人类社会的可能选项），其核心就是“算法”。 “算法就是计算机的灵魂”算法的实现又依赖于“计算机编程语言”。</p>
+<p>计算机编程语言的发展，是随着计算机本身硬件发展而发展的。硬件速度越快、体积越小、成本越低，应用到人类社会的场景就会越多，那么所需要的算法就会越复杂，也就要求计算机编程语言越高级。</p>
+<p>最初重达几十吨但一秒只能运算5000次的ENIAC(世界上第一台计算机)，只能做非常小的应用，比如：某些情况的弹道计算。现在任何一个人的手机运算能力都可以秒杀那个年代地球上所有计算机运算能力的总和。</p>
+<p>计算机编程语言的发展历经了从低级到高级发展。发展的核心思想就是“让人更容易编程”。越容易使用的语言，就有越多人使用；越多人使用，就有越多协作；越多协作，就可以创造越复杂的物体；现代社会，一个软件动辄几十人协作、几百人协作、甚至几千人协作也成为可能，这自然就为开发复杂软件提供了“人力基础”。这是一个人类普遍的社会现象，越容易使用的工具，通过使用数量，通过大量人的协作，彻底改变某个行业甚至人类社会。</p>
+<h3 id="计算机语言经历了三代第一代是机器语言第二代是汇编语言第三代是高级语言">计算机语言经历了三代：第一代是机器语言，第二代是汇编语言，第三代是高级语言。</h3>
+<h3 id="第一代语言机器语言相当于人类的原始阶段">·第一代语言：机器语言(相当于人类的原始阶段)</h3>
+<p>机器语言由数字组成所有指令。当让你使用数字编程，写几百个数字、甚至几千个数字，每天面对的是纯数字，我大胆预测：“程序员群体100%会有精神问题”。</p>
+<p>机器语言通常由数字串组成（最终被简化成01），对于人类来说，机器语言过于繁琐。使用机器语言，人类无法编出复杂的程序。如下为一段典型的机器码：</p>
+<pre><code>  1. 0000,0000,000000010000 代表 LOAD A, 16
+  2. 0000,0001,000000000001 代表 LOAD B, 1
+  3. 0001,0001,000000010000 代表 STORE B, 16
+</code></pre>
+<h3 id="第二代语言汇编语言相当于人类的手工业阶段">·第二代语言：汇编语言（相当于人类的手工业阶段）</h3>
+<p>为了编程的方便，以及解决更加复杂的问题。程序员开始改进机器语言，使用英文缩写的助记符来表示基本的计算机操作。这些助记符构成了汇编语言的基础。如下是一些常见的汇编语言助记符(单词)比如：LOAD、MOVE之类，这样人更容易使用了。识别几百、几千个单词，感觉要比几百几千个数字，美妙多了。汇编语言相当于人类的手工业社会，需要技术极其娴熟的工匠，但是开发效率也非常低。</p>
+<p>汇编语言虽然能编写高效率的程序，但是学习和使用都不是易事，并且很难调试。另一个复杂的问题，汇编语言以及早期的计算机语言（Basic、Fortran等）没有考虑结构化设计原则，而是使用goto语句来作为程序流程控制的主要方法。这样做的后果是：一大堆混乱的调转语句使得程序几乎不可能被读懂。对于那个时代的程序员，能读懂上个月自己写的代码都成为一种挑战。</p>
+<p>汇编语言仍然应用于工业电子编程领域、软件的加密解密、计算机病毒分析等。</p>
+<h3 id="第三代高级语言相当于人类的工业阶段">·第三代：高级语言（相当于人类的工业阶段）</h3>
+<p>对于简单的任务，汇编语言可以胜任。但是随着计算机的发展，渗透到了工作生活的更多的方面，一些复杂的任务出现了，汇编语言就显得力不从心（应该说是程序员使用汇编语言解决复杂问题出现了瓶颈）。于是，出现了高级语言。像我们熟知的C、C++、Java等等都是高级语言。</p>
+<p>高级语言允许程序员使用接近日常英语的指令来编写程序。例如，实现一个简单的任务：A+B=C  , 使用机器语言、汇编语言和高级语言的的实现如下图。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494834483891550.png" alt=""></p>
+<p>从上面这个简单的加法计算，可以看出越到高级语言，越接近人的思维，人使用起来就越方便。</p>
+<p>高级语言的出现，尤其是面向对象语言的出现，相当于人类的工业社会，高级语言极其易用，编程门槛和难度大大降低，大量的人员进入软件开发行业，为软件爆发性的增长提供了充足的人力资源。目前以及可预见的将来，计算机语言仍然处于“第三代高级语言”阶段。</p>
+<h2 id="为什么担心软件开发人才饱和是多余的">·为什么担心软件开发人才饱和是多余的？</h2>
+<p>很多未进入或刚进入软件行业的朋友，特别担心一个问题“这么多人学，会不会饱和？”。这其实是杞人忧天，越多人编程，才能为软件行业提供巨量的人力资源，才能实现我们以前都不敢想的应用开发。要以发展的眼光看问题，而不是静态的眼光。</p>
+<p>越多人编程，越多应用需要做，越多应用需要做，更需要越多人编程。这就像一个农夫刚刚进入工业社会，担心服装工厂工人招满了怎么办? 他没有想到工业发展后，钢铁厂也需要工人、汽车厂也需要工人。年轻朋友请记住“软件行业发展永无止境，将会整合人类现有所有行业，也会创造很多新的行业”。</p>
+<h2 id="未来30年必将是软件人才的世界">·未来30年必将是软件人才的世界</h2>
+<p>未来30年的世界必将是软件人才的世界；除了普通软件的应用，大批的人工智能应用也将出现；未来自动驾驶、自动翻译、机器人保姆甚至机器人女友都会进入我们的生活，甚至计算机编程和基因工程结合，长生不老都能实现；有兴趣的童鞋，推荐大家看《未来简史》这本书，把握一下未来的脉搏。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170515/1494834494868544.png" alt=""></p>
+<h3 id="请发挥我们年轻人的想象力尽情的在it的世界中挥洒吧">请发挥我们年轻人的想象力，尽情的在IT的世界中挥洒吧！</h3>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第一章 走进Java</title>
+			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%B5%B0%E8%BF%9Bjava/</link>
+			<pubDate>Fri, 01 Jan 2021 05:20:06 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%B5%B0%E8%BF%9Bjava/</guid>
+			<description>目录 1.1 计算机语言发展史以及未来方向 1.2 常见编程语言介绍 1.3.1 Java发展简史 1.3.2 Java的核心优势 1.3.3 Java各版本的含义 1.3.4 Java的特性和优势 1.3.5 Java应用程序的运行机制 1.3.6 JVM、JRE和JDK 1.4.1 JDK下载和安装 1.4.2 环境变量Path的配置 1.4.3 测试JDK安装成功 1.5.1 开发第一个Java程序 1.5.2 第一个程序常见错误 1.5.3 第一个Java程序的总结和提升 1.5.4 最常用DOS命令 1.6 常用Java开发工具 1.7 eclipse使用10分钟入门 1.7.1 下载和安装eclipse 1.7.2 在eclipse中创建Java项目 1.7.3 使用eclipse开发和运行Java程序 1.8 30分钟完成桌球小游戏项目 </description>
+			<content type="html"><![CDATA[<h1 id="目录">目录</h1>
+<h2 id="11-计算机语言发展史以及未来方向">1.1 计算机语言发展史以及未来方向</h2>
+<h2 id="12-常见编程语言介绍">1.2 常见编程语言介绍</h2>
+<h2 id="131-java发展简史">1.3.1 Java发展简史</h2>
+<h2 id="132-java的核心优势">1.3.2 Java的核心优势</h2>
+<h2 id="133-java各版本的含义">1.3.3 Java各版本的含义</h2>
+<h2 id="134-java的特性和优势">1.3.4 Java的特性和优势</h2>
+<h2 id="135-java应用程序的运行机制">1.3.5 Java应用程序的运行机制</h2>
+<h2 id="136-jvmjre和jdk">1.3.6 JVM、JRE和JDK</h2>
+<h2 id="141-jdk下载和安装">1.4.1 JDK下载和安装</h2>
+<h2 id="142-环境变量path的配置">1.4.2 环境变量Path的配置</h2>
+<h2 id="143-测试jdk安装成功">1.4.3 测试JDK安装成功</h2>
+<h2 id="151-开发第一个java程序">1.5.1 开发第一个Java程序</h2>
+<h2 id="152-第一个程序常见错误">1.5.2 第一个程序常见错误</h2>
+<h2 id="153-第一个java程序的总结和提升">1.5.3 第一个Java程序的总结和提升</h2>
+<h2 id="154-最常用dos命令">1.5.4 最常用DOS命令</h2>
+<h2 id="16-常用java开发工具">1.6 常用Java开发工具</h2>
+<h2 id="17-eclipse使用10分钟入门">1.7 eclipse使用10分钟入门</h2>
+<h2 id="171-下载和安装eclipse">1.7.1 下载和安装eclipse</h2>
+<h2 id="172-在eclipse中创建java项目">1.7.2 在eclipse中创建Java项目</h2>
+<h2 id="173-使用eclipse开发和运行java程序">1.7.3 使用eclipse开发和运行Java程序</h2>
+<h2 id="18-30分钟完成桌球小游戏项目">1.8 30分钟完成桌球小游戏项目</h2>
 ]]></content>
 		</item>
 		
