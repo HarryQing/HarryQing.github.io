@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>本地图片转成链接 on Mr.哈利-南山不寒</title>
+    <link>https://HarryQing.github.io/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%BD%AC%E6%88%90%E9%93%BE%E6%8E%A5/</link>
+    <description>Recent content in 本地图片转成链接 on Mr.哈利-南山不寒</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 13 Mar 2021 23:10:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%BD%AC%E6%88%90%E9%93%BE%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何将本地图片转成链接？</title>
+      <link>https://HarryQing.github.io/blog/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%BD%AC%E6%88%90%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Sat, 13 Mar 2021 23:10:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/blog/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%BD%AC%E6%88%90%E9%93%BE%E6%8E%A5/</guid>
+      <description>第一步 打开浏览器，在地址栏中输入链接：https://sm.ms/
+第二步 选择如下图中的 Select Image(s) 进行上传图片；
+第三步 上传完后，会显示图片，然后点击Upload选项即可；
+第四步 生成好的链接，会在Preview选项中有HTML、Markdown等各种；
+第五步 这里我们选择Image URL即可看到生成好的 URL 链接。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="4.1 面向过程和面向对象">
+<meta itemprop="description" content="面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。
+　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：
+　1. 发动车 2. 挂挡 3.踩油门 4. 走你
+　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。
+　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。
+　一、面向对象思想思考造车，发现车由如下对象组成：
+　1. 轮胎
+　2. 发动机
+　3. 车壳
+　4. 座椅
+　5. 挡风玻璃
+　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!
+　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。
+　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!
+面向对象和面向过程的总结 　1、都是解决问题的思维方式，都是代码组织的方式。
+　2、解决简单问题可以使用面向过程
+　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。
+面向对象思考方式 　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。
+建议 　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。
+　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。">
+<meta itemprop="datePublished" content="2021-02-20T16:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-02-20T16:20:00+08:00" />
+<meta itemprop="wordCount" content="41">
+
+
+
+<meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
+<meta property="og:title" content="4.1 面向过程和面向对象" />
+<meta property="og:description" content="面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。
+　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：
+　1. 发动车 2. 挂挡 3.踩油门 4. 走你
+　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。
+　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。
+　一、面向对象思想思考造车，发现车由如下对象组成：
+　1. 轮胎
+　2. 发动机
+　3. 车壳
+　4. 座椅
+　5. 挡风玻璃
+　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!
+　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。
+　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!
+面向对象和面向过程的总结 　1、都是解决问题的思维方式，都是代码组织的方式。
+　2、解决简单问题可以使用面向过程
+　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。
+面向对象思考方式 　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。
+建议 　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。
+　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/4.1-%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" />
+<meta property="article:published_time" content="2021-02-20T16:20:00+08:00" />
+<meta property="article:modified_time" content="2021-02-20T16:20:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="4.1 面向过程和面向对象"/>
+<meta name="twitter:description" content="面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。
+　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：
+　1. 发动车 2. 挂挡 3.踩油门 4. 走你
+　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。
+　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。
+　一、面向对象思想思考造车，发现车由如下对象组成：
+　1. 轮胎
+　2. 发动机
+　3. 车壳
+　4. 座椅
+　5. 挡风玻璃
+　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!
+　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。
+　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!
+面向对象和面向过程的总结 　1、都是解决问题的思维方式，都是代码组织的方式。
+　2、解决简单问题可以使用面向过程
+　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。
+面向对象思考方式 　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。
+建议 　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。
+　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>4.1 面向过程和面向对象</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">知识能量站</a>
+				<a href="https://HarryQing.github.io/blog/">天马行空</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">知识能量站</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">天马行空</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 20, 2021</span></div>
+				<h1>4.1 面向过程和面向对象</h1>
+			</header>
+			<div class="content">
+				<p>　　面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。</p>
+<p>　　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：</p>
+<p>　　1. 发动车 
+　　2. 挂挡 
+　　3.踩油门 
+　　4. 走你</p>
+<p>　　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。</p>
+<p>　　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。</p>
+<p>　　一、面向对象思想思考造车，发现车由如下对象组成：</p>
+<p>　　1. 轮胎</p>
+<p>　　2. 发动机</p>
+<p>　　3. 车壳</p>
+<p>　　4. 座椅</p>
+<p>　　5. 挡风玻璃</p>
+<p>　　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!</p>
+<p>　　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。</p>
+<p>　　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!</p>
+<h2 id="面向对象和面向过程的总结">面向对象和面向过程的总结<a href="#面向对象和面向过程的总结" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　1、都是解决问题的思维方式，都是代码组织的方式。</p>
+<p>　　2、解决简单问题可以使用面向过程</p>
+<p>　　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。</p>
+<h2 id="面向对象思考方式">面向对象思考方式<a href="#面向对象思考方式" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。</p>
+<h2 id="建议">建议<a href="#建议" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。</p>
+<p>　　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>41 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-02-20 16:20 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://HarryQing.github.io/posts/4.2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%9B%E5%8C%96%E5%8F%B2%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%92%8C%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86%E5%85%B1%E9%80%9A%E4%B9%8B%E5%A4%84/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>4.2 对象的进化史(数据管理和企业管理共通之处)</span>
+			</a>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>第四章 Java面对对象基础</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

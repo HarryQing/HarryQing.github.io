@@ -6,8 +6,956 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 17 Feb 2021 18:20:00 +0800</lastBuildDate>
+		<lastBuildDate>Mon, 01 Mar 2021 16:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第五章 Java面对对象进阶</title>
+			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%BA%94%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</link>
+			<pubDate>Mon, 01 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%BA%94%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</guid>
+			<description>敬请期待 别急喔小可爱！ </description>
+			<content type="html"><![CDATA[<h2 id="敬请期待-别急喔小可爱">敬请期待 别急喔小可爱！</h2>
+<p><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhUYGBgZHBoYHBgYGRgaGBgaGBoaGhgYGhocIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISHjEhISE0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ/MTQ0Pz80NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQIDAAEGBwj/xAA+EAABAwIEBAQEBgECBAcBAAABAAIRAwQSITFBBVFhcQYigZETMqHBFEJSsdHw4WJyFSOS8RczQ1OCosIH/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJBEAAwEAAwEAAgICAwAAAAAAAAECEQMSITFBURMiBHEUMmH/2gAMAwEAAhEDEQA/AKVolYVErzz0NMcohbIUUCJLRWFQc6EAJfEl9gZhb8zslyVR5iE348S6rmchokjsyurjlJHNyPWQWJzYeHa7xiwENIyLsvoUaPCVcaMB64gr7IhTTOZIWLqaHgq4d8xY3uZ/ZObLwKwZ1Hl3RuQSdIa46Z57CKtuHVX/ACMc7sF6rbcEt2fLSbluRJRrQBkAAOghS+T9Frh/ZwHCPCtwHYnBrByJz+i6ujwmBm+ewTMlbAWdPTWZS+Af/D2dStOs2ckY9hUCpxDAH2LeoVL7A7H3TJwVbyjqh6JqlMjULz+//wDMf3Xqj0i4p4fp1c2+R3MaHuFUZLM7l0vDgAtlMOI8HqUfmbLf1DMf4QELdPTD1FRWBbWgqAsKi5WFqceHvDFe7fgptgRJe6QwDvueilvAX0RLF6N/4TXP/vU/ZyxLsv2VjGBKjKor3bGfM4BJ7zxCwZMzK5VDfw6KpIekqutcNaJJAXH3PiF7smw1LK12958ziVc8Tf0zrlS+HY3XHqbNDJ6JNd+IHPyYMPVIJXU+CvCrr2pE4aYzc6M8oyC0/jmV6R3qniALDhNa5dLWl0/mjL3XZ8H8Gsow+qMb9YI8o/lemWHB2UKbabAMLRqdT1PVV39ARBI0UVyJL9FxGv8AZybqa2wJobMfq+ipqWR2MrH+eNzTofFX6B2hacrMBGqg8LUzzCsqDir3UXQDGRkztA1QFZxOk90AW4lOm0kq/hvDnPI8pjnoE2q8LwCW5lAaKqogIYhN6PDHvOYwjmVu54MWBxxeUadUC1CVyqLUxocPe8Exoq6Vi57iGg5aoHoscFU9q6C64Z8Nhe/M6AdSk9G1e8w1pcegQLQJzQciJHVIOK+HWvBNIBrtS3Y9uS9BteBRnUP/AMR9ymDOG0h+QeslY1/lTDz6afwOkfP9zauYS14LXcijeAcAr3b8FFkkQXOOTGA7uOy9tvOCW1Qeeix3cZp14e4dQoU8FFgYJkgak8ytY/yptefTKuCp9fw5Pw5//NKdPC+4cKr26NAhg+5XdWtgymIYwN7ABFgrC4JumzNeFcLFvGOaxIfp8rVa7nfMSVUpNYTkBKubZPJjA6exXT4jH1lCk+NkxZwC4P8A6bl0vBfAjnDHWdhH6Rr6odJDUUzkuFWDq1RrGjMn6br33wZaMpMNNgjCAJ5ncrmOF8Do22IsEuO51HZdD4Trw54O8FZVWm0xi/8ATo764wjLVIqtQkyUXf1Zd2QcZryOe3V5+EehwQpnfyaarGtWMYeSOtbTFqpmHTxGl2pWsCdbY8o9VRbcCc4y92Echqulp0Wt0CiTB6L0eGHM42cHJyKn4gVnDGBgZqIIz6qTOHMAw4Wx2CMLpGSqe7fdamWkmUgABEdlj2AKo3BBUyZQBpr9Z2WyA4QqajolD0qxBOSAwO+GI0Uadu1g8oiTJ6yt0606q8vBCAAbuza+MWgMwq6+FvlaAOyZOYll20Ddc3O664jbhx0ClaIW5laK807ity3SrlpxD17LRKpeqiur1DpasZ0VGsHCQVY9whIuG3EAt5FH1auS9SK7SmedcYwjEFiA/EjmtKxYeZ2HDqdGpjDAS476DsunvHtDQQACROgXP3tXNgG8JtxN8Bo6BWwSwnYNxuk6BG3NTZUWUNYMokrV+SGykUkQcTqruF1w14cN8ih6FTE0FapOg5aIGdPXzcVKjSlRtmlzWndMaVAtAORO4XnrhdW9OiuVKVhq3o4URTraiOy2HmNFkhdkwpXhy1Tp+km1s4W6jUO5w1nRAXHGmg4Rr2Vdieo0FQBQqVGjVKTdvcJDHeyEqcS1aWOJ2gEyl2Q+o0r3InJadcnDkVy1XiT8RDWOPZE2d++M2OGfJHYfUesci6LBEpKOJN00/uiYW1eRknomg9z8tFXRflorGOGFY5+UbIJJisCoub0BQXxIKvZXKmlpS8+C6+qNYcxE/v0WT5ZjVMLim1zfMJSqpUOONgJA5rkvjSr/AGdfHeo05qiQQicQAVFZ65alJ+G6bYPQqYXn0RV7diEnNSXu9lY92KeQXpcK/qji5v8AsWfiwtIX4beaxbGeiG0tHPezLytjNNb6nLwheAXsgsdkR9U4eBMqmBC6bhY2Fp/mZ6KFzVlDvr5QkMFsHxLSeyf8K4XjGJ2QnTn1XO29Ml4A1Jj3XpNhRDGNbyCGJsuo0A0ABQqMjNpW7moBvHUJVdXhbOcqdEk2GPuiEO++HVJH8X1hpnYkGPdFcFu6UkveC/qR7AKHRfXzRlTY6fNlOiKZbsZmGiTnKg94JBGaqq1ZUsMKb26dmBolNa7LvK0QNyNzOiNvn5QNUvZSgabpFLEX0meU/wB1WxTJcGgw0b81TUfGQ1lE29UQhIGwo2zIgtEcvupUcNMROQ57BC1Lj6II0nVTAMN3d/CsnA254+wGAVdb35foUG/gtIiDmfSZ7qfDbQUicb8XKBAA900yWkGvaQJJWmVtljqwcegWNbJmFQi9typ1GtcJgSNFGoxsaKDKgAUudHNNfAWowjPP1QF5c4GknXYJzWe0jmufv+GvccUZHTNc/wDx1206VzagG1uWCZKrrXxEhu6puLX4apeQuqZw56esn+JfzW1TKxULBeXljg8ajXqF0tvch7Q4HVJKtOQSq+G3Xw34D8rjl0KYDi5fsh5RNyMpQ9JmJwCQ9LeDUi+uwZmDJXpAaISLhHBm0iHl0ujbTNMb6vhGRSpk/QTidcN0Mrn7h1R3m0bPqnltQxnG/TYKy9Y1rZ2ErJvTSVhw/G7s02fNB58uw5rjrmvVcZD3ZZ5nX0RHjS8c6u0A5RI5STr7AKPGeJU2sY2g55yAJe1rSDAxAYSZE6Lp44WazHl5HuId+B/E7xXbRfMOygmRPMTp2Xp12yIOxXg/h2m591RAzONp9jJXv9YeQAnPJZc0qX4Vx02tYmutUJWrYQi7rIxuEp4jU2AnXOOY/vuskjUpqXJJ1K3RqHTPP6KNlYvfE5DQo+vSZSbt17KsE3hqqPL5jA35noEHX8SW1LyOqAHkJMd4XBeLPET6j8DHEMGRj8x/hKrbgtV7Q85A7/z0Ws8WmVcmeHrNr4ioPEMrCeso9ryRMtd2j/uvDri2LDGKY5JtwDxLUoOwucXMOoOceh1CK4mvgTaf09X/ABGDMjLpz9VZY35eXASOhSq1vmVGYmPyOx26GdFjbk0nZtidxm0/ceyzTwtrTp6LiRmq31AJBCDtL6dCD0nRTdhIknNUQQY/zZI6rcEtyhCtotwyhGVsLi06JoRXdvDhhcPdIOIUwzMZDTddHfVGHD5TI9Fz/GLjFqIjQJjTF3xeqxUT0WIKGFN8hCXtrII9uhWW1RGPZiCYFfBb0vaWPye3LPcbEc0zsLkUnguEiVy1y91Ko17SRnDhzHZdhwprKjmOIncZ5ZIYkzrhcAtBAInPNB/DL3xtqUWWSOS1bsieqxplSSeyBloh79hfScwa7TkjSVU7PTNR8ZZ414n4bUluJjg9ktIjVozDhzyXLhhcQ0ZnQAaz2X0RUs2u+doPcSgWcMosOJlJjTzDGg+8LaebqsMq4uz3TjPAvhh1M/GqjC6PK06idzyXa3V5tKU8Q40xriwE5GCYy7IF1+yJxdVnVOnrN54+q8DzWMzMrYqgnMJIL6T05hF0n4xlqEJCpYPmXbQyANFyPiu9cKT3DsnRGQlCX/Dm1WFhGRTl59JaPKWUyQXck5uuLNFuyixuF2fxKmNxLw4gxh0ZGmScV/C1WmXy0PYdCOR19ei5O/tHMdBBjYrpm02c1S0U16kmZnuiOGUsb4IyhUULVz8mgn0K6vgfh+o7ysY7P5nwYHYou0kES2wjwyx4YYkjQ6+n7roA15EOIPLmF0HDeFsosDTE8hp7q17WRouanrOlHIPtqzPOx+Y039CN094XeGqwOIGL8wGx3W7qkIyHoYSq2fgdib5QdeXfVOWTSOkYZ02Q14dFpjiCIdMg+6hXYS0uBkq0ZsoZnq4nuUn4o9vc9FZVfhcc0HfvluSoeAnxByPusQyxAy1lw4fmKZW9w79R9ylRa3mfREW1wBsfUoGS4rUfhMOOQ0MH6FF+Eb9xIbgaTtDY+gyW6jwWfKD3k/dD8NvCx4DWtbntiH/6R+APTQYAlY90DJDMeHMDp2BVDbglYV4ypQXTknMH3R7AAltmx055ymRgCDPqEkhtmsQ0VdemIJVjHg6BTrjJNIWnmHF7MsqEycLiT2JKScYrfDZiAmTAC6/xNbOfAad8wldlwF1Vzcfytzg7nkhL06pr+mv6IOEVaryIY6DtGS7qx4e4NBIgwnNvZNY0YWjIbBX+keyp5+DmdN/Ra61y6LKVKD02V9zUDJJkRmqRcAgRoVDDS94BGv8Ae26Aq0mEwQ09wP2RVKuIJzQlQ6nKDtGfqU8DS+k8DJrA3s0fTJWOq5Zk+8BBsdI1g+o/da/E9iOphAwl5kzP1VRuAAqy9pE/cQgLmq1ujs+QIj1EowWl1zdNicIy/vqufqXPndJ9ifujzWGZLQfSPqkNzWGMxAlWkS2NhxeS1jcpzmdxsE5sHVHtMe5XE1HaEHMZj7rruFXH/L11zMKkSwW+t3B06+qW3lSGgRmjb6oZOqS3N0Tly3VEkcZWKjF1WJ4MLezNTpWryRlH+7L/ACjC7Lyw0bndA1qxzAnqdz6pFDa3YxuTnyf0tH7k6KqvdspPDm0ZP6nOJ+kQl1tUzTC5pl7AQEAd3wm9+JSDw1oy2zz5K+3e06tbPZcv4UrvY1zAwuB5EkDrJy+q6T4YHmxRzjP7rKvpSGTG7zC3WuOQVLCHDJQrvAEDVSLAmld7RCGu7g+iX1LnMyUtveJgZSSdYGapLRpGX9cCZRVB8AYVyF+bl58jcLSZzzJ/sprw6tVaBjEHn/KpIt/MOso1wcsluuPKcJE+/uk3xZAAOZ3HuRmrDVeA0McDHzDU9PujDJlFzeAzSewvJ1OHyjlqqK1MPwtY/AW7Rl0BCrPEXAlz2gHcebLPIz/dVplNjnY2ZO/fdTgaSF++m/A4Zx80EArdW4GrQZOflzH/ANSqbi6qAxUpyNMbcj6g5JTxB8GMQG48pH1EifVPA0Y1aha7EDmdtPcHNSa4P2z5JRSuam5xj0ePUZwpN4gGHNhA5sMj/pd9iEND0JrV3sMRI6gfsl1esXOkCANNh7Iw34f8rmuOw0d1BY7X0lCPrDSCOmkf3kjA0jUrmOSW3JOIFWVmZyFCoJzTEWaxkntgwhhM6Z9lz1pUl0Lo7d/kOkRBTkTALu7BklJC7NbubqSY0UAVoiSeIragsQA6Y+RCpqUJPPtqrrWifzH+ETWuQ0EMzPPb/KksptbCPM8tY3mTJTOjdUm+VrcZ5v09AubuKj3mSST/AHQJha0ogvMbx+Y/wgAp99We/BiOH9Lcmj0C67hdYFgBIcRyMgeq5Z7HVBDPIN+vc7rouFWIYyPc7lRWYORtSrbD22RBYHCRqlb6J2TWxe0CNVimy2lglv6DhOSDsLVrZJzJ3P8AdE+468Npkxm44R66n2CSWz8ltJUr+uhDWAnoENeEBvurmvgf3okfGbvIhUEzrAhxYsJBPlnXlJTWhWBbiYcznrMic1wfFbmfIPVEcI4wabMJzwjL6n7p9SLxPEdoy4Hy1BMDIjQtOo+n0VFSyDs2v0gtcCdNp9P29Em/460hjiNZB6QftIKvN+3C17DhDsQjkQQXM9HE+hCloz0cUbp84HCSMi3cjYt/V265JTxaCSW7EEiCC3/ClTvRWIZIDx8jpgE/oJ2nY88t0O+sXkh/lePLiOU/6Xg79ffosGD0bj9TZ/1DJ49d/VGVAXCcnt0MiHjudR3zCCc3MjDhcMiNP+xVlq9wdMoAhX4e0jIxOzvsRl+yop1Ht8jxiA0DpkdnahPalIPaY8ruQ5pYQ5pg+yARFtIPzYc/0uifQ6FRdaujMEdFF8azHTRG0L0xDzI0kxI9UCYq+GWnbL+6KF/duAlpwzkQN0xvmjM4QRz3XPXNQTBDvUx9vuqlCZjM89h+/JWMcqWvJyyA2A0/vVWtWgi2VijhWIAZ1a5J6K+i0uyCFaye3NEU6wiG6fusyy5zAMm/N+o7dkRwzhz3OAfMH3Ky3ZuR2C6zgdrAxO1P0SqsQJaa/AtY0CPRWMvQ3JNH0wQg32IJWL1miw024BzGaJpvGyXv4Zu0wsp0ns1EqR+EfENwSWN2AJ9TAS+3fKhxWrLgSD6oe2rYR7ldEfDfr/VDC4qgBchxW71KcXNz5Tn/AGFz9xQL+yGwzrOiNoLjJ3W/wjh2TZln0UqdmfzSn2OSii3tMTGiNyfcD+E1o2P/ACyC2YOIZ8gAY6kEf9CnSoQ3+E0taeg5gj3EI0nDnxawQRIzlNKtP4gDo85Ef7i3VveMx0y5KL6YPl0P3CvtBJIOWhB3Dm7j6oAEDcbcJjGB5T+oD8h68vbkhDcRkRnz+xTe9YBD+esbO3P39VTcMDwXgeaPNG/JwUjAKV69urTHRE/imvER5oy69O6HBOhH8ql9IdiMwQgMB67hJCoxv/KTG4KYGnj1jFz/AFKpzAwS4QjAKfjvYMQE/wCnUHpCBvPND2tgHURoeXZD311jdltyWW9SMjodf5WszhDek2q9qrLIKtamBJYtysSF6MajthorLKAZKpDZRdnbucdPqoNMOn4HZYjjI00XQg4UHwumWMDYzRTjKxp6zRIuY+VLChmsOxRFJ6jR4ShSAVwhbLUCOV47Q3C58kruL+0xjILmrrhTgclrNeHTFLPRFXcSQwauIA7nJNn8NwtA5BWWvB34w86jTumDw+PM0Hqh0RzVuJHPOtTKsbRG6aVWH9KXXFwGzLSl2MMJBghRZVh7e4S6pxhgMZq2lfsJmdM/YSqE0XPcCZUqDxIM7pd+Kad1B9YaSnpODlhacTSdcs9nT5T9vVVMcB0I1H7hKrh5xSDrn7qy4e4gPk55O/3D+RBQAbeBuuxzHToeyDeQq6VWZad9OhQNS7AMJpC0MbVA7hDcS4g11IiQTsY35dEuua5ecpA/dDVGx5TuPqqleipgjUQxUsar2qyEEsMhTY5UsKuASZRKVi0sS1gO6NKd11nh/h35nAZaFIeH2mNwGISu7sLYMYGhZ0zVF0Qq3IjAtGksWUmV0wVaaQPdYxkaqREJD0qY8g5ogPlDOZiMqOKDqgMCyhajJzVuKR0WnaIEC4TyVb6aKxiFRVeOYQABXIzSy5oBwOSZVqYJ1QdzSBGqaY8OZv8AhrP4QD7XCCRuI9/8LoL94bB1Mf0JY95LYjVWmJoRuty3nqFB1MkyHGU3ex06ABVmgTrCek4UMqva1oMOyiT0OX0RNheOOJjxEiQQMpb/AIlbFs4iMslXTolrgYOR2VaS0D1roz5fdUXNPzTHzZ+6aV6EOOX7KLx5R0PJPQFTWgbICs4l0xonVV8DRJ6tSXFVJNGFikFjVY1islEmBXsasp0ijaNBJjBfhrEw+GsSHh0/AeHEHHquiF0WnMKZe1ggAQoVXB7ctVzU9ZvKGFtUDhIReBc7w6vgfhOhK6amhCpYRLMkPcDC2QinIeoUmJADgXDEMiNlU/MIh1WZAVQtwdSlhWmmGBCk1rjos+EAsLyN1SkTopqAhDPZO6vfUnVV4hsn1F2BalrlElDvteqPqVdkDcVICOqDswarw+d0LV4ZmCD0Rbq6ky4zRgaLK1gWiJ+57Id9uAMwn4cCFW5rY0TFrENNjcwFt9AHRx+iOuLHVwHYf4SmoHDLT91WC0tq0nwN8o3nJUOpkNMj91PzhuYxQf37rTLnWSOyaEAXIyORSJ7s9P3XT1KwOoSa4LZOQKuWTQJTKYW9JCU2CU3tmKxFlKkjKdNapsV7AkUawhYrMKxLwZ1N4ssdStrFyHQvhXc/O3uF1tDQdlpYqRFknoWusWJMlC3mraKxYhDZNyoqraxWQA1NVoLFiBA1x8yFuflWLEIYE/Qdgts+ZYsQNBf5SsWLE0DJu0SS81PYLFiok0PkKUv1W1iQFZSq6+Y91ixXJLNUE5s9FtYtBDBivasWJMr8m1ixYpGf/9k=" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.13.3 静态导入</title>
+			<link>https://HarryQing.github.io/posts/4.13.3-%E9%9D%99%E6%80%81%E5%AF%BC%E5%85%A5/</link>
+			<pubDate>Sun, 28 Feb 2021 20:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.13.3-%E9%9D%99%E6%80%81%E5%AF%BC%E5%85%A5/</guid>
+			<description>　静态导入(static import)是在JDK1.5新增加的功能，其作用是用于导入指定类的静态属性，这样我们可以直接使用静态属性。
+【示例4-16】 静态导入的使用　package cn.sxt;//以下两种静态导入的方式二选一即可import static java.lang.Math.*;//导入Math类的所有静态属性import static java.lang.Math.PI;//导入Math类的PI属性public class Test2{public static void main(String [] args){System.out.println(PI);System.out.println(random());}} 　执行结果如图4-15所示。 </description>
+			<content type="html"><![CDATA[<p>　　静态导入(static import)是在JDK1.5新增加的功能，其作用是用于导入指定类的静态属性，这样我们可以直接使用静态属性。</p>
+<p><strong>【示例4-16】</strong> 静态导入的使用　　</p>
+<pre><code>package cn.sxt;
+ //以下两种静态导入的方式二选一即可
+import static java.lang.Math.*;//导入Math类的所有静态属性
+import static java.lang.Math.PI;//导入Math类的PI属性
+
+public class Test2{
+    public static void main(String [] args){
+        System.out.println(PI);
+        System.out.println(random());
+    }
+}
+</code></pre>
+<p>　　执行结果如图4-15所示。
+<img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494928654561591.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.13.2 导入类import</title>
+			<link>https://HarryQing.github.io/posts/4.13.2-%E5%AF%BC%E5%85%A5%E7%B1%BBimport/</link>
+			<pubDate>Sun, 28 Feb 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.13.2-%E5%AF%BC%E5%85%A5%E7%B1%BBimport/</guid>
+			<description>　如果我们要使用其他包的类，需要使用import导入，从而可以在本类中直接通过类名来调用，否则就需要书写类的完整包名和类名。import后，便于编写代码，提高可维护性。
+注意要点： 　1. Java会默认导入java.lang包下所有的类，因此这些类我们可以直接使用。
+　2. 如果导入两个同名的类，只能用包名+类名来显示调用相关类：　java.util.Date date = new java.util.Date(); 【示例4-15】 导入同名类的处理　import java.sql.Date;import java.util.*;//导入该包下所有的类。会降低编译速度，但不会降低运行速度。public class Test{public static void main(String[] args) {//这里指的是java.sql.DateDate now; //java.util.Date因为和java.sql.Date类同名，需要完整路径java.util.Date now2 = new java.util.Date();System.out.println(now2); //java.util包的非同名类不需要完整路径Scanner input = new Scanner(System.in); }} </description>
+			<content type="html"><![CDATA[<p>　　如果我们要使用其他包的类，需要使用import导入，从而可以在本类中直接通过类名来调用，否则就需要书写类的完整包名和类名。import后，便于编写代码，提高可维护性。</p>
+<h2 id="注意要点">注意要点：</h2>
+<p>　　1. Java会默认导入java.lang包下所有的类，因此这些类我们可以直接使用。</p>
+<p>　　2. 如果导入两个同名的类，只能用包名+类名来显示调用相关类：　</p>
+<pre><code>java.util.Date date  = new  java.util.Date();
+</code></pre>
+<p><strong>【示例4-15】</strong> 导入同名类的处理　　</p>
+<pre><code>import java.sql.Date;
+import java.util.*;//导入该包下所有的类。会降低编译速度，但不会降低运行速度。
+
+public class Test{
+    public static void main(String[] args) {
+        //这里指的是java.sql.Date
+        Date now; 
+        //java.util.Date因为和java.sql.Date类同名，需要完整路径
+        java.util.Date  now2 = new java.util.Date();
+        System.out.println(now2);      
+        //java.util包的非同名类不需要完整路径
+        Scanner input = new Scanner(System.in);    
+    }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.13.1 JDK中的主要包</title>
+			<link>https://HarryQing.github.io/posts/4.13.1-jdk%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8C%85/</link>
+			<pubDate>Sun, 28 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.13.1-jdk%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8C%85/</guid>
+			<description></description>
+			<content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/03/14/T5rXjhMmia3gJ8u.png" alt="image.png"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.13 package</title>
+			<link>https://HarryQing.github.io/posts/4.13-package/</link>
+			<pubDate>Sat, 27 Feb 2021 23:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.13-package/</guid>
+			<description>我们通过package实现对类的管理，package的使用有两个要点：
+　1. 通常是类的第一句非注释性语句。
+　2. 包名：域名倒着写即可，再加上模块名，便于内部管理类。
+【示例4-13】 package的命名举例
+com.sun.test;com.oracle.test;cn.sxt.gao.test;cn.sxt.gao.view;cn.sxt.gao.view.model; 注意事项： 　1. 写项目时都要加包，不要使用默认包。
+　2. com.gao和com.gao.car，这两个包没有包含关系，是两个完全独立的包。只是逻辑上看起来后者是前者的一部分。
+【示例4-14】 package的使用
+package cn.sxt;public class Test {public static void main(String[] args) {System.out.println(&amp;quot;helloworld&amp;quot;);}} ·在eclipse项目中新建包 　在src目录上单击右键，选择new-&amp;gt;package
+图4-13 创建package
+　在package窗口上输入包名即可
+图4-14 指定包名称
+　接下来，我们就可以在包上单击右键，新建类啦!</description>
+			<content type="html"><![CDATA[<p>　　我们通过package实现对类的管理，package的使用有两个要点：</p>
+<p>　　1. 通常是类的第一句非注释性语句。</p>
+<p>　　2. 包名：域名倒着写即可，再加上模块名，便于内部管理类。</p>
+<p><strong>【示例4-13】</strong> package的命名举例</p>
+<pre><code>com.sun.test;
+com.oracle.test;
+cn.sxt.gao.test;
+cn.sxt.gao.view;
+cn.sxt.gao.view.model;
+</code></pre>
+<h2 id="注意事项">注意事项：</h2>
+<p>　　1. 写项目时都要加包，不要使用默认包。</p>
+<p>　　2. com.gao和com.gao.car，这两个包没有包含关系，是两个完全独立的包。只是逻辑上看起来后者是前者的一部分。</p>
+<p><strong>【示例4-14】</strong> package的使用</p>
+<pre><code>package cn.sxt;
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(&quot;helloworld&quot;);
+    }
+}
+</code></pre>
+<h3 id="在eclipse项目中新建包">·在eclipse项目中新建包</h3>
+<p>　　在src目录上单击右键，选择new-&gt;package</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494928098161998.png" alt="enter description here"></p>
+<p>图4-13 创建package</p>
+<p>　　在package窗口上输入包名即可</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494928109616215.png" alt="enter description here"></p>
+<p>图4-14 指定包名称</p>
+<p>　　接下来，我们就可以在包上单击右键，新建类啦!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.12 包</title>
+			<link>https://HarryQing.github.io/posts/4.12-%E5%8C%85/</link>
+			<pubDate>Sat, 27 Feb 2021 22:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.12-%E5%8C%85/</guid>
+			<description>包机制是Java中管理类的重要手段。 开发中，我们会遇到大量同名的类，通过包我们很容易对解决类重名的问题，也可以实现对类的有效管理。 包对于类，相当于文件夹对于文件的作用。</description>
+			<content type="html"><![CDATA[<p>　　包机制是Java中管理类的重要手段。 开发中，我们会遇到大量同名的类，通过包我们很容易对解决类重名的问题，也可以实现对类的有效管理。 包对于类，相当于文件夹对于文件的作用。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.11 参数传值机制</title>
+			<link>https://HarryQing.github.io/posts/4.11-%E5%8F%82%E6%95%B0%E4%BC%A0%E5%80%BC%E6%9C%BA%E5%88%B6/</link>
+			<pubDate>Sat, 27 Feb 2021 20:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.11-%E5%8F%82%E6%95%B0%E4%BC%A0%E5%80%BC%E6%9C%BA%E5%88%B6/</guid>
+			<description>Java中，方法中所有参数都是“值传递”，也就是“传递的是值的副本”。 也就是说，我们得到的是“原参数的复印件，而不是原件”。因此，复印件改变不会影响原件。
+· 基本数据类型参数的传值 　传递的是值的副本。 副本改变不会影响原件。
+· 引用类型参数的传值 　传递的是值的副本。但是引用类型指的是“对象的地址”。因此，副本和原参数都指向了同一个“地址”，改变“副本指向地址对象的值，也意味着原参数指向对象的值也发生了改变”。
+【示例4-12】 多个变量指向同一个对象
+/*** 测试参数传值机制* @author 王雪庆**/public class User4 {int id; //idString name; //账户名String pwd; //密码public User4(int id, String name) {this.id = id;this.name = name;}public void testParameterTransfer01(User4 u){u.name=&amp;quot;王雪庆&amp;quot;;}public void testParameterTransfer02(User4 u){u = new User4(200,&amp;quot;王永庆&amp;quot;);}public static void main(String[] args) {User4 u1 = new User4(100, &amp;quot;张雪&amp;quot;);u1.</description>
+			<content type="html"><![CDATA[<p>　　Java中，方法中所有参数都是“值传递”，也就是“传递的是值的副本”。 也就是说，我们得到的是“原参数的复印件，而不是原件”。因此，复印件改变不会影响原件。</p>
+<h3 id="-基本数据类型参数的传值">· 基本数据类型参数的传值</h3>
+<p>　　传递的是值的副本。 副本改变不会影响原件。</p>
+<h3 id="-引用类型参数的传值">· 引用类型参数的传值</h3>
+<p>　　传递的是值的副本。但是引用类型指的是“对象的地址”。因此，副本和原参数都指向了同一个“地址”，改变“副本指向地址对象的值，也意味着原参数指向对象的值也发生了改变”。</p>
+<p><strong>【示例4-12】</strong> 多个变量指向同一个对象</p>
+<pre><code>/**
+ * 测试参数传值机制
+ * @author 王雪庆
+ *
+ */
+public class User4 {
+    int id;        //id
+    String name;   //账户名
+    String pwd;   //密码
+
+    public User4(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public   void   testParameterTransfer01(User4  u){
+        u.name=&quot;王雪庆&quot;;
+    }
+
+    public   void   testParameterTransfer02(User4  u){
+        u  =  new  User4(200,&quot;王永庆&quot;);
+    }
+
+    public static void main(String[] args) {
+        User4   u1  =  new User4(100, &quot;张雪&quot;);
+
+        u1.testParameterTransfer01(u1); 
+        System.out.println(u1.name);
+
+        u1.testParameterTransfer02(u1);
+        System.out.println(u1.name);
+    }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.10 静态初始化块</title>
+			<link>https://HarryQing.github.io/posts/4.10-%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97/</link>
+			<pubDate>Sat, 27 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.10-%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97/</guid>
+			<description>　构造方法用于对象的初始化!静态初始化块，用于类的初始化操作!在静态初始化块中不能直接访问非static成员。
+注意事项： 　静态初始化块执行顺序(学完继承再看这里)：
+　1. 上溯到Object类，先执行Object的静态初始化块，再向下执行子类的静态初始化块，直到我们的类的静态初始化块为止。
+　2. 构造方法执行顺序和上面顺序一样!!
+【示例4-11】 static初始化块
+public class User3 {int id; //idString name; //账户名String pwd; //密码static String company; //公司名称static {System.out.println(&amp;quot;执行类的初始化工作&amp;quot;);company = &amp;quot;王雪庆&amp;quot;;printCompany();} public static void printCompany(){System.out.println(company);} public static void main(String[] args) {User3 u3 = new User3();}} </description>
+			<content type="html"><![CDATA[<p>　　构造方法用于对象的初始化!静态初始化块，用于类的初始化操作!在静态初始化块中不能直接访问非static成员。</p>
+<h2 id="注意事项">注意事项：</h2>
+<p>　　静态初始化块执行顺序(学完继承再看这里)：</p>
+<p>　　1. 上溯到Object类，先执行Object的静态初始化块，再向下执行子类的静态初始化块，直到我们的类的静态初始化块为止。</p>
+<p>　　2. 构造方法执行顺序和上面顺序一样!!</p>
+<p><strong>【示例4-11】</strong> static初始化块</p>
+<pre><code>public class User3 {
+    int id;        //id
+    String name;   //账户名
+    String pwd;   //密码
+    static String company; //公司名称
+    static {
+        System.out.println(&quot;执行类的初始化工作&quot;);
+        company = &quot;王雪庆&quot;;
+        printCompany();
+    }  
+    public static void printCompany(){
+        System.out.println(company);
+    }  
+    public static void main(String[] args) {
+        User3  u3 = new User3();
+    }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.9 static 关键字</title>
+			<link>https://HarryQing.github.io/posts/4.9-static-%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+			<pubDate>Fri, 26 Feb 2021 23:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.9-static-%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+			<description>在类中，用static声明的成员变量为静态成员变量，也称为类变量。 类变量的生命周期和类相同，在整个应用程序执行期间都有效。它有如下特点：
+　1. 为该类的公用变量，属于类，被该类的所有实例共享，在类被载入时被显式初始化。
+　2. 对于该类的所有对象来说，static成员变量只有一份。被该类的所有对象共享!!
+　3. 一般用“类名.类属性/方法”来调用。(也可以通过对象引用或类名(不需要实例化)访问静态成员。)
+　4. 在static方法中不可直接访问非static的成员。
+核心要点：  static修饰的成员变量和方法，从属于类。普通变量和方法从属于对象的。 【示例4-10】 static关键字的使用
+/*** 测试static关键字的用法* @author **/public class User2 {int id; // idString name; // 账户名String pwd; // 密码static String company = &amp;quot;北京尚学堂&amp;quot;; // 公司名称public User2(int id, String name) {this.id = id;this.name = name;}public void login() {printCompany();System.</description>
+			<content type="html"><![CDATA[<p>　　在类中，用static声明的成员变量为静态成员变量，也称为类变量。 类变量的生命周期和类相同，在整个应用程序执行期间都有效。它有如下特点：</p>
+<p>　　1. 为该类的公用变量，属于类，被该类的所有实例共享，在类被载入时被显式初始化。</p>
+<p>　　2. 对于该类的所有对象来说，static成员变量只有一份。被该类的所有对象共享!!</p>
+<p>　　3. 一般用“类名.类属性/方法”来调用。(也可以通过对象引用或类名(不需要实例化)访问静态成员。)</p>
+<p>　　4. 在static方法中不可直接访问非static的成员。</p>
+<h2 id="核心要点">核心要点：</h2>
+<pre><code>        static修饰的成员变量和方法，从属于类。
+
+        普通变量和方法从属于对象的。
+</code></pre>
+<p><strong>【示例4-10】</strong> static关键字的使用</p>
+<pre><code>/**
+ * 测试static关键字的用法
+ * @author 
+ *
+ */
+public class User2 {
+    int id; // id
+    String name; // 账户名
+    String pwd; // 密码
+
+    static String company = &quot;北京尚学堂&quot;; // 公司名称
+
+
+    public User2(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public void login() {
+        printCompany();
+        System.out.println(company); 
+        System.out.println(&quot;登录：&quot; + name);
+    }
+
+    public static void printCompany() {
+//         login();//调用非静态成员，编译就会报错
+        System.out.println(company);
+    }
+
+    public static void main(String[] args) {
+        User2 u = new User2(101, &quot;高小七&quot;);
+        User2.printCompany();
+        User2.company = &quot;北京阿里爷爷&quot;;
+        User2.printCompany();
+    }
+}
+</code></pre>
+<p>　　运行结果如图4-9所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494927327134687.png" alt="enter description here"></p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494927332527045.png" alt="enter description here"></p>
+<p>图4-10 示例4-10的内存分配图</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.8 this关键字</title>
+			<link>https://HarryQing.github.io/posts/4.8-this%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+			<pubDate>Fri, 26 Feb 2021 22:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.8-this%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+			<description>· 对象创建的过程和this的本质 　构造方法是创建Java对象的重要途径，通过new关键字调用构造器时，构造器也确实返回该类的对象，但这个对象并不是完全由构造器负责创建。创建一个对象分为如下四步：
+　1. 分配对象空间，并将对象成员变量初始化为0或空
+　2. 执行属性值的显示初始化
+　3. 执行构造方法
+　4. 返回对象的地址给相关的变量
+　this的本质就是“创建好的对象的地址”! 由于在构造方法调用前，对象已经创建。因此，在构造方法中也可以使用this代表“当前对象” 。
+this最常的用法： 　1. 在程序中产生二义性之处，应使用this来指明当前对象;普通方法中，this总是指向调用该方法的对象。构造方法中，this总是指向正要初始化的对象。
+　2. 使用this关键字调用重载的构造方法，避免相同的初始化代码。但只能在构造方法中用，并且必须位于构造方法的第一句。
+　3. this不能用于static方法中。
+【示例4-8】 this代表“当前对象”示例
+public class User {int id; //idString name; //账户名String pwd; //密码public User() {}public User(int id, String name) {System.out.println(&amp;quot;正在初始化已经创建好的对象：&amp;quot;+this);this.id = id; //不写this，无法区分局部变量id和成员变量idthis.name = name;}public void login(){System.out.println(this.name+&amp;quot;,要登录！&amp;quot;); //不写this效果一样} public static void main(String[] args) {User u3 = new User(101,&amp;quot;高小七&amp;quot;);System.</description>
+			<content type="html"><![CDATA[<h2 id="-对象创建的过程和this的本质">· 对象创建的过程和this的本质</h2>
+<p>　　构造方法是创建Java对象的重要途径，通过new关键字调用构造器时，构造器也确实返回该类的对象，但这个对象并不是完全由构造器负责创建。创建一个对象分为如下四步：</p>
+<p>　　1. 分配对象空间，并将对象成员变量初始化为0或空</p>
+<p>　　2. 执行属性值的显示初始化</p>
+<p>　　3. 执行构造方法</p>
+<p>　　4. 返回对象的地址给相关的变量</p>
+<p>　　this的本质就是“创建好的对象的地址”! 由于在构造方法调用前，对象已经创建。因此，在构造方法中也可以使用this代表“当前对象” 。</p>
+<h3 id="this最常的用法">this最常的用法：</h3>
+<p>　　1.  在程序中产生二义性之处，应使用this来指明当前对象;普通方法中，this总是指向调用该方法的对象。构造方法中，this总是指向正要初始化的对象。</p>
+<p>　　2. 使用this关键字调用重载的构造方法，避免相同的初始化代码。但只能在构造方法中用，并且必须位于构造方法的第一句。</p>
+<p>　　3. this不能用于static方法中。</p>
+<p><strong>【示例4-8】</strong> this代表“当前对象”示例</p>
+<pre><code>public class User {
+    int id;        //id
+    String name;   //账户名
+    String pwd;   //密码
+
+    public User() {
+    }
+    public User(int id, String name) {
+        System.out.println(&quot;正在初始化已经创建好的对象：&quot;+this);
+        this.id = id;   //不写this，无法区分局部变量id和成员变量id
+        this.name = name;
+    }
+    public void login(){
+        System.out.println(this.name+&quot;,要登录！&quot;);  //不写this效果一样
+    }  
+
+    public static void main(String[] args) {
+        User  u3 = new User(101,&quot;高小七&quot;);
+        System.out.println(&quot;打印高小七对象：&quot;+u3);
+        u3.login();
+    }
+}
+</code></pre>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494927000371640.png" alt="enter description here"></p>
+<p>图4-8 示例4-8运行结果</p>
+<p><strong>【示例4-9】</strong> this()调用重载构造方法</p>
+<pre><code>public class TestThis {
+    int a, b, c;
+
+    TestThis() {
+        System.out.println(&quot;正要初始化一个Hello对象&quot;);
+    }
+    TestThis(int a, int b) {
+        // TestThis(); //这样是无法调用构造方法的！
+        this(); // 调用无参的构造方法，并且必须位于第一行！
+        a = a;// 这里都是指的局部变量而不是成员变量
+// 这样就区分了成员变量和局部变量. 这种情况占了this使用情况大多数！
+        this.a = a;
+        this.b = b;
+    }
+    TestThis(int a, int b, int c) {
+        this(a, b); // 调用带参的构造方法，并且必须位于第一行！
+        this.c = c;
+    }
+
+    void sing() {
+    }
+    void eat() {
+        this.sing(); // 调用本类中的sing();
+        System.out.println(&quot;你妈妈喊你回家吃饭！&quot;);
+    }
+
+    public static void main(String[] args) {
+        TestThis hi = new TestThis(2, 3);
+        hi.eat();
+    }
+}
+</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.7.4 开发中容易造成内存泄露的操作</title>
+			<link>https://HarryQing.github.io/posts/4.7.4-%E5%BC%80%E5%8F%91%E4%B8%AD%E5%AE%B9%E6%98%93%E9%80%A0%E6%88%90%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E7%9A%84%E6%93%8D%E4%BD%9C/</link>
+			<pubDate>Fri, 26 Feb 2021 21:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.7.4-%E5%BC%80%E5%8F%91%E4%B8%AD%E5%AE%B9%E6%98%93%E9%80%A0%E6%88%90%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E7%9A%84%E6%93%8D%E4%BD%9C/</guid>
+			<description>建议： 　1. 在实际开发中，经常会造成系统的崩溃。如下这些操作我们应该注意这些使用场景。 请大家学完相关内容后，回头过来温习下面的内容。不要求此处掌握相关细节。
+　如下四种情况时最容易造成内存泄露的场景，请大家开发时一定注意：
+· 创建大量无用对象 　比如，我们在需要大量拼接字符串时，使用了String而不是StringBuilder。
+String str = &amp;quot;&amp;quot;;for (int i = 0; i &amp;lt; 10000; i++) { str += i; //相当于产生了10000个String对象} · 静态集合类的使用 　像HashMap、Vector、List等的使用最容易出现内存泄露，这些静态变量的生命周期和应用程序一致，所有的对象Object也不能被释放。
+· 各种连接对象(IO流对象、数据库连接对象、网络连接对象)未关闭 　IO流对象、数据库连接对象、网络连接对象等连接对象属于物理连接，和硬盘或者网络连接，不使用的时候一定要关闭。
+· 监听器的使用 　释放对象时，没有删除相应的监听器。
+要点： 　1. 程序员无权调用垃圾回收器。
+　2. 程序员可以调用System.gc()，该方法只是通知JVM，并不是运行垃圾回收器。尽量少用，会申请启动Full GC，成本高，影响系统性能。
+　3. finalize方法，是Java提供给程序员用来释放对象或资源的方法，但是尽量少用。</description>
+			<content type="html"><![CDATA[<h2 id="建议">建议：</h2>
+<p>　　1. 在实际开发中，经常会造成系统的崩溃。如下这些操作我们应该注意这些使用场景。 请大家学完相关内容后，回头过来温习下面的内容。不要求此处掌握相关细节。</p>
+<p>　　如下四种情况时最容易造成内存泄露的场景，请大家开发时一定注意：</p>
+<h3 id="-创建大量无用对象">· 创建大量无用对象</h3>
+<p>　　比如，我们在需要大量拼接字符串时，使用了String而不是StringBuilder。</p>
+<pre><code>String str = &quot;&quot;;
+for (int i = 0; i &lt; 10000; i++) {   
+    str += i;     //相当于产生了10000个String对象
+}
+</code></pre>
+<h3 id="-静态集合类的使用">· 静态集合类的使用</h3>
+<p>　　像HashMap、Vector、List等的使用最容易出现内存泄露，这些静态变量的生命周期和应用程序一致，所有的对象Object也不能被释放。</p>
+<h3 id="-各种连接对象io流对象数据库连接对象网络连接对象未关闭">· 各种连接对象(IO流对象、数据库连接对象、网络连接对象)未关闭</h3>
+<p>　　IO流对象、数据库连接对象、网络连接对象等连接对象属于物理连接，和硬盘或者网络连接，不使用的时候一定要关闭。</p>
+<h3 id="-监听器的使用">· 监听器的使用</h3>
+<p>　　释放对象时，没有删除相应的监听器。</p>
+<h2 id="要点">要点：</h2>
+<p>　　1. 程序员无权调用垃圾回收器。</p>
+<p>　　2. 程序员可以调用System.gc()，该方法只是通知JVM，并不是运行垃圾回收器。尽量少用，会申请启动Full GC，成本高，影响系统性能。</p>
+<p>　　3. finalize方法，是Java提供给程序员用来释放对象或资源的方法，但是尽量少用。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.7.3 JVM调优和Full GC</title>
+			<link>https://HarryQing.github.io/posts/4.7.3-jvm%E8%B0%83%E4%BC%98%E5%92%8Cfull-gc/</link>
+			<pubDate>Fri, 26 Feb 2021 20:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.7.3-jvm%E8%B0%83%E4%BC%98%E5%92%8Cfull-gc/</guid>
+			<description>在对JVM调优的过程中，很大一部分工作就是对于Full GC的调节。有如下原因可能导致Full GC：
+　1.年老代(Tenured)被写满
+　2.持久代(Perm)被写满
+　3.System.gc()被显式调用（程序建议GC启动，不是调用GC）
+　4.上一次GC之后Heap的各域分配策略动态变化</description>
+			<content type="html"><![CDATA[<p>　　在对JVM调优的过程中，很大一部分工作就是对于Full GC的调节。有如下原因可能导致Full GC：</p>
+<p>　　1.年老代(Tenured)被写满</p>
+<p>　　2.持久代(Perm)被写满</p>
+<p>　　3.System.gc()被显式调用（程序建议GC启动，不是调用GC）</p>
+<p>　　4.上一次GC之后Heap的各域分配策略动态变化</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.7.2 通用的分代垃圾回收机制</title>
+			<link>https://HarryQing.github.io/posts/4.7.2-%E9%80%9A%E7%94%A8%E7%9A%84%E5%88%86%E4%BB%A3%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</link>
+			<pubDate>Fri, 26 Feb 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.7.2-%E9%80%9A%E7%94%A8%E7%9A%84%E5%88%86%E4%BB%A3%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</guid>
+			<description>分代垃圾回收机制，是基于这样一个事实：不同的对象的生命周期是不一样的。因此，不同生命周期的对象可以采取不同的回收算法，以便提高回收效率。我们将对象分为三种状态：年轻代、年老代、持久代。JVM将堆内存划分为 Eden、Survivor 和 Tenured/Old 空间。
+　1. 年轻代
+　所有新生成的对象首先都是放在Eden区。 年轻代的目标就是尽可能快速的收集掉那些生命周期短的对象，对应的是Minor GC，每次 Minor GC 会清理年轻代的内存，算法采用效率较高的复制算法，频繁的操作，但是会浪费内存空间。当“年轻代”区域存放满对象后，就将对象存放到年老代区域。
+　2. 年老代
+　在年轻代中经历了N(默认15)次垃圾回收后仍然存活的对象，就会被放到年老代中。因此，可以认为年老代中存放的都是一些生命周期较长的对象。年老代对象越来越多，我们就需要启动Major GC和Full GC(全量回收)，来一次大扫除，全面清理年轻代区域和年老代区域。
+　3. 持久代
+　用于存放静态文件，如Java类、方法等。持久代对垃圾回收没有显著影响。
+　·Minor GC:
+　用于清理年轻代区域。Eden区满了就会触发一次Minor GC。清理无用对象，将有用对象复制到“Survivor1”、“Survivor2”区中(这两个区，大小空间也相同，同一时刻Survivor1和Survivor2只有一个在用，一个为空)
+　·Major GC：
+　用于清理老年代区域。
+　·Full GC：
+　用于清理年轻代、年老代区域。 成本较高，会对系统性能产生影响。
+垃圾回收过程： 　1、新创建的对象，绝大多数都会存储在Eden中，
+　2、当Eden满了（达到一定比例）不能创建新对象，则触发垃圾回收（GC），将无用对象清理掉，
+　然后剩余对象复制到某个Survivor中，如S1，同时清空Eden区
+　3、当Eden区再次满了，会将S1中的不能清空的对象存到另外一个Survivor中，如S2，
+　同时将Eden区中的不能清空的对象，也复制到S1中，保证Eden和S1，均被清空。
+　4、重复多次(默认15次)Survivor中没有被清理的对象，则会复制到老年代Old(Tenured)区中，
+　5、当Old区满了，则会触发一个一次完整地垃圾回收（FullGC），之前新生代的垃圾回收称为（minorGC）</description>
+			<content type="html"><![CDATA[<p>　　分代垃圾回收机制，是基于这样一个事实：不同的对象的生命周期是不一样的。因此，不同生命周期的对象可以采取不同的回收算法，以便提高回收效率。我们将对象分为三种状态：年轻代、年老代、持久代。JVM将堆内存划分为 Eden、Survivor 和 Tenured/Old 空间。</p>
+<p>　　1. 年轻代</p>
+<p>　　所有新生成的对象首先都是放在Eden区。 年轻代的目标就是尽可能快速的收集掉那些生命周期短的对象，对应的是Minor GC，每次 Minor GC 会清理年轻代的内存，算法采用效率较高的复制算法，频繁的操作，但是会浪费内存空间。当“年轻代”区域存放满对象后，就将对象存放到年老代区域。</p>
+<p>　　2. 年老代</p>
+<p>　　在年轻代中经历了N(默认15)次垃圾回收后仍然存活的对象，就会被放到年老代中。因此，可以认为年老代中存放的都是一些生命周期较长的对象。年老代对象越来越多，我们就需要启动Major GC和Full GC(全量回收)，来一次大扫除，全面清理年轻代区域和年老代区域。</p>
+<p>　　3. 持久代</p>
+<p>　　用于存放静态文件，如Java类、方法等。持久代对垃圾回收没有显著影响。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494926399617250.png" alt="enter description here"></p>
+<p>　　·Minor GC:</p>
+<p>　　用于清理年轻代区域。Eden区满了就会触发一次Minor GC。清理无用对象，将有用对象复制到“Survivor1”、“Survivor2”区中(这两个区，大小空间也相同，同一时刻Survivor1和Survivor2只有一个在用，一个为空)</p>
+<p>　　·Major GC：</p>
+<p>　　用于清理老年代区域。</p>
+<p>　　·Full GC：</p>
+<p>　　用于清理年轻代、年老代区域。 成本较高，会对系统性能产生影响。</p>
+<h2 id="垃圾回收过程">垃圾回收过程：</h2>
+<p>　　1、新创建的对象，绝大多数都会存储在Eden中，</p>
+<p>　　2、当Eden满了（达到一定比例）不能创建新对象，则触发垃圾回收（GC），将无用对象清理掉，</p>
+<p>　　　然后剩余对象复制到某个Survivor中，如S1，同时清空Eden区</p>
+<p>　　3、当Eden区再次满了，会将S1中的不能清空的对象存到另外一个Survivor中，如S2，</p>
+<p>　　同时将Eden区中的不能清空的对象，也复制到S1中，保证Eden和S1，均被清空。</p>
+<p>　　4、重复多次(默认15次)Survivor中没有被清理的对象，则会复制到老年代Old(Tenured)区中，</p>
+<p>　　5、当Old区满了，则会触发一个一次完整地垃圾回收（FullGC），之前新生代的垃圾回收称为（minorGC）</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.7.1 垃圾回收原理和算法</title>
+			<link>https://HarryQing.github.io/posts/4.7.1-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%8E%9F%E7%90%86%E5%92%8C%E7%AE%97%E6%B3%95/</link>
+			<pubDate>Fri, 26 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.7.1-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%8E%9F%E7%90%86%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
+			<description>·内存管理 　Java的内存管理很大程度指的就是对象的管理，其中包括对象空间的分配和释放。
+　对象空间的分配：使用new关键字创建对象即可
+　对象空间的释放：将对象赋值null即可。垃圾回收器将负责回收所有”不可达”对象的内存空间。
+·垃圾回收过程 　任何一种垃圾回收算法一般要做两件基本事情：
+　1. 发现无用的对象
+　2. 回收无用对象占用的内存空间。
+　垃圾回收机制保证可以将“无用的对象”进行回收。无用的对象指的就是没有任何变量引用该对象。Java的垃圾回收器通过相关算法发现无用对象，并进行清除和整理。
+·垃圾回收相关算法 　1. 引用计数法
+　堆中每个对象都有一个引用计数。被引用一次，计数加1. 被引用变量值变为null，则计数减1，直到计数为0，则表示变成无用对象。优点是算法简单，缺点是“循环引用的无用对象”无法别识别。
+【示例4-7】 循环引用示例　public class Student {String name;Student friend;public static void main(String[] args) {Student s1 = new Student();Student s2 = new Student();s1.friend = s2;s2.friend = s1; s1 = null;s2 = null;}} 　s1和s2互相引用对方，导致他们引用计数不为0，但是实际已经无用，但无法被识别。
+　2. 引用可达法(根搜索算法)</description>
+			<content type="html"><![CDATA[<h2 id="内存管理">·内存管理</h2>
+<p>　　Java的内存管理很大程度指的就是对象的管理，其中包括对象空间的分配和释放。</p>
+<p>　　对象空间的分配：使用new关键字创建对象即可</p>
+<p>　　对象空间的释放：将对象赋值null即可。垃圾回收器将负责回收所有”不可达”对象的内存空间。</p>
+<h2 id="垃圾回收过程">·垃圾回收过程</h2>
+<p>　　任何一种垃圾回收算法一般要做两件基本事情：</p>
+<p>　　1. 发现无用的对象</p>
+<p>　　2. 回收无用对象占用的内存空间。</p>
+<p>　　垃圾回收机制保证可以将“无用的对象”进行回收。无用的对象指的就是没有任何变量引用该对象。Java的垃圾回收器通过相关算法发现无用对象，并进行清除和整理。</p>
+<h2 id="垃圾回收相关算法">·垃圾回收相关算法</h2>
+<p>　　1. 引用计数法</p>
+<p>　　堆中每个对象都有一个引用计数。被引用一次，计数加1. 被引用变量值变为null，则计数减1，直到计数为0，则表示变成无用对象。优点是算法简单，缺点是“循环引用的无用对象”无法别识别。</p>
+<p><strong>【示例4-7】</strong> 循环引用示例　　</p>
+<pre><code>public class Student {
+    String name;
+    Student friend;
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student();
+
+        s1.friend = s2;
+        s2.friend = s1;        
+        s1 = null;
+        s2 = null;
+    }
+}
+</code></pre>
+<p>　　s1和s2互相引用对方，导致他们引用计数不为0，但是实际已经无用，但无法被识别。</p>
+<p>　　2. 引用可达法(根搜索算法)</p>
+<p>　　程序把所有的引用关系看作一张图，从一个节点GC ROOT开始，寻找对应的引用节点，找到这个节点以后，继续寻找这个节点的引用节点，当所有的引用节点寻找完毕之后，剩余的节点则被认为是没有被引用到的节点，即无用的节点。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.7 垃圾回收机制(Garbage Collection)</title>
+			<link>https://HarryQing.github.io/posts/4.7-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6garbage-collection/</link>
+			<pubDate>Thu, 25 Feb 2021 23:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.7-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6garbage-collection/</guid>
+			<description>Java引入了垃圾回收机制，令C++程序员最头疼的内存管理问题迎刃而解。Java程序员可以将更多的精力放到业务逻辑上而不是内存管理工作上，大大的提高了开发效率。</description>
+			<content type="html"><![CDATA[<p>　　Java引入了垃圾回收机制，令C++程序员最头疼的内存管理问题迎刃而解。Java程序员可以将更多的精力放到业务逻辑上而不是内存管理工作上，大大的提高了开发效率。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.6 构造方法的重载</title>
+			<link>https://HarryQing.github.io/posts/4.6-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD/</link>
+			<pubDate>Thu, 25 Feb 2021 22:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.6-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD/</guid>
+			<description>构造方法也是方法，只不过有特殊的作用而已。与普通方法一样，构造方法也可以重载。
+【示例4-6】 构造方法重载(创建不同用户对象)
+public class User {int id; // idString name; // 账户名String pwd; // 密码public User() {}public User(int id, String name) {super();this.id = id;this.name = name;}public User(int id, String name, String pwd) {this.id = id;this.name = name;this.pwd = pwd;}public static void main(String[] args) {User u1 = new User();User u2 = new User(101, &amp;quot;高小七&amp;quot;);User u3 = new User(100, &amp;quot;高淇&amp;quot;, &amp;quot;123456&amp;quot;); }} 雷区： 　如果方法构造中形参名与属性名相同时，需要使用this关键字区分属性与形参。如示例4-6所示：</description>
+			<content type="html"><![CDATA[<p>　　构造方法也是方法，只不过有特殊的作用而已。与普通方法一样，构造方法也可以重载。</p>
+<p><strong>【示例4-6】</strong> 构造方法重载(创建不同用户对象)</p>
+<pre><code>public class User {
+    int id; // id
+    String name; // 账户名
+    String pwd; // 密码
+    public User() {
+
+    }
+    public User(int id, String name) {
+        super();
+        this.id = id;
+        this.name = name;
+    }
+    public User(int id, String name, String pwd) {
+        this.id = id;
+        this.name = name;
+        this.pwd = pwd;
+    }
+    public static void main(String[] args) {
+        User u1 = new User();
+        User u2 = new User(101, &quot;高小七&quot;);
+        User u3 = new User(100, &quot;高淇&quot;, &quot;123456&quot;);     
+    }
+}
+</code></pre>
+<h2 id="雷区">雷区：</h2>
+<p>　　如果方法构造中形参名与属性名相同时，需要使用this关键字区分属性与形参。如示例4-6所示：</p>
+<p>　　this.id 表示属性id;id表示形参id</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.5 构造方法</title>
+			<link>https://HarryQing.github.io/posts/4.5-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/</link>
+			<pubDate>Thu, 25 Feb 2021 21:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.5-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/</guid>
+			<description>构造器也叫构造方法(constructor)，用于对象的初始化。构造器是一个创建对象时被自动调用的特殊方法，目的是对象的初始化。构造器的名称应与类的名称一致。Java通过new关键字来调用构造器，从而返回该类的实例，是一种特殊的方法。
+声明格式：　 [修饰符] 类名(形参列表){//n条语句} 要点： 　1. 通过new关键字调用!!
+　2. 构造器虽然有返回值，但是不能定义返回值类型(返回值的类型肯定是本类)，不能在构造器里使用return返回某个值。
+　3. 如果我们没有定义构造器，则编译器会自动定义一个无参的构造函数。如果已定义则编译器不会自动添加!
+　4. 构造器的方法名必须和类名一致!
+课堂练习： 　1. 定义一个“点”(Point)类用来表示二维空间中的点(有两个坐标)。要求如下：
+　(1) 可以生成具有特定坐标的点对象。
+　(2) 提供可以设置坐标的方法。
+　(3)提供可以计算该“点”距另外一点距离的方法。
+参考答案：　 class Point {double x, y;public Point(double _x, double _y) {x = _x;y = _y; }public double getDistance(Point p) {return Math.sqrt((x - p.x) * (x - p.x) + (y - p.</description>
+			<content type="html"><![CDATA[<p>　　构造器也叫构造方法(constructor)，用于对象的初始化。构造器是一个创建对象时被自动调用的特殊方法，目的是对象的初始化。构造器的名称应与类的名称一致。Java通过new关键字来调用构造器，从而返回该类的实例，是一种特殊的方法。</p>
+<h2 id="声明格式">声明格式：　</h2>
+<pre><code>[修饰符] 类名(形参列表){
+    //n条语句
+}
+</code></pre>
+<h2 id="要点">要点：</h2>
+<p>　　1. 通过new关键字调用!!</p>
+<p>　　2. 构造器虽然有返回值，但是不能定义返回值类型(返回值的类型肯定是本类)，不能在构造器里使用return返回某个值。</p>
+<p>　　3. 如果我们没有定义构造器，则编译器会自动定义一个无参的构造函数。如果已定义则编译器不会自动添加!</p>
+<p>　　4. 构造器的方法名必须和类名一致!</p>
+<h2 id="课堂练习">课堂练习：</h2>
+<p>　　1. 定义一个“点”(Point)类用来表示二维空间中的点(有两个坐标)。要求如下：</p>
+<p>　　(1) 可以生成具有特定坐标的点对象。</p>
+<p>　　(2) 提供可以设置坐标的方法。</p>
+<p>　　(3)提供可以计算该“点”距另外一点距离的方法。</p>
+<h3 id="参考答案">参考答案：　</h3>
+<pre><code>class Point {
+    double x, y;
+    public Point(double _x, double _y) {
+        x = _x;
+        y = _y;  
+    }
+    public double getDistance(Point p) {
+        return Math.sqrt((x - p.x) * (x - p.x) + (y - p.y) * (y - p.y));
+    }
+}
+public class TestConstructor {
+    public static void main(String[] args) {
+        Point p = new Point(3.0, 4.0);
+        Point origin = new Point(0.0, 0.0);
+        System.out.println(p.getDistance(origin));
+    }
+}
+</code></pre>
+<h2 id="作业">作业：</h2>
+<p>　　1. 很多零基础同学会在这个地方开始晕菜。大家都学过内存分析，将这个程序的执行过程的内存分析画出来。如果画不出，好好再温习一下内存分析那一节课 面向对象内存分析。　　</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.4 面向对象的内存分析</title>
+			<link>https://HarryQing.github.io/posts/4.4-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90/</link>
+			<pubDate>Thu, 25 Feb 2021 20:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.4-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90/</guid>
+			<description>为了让大家对于面向对象编程有更深入的了解，我们要对程序的执行过程中，内存到底发生了什么变化进行剖析，让大家做到“心中有数”，通过更加形象方式理解程序的执行方式。
+建议： 　1. 本节课是为了让初学者更深入了解程序底层执行情况，为了完整的体现内存分析流程，会有些新的名词，比如：线程、Class对象。大家暂时可以不求甚解的了解，后期学了这两个概念再回头来看我们这篇内存分析，肯定收获会更大。
+　2.学习本节，一定要结合视频学习!
+　Java虚拟机的内存可以分为三个区域：栈stack、堆heap、方法区method area。
+栈的特点如下： 　1. 栈描述的是方法执行的内存模型。每个方法被调用都会创建一个栈帧(存储局部变量、操作数、方法出口等)
+　2. JVM为每个线程创建一个栈，用于存放该线程执行方法的信息(实际参数、局部变量等)
+　3. 栈属于线程私有，不能实现线程间的共享!
+　4. 栈的存储特性是“先进后出，后进先出”
+　5. 栈是由系统自动分配，速度快!栈是一个连续的内存空间!
+堆的特点如下： 　1. 堆用于存储创建好的对象和数组(数组也是对象)
+　2. JVM只有一个堆，被所有线程共享
+　3. 堆是一个不连续的内存空间，分配灵活，速度慢!
+方法区(又叫静态区)特点如下： 　1. JVM只有一个方法区，被所有线程共享!
+　2. 方法区实际也是堆，只是用于存储类、常量相关的信息!
+　3. 用来存放程序中永远是不变或唯一的内容。(类信息【Class对象】、静态变量、字符串常量等)
+图4-4 示例4-3内存分配图</description>
+			<content type="html"><![CDATA[<p>　　为了让大家对于面向对象编程有更深入的了解，我们要对程序的执行过程中，内存到底发生了什么变化进行剖析，让大家做到“心中有数”，通过更加形象方式理解程序的执行方式。</p>
+<h2 id="建议">建议：</h2>
+<p>　　1. 本节课是为了让初学者更深入了解程序底层执行情况，为了完整的体现内存分析流程，会有些新的名词，比如：线程、Class对象。大家暂时可以不求甚解的了解，后期学了这两个概念再回头来看我们这篇内存分析，肯定收获会更大。</p>
+<p>　　2.学习本节，一定要结合视频学习!</p>
+<p>　　Java虚拟机的内存可以分为三个区域：栈stack、堆heap、方法区method area。</p>
+<h2 id="栈的特点如下">栈的特点如下：</h2>
+<p>　　1. 栈描述的是方法执行的内存模型。每个方法被调用都会创建一个栈帧(存储局部变量、操作数、方法出口等)</p>
+<p>　　2. JVM为每个线程创建一个栈，用于存放该线程执行方法的信息(实际参数、局部变量等)</p>
+<p>　　3. 栈属于线程私有，不能实现线程间的共享!</p>
+<p>　　4. 栈的存储特性是“先进后出，后进先出”</p>
+<p>　　5. 栈是由系统自动分配，速度快!栈是一个连续的内存空间!</p>
+<h2 id="堆的特点如下">堆的特点如下：</h2>
+<p>　　1. 堆用于存储创建好的对象和数组(数组也是对象)</p>
+<p>　　2. JVM只有一个堆，被所有线程共享</p>
+<p>　　3. 堆是一个不连续的内存空间，分配灵活，速度慢!</p>
+<h2 id="方法区又叫静态区特点如下">方法区(又叫静态区)特点如下：</h2>
+<p>　　1. JVM只有一个方法区，被所有线程共享!</p>
+<p>　　2. 方法区实际也是堆，只是用于存储类、常量相关的信息!</p>
+<p>　　3. 用来存放程序中永远是不变或唯一的内容。(类信息【Class对象】、静态变量、字符串常量等)</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494925174358420.png" alt="enter description here"></p>
+<p>图4-4 示例4-3内存分配图</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20171026/1509008324820095.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.3.4 一个典型类的定义和UML图</title>
+			<link>https://HarryQing.github.io/posts/4.3.4-%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8Cuml%E5%9B%BE/</link>
+			<pubDate>Thu, 25 Feb 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.3.4-%E4%B8%80%E4%B8%AA%E5%85%B8%E5%9E%8B%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8Cuml%E5%9B%BE/</guid>
+			<description>【示例4-3】 模拟学生使用电脑学习
+class Computer {String brand; //品牌}public class SxtStu {// fieldint id;String sname;int age;Computer comp;void study() {System.out.println(&amp;quot;我正在学习！使用我们的电脑，&amp;quot;+comp.brand);}SxtStu() {}public static void main(String[] args) {SxtStu stu1 = new SxtStu();stu1.sname = &amp;quot;张三&amp;quot;;Computer comp1 = new Computer();comp1.brand = &amp;quot;联想&amp;quot;;stu1.comp = comp1;stu1.study();}} 执行结果： 对应的UML图如下： </description>
+			<content type="html"><![CDATA[<p><strong>【示例4-3】</strong> 模拟学生使用电脑学习</p>
+<pre><code>class Computer {
+    String brand;  //品牌
+}
+public class SxtStu {
+    // field
+    int id;
+    String sname;
+    int age;
+    Computer comp;
+    void study() {
+        System.out.println(&quot;我正在学习！使用我们的电脑，&quot;+comp.brand);
+    }
+    SxtStu() {
+    }
+    public static void main(String[] args) {
+        SxtStu stu1 = new SxtStu();
+        stu1.sname = &quot;张三&quot;;
+        Computer comp1 = new Computer();
+         comp1.brand = &quot;联想&quot;;
+        stu1.comp = comp1;
+        stu1.study();
+    }
+}
+</code></pre>
+<h2 id="执行结果">执行结果：</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494924993319375.png" alt="enter description here">
+　　</p>
+<h2 id="对应的uml图如下">对应的UML图如下：</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494924998558667.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.3.3 方法</title>
+			<link>https://HarryQing.github.io/posts/4.3.3-%E6%96%B9%E6%B3%95/</link>
+			<pubDate>Thu, 25 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.3.3-%E6%96%B9%E6%B3%95/</guid>
+			<description>　方法用于定义该类或该类实例的行为特征和功能实现。方法是类和对象行为特征的抽象。方法很类似于面向过程中的函数。面向过程中，函数是最基本单位，整个程序由一个个函数调用组成。面向对象中，整个程序的基本单位是类，方法是从属于类和对象的。
+方法定义格式：　 [修饰符] 方法返回值类型 方法名(形参列表) {// n条语句} </description>
+			<content type="html"><![CDATA[<p>　　方法用于定义该类或该类实例的行为特征和功能实现。方法是类和对象行为特征的抽象。方法很类似于面向过程中的函数。面向过程中，函数是最基本单位，整个程序由一个个函数调用组成。面向对象中，整个程序的基本单位是类，方法是从属于类和对象的。</p>
+<h3 id="方法定义格式">方法定义格式：　</h3>
+<pre><code>[修饰符]  方法返回值类型  方法名(形参列表) {
+    // n条语句
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.3.2 属性(field，或者叫成员变量)</title>
+			<link>https://HarryQing.github.io/posts/4.3.2-%E5%B1%9E%E6%80%A7field%E6%88%96%E8%80%85%E5%8F%AB%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/</link>
+			<pubDate>Wed, 24 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.3.2-%E5%B1%9E%E6%80%A7field%E6%88%96%E8%80%85%E5%8F%AB%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/</guid>
+			<description>　属性用于定义该类或该类对象包含的数据或者说静态特征。属性作用范围是整个类体。
+　在定义成员变量时可以对其初始化，如果不对其初始化，Java使用默认的值对其初始化。
+属性定义格式： [修饰符] 属性类型 属性名 = [默认值] ; </description>
+			<content type="html"><![CDATA[<p>　　属性用于定义该类或该类对象包含的数据或者说静态特征。属性作用范围是整个类体。</p>
+<p>　　在定义成员变量时可以对其初始化，如果不对其初始化，Java使用默认的值对其初始化。</p>
+<p><img src="https://i.loli.net/2021/03/13/qT8vO16iMrJcZVb.png" alt="image.png"></p>
+<h3 id="属性定义格式">属性定义格式：</h3>
+<pre><code>[修饰符]  属性类型  属性名 = [默认值] ;</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.3.1 第一个类的定义</title>
+			<link>https://HarryQing.github.io/posts/4.3.1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89/</link>
+			<pubDate>Tue, 23 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.3.1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89/</guid>
+			<description>【示例4-1】 类的定义方式
+// 每一个源文件必须有且只有一个public class，并且类名和文件名保持一致！public class Car { }class Tyre { // 一个Java文件可以同时定义多个class}class Engine {}class Seat {} 　上面的类定义好后，没有任何的其他信息，就跟我们拿到一张张图纸，但是纸上没有任何信息，这是一个空类，没有任何实际意义。所以，我们需要定义类的具体信息。对于一个类来说，一般有三种常见的成员：属性field、方法method、构造器constructor。这三种成员都可以定义零个或多个。
+【示例4-2】 简单的学生类编写
+public class SxtStu {//属性（成员变量）int id;String sname;int age; //方法void study(){System.out.println(&amp;quot;我正在想着雪儿宝贝喔，加油，刚把爹！&amp;quot;);} //构造方法SxtStu(){}} </description>
+			<content type="html"><![CDATA[<p><strong>【示例4-1】</strong> 类的定义方式</p>
+<pre><code>// 每一个源文件必须有且只有一个public class，并且类名和文件名保持一致！
+public class Car { 
+}
+class Tyre { // 一个Java文件可以同时定义多个class
+}
+class Engine {
+}
+class Seat {
+}
+</code></pre>
+<p>　　上面的类定义好后，没有任何的其他信息，就跟我们拿到一张张图纸，但是纸上没有任何信息，这是一个空类，没有任何实际意义。所以，我们需要定义类的具体信息。对于一个类来说，一般有三种常见的成员：属性field、方法method、构造器constructor。这三种成员都可以定义零个或多个。</p>
+<p><strong>【示例4-2】</strong> 简单的学生类编写</p>
+<pre><code>public class SxtStu {
+    //属性（成员变量）
+    int id;
+    String sname;
+    int age;  
+    //方法
+    void study(){
+        System.out.println(&quot;我正在想着雪儿宝贝喔，加油，刚把爹！&quot;);
+    }  
+    //构造方法
+   SxtStu(){
+   }
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.3 对象和类的概念</title>
+			<link>https://HarryQing.github.io/posts/4.3-%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+			<pubDate>Mon, 22 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.3-%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+			<description>我们人认识世界，其实就是面向对象的(此对象可不是男女谈对象的彼对象呀)。比如现在让大家认识一下“天使”这个新事物，天使大家没见过吧，怎么样认识呢?最好的办法就是，给你们面前摆4个天使，带翅膀的美女，让大家看，看完以后，即使我不说，大家下一次是不是就都认识天使了。
+　但是，看完10个天使后，我们总要总结一下，什么样的东东才算天使?天使是无数的，总有没见过的!所以必须总结抽象，便于认识未知事物!总结的过程就是抽象的过程。小时候，我们学自然数时怎么定义的?像1，2，3，4…这样的数就叫做自然数。 通过抽象，我们发现天使有这样一下特征：
+　1. 带翅膀(带翅膀不一定是天使，还可能是鸟人)
+　2. 女孩(天使掉下来脸着地，也是天使!)
+　3. 善良
+　4. 头上有光环
+　那么通过这4个具体的天使，我们进行抽象，抽象出了天使的特征，我们也可以归纳一个天使类。 通过这个过程，类就是对象的抽象。
+　类可以看做是一个模版，或者图纸，系统根据类的定义来造出对象。我们要造一个汽车，怎么样造?类就是这个图纸，规定了汽车的详细信息，然后根据图纸将汽车造出来。
+　类： 我们叫做class。对象： 我们叫做Object,instance(实例)。以后我们说某个类的对象，某个类的实例。是一样的意思。
+总结 　1.对象是具体的事物;类是对对象的抽象;
+　2.类可以看成一类对象的模板，对象可以看成该类的一个具体实例。
+　3.类是用于描述同一类型的对象的一个抽象概念，类中定义了这一类对象所应具有的共同的属性、方法。</description>
+			<content type="html"><![CDATA[<p>　　我们人认识世界，其实就是面向对象的(此对象可不是男女谈对象的彼对象呀)。比如现在让大家认识一下“天使”这个新事物，天使大家没见过吧，怎么样认识呢?最好的办法就是，给你们面前摆4个天使，带翅膀的美女，让大家看，看完以后，即使我不说，大家下一次是不是就都认识天使了。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494924270913105.png" alt="enter description here"></p>
+<p>　　但是，看完10个天使后，我们总要总结一下，什么样的东东才算天使?天使是无数的，总有没见过的!所以必须总结抽象，便于认识未知事物!总结的过程就是抽象的过程。小时候，我们学自然数时怎么定义的?像1，2，3，4…这样的数就叫做自然数。 通过抽象，我们发现天使有这样一下特征：</p>
+<p>　　1. 带翅膀(带翅膀不一定是天使，还可能是鸟人)</p>
+<p>　　2. 女孩(天使掉下来脸着地，也是天使!)</p>
+<p>　　3. 善良</p>
+<p>　　4. 头上有光环</p>
+<p>　　那么通过这4个具体的天使，我们进行抽象，抽象出了天使的特征，我们也可以归纳一个天使类。 通过这个过程，类就是对象的抽象。</p>
+<p>　　类可以看做是一个模版，或者图纸，系统根据类的定义来造出对象。我们要造一个汽车，怎么样造?类就是这个图纸，规定了汽车的详细信息，然后根据图纸将汽车造出来。</p>
+<p>　　<strong>类：</strong> 我们叫做class。<strong>对象：</strong> 我们叫做Object,instance(实例)。以后我们说某个类的对象，某个类的实例。是一样的意思。</p>
+<h2 id="总结">总结</h2>
+<p>　　1.对象是具体的事物;类是对对象的抽象;</p>
+<p>　　2.类可以看成一类对象的模板，对象可以看成该类的一个具体实例。</p>
+<p>　　3.类是用于描述同一类型的对象的一个抽象概念，类中定义了这一类对象所应具有的共同的属性、方法。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.2 对象的进化史(数据管理和企业管理共通之处)</title>
+			<link>https://HarryQing.github.io/posts/4.2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%9B%E5%8C%96%E5%8F%B2%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%92%8C%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86%E5%85%B1%E9%80%9A%E4%B9%8B%E5%A4%84/</link>
+			<pubDate>Sun, 21 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%9B%E5%8C%96%E5%8F%B2%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%92%8C%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86%E5%85%B1%E9%80%9A%E4%B9%8B%E5%A4%84/</guid>
+			<description>事物的发展总是遵循“量变引起质变”的哲学原则;企业管理和数据管理、甚至社会管理也有很多共通的地方。本节课类比企业发展，让大家更容易理解为什么会产生“对象”这个概念。
+·数据无管理时代 　最初的计算机语言只有基本变量(类似我们学习的基本数据类型)，用来保存数据。那时候面对的数据非常简单，只需要几个变量即可搞定;这个时候不涉及“数据管理”的问题。同理，就像在企业最初发展阶段只有几个人，不涉及管理问题，大家闷头做事就OK了。
+·数组管理和企业部门制 　企业发展中，员工多了怎么办?我们很自然的想法就是归类，将类型一致的人放到一起;企业中，会将都做销售工作的放到销售部管理;会将研发软件的放到开发部管理。同理在编程中，变量多了，我们很容易的想法就是“将同类型数据放到一起”， 于是就形成了“数组”的概念，单词对应“array”。 这种“归类”的思想，便于管理数据、管理人。
+·对象和企业项目制 　企业继续发展，面对的场景更加复杂。一个项目可能需要经常协同多个部门才能完成工作;一个项目从谈判接触可能需要销售部介入;谈判完成后，需求调研开始，研发部和销售部一起介入;开发阶段需要开发部和测试部互相配合敏捷开发，同时整个过程财务部也需要跟进。在企业中，为了便于协作和管理，很自然就兴起了“项目制”，以项目组的形式组织，一个项目组可能包含各种类型的人员。 一个完整的项目组，麻雀虽小五脏俱全，就是个创业公司甚至小型公司的编制，包含行政后勤人员、财务核算人员、开发人员、售前人员、售后人员、测试人员、设计人员等等。事实上，华为、腾讯、阿里巴巴等大型公司内部都是采用这种“项目制”的方式进行管理。
+　同理，计算机编程继续发展，各种类型的变量更加多了，而且对数据的操作(指的就是方法，方法可以看做是对数据操作的管理)也复杂了，怎么办?
+　为了便于协作和管理，我们“将相关数据和相关方法封装到一个独立的实体”，于是“对象”产生了。 比如，我们的一个学生对象：
+　有属性(静态特征)：年龄：18，姓名：雪庆，学号：1234
+　也可以有方法(动态行为)：看雪，陪雪，爱雪
+　请大家举一反三，根据上表理解一下企业的进化史，会发现大道至简。原来，数据管理、企业管理、社会发展也是有很多共通的地方。“量变引起质变，不同的数量级必然采用不同的管理模式”。
+总结 　1.对象说白了也是一种数据结构(对数据的管理模式)，将数据和数据的行为放到了一起。
+　2.在内存上，对象就是一个内存块，存放了相关的数据集合!
+　3.对象的本质就一种数据的组织方式!</description>
+			<content type="html"><![CDATA[<p>　　事物的发展总是遵循“量变引起质变”的哲学原则;企业管理和数据管理、甚至社会管理也有很多共通的地方。本节课类比企业发展，让大家更容易理解为什么会产生“对象”这个概念。</p>
+<h2 id="数据无管理时代">·数据无管理时代</h2>
+<p>　　最初的计算机语言只有基本变量(类似我们学习的基本数据类型)，用来保存数据。那时候面对的数据非常简单，只需要几个变量即可搞定;这个时候不涉及“数据管理”的问题。同理，就像在企业最初发展阶段只有几个人，不涉及管理问题，大家闷头做事就OK了。</p>
+<h2 id="数组管理和企业部门制">·数组管理和企业部门制</h2>
+<p>　　企业发展中，员工多了怎么办?我们很自然的想法就是归类，将类型一致的人放到一起;企业中，会将都做销售工作的放到销售部管理;会将研发软件的放到开发部管理。同理在编程中，变量多了，我们很容易的想法就是“将同类型数据放到一起”， 于是就形成了“数组”的概念，单词对应“array”。 这种“归类”的思想，便于管理数据、管理人。</p>
+<h2 id="对象和企业项目制">·对象和企业项目制</h2>
+<p>　　企业继续发展，面对的场景更加复杂。一个项目可能需要经常协同多个部门才能完成工作;一个项目从谈判接触可能需要销售部介入;谈判完成后，需求调研开始，研发部和销售部一起介入;开发阶段需要开发部和测试部互相配合敏捷开发，同时整个过程财务部也需要跟进。在企业中，为了便于协作和管理，很自然就兴起了“项目制”，以项目组的形式组织，一个项目组可能包含各种类型的人员。 一个完整的项目组，麻雀虽小五脏俱全，就是个创业公司甚至小型公司的编制，包含行政后勤人员、财务核算人员、开发人员、售前人员、售后人员、测试人员、设计人员等等。事实上，华为、腾讯、阿里巴巴等大型公司内部都是采用这种“项目制”的方式进行管理。</p>
+<p>　　同理，计算机编程继续发展，各种类型的变量更加多了，而且对数据的操作(指的就是方法，方法可以看做是对数据操作的管理)也复杂了，怎么办?</p>
+<p>　　为了便于协作和管理，我们“将相关数据和相关方法封装到一个独立的实体”，于是“对象”产生了。 比如，我们的一个学生对象：</p>
+<p>　　有属性(静态特征)：年龄：18，姓名：雪庆，学号：1234</p>
+<p>　　也可以有方法(动态行为)：看雪，陪雪，爱雪</p>
+<p>　　请大家举一反三，根据上表理解一下企业的进化史，会发现大道至简。原来，数据管理、企业管理、社会发展也是有很多共通的地方。“量变引起质变，不同的数量级必然采用不同的管理模式”。</p>
+<p><img src="https://i.loli.net/2021/03/13/FzquH12sDbvYSCW.png" alt="image.png"></p>
+<h2 id="总结">总结</h2>
+<p>　　1.对象说白了也是一种数据结构(对数据的管理模式)，将数据和数据的行为放到了一起。</p>
+<p>　　2.在内存上，对象就是一个内存块，存放了相关的数据集合!</p>
+<p>　　3.对象的本质就一种数据的组织方式!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>4.1 面向过程和面向对象</title>
+			<link>https://HarryQing.github.io/posts/4.1-%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+			<pubDate>Sat, 20 Feb 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/4.1-%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+			<description>面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。
+　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：
+　1. 发动车 2. 挂挡 3.踩油门 4. 走你
+　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。
+　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。
+　一、面向对象思想思考造车，发现车由如下对象组成：
+　1. 轮胎
+　2. 发动机
+　3. 车壳
+　4. 座椅
+　5. 挡风玻璃
+　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!
+　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。
+　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!
+面向对象和面向过程的总结 　1、都是解决问题的思维方式，都是代码组织的方式。
+　2、解决简单问题可以使用面向过程
+　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。
+面向对象思考方式 　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。
+建议 　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。
+　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。</description>
+			<content type="html"><![CDATA[<p>　　面向过程(Procedure Oriented)和面向对象(Object Oriented,OO)都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。早期先有面向过程思想，随着软件规模的扩大，问题复杂性的提高，面向过程的弊端越来越明显的显示出来，出现了面向对象思想并成为目前主流的方式。两者都贯穿于软件分析、设计和开发各个阶段，对应面向对象就分别称为面向对象分析(OOA)、面向对象设计(OOD)和面向对象编程(OOP)。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。</p>
+<p>　　面向过程思想思考问题时，我们首先思考“怎么按步骤实现?”并将步骤对应成方法，一步一步，最终完成。 这个适合简单任务，不需要过多协作的情况下。比如，如何开车?我们很容易就列出实现步骤：</p>
+<p>　　1. 发动车 
+　　2. 挂挡 
+　　3.踩油门 
+　　4. 走你</p>
+<p>　　面向过程适合简单、不需要协作的事务。 但是当我们思考比较复杂的问题，比如“如何造车?”，就会发现列出1234这样的步骤，是不可能的。那是因为，造车太复杂，需要很多协作才能完成。此时面向对象思想就应运而生了。</p>
+<p>　　面向对象(Object)思想更契合人的思维模式。我们首先思考的是“怎么设计这个事物?” 比如思考造车，我们就会先思考“车怎么设计?”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。</p>
+<p>　　一、面向对象思想思考造车，发现车由如下对象组成：</p>
+<p>　　1. 轮胎</p>
+<p>　　2. 发动机</p>
+<p>　　3. 车壳</p>
+<p>　　4. 座椅</p>
+<p>　　5. 挡风玻璃</p>
+<p>　　为了便于协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤;这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。但是，具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开面向过程思想!</p>
+<p>　　因此，面向对象可以帮助我们从宏观上把握、从整体上分析整个系统。 但是，具体到实现部分的微观操作(就是一个个方法)，仍然需要面向过程的思路去处理。</p>
+<p>　　我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程!</p>
+<h2 id="面向对象和面向过程的总结">面向对象和面向过程的总结</h2>
+<p>　　1、都是解决问题的思维方式，都是代码组织的方式。</p>
+<p>　　2、解决简单问题可以使用面向过程</p>
+<p>　　3、解决复杂问题：宏观上使用面向对象把握，微观处理上仍然是面向过程。</p>
+<h2 id="面向对象思考方式">面向对象思考方式</h2>
+<p>　　遇到复杂问题，先从问题中找名词，然后确立这些名词哪些可以作为类，再根据问题需求确定的类的属性和方法，确定类之间的关系。</p>
+<h2 id="建议">建议</h2>
+<p>　　1.面向对象具有三大特征：封装性、继承性和多态性，而面向过程没有继承性和多态性，并且面向过程的封装只是封装功能，而面向对象可以封装数据和功能。所以面向对象优势更明显。</p>
+<p>　　2.一个经典的比喻：面向对象是盖浇饭、面向过程是蛋炒饭。盖浇饭的好处就是“菜”“饭”分离，从而提高了制作盖浇饭的灵活性。饭不满意就换饭，菜不满意换菜。用软件工程的专业术语就是“可维护性”比较好，“饭” 和“菜”的耦合度比较低。</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第四章 Java面对对象基础</title>
@@ -15,8 +963,31 @@
 			<pubDate>Wed, 17 Feb 2021 18:20:00 +0800</pubDate>
 			
 			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%9B%9B%E7%AB%A0-java%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</guid>
-			<description>敬请期待 </description>
-			<content type="html"><![CDATA[<h2 id="敬请期待">敬请期待</h2>
+			<description>目录 4.1 面向过程和面向对象 4.2 对象的进化史(数据管理和企业管理共通之处) 4.3 对象和类的概念 4.3.1 第一个类的定义 4.3.2 属性(field，或者叫成员变量) 4.3.3 方法 4.3.4 一个典型类的定义和UML图 4.4 面向对象的内存分析 4.5 构造方法 4.6 构造方法的重载 4.7 垃圾回收机制(Garbage Collection) 4.7.1 垃圾回收原理和算法 4.7.2 通用的分代垃圾回收机制 4.7.3 JVM调优和Full GC 4.7.4 开发中容易造成内存泄露的操作 4.9 static 关键字 4.10 静态初始化块 4.11 参数传值机制 4.12 包 4.13 package 4.13.1 JDK中的主要包 4.13.2 导入类import 4.13.3 静态导入 </description>
+			<content type="html"><![CDATA[<h1 id="目录">目录</h1>
+<h2 id="41-面向过程和面向对象">4.1 面向过程和面向对象</h2>
+<h2 id="42-对象的进化史数据管理和企业管理共通之处">4.2 对象的进化史(数据管理和企业管理共通之处)</h2>
+<h2 id="43-对象和类的概念">4.3 对象和类的概念</h2>
+<h2 id="431-第一个类的定义">4.3.1 第一个类的定义</h2>
+<h2 id="432-属性field或者叫成员变量">4.3.2 属性(field，或者叫成员变量)</h2>
+<h2 id="433-方法">4.3.3 方法</h2>
+<h2 id="434-一个典型类的定义和uml图">4.3.4 一个典型类的定义和UML图</h2>
+<h2 id="44-面向对象的内存分析">4.4 面向对象的内存分析</h2>
+<h2 id="45-构造方法">4.5 构造方法</h2>
+<h2 id="46-构造方法的重载">4.6 构造方法的重载</h2>
+<h2 id="47-垃圾回收机制garbage-collection">4.7 垃圾回收机制(Garbage Collection)</h2>
+<h2 id="471-垃圾回收原理和算法">4.7.1 垃圾回收原理和算法</h2>
+<h2 id="472-通用的分代垃圾回收机制">4.7.2 通用的分代垃圾回收机制</h2>
+<h2 id="473-jvm调优和full-gc">4.7.3 JVM调优和Full GC</h2>
+<h2 id="474-开发中容易造成内存泄露的操作">4.7.4 开发中容易造成内存泄露的操作</h2>
+<h2 id="49-static-关键字">4.9 static 关键字</h2>
+<h2 id="410-静态初始化块">4.10 静态初始化块</h2>
+<h2 id="411-参数传值机制">4.11 参数传值机制</h2>
+<h2 id="412-包">4.12 包</h2>
+<h2 id="413-package">4.13 package</h2>
+<h2 id="4131-jdk中的主要包">4.13.1 JDK中的主要包</h2>
+<h2 id="4132-导入类import">4.13.2 导入类import</h2>
+<h2 id="4133-静态导入">4.13.3 静态导入</h2>
 <p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1666491998,3961460638&amp;fm=26&amp;gp=0.jpg" alt="enter description here"></p>
 ]]></content>
 		</item>
