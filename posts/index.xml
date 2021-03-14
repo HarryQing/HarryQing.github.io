@@ -6,8 +6,330 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 01 Mar 2021 16:20:00 +0800</lastBuildDate>
+		<lastBuildDate>Tue, 02 Mar 2021 18:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>5.3 super关键字</title>
+			<link>https://HarryQing.github.io/posts/5.3-super%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+			<pubDate>Tue, 02 Mar 2021 18:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.3-super%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+			<description>super是直接父类对象的引用。可以通过super来访问父类中被子类覆盖的方法或属性。
+　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。
+　若是构造方法的第一行代码没有显式的调用super(&amp;hellip;)或者this(&amp;hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。
+【示例5-7】 super关键字的使用
+public class TestSuper01 { public static void main(String[] args) {new ChildClass().f();}}class FatherClass {public int value;public void f(){value = 100;System.out.println (&amp;quot;FatherClass.value=&amp;quot;+value);}}class ChildClass extends FatherClass {public int value;public void f() {super.f(); //调用父类对象的普通方法value = 200;System.out.println(&amp;quot;ChildClass.value=&amp;quot;+value);System.out.println(value);System.out.println(super.value); //调用父类对象的成员变量}} 执行结果如图5-5所示：</description>
+			<content type="html"><![CDATA[<p>　　super是直接父类对象的引用。可以通过super来访问父类中被子类覆盖的方法或属性。</p>
+<p>　　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。</p>
+<p>　　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。</p>
+<p><strong>【示例5-7】</strong> super关键字的使用</p>
+<pre><code>public class TestSuper01 { 
+    public static void main(String[] args) {
+        new ChildClass().f();
+    }
+}
+class FatherClass {
+    public int value;
+    public void f(){
+        value = 100;
+        System.out.println (&quot;FatherClass.value=&quot;+value);
+    }
+}
+class ChildClass extends FatherClass {
+    public int value;
+    public void f() {
+        super.f();  //调用父类对象的普通方法
+        value = 200;
+        System.out.println(&quot;ChildClass.value=&quot;+value);
+        System.out.println(value);
+        System.out.println(super.value); //调用父类对象的成员变量
+    }
+}
+</code></pre>
+<p>执行结果如图5-5所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495186136513650.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.2.3 ==和equals方法</title>
+			<link>https://HarryQing.github.io/posts/5.2.3-%E5%92%8Cequals%E6%96%B9%E6%B3%95/</link>
+			<pubDate>Tue, 02 Mar 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.2.3-%E5%92%8Cequals%E6%96%B9%E6%B3%95/</guid>
+			<description>“==”代表比较双方是否相同。如果是基本类型则表示值相等，如果是引用类型则表示地址相等即是同一个对象。
+　Object类中定义有：public boolean equals(Object obj)方法，提供定义“对象内容相等”的逻辑。比如，我们在公安系统中认为id相同的人就是同一个人、学籍系统中认为学号相同的人就是同一个人。
+　Object 的 equals 方法默认就是比较两个对象的hashcode，是同一个对象的引用时返回 true 否则返回 false。但是，我们可以根据我们自己的要求重写equals方法。
+【示例5-6】 equals方法测试和自定义类重写equals方法
+public class TestEquals { public static void main(String[] args) {Person p1 = new Person(123,&amp;quot;王雪庆&amp;quot;);Person p2 = new Person(123,&amp;quot;张雪&amp;quot;); System.out.println(p1==p2); //false，不是同一个对象System.out.println(p1.equals(p2)); //true，id相同则认为两个对象内容相同String s1 = new String(&amp;quot;我爱你！&amp;quot;);String s2 = new String(&amp;quot;立刻有！&amp;quot;);System.out.println(s1==s2); //false, 两个字符串不是同一个对象System.out.println(s1.equals(s2)); //true, 两个字符串内容相同}}class Person {int id;String name;public Person(int id,String name) {this.</description>
+			<content type="html"><![CDATA[<p>　　“==”代表比较双方是否相同。如果是基本类型则表示值相等，如果是引用类型则表示地址相等即是同一个对象。</p>
+<p>　　Object类中定义有：public boolean equals(Object obj)方法，提供定义“对象内容相等”的逻辑。比如，我们在公安系统中认为id相同的人就是同一个人、学籍系统中认为学号相同的人就是同一个人。</p>
+<p>　　Object 的 equals 方法默认就是比较两个对象的hashcode，是同一个对象的引用时返回 true 否则返回 false。但是，我们可以根据我们自己的要求重写equals方法。</p>
+<p><strong>【示例5-6】</strong> equals方法测试和自定义类重写equals方法</p>
+<pre><code>public class TestEquals { 
+    public static void main(String[] args) {
+        Person p1 = new Person(123,&quot;王雪庆&quot;);
+        Person p2 = new Person(123,&quot;张雪&quot;);     
+        System.out.println(p1==p2);     //false，不是同一个对象
+        System.out.println(p1.equals(p2));  //true，id相同则认为两个对象内容相同
+        String s1 = new String(&quot;我爱你！&quot;);
+        String s2 = new String(&quot;立刻有！&quot;);
+        System.out.println(s1==s2);         //false, 两个字符串不是同一个对象
+        System.out.println(s1.equals(s2));  //true,  两个字符串内容相同
+    }
+}
+class Person {
+    int id;
+    String name;
+    public Person(int id,String name) {
+        this.id=id;
+        this.name=name;
+    }
+    public boolean equals(Object obj) {
+        if(obj == null){
+            return false;
+        }else {
+            if(obj instanceof Person) {
+                Person c = (Person)obj;
+                if(c.id==this.id) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+</code></pre>
+<p>　　JDK提供的一些类，如String、Date、包装类等，重写了Object的equals方法，调用这些类的equals方法， x.equals (y) ，当x和y所引用的对象是同一类对象且属性内容相等时（并不一定是相同对象），返回 true 否则返回 false。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.2.2 toString方法</title>
+			<link>https://HarryQing.github.io/posts/5.2.2-tostring%E6%96%B9%E6%B3%95/</link>
+			<pubDate>Tue, 02 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.2.2-tostring%E6%96%B9%E6%B3%95/</guid>
+			<description>Object类中定义有public String toString()方法，其返回值是 String 类型。Object类中toString方法的源码为：
+public String toString() {return getClass().getName() + &amp;quot;@&amp;quot; + Integer.toHexString(hashCode());} 　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。
+【示例5-5】 toString()方法测试和重写toString()方法
+class Person {String name;int age;@Overridepublic String toString() {return name+&amp;quot;,年龄：&amp;quot;+age;}}public class Test {public static void main(String[] args) {Person p=new Person();p.age=20;p.name=&amp;quot;李东&amp;quot;;System.out.println(&amp;quot;info:&amp;quot;+p);Test t = new Test();System.out.println(t);}} 执行结果如图5-4所示：</description>
+			<content type="html"><![CDATA[<p>　　Object类中定义有public String toString()方法，其返回值是 String 类型。Object类中toString方法的源码为：</p>
+<pre><code>public String toString() {
+    return getClass().getName() + &quot;@&quot; + Integer.toHexString(hashCode());
+}
+</code></pre>
+<p>　　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。</p>
+<p><strong>【示例5-5】</strong> toString()方法测试和重写toString()方法</p>
+<pre><code>class Person {
+    String name;
+    int age;
+    @Override
+    public String toString() {
+        return name+&quot;,年龄：&quot;+age;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Person p=new Person();
+        p.age=20;
+        p.name=&quot;李东&quot;;
+        System.out.println(&quot;info:&quot;+p);
+
+        Test t = new Test();
+        System.out.println(t);
+    }
+}
+</code></pre>
+<p>执行结果如图5-4所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495183720428188.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.2.1 Object类基本特性</title>
+			<link>https://HarryQing.github.io/posts/5.2.1-object%E7%B1%BB%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/</link>
+			<pubDate>Mon, 01 Mar 2021 23:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.2.1-object%E7%B1%BB%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/</guid>
+			<description>　Object类是所有Java类的根基类，也就意味着所有的Java对象都拥有Object类的属性和方法。如果在类的声明中未使用extends关键字指明其父类，则默认继承Object类。
+【示例5-4】 Object类
+public class Person {...}//等价于：public class Person extends Object {...} </description>
+			<content type="html"><![CDATA[<p>　　Object类是所有Java类的根基类，也就意味着所有的Java对象都拥有Object类的属性和方法。如果在类的声明中未使用extends关键字指明其父类，则默认继承Object类。</p>
+<p><strong>【示例5-4】</strong> Object类</p>
+<pre><code>public class Person {
+    ...
+}
+//等价于：
+public class Person extends Object {
+    ...
+}</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.1.4方法的重写override</title>
+			<link>https://HarryQing.github.io/posts/5.1.4%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E5%86%99override/</link>
+			<pubDate>Mon, 01 Mar 2021 22:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.1.4%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E5%86%99override/</guid>
+			<description>子类通过重写父类的方法，可以用自身的行为替换父类的行为。方法的重写是实现多态的必要条件。
+方法的重写需要符合下面的三个要点：  1.“==”： 方法名、形参列表相同。2.“≤”：返回值类型和声明异常类型，子类小于等于父类。3.“≥”： 访问权限，子类大于等于父类。 【示例5-3】 方法重写
+public class TestOverride {public static void main(String[] args) {Vehicle v1 = new Vehicle();Vehicle v2 = new Horse();Vehicle v3 = new Plane();v1.run();v2.run();v3.run();v2.stop();v3.stop();}}class Vehicle { // 交通工具类public void run() {System.out.println(&amp;quot;跑....&amp;quot;);}public void stop() {System.out.println(&amp;quot;停止不动&amp;quot;);}}class Horse extends Vehicle { // 马也是交通工具public void run() { // 重写父类方法System.</description>
+			<content type="html"><![CDATA[<p>　　子类通过重写父类的方法，可以用自身的行为替换父类的行为。方法的重写是实现多态的必要条件。</p>
+<h2 id="方法的重写需要符合下面的三个要点">方法的重写需要符合下面的三个要点：</h2>
+<pre><code>  1.“==”： 方法名、形参列表相同。
+
+  2.“≤”：返回值类型和声明异常类型，子类小于等于父类。
+
+  3.“≥”： 访问权限，子类大于等于父类。
+</code></pre>
+<p><strong>【示例5-3】</strong> 方法重写</p>
+<pre><code>public class TestOverride {
+    public static void main(String[] args) {
+        Vehicle v1 = new Vehicle();
+        Vehicle v2 = new Horse();
+        Vehicle v3 = new Plane();
+        v1.run();
+        v2.run();
+        v3.run();
+        v2.stop();
+        v3.stop();
+    }
+}
+
+class Vehicle { // 交通工具类
+    public void run() {
+        System.out.println(&quot;跑....&quot;);
+    }
+    public void stop() {
+        System.out.println(&quot;停止不动&quot;);
+    }
+}
+class Horse extends Vehicle { // 马也是交通工具
+    public void run() { // 重写父类方法
+        System.out.println(&quot;四蹄翻飞，嘚嘚嘚...&quot;);
+    }
+}
+
+class Plane extends Vehicle {
+    public void run() { // 重写父类方法
+        System.out.println(&quot;天上飞！&quot;);
+    }
+    public void stop() {
+        System.out.println(&quot;空中不能停，坠毁了！&quot;);
+    }
+}  
+</code></pre>
+<p>执行结果如图5-3所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495182341450054.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.1.3 继承使用要点</title>
+			<link>https://HarryQing.github.io/posts/5.1.3-%E7%BB%A7%E6%89%BF%E4%BD%BF%E7%94%A8%E8%A6%81%E7%82%B9/</link>
+			<pubDate>Mon, 01 Mar 2021 21:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.1.3-%E7%BB%A7%E6%89%BF%E4%BD%BF%E7%94%A8%E8%A6%81%E7%82%B9/</guid>
+			<description>1.父类也称作超类、基类、派生类等。
+2.Java中只有单继承，没有像C++那样的多继承。多继承会引起混乱，使得继承链过于复杂，系统难于维护。
+3.Java中类没有多继承，接口有多继承。
+4.子类继承父类，可以得到父类的全部属性和方法 (除了父类的构造方法)，但不见得可以直接访问(比如，父类私有的属性和方法)。
+5.如果定义一个类时，没有调用extends，则它的父类是：java.lang.Object。</description>
+			<content type="html"><![CDATA[<p>1.父类也称作超类、基类、派生类等。</p>
+<p>2.Java中只有单继承，没有像C++那样的多继承。多继承会引起混乱，使得继承链过于复杂，系统难于维护。</p>
+<p>3.Java中类没有多继承，接口有多继承。</p>
+<p>4.子类继承父类，可以得到父类的全部属性和方法 (除了父类的构造方法)，但不见得可以直接访问(比如，父类私有的属性和方法)。</p>
+<p>5.如果定义一个类时，没有调用extends，则它的父类是：java.lang.Object。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.1.2  instanceof 运算符</title>
+			<link>https://HarryQing.github.io/posts/5.1.2-instanceof-%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+			<pubDate>Mon, 01 Mar 2021 20:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.1.2-instanceof-%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+			<description>instanceof是二元运算符，左边是对象，右边是类；当对象是右面类或子类所创建对象时，返回true；否则，返回false。比如：
+【示例5-2】 使用instanceof运算符进行类型判断
+public class Test{public static void main(String[] args) {Student s = new Student(&amp;quot;高淇&amp;quot;,172,&amp;quot;Java&amp;quot;);System.out.println(s instanceof Person);System.out.println(s instanceof Student);}} 两条语句的输出结果都是true</description>
+			<content type="html"><![CDATA[<p>　　instanceof是二元运算符，左边是对象，右边是类；当对象是右面类或子类所创建对象时，返回true；否则，返回false。比如：</p>
+<p><strong>【示例5-2】</strong> 使用instanceof运算符进行类型判断</p>
+<pre><code>public class Test{
+    public static void main(String[] args) {
+        Student s = new Student(&quot;高淇&quot;,172,&quot;Java&quot;);
+        System.out.println(s instanceof Person);
+        System.out.println(s instanceof Student);
+    }
+}
+</code></pre>
+<p>两条语句的输出结果都是true</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.1.1 继承的实现</title>
+			<link>https://HarryQing.github.io/posts/5.1.1-%E7%BB%A7%E6%89%BF%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+			<pubDate>Mon, 01 Mar 2021 19:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.1.1-%E7%BB%A7%E6%89%BF%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+			<description>继承让我们更加容易实现类的扩展。 比如，我们定义了人类，再定义Boy类就只需要扩展人类即可。实现了代码的重用，不用再重新发明轮子(don’t reinvent wheels)。
+　从英文字面意思理解，extends的意思是“扩展”。子类是父类的扩展。现实世界中的继承无处不在。比如：
+图5-1 现实世界中的继承
+　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。
+【示例5-1】 使用extends实现继承
+public class Test{public static void main(String[] args) {Student s = new Student(&amp;quot;王雪庆&amp;quot;,172,&amp;quot;Java&amp;quot;);s.rest();s.study();}}class Person {String name;int height;public void rest(){System.out.println(&amp;quot;休息一会！&amp;quot;);} }class Student extends Person {String major; //专业public void study(){System.out.println(&amp;quot;雪儿，学习Java&amp;quot;);} public Student(String name,int height,String major) {//天然拥有父类的属性this.name = name;this.height = height;this.</description>
+			<content type="html"><![CDATA[<p>　　继承让我们更加容易实现类的扩展。 比如，我们定义了人类，再定义Boy类就只需要扩展人类即可。实现了代码的重用，不用再重新发明轮子(don’t  reinvent  wheels)。</p>
+<p>　　从英文字面意思理解，extends的意思是“扩展”。子类是父类的扩展。现实世界中的继承无处不在。比如：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495179917567916.png" alt="enter description here"></p>
+<p>图5-1 现实世界中的继承</p>
+<p>　　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。</p>
+<p><strong>【示例5-1】</strong> 使用extends实现继承</p>
+<pre><code>public class Test{
+    public static void main(String[] args) {
+        Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);
+        s.rest();
+        s.study();
+    }
+}
+class Person {
+    String name;
+    int height;
+    public void rest(){
+        System.out.println(&quot;休息一会！&quot;);
+    }  
+}
+class Student extends Person {
+    String major; //专业
+    public void study(){
+        System.out.println(&quot;雪儿，学习Java&quot;);
+    }  
+    public Student(String name,int height,String major) {
+        //天然拥有父类的属性
+        this.name = name;
+        this.height = height;
+        this.major = major;
+    }
+}
+</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.1 概述</title>
+			<link>https://HarryQing.github.io/posts/5.1-%E6%A6%82%E8%BF%B0/</link>
+			<pubDate>Mon, 01 Mar 2021 17:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.1-%E6%A6%82%E8%BF%B0/</guid>
+			<description>本章重点针对面向对象的三大特征：继承、封装、多态进行详细的讲解。另外还包括抽象类、接口、内部类等概念。很多概念对于初学者来说，更多的是先进行语法性质的了解。不要期望，通过本章学习就“搞透面向对象”。本章只是面向对象的起点，后面所有的章节说白了都是对面向对象这一章的应用。
+老鸟建议： 　建议大家，学习本章，莫停留！学完以后，迅速开展后面的章节。可以这么说，以后所有的编程都是“面向对象”的应用而已！</description>
+			<content type="html"><![CDATA[<p>　　本章重点针对面向对象的三大特征：继承、封装、多态进行详细的讲解。另外还包括抽象类、接口、内部类等概念。很多概念对于初学者来说，更多的是先进行语法性质的了解。不要期望，通过本章学习就“搞透面向对象”。本章只是面向对象的起点，后面所有的章节说白了都是对面向对象这一章的应用。</p>
+<h2 id="老鸟建议">老鸟建议：</h2>
+<p>　　建议大家，学习本章，莫停留！学完以后，迅速开展后面的章节。可以这么说，以后所有的编程都是“面向对象”的应用而已！</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第五章 Java面对对象进阶</title>
