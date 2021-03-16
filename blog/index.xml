@@ -9,21 +9,16 @@
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 14 Mar 2021 00:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hugo博客上传</title>
-      <link>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0/</link>
+      <title>hugo博客在GitHub上进行部署（二）</title>
+      <link>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</link>
       <pubDate>Sun, 14 Mar 2021 00:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0/</guid>
-      <description>博客文件夹右击（Git Bush Here）
-打开public文件，用vc打开
-在终端依次输入
-hugo
-git init
-git add -A
-git commit -am&amp;quot;init&amp;quot;
-git branch -M main
-git remote add origin https://github.com/HarryQing/HarryQing.github.io.git
-git push -f origin main</description>
+      <guid>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</guid>
+      <description>创建新文章 hugo new 你的文档名/你的文章名.md
+创建库 1.名称一定是：你的用户名.github.io 2.选择本地存储复制
+部署到云端 1.在config.toml中改参数 2.生成public: 打开文件根目录的cmd或git bash here输入
+hugo 3.进入public 4.在该页面下打开git bash here 5.相继输入以下代码
+git init git add -Agit commit -am&amp;quot;init&amp;quot;git branch -M maingit remote add origin https://github.com/你的用户名/你的用户名.github.io.git（假如是我：git remote add origin https://github.com/HarryQing/HarryQing.github.io.git）git push -f origin master（无响应则再次运行同一代码，最多两次）你的博客:https://你的用户名.github.io/假如是我的博客：https://harryqing.github.io/ 笔者 git initgit add -Agit commit -am&amp;quot;init&amp;quot;git branch -M maingit remote add origin https://github.com/HarryQing/HarryQing.github.io.gitgit push -f origin main </description>
     </item>
     
     <item>
@@ -49,24 +44,18 @@ git push -f origin main</description>
 2.建立一个文档blog，该文档中建立一个bin文件夹，将解压的hugo文件放进去，之后复制其全链接（路径）我的是H:\boke\bin。
 3.打开控制面板，打开查看高级系统设置，点击里面的环境变量，在A的用户变量（U里面找到path变量，双击在里面添加之前复制的全链接H:\boke\bin，之后点确定；下面的系统变量（S同上。
 4.打开系统的cmd（命令提示符），输入
- hugo version
- 5.显示Hugo版本信息。
- C:\Users\A&amp;gt;hugo version Hugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z
- 6.Hugo安装完成
+**hugo version** 5.显示Hugo版本信息。
+C:\Users\A&amp;gt;hugo versionHugo Static Site Generator v0.78.2-959724F0 windows/amd64 BuildDate: 2020-11-13T10:08:15Z 6.Hugo安装完成
 创建一个站点 1.在cmd（命令提示符）输入
- hogo new site yourname.com(yourname自定义)
- 2.创建完成即生成你的博客目录，目录如下：
- ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml
- 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
+hogo new site yourname.com(yourname自定义) 2.创建完成即生成你的博客目录，目录如下：
+├─archetypes├─content├─data├─layouts├─static├─themes└─config.toml 挑选一个主题 1.在Hugo的 主题网站https://themes.gohugo.io/中挑选一款你喜欢的主题。
 2.选定后，将其下载好为一个文件夹（以我的为例：文件夹名为hermit）
 3.打开创建的站点的文件夹，找到theme文件夹将下载好的主题文件夹放进去hermit（若文件夹后面有master删掉，避免后面的麻烦），添加好后打开hermit文件夹，找到exampleSite，复制里面的content和comfig.toml，替换掉外层（yourname.com这层）的content和comfig.toml。
 调试并实现本地查看 1.下载一个VS Studio网址https://code.visualstudio.com/。
 2.使用VS Studio打开站点文件夹（yourname.com）
 3.在其终端输入命令
- hugo server
- 得到结果
- C:\Users\A\foreversnow.com&amp;gt; hugo server Start building sites …
- | EN  &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;ndash; Pages | 15 Paginator pages | 0 Non-page files | 0</description>
+hugo server 得到结果 C:\Users\A\foreversnow.com&amp;gt; hugo server Start building sites …
+ | EN -------------------+-----Pages | 15Paginator pages | 0Non-page files | 0 Static files | 10Processed images | 0Aliases | 0Sitemaps | 1 Cleaned | 0Built in 187 msWatching for changes in C:\Users\A\foreversnow.</description>
     </item>
     
   </channel>
