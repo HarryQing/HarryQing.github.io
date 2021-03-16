@@ -6,8 +6,398 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Tue, 02 Mar 2021 18:20:00 +0800</lastBuildDate>
+		<lastBuildDate>Thu, 04 Mar 2021 18:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>5.6 对象的转型(casting)</title>
+			<link>https://HarryQing.github.io/posts/5.6-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E5%9E%8Bcasting/</link>
+			<pubDate>Thu, 04 Mar 2021 18:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.6-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E5%9E%8Bcasting/</guid>
+			<description>父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。
+　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!
+【示例5-13】 对象的转型
+public class TestCasting {public static void main(String[] args) {Object obj = new String(&amp;quot;北京&amp;quot;); // 向上可以自动转型// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。* 不然通不过编译器的检查。 */String str = (String) obj; // 向下转型System.out.println(str.charAt(0)); // 位于0索引位置的字符System.out.println(obj == str); // true.他们俩运行时是同一个对象}} 　执行结果如果5-18所示：
+　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。
+【示例5-14】 类型转换异常
+public class TestCasting2 {public static void main(String[] args) {Object obj = new String(&amp;quot;北京尚学堂&amp;quot;);//真实的子类类型是String，但是此处向下转型为StringBufferStringBuffer str = (StringBuffer) obj;System.</description>
+			<content type="html"><![CDATA[<p>　　父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。</p>
+<p>　　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!</p>
+<p><strong>【示例5-13】</strong> 对象的转型</p>
+<pre><code>public class TestCasting {
+    public static void main(String[] args) {
+        Object obj = new String(&quot;北京&quot;); // 向上可以自动转型
+        // obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型
+        /* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+         * 不然通不过编译器的检查。 */
+        String str = (String) obj; // 向下转型
+        System.out.println(str.charAt(0)); // 位于0索引位置的字符
+        System.out.println(obj == str); // true.他们俩运行时是同一个对象
+    }
+}
+</code></pre>
+<p>　　执行结果如果5-18所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495254148771321.png" alt="enter description here"></p>
+<p>　　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。</p>
+<p><strong>【示例5-14】</strong> 类型转换异常</p>
+<pre><code>public class TestCasting2 {
+    public static void main(String[] args) {
+        Object obj = new String(&quot;北京尚学堂&quot;);
+        //真实的子类类型是String，但是此处向下转型为StringBuffer
+        StringBuffer str = (StringBuffer) obj;
+        System.out.println(str.charAt(0));
+    }
+}
+</code></pre>
+<p>　　执行结果如果5-19所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256025435935.png" alt="enter description here"></p>
+<p>　　为了避免出现这种异常，我们可以使用5.1.2中所学的instanceof运算符进行判断，如示例5-15所示。</p>
+<p><strong>【示例5-15】</strong> 向下转型中使用instanceof</p>
+<pre><code>public class TestCasting3 {
+    public static void main(String[] args) {
+        Object obj = new String(&quot;北京&quot;);
+        if(obj instanceof String){
+            String str = (String)obj;
+            System.out.println(str.charAt(0));
+        }else if(obj instanceof StringBuffer){
+            StringBuffer str = (StringBuffer) obj;
+            System.out.println(str.charAt(0));
+        }
+    }
+}
+</code></pre>
+<p>　　执行结果如果5-20所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256138635602.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.5 多态(polymorphism)</title>
+			<link>https://HarryQing.github.io/posts/5.5-%E5%A4%9A%E6%80%81polymorphism/</link>
+			<pubDate>Thu, 04 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.5-%E5%A4%9A%E6%80%81polymorphism/</guid>
+			<description>多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。
+多态的要点：  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。 【示例5-12】 多态和类型转换测试
+class Animal {public void shout() {System.out.println(&amp;quot;叫了一声！&amp;quot;);}}class Dog extends Animal {public void shout() {System.out.println(&amp;quot;旺旺旺！&amp;quot;);}public void seeDoor() {System.out.println(&amp;quot;看门中....&amp;quot;);}}class Cat extends Animal {public void shout() {System.out.println(&amp;quot;喵喵喵喵！&amp;quot;);}}public class TestPolym {public static void main(String[] args) {Animal a1 = new Cat(); // 向上可以自动转型//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。animalCry(a1);Animal a2 = new Dog();animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。// 否则通不过编译器的检查。Dog dog = (Dog)a2;//向下需要强制类型转换dog.</description>
+			<content type="html"><![CDATA[<p>　　多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。</p>
+<h2 id="多态的要点">多态的要点：</h2>
+<pre><code>  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。
+
+  2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。
+
+  3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。
+</code></pre>
+<p><strong>【示例5-12】</strong> 多态和类型转换测试</p>
+<pre><code>class Animal {
+    public void shout() {
+        System.out.println(&quot;叫了一声！&quot;);
+    }
+}
+class Dog extends Animal {
+    public void shout() {
+        System.out.println(&quot;旺旺旺！&quot;);
+    }
+    public void seeDoor() {
+        System.out.println(&quot;看门中....&quot;);
+    }
+}
+class Cat extends Animal {
+    public void shout() {
+        System.out.println(&quot;喵喵喵喵！&quot;);
+    }
+}
+public class TestPolym {
+    public static void main(String[] args) {
+        Animal a1 = new Cat(); // 向上可以自动转型
+        //传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。
+        animalCry(a1);
+        Animal a2 = new Dog();
+        animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。
+
+        //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+        // 否则通不过编译器的检查。
+        Dog dog = (Dog)a2;//向下需要强制类型转换
+        dog.seeDoor();
+    }
+
+    // 有了多态，只需要让增加的这个类继承Animal类就可以了。
+    static void animalCry(Animal a) {
+        a.shout();
+    }
+
+    /* 如果没有多态，我们这里需要写很多重载的方法。
+     * 每增加一种动物，就需要重载一种动物的喊叫方法。非常麻烦。
+    static void animalCry(Dog d) {
+        d.shout();
+    }
+    static void animalCry(Cat c) {
+        c.shout();
+    }*/
+}
+</code></pre>
+<p>执行结果如图5-17所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495253451887350.png" alt="enter description here"></p>
+<p>图5-17 示例5-12运行效果图</p>
+<p>　　示例5-12给大家展示了多态最为多见的一种用法，即父类引用做方法的形参，实参可以是任意的子类对象，可以通过不同的子类对象实现不同的行为方式。</p>
+<p>　　由此，我们可以看出多态的主要优势是提高了代码的可扩展性，符合开闭原则。但是多态也有弊端，就是无法调用子类特有的功能，比如，我不能使用父类的引用变量调用Dog类特有的seeDoor()方法。</p>
+<p>　　那如果我们就想使用子类特有的功能行不行呢?行!这就是我们下一章节所讲的内容：对象的转型。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.4.3 封装的使用细节</title>
+			<link>https://HarryQing.github.io/posts/5.4.3-%E5%B0%81%E8%A3%85%E7%9A%84%E4%BD%BF%E7%94%A8%E7%BB%86%E8%8A%82/</link>
+			<pubDate>Wed, 03 Mar 2021 23:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.4.3-%E5%B0%81%E8%A3%85%E7%9A%84%E4%BD%BF%E7%94%A8%E7%BB%86%E8%8A%82/</guid>
+			<description>类的属性的处理: 　1. 一般使用private访问权限。
+　2. 提供相应的get/set方法来访问相关属性，这些方法通常是public修饰的，以提供对属性的赋值与读取操作(注意：boolean变量的get方法是is开头!)。
+　3. 一些只用于本类的辅助性方法可以用private修饰，希望其他类调用的方法用public修饰。
+【示例5-10】 JavaBean的封装实例
+public class Person {// 属性一般使用private修饰private String name;private int age;private boolean flag;// 为属性提供public修饰的set/get方法public String getName() {return name;}public void setName(String name) {this.name = name;}public int getAge() {return age;}public void setAge(int age) {this.age = age;}public boolean isFlag() {// 注意：boolean类型的属性get方法是is开头的return flag;}public void setFlag(boolean flag) {this.</description>
+			<content type="html"><![CDATA[<h2 id="类的属性的处理">类的属性的处理:</h2>
+<p>　　1. 一般使用private访问权限。</p>
+<p>　　2.  提供相应的get/set方法来访问相关属性，这些方法通常是public修饰的，以提供对属性的赋值与读取操作(注意：boolean变量的get方法是is开头!)。</p>
+<p>　　3. 一些只用于本类的辅助性方法可以用private修饰，希望其他类调用的方法用public修饰。</p>
+<p><strong>【示例5-10】</strong> JavaBean的封装实例</p>
+<pre><code>public class Person {
+    // 属性一般使用private修饰
+    private String name;
+    private int age;
+    private boolean flag;
+    // 为属性提供public修饰的set/get方法
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public boolean isFlag() {// 注意：boolean类型的属性get方法是is开头的
+        return flag;
+    }
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
+}
+</code></pre>
+<p>　　下面我们使用封装来解决一下5.4.1中提到的年龄非法赋值的问题。</p>
+<p><strong>【示例5-11】</strong> 封装的使用</p>
+<pre><code>class Person {
+    private String name;
+    private int age;
+    public Person() {
+
+    }
+    public Person(String name, int age) {
+        this.name = name;
+        // this.age = age;//构造方法中不能直接赋值，应该调用setAge方法
+        setAge(age);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setAge(int age) {
+        //在赋值之前先判断年龄是否合法
+        if (age &gt; 130 || age &lt; 0) {
+            this.age = 18;//不合法赋默认值18
+        } else {
+            this.age = age;//合法才能赋值给属性age
+        }
+    }
+    public int getAge() {
+        return age;
+    }
+    @Override
+    public String toString() {
+        return &quot;Person [name=&quot; + name + &quot;, age=&quot; + age + &quot;]&quot;;
+    }
+}
+
+public class Test2 {
+    public static void main(String[] args) {
+        Person p1 = new Person();
+        //p1.name = &quot;小红&quot;; //编译错误
+        //p1.age = -45;  //编译错误
+        p1.setName(&quot;小红&quot;);
+        p1.setAge(-45);
+        System.out.println(p1);
+
+        Person p2 = new Person(&quot;小白&quot;, 300);
+        System.out.println(p2);
+    }
+}
+</code></pre>
+<p>执行结果如图5-16所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495253058271276.png" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.4.2 封装的实现—使用访问控制符</title>
+			<link>https://HarryQing.github.io/posts/5.4.2-%E5%B0%81%E8%A3%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%BD%BF%E7%94%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E7%AC%A6/</link>
+			<pubDate>Wed, 03 Mar 2021 22:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.4.2-%E5%B0%81%E8%A3%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%BD%BF%E7%94%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E7%AC%A6/</guid>
+			<description>Java是使用“访问控制符”来控制哪些细节需要封装，哪些细节需要暴露的。 Java中4种“访问控制符”分别为private、default、protected、public，它们说明了面向对象的封装性，所以我们要利用它们尽可能的让访问权限降到最低，从而提高安全性。
+　下面详细讲述它们的访问权限问题。其访问权限范围如表5-1所示。
+表5-1 访问权限修饰符
+ 1. private 表示私有，只有自己类能访问2. default表示没有修饰符修饰，只有同一个包的类能访问3. protected表示可以被同一个包的类以及其他包中的子类访问4. public表示可以被该项目的所有包中的所有类访问 　下面做进一步说明Java中4种访问权限修饰符的区别：首先我们创建4个类：Person类、Student类、Animal类和Computer类，分别比较本类、本包、子类、其他包的区别。
+public访问权限修饰符： 图5-8 public访问权限—本类中访问public属性
+图5-9 public访问权限—本包中访问public属性
+图5-10 public访问权限—不同包中的子类访问public属性
+图5-11 public访问权限—不同包中的非子类访问public属性
+　通过图5-8 ~ 图5-11可以说明，public修饰符的访问权限为：该项目的所有包中的所有类。
+protected访问权限修饰符：将Person类中属性改为protected，其他类不修改。 图5-12 protected访问权限—修改后的Person类
+图5-13 protected访问权限—不同包中的非子类不能访问protected属性
+　通过图5-12和图5-13可以说明，protected修饰符的访问权限为：同一个包中的类以及其他包中的子类。
+默认访问权限修饰符：将Person类中属性改为默认的，其他类不修改。 图5-14 默认访问权限—修改后的Person类
+　通过图5-14可以说明，默认修饰符的访问权限为：同一个包中的类。
+private访问权限修饰符：将Person类中属性改为private，其他类不修改。 图5-15 private访问权限—修改后的Person类
+　通过图5-15可以说明，private修饰符的访问权限为：同一个类。</description>
+			<content type="html"><![CDATA[<p>　　Java是使用“访问控制符”来控制哪些细节需要封装，哪些细节需要暴露的。 Java中4种“访问控制符”分别为private、default、protected、public，它们说明了面向对象的封装性，所以我们要利用它们尽可能的让访问权限降到最低，从而提高安全性。</p>
+<p>　　下面详细讲述它们的访问权限问题。其访问权限范围如表5-1所示。</p>
+<p>表5-1 访问权限修饰符</p>
+<p><img src="https://i.loli.net/2021/03/16/nyDWhU3mLpwl7j2.png" alt="image.png"></p>
+<pre><code>  1. private 表示私有，只有自己类能访问
+
+  2. default表示没有修饰符修饰，只有同一个包的类能访问
+
+  3. protected表示可以被同一个包的类以及其他包中的子类访问
+
+  4. public表示可以被该项目的所有包中的所有类访问
+</code></pre>
+<p>　　下面做进一步说明Java中4种访问权限修饰符的区别：首先我们创建4个类：Person类、Student类、Animal类和Computer类，分别比较本类、本包、子类、其他包的区别。</p>
+<h2 id="public访问权限修饰符">public访问权限修饰符：</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495251897514580.png" alt="enter description here"></p>
+<p>图5-8 public访问权限—本类中访问public属性</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495251910209664.png" alt="enter description here"></p>
+<p>图5-9 public访问权限—本包中访问public属性</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495251926154354.png" alt="enter description here"></p>
+<p>图5-10 public访问权限—不同包中的子类访问public属性</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495251937942718.png" alt="enter description here"></p>
+<p>图5-11 public访问权限—不同包中的非子类访问public属性</p>
+<p>　　通过图5-8 ~ 图5-11可以说明，public修饰符的访问权限为：该项目的所有包中的所有类。</p>
+<h2 id="protected访问权限修饰符将person类中属性改为protected其他类不修改">protected访问权限修饰符：将Person类中属性改为protected，其他类不修改。</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495251999316349.png" alt="enter description here"></p>
+<p>图5-12 protected访问权限—修改后的Person类</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495252016275089.png" alt="enter description here"></p>
+<p>图5-13 protected访问权限—不同包中的非子类不能访问protected属性</p>
+<p>　　通过图5-12和图5-13可以说明，protected修饰符的访问权限为：同一个包中的类以及其他包中的子类。</p>
+<h2 id="默认访问权限修饰符将person类中属性改为默认的其他类不修改">默认访问权限修饰符：将Person类中属性改为默认的，其他类不修改。</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495252053329405.png" alt="enter description here"></p>
+<p>图5-14 默认访问权限—修改后的Person类</p>
+<p>　　通过图5-14可以说明，默认修饰符的访问权限为：同一个包中的类。</p>
+<h2 id="private访问权限修饰符将person类中属性改为private其他类不修改">private访问权限修饰符：将Person类中属性改为private，其他类不修改。</h2>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495252087548083.png" alt="enter description here"></p>
+<p>图5-15 private访问权限—修改后的Person类</p>
+<p>　　通过图5-15可以说明，private修饰符的访问权限为：同一个类。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.4.1 封装的作用和含义</title>
+			<link>https://HarryQing.github.io/posts/5.4.1-%E5%B0%81%E8%A3%85%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%90%AB%E4%B9%89/</link>
+			<pubDate>Wed, 03 Mar 2021 18:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.4.1-%E5%B0%81%E8%A3%85%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%90%AB%E4%B9%89/</guid>
+			<description>我要看电视，只需要按一下开关和换台就可以了。有必要了解电视机内部的结构吗?有必要碰碰显像管吗?制造厂家为了方便我们使用电视，把复杂的内部细节全部封装起来，只给我们暴露简单的接口，比如：电源开关。具体内部是怎么实现的，我们不需要操心。
+　需要让用户知道的才暴露出来，不需要让用户知道的全部隐藏起来，这就是封装。说的专业一点，封装就是把对象的属性和操作结合为一个独立的整体，并尽可能隐藏对象的内部实现细节。
+　我们程序设计要追求“高内聚，低耦合”。 高内聚就是类的内部数据操作细节自己完成，不允许外部干涉;低耦合是仅暴露少量的方法给外部使用，尽量方便外部调用。
+编程中封装的具体优点：  1. 提高代码的安全性。2. 提高代码的复用性。3. “高内聚”：封装细节，便于修改内部代码，提高可维护性。4. “低耦合”：简化外部调用，便于调用者使用，便于扩展和协作。 【示例5-9】 没有封装的代码会出现一些问题
+class Person {String name;int age;@Overridepublic String toString() {return &amp;quot;Person [name=&amp;quot; + name + &amp;quot;, age=&amp;quot; + age + &amp;quot;]&amp;quot;;}}public class Test {public static void main(String[] args) {Person p = new Person();p.name = &amp;quot;小红&amp;quot;;p.age = -45;//年龄可以通过这种方式随意赋值，没有任何限制System.out.println(p);}} 　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</description>
+			<content type="html"><![CDATA[<p>　　我要看电视，只需要按一下开关和换台就可以了。有必要了解电视机内部的结构吗?有必要碰碰显像管吗?制造厂家为了方便我们使用电视，把复杂的内部细节全部封装起来，只给我们暴露简单的接口，比如：电源开关。具体内部是怎么实现的，我们不需要操心。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20171028/1509199502558961.png" alt="enter description here"></p>
+<p>　　需要让用户知道的才暴露出来，不需要让用户知道的全部隐藏起来，这就是封装。说的专业一点，封装就是把对象的属性和操作结合为一个独立的整体，并尽可能隐藏对象的内部实现细节。</p>
+<p>　　我们程序设计要追求“高内聚，低耦合”。 高内聚就是类的内部数据操作细节自己完成，不允许外部干涉;低耦合是仅暴露少量的方法给外部使用，尽量方便外部调用。</p>
+<h2 id="编程中封装的具体优点">编程中封装的具体优点：</h2>
+<pre><code> 1. 提高代码的安全性。
+
+ 2. 提高代码的复用性。
+
+ 3. “高内聚”：封装细节，便于修改内部代码，提高可维护性。
+
+ 4. “低耦合”：简化外部调用，便于调用者使用，便于扩展和协作。
+</code></pre>
+<p><strong>【示例5-9】</strong> 没有封装的代码会出现一些问题</p>
+<pre><code>class Person {
+    String name;
+    int age;
+    @Override
+    public String toString() {
+        return &quot;Person [name=&quot; + name + &quot;, age=&quot; + age + &quot;]&quot;;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.name = &quot;小红&quot;;
+        p.age = -45;//年龄可以通过这种方式随意赋值，没有任何限制
+        System.out.println(p);
+    }
+}
+</code></pre>
+<p>　　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495250202677298.png" alt="enter description here"></p>
+<p>　　再比如说，如果哪天我们需要将Person类中的age属性修改为String类型的，你会怎么办?你只有一处使用了这个类的话那还比较幸运，但如果你有几十处甚至上百处都用到了，那你岂不是要改到崩溃。而封装恰恰能解决这样的问题。如果使用封装，我们只需要稍微修改下Person类的setAge()方法即可，而无需修改使用了该类的客户代码。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>5.3.1 继承树追溯</title>
+			<link>https://HarryQing.github.io/posts/5.3.1-%E7%BB%A7%E6%89%BF%E6%A0%91%E8%BF%BD%E6%BA%AF/</link>
+			<pubDate>Wed, 03 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/5.3.1-%E7%BB%A7%E6%89%BF%E6%A0%91%E8%BF%BD%E6%BA%AF/</guid>
+			<description>·属性/方法查找顺序：(比如：查找变量h)  1. 查找当前类中有没有属性h2. 依次上溯每个父类，查看每个父类中是否有h，直到Object3. 如果没找到，则出现编译错误。4. 上面步骤，只要找到h变量，则这个过程终止。 ·构造方法调用顺序： 　构造方法第一句总是：super(…)来调用父类对应的构造方法。所以，流程就是：先向上追溯到Object，然后再依次向下执行类的初始化块和构造方法，直到当前子类为止。
+　注：静态初始化块调用顺序，与构造方法调用顺序一样，不再重复。
+【示例5-8】 构造方法向上追溯执行测试
+public class TestSuper02 { public static void main(String[] args) {System.out.println(&amp;quot;开始创建一个ChildClass对象......&amp;quot;);new ChildClass();}}class FatherClass {public FatherClass() {System.out.println(&amp;quot;创建FatherClass&amp;quot;);}}class ChildClass extends FatherClass {public ChildClass() {System.out.println(&amp;quot;创建ChildClass&amp;quot;);}} 执行结果如图5-6所示：</description>
+			<content type="html"><![CDATA[<h2 id="属性方法查找顺序比如查找变量h">·属性/方法查找顺序：(比如：查找变量h)</h2>
+<pre><code>  1. 查找当前类中有没有属性h
+
+  2. 依次上溯每个父类，查看每个父类中是否有h，直到Object
+
+  3. 如果没找到，则出现编译错误。
+
+  4. 上面步骤，只要找到h变量，则这个过程终止。
+</code></pre>
+<h2 id="构造方法调用顺序">·构造方法调用顺序：</h2>
+<p>　　构造方法第一句总是：super(…)来调用父类对应的构造方法。所以，流程就是：先向上追溯到Object，然后再依次向下执行类的初始化块和构造方法，直到当前子类为止。</p>
+<p>　　注：静态初始化块调用顺序，与构造方法调用顺序一样，不再重复。</p>
+<p><strong>【示例5-8】</strong> 构造方法向上追溯执行测试</p>
+<pre><code>public class TestSuper02 { 
+    public static void main(String[] args) {
+        System.out.println(&quot;开始创建一个ChildClass对象......&quot;);
+        new ChildClass();
+    }
+}
+class FatherClass {
+    public FatherClass() {
+        System.out.println(&quot;创建FatherClass&quot;);
+    }
+}
+class ChildClass extends FatherClass {
+    public ChildClass() {
+        System.out.println(&quot;创建ChildClass&quot;);
+    }
+}
+</code></pre>
+<p>执行结果如图5-6所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495187263836897.png" alt="enter description here"></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>5.3 super关键字</title>
