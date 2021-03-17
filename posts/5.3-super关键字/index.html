@@ -12,7 +12,7 @@
 　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。
 　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。
 【示例5-7】 super关键字的使用
-public class TestSuper01 { public static void main(String[] args) {new ChildClass().f();}}class FatherClass {public int value;public void f(){value = 100;System.out.println (&quot;FatherClass.value=&quot;&#43;value);}}class ChildClass extends FatherClass {public int value;public void f() {super.f(); //调用父类对象的普通方法value = 200;System.out.println(&quot;ChildClass.value=&quot;&#43;value);System.out.println(value);System.out.println(super.value); //调用父类对象的成员变量}} 执行结果如图5-5所示：">
+public class TestSuper01 { public static void main(String[] args) { new ChildClass().f(); } } class FatherClass { public int value; public void f(){ value = 100; System.out.println (&#34;FatherClass.value=&#34;&#43;value); } } class ChildClass extends FatherClass { public int value; public void f() { super.f(); //调用父类对象的普通方法 	value = 200; System.out.println(&#34;ChildClass.value=&#34;&#43;value); System.out.println(value); System.out.println(super.value); //调用父类对象的成员变量 	} } 执行结果如图5-5所示：">
 <meta itemprop="datePublished" content="2021-03-02T18:20:00+08:00" />
 <meta itemprop="dateModified" content="2021-03-02T18:20:00+08:00" />
 <meta itemprop="wordCount" content="59">
@@ -25,7 +25,7 @@ public class TestSuper01 { public static void main(String[] args) {new ChildCla
 　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。
 　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。
 【示例5-7】 super关键字的使用
-public class TestSuper01 { public static void main(String[] args) {new ChildClass().f();}}class FatherClass {public int value;public void f(){value = 100;System.out.println (&quot;FatherClass.value=&quot;&#43;value);}}class ChildClass extends FatherClass {public int value;public void f() {super.f(); //调用父类对象的普通方法value = 200;System.out.println(&quot;ChildClass.value=&quot;&#43;value);System.out.println(value);System.out.println(super.value); //调用父类对象的成员变量}} 执行结果如图5-5所示：" />
+public class TestSuper01 { public static void main(String[] args) { new ChildClass().f(); } } class FatherClass { public int value; public void f(){ value = 100; System.out.println (&#34;FatherClass.value=&#34;&#43;value); } } class ChildClass extends FatherClass { public int value; public void f() { super.f(); //调用父类对象的普通方法 	value = 200; System.out.println(&#34;ChildClass.value=&#34;&#43;value); System.out.println(value); System.out.println(super.value); //调用父类对象的成员变量 	} } 执行结果如图5-5所示：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/posts/5.3-super%E5%85%B3%E9%94%AE%E5%AD%97/" />
 <meta property="article:published_time" content="2021-03-02T18:20:00+08:00" />
@@ -36,7 +36,7 @@ public class TestSuper01 { public static void main(String[] args) {new ChildCla
 　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。
 　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。
 【示例5-7】 super关键字的使用
-public class TestSuper01 { public static void main(String[] args) {new ChildClass().f();}}class FatherClass {public int value;public void f(){value = 100;System.out.println (&quot;FatherClass.value=&quot;&#43;value);}}class ChildClass extends FatherClass {public int value;public void f() {super.f(); //调用父类对象的普通方法value = 200;System.out.println(&quot;ChildClass.value=&quot;&#43;value);System.out.println(value);System.out.println(super.value); //调用父类对象的成员变量}} 执行结果如图5-5所示："/>
+public class TestSuper01 { public static void main(String[] args) { new ChildClass().f(); } } class FatherClass { public int value; public void f(){ value = 100; System.out.println (&#34;FatherClass.value=&#34;&#43;value); } } class ChildClass extends FatherClass { public int value; public void f() { super.f(); //调用父类对象的普通方法 	value = 200; System.out.println(&#34;ChildClass.value=&#34;&#43;value); System.out.println(value); System.out.println(super.value); //调用父类对象的成员变量 	} } 执行结果如图5-5所示："/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -93,30 +93,29 @@ public class TestSuper01 { public static void main(String[] args) {new ChildCla
 <p>　　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。</p>
 <p>　　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。</p>
 <p><strong>【示例5-7】</strong> super关键字的使用</p>
-<pre><code>public class TestSuper01 { 
-    public static void main(String[] args) {
-        new ChildClass().f();
-    }
-}
-class FatherClass {
-    public int value;
-    public void f(){
-        value = 100;
-        System.out.println (&quot;FatherClass.value=&quot;+value);
-    }
-}
-class ChildClass extends FatherClass {
-    public int value;
-    public void f() {
-        super.f();  //调用父类对象的普通方法
-        value = 200;
-        System.out.println(&quot;ChildClass.value=&quot;+value);
-        System.out.println(value);
-        System.out.println(super.value); //调用父类对象的成员变量
-    }
-}
-</code></pre>
-<p>执行结果如图5-5所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestSuper01</span> <span class="o">{</span> 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">new</span> <span class="n">ChildClass</span><span class="o">().</span><span class="na">f</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">f</span><span class="o">(){</span>
+		<span class="n">value</span> <span class="o">=</span> <span class="n">100</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span> <span class="o">(</span><span class="s">&#34;FatherClass.value=&#34;</span><span class="o">+</span><span class="n">value</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">ChildClass</span> <span class="kd">extends</span> <span class="n">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">f</span><span class="o">()</span> <span class="o">{</span>
+		<span class="kd">super</span><span class="o">.</span><span class="na">f</span><span class="o">();</span>  <span class="c1">//调用父类对象的普通方法
+</span><span class="c1"></span>		<span class="n">value</span> <span class="o">=</span> <span class="n">200</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;ChildClass.value=&#34;</span><span class="o">+</span><span class="n">value</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="kd">super</span><span class="o">.</span><span class="na">value</span><span class="o">);</span> <span class="c1">//调用父类对象的成员变量
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-5所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495186136513650.png" alt="enter description here"></p>
 
 			</div>

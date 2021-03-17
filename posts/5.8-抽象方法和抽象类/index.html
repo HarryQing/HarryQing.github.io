@@ -11,7 +11,7 @@
 <meta itemprop="description" content="·抽象方法 　使用abstract修饰的方法，没有方法体，只有声明。定义的是一种“规范”，就是告诉子类必须要给抽象方法提供具体的实现。
 ·抽象类 　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。
 【示例5-16】 抽象类和抽象方法的基本用法
-//抽象类abstract class Animal {abstract public void shout(); //抽象方法}class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误public void shout() {System.out.println(&quot;汪汪汪！&quot;);}public void seeDoor(){System.out.println(&quot;看门中....&quot;);}}//测试抽象类public class TestAbstractClass {public static void main(String[] args) {Dog a = new Dog();a.shout();a.seeDoor();}} 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
+//抽象类 abstract class Animal { abstract public void shout(); //抽象方法 } class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误 	public void shout() { System.out.println(&#34;汪汪汪！&#34;); } public void seeDoor(){ System.out.println(&#34;看门中....&#34;); } } //测试抽象类 public class TestAbstractClass { public static void main(String[] args) { Dog a = new Dog(); a.shout(); a.seeDoor(); } } 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
 　2. 抽象类不能实例化，即不能用new来实例化抽象类。
 　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。
 　4. 抽象类只能用来被继承。">
@@ -26,7 +26,7 @@
 <meta property="og:description" content="·抽象方法 　使用abstract修饰的方法，没有方法体，只有声明。定义的是一种“规范”，就是告诉子类必须要给抽象方法提供具体的实现。
 ·抽象类 　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。
 【示例5-16】 抽象类和抽象方法的基本用法
-//抽象类abstract class Animal {abstract public void shout(); //抽象方法}class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误public void shout() {System.out.println(&quot;汪汪汪！&quot;);}public void seeDoor(){System.out.println(&quot;看门中....&quot;);}}//测试抽象类public class TestAbstractClass {public static void main(String[] args) {Dog a = new Dog();a.shout();a.seeDoor();}} 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
+//抽象类 abstract class Animal { abstract public void shout(); //抽象方法 } class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误 	public void shout() { System.out.println(&#34;汪汪汪！&#34;); } public void seeDoor(){ System.out.println(&#34;看门中....&#34;); } } //测试抽象类 public class TestAbstractClass { public static void main(String[] args) { Dog a = new Dog(); a.shout(); a.seeDoor(); } } 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
 　2. 抽象类不能实例化，即不能用new来实例化抽象类。
 　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。
 　4. 抽象类只能用来被继承。" />
@@ -39,7 +39,7 @@
 <meta name="twitter:description" content="·抽象方法 　使用abstract修饰的方法，没有方法体，只有声明。定义的是一种“规范”，就是告诉子类必须要给抽象方法提供具体的实现。
 ·抽象类 　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。
 【示例5-16】 抽象类和抽象方法的基本用法
-//抽象类abstract class Animal {abstract public void shout(); //抽象方法}class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误public void shout() {System.out.println(&quot;汪汪汪！&quot;);}public void seeDoor(){System.out.println(&quot;看门中....&quot;);}}//测试抽象类public class TestAbstractClass {public static void main(String[] args) {Dog a = new Dog();a.shout();a.seeDoor();}} 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
+//抽象类 abstract class Animal { abstract public void shout(); //抽象方法 } class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误 	public void shout() { System.out.println(&#34;汪汪汪！&#34;); } public void seeDoor(){ System.out.println(&#34;看门中....&#34;); } } //测试抽象类 public class TestAbstractClass { public static void main(String[] args) { Dog a = new Dog(); a.shout(); a.seeDoor(); } } 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
 　2. 抽象类不能实例化，即不能用new来实例化抽象类。
 　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。
 　4. 抽象类只能用来被继承。"/>
@@ -100,29 +100,28 @@
 <h2 id="抽象类">·抽象类<a href="#抽象类" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>　　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。</p>
 <p><strong>【示例5-16】</strong> 抽象类和抽象方法的基本用法</p>
-<pre><code>//抽象类
-abstract class Animal {
-    abstract public void shout();  //抽象方法
-}
-class Dog extends Animal { 
-    //子类必须实现父类的抽象方法，否则编译错误
-    public void shout() {
-        System.out.println(&quot;汪汪汪！&quot;);
-    }
-    public void seeDoor(){
-        System.out.println(&quot;看门中....&quot;);
-    }
-}
-//测试抽象类
-public class TestAbstractClass {
-    public static void main(String[] args) {
-        Dog a = new Dog();
-        a.shout();
-        a.seeDoor();
-    }
-}
-</code></pre>
-<h2 id="抽象类的使用要点">抽象类的使用要点:<a href="#抽象类的使用要点" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//抽象类
+</span><span class="c1"></span><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+	<span class="kd">abstract</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">();</span>  <span class="c1">//抽象方法
+</span><span class="c1"></span><span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span> 
+	<span class="c1">//子类必须实现父类的抽象方法，否则编译错误
+</span><span class="c1"></span>	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;汪汪汪！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">seeDoor</span><span class="o">(){</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;看门中....&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="c1">//测试抽象类
+</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestAbstractClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Dog</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">shout</span><span class="o">();</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">seeDoor</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="抽象类的使用要点">抽象类的使用要点:<a href="#抽象类的使用要点" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>　　1. 有抽象方法的类只能定义成抽象类</p>
 <p>　　2. 抽象类不能实例化，即不能用new来实例化抽象类。</p>
 <p>　　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。</p>

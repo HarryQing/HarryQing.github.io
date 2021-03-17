@@ -13,7 +13,7 @@
 图5-1 现实世界中的继承
 　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。
 【示例5-1】 使用extends实现继承
-public class Test{public static void main(String[] args) {Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);s.rest();s.study();}}class Person {String name;int height;public void rest(){System.out.println(&quot;休息一会！&quot;);} }class Student extends Person {String major; //专业public void study(){System.out.println(&quot;雪儿，学习Java&quot;);} public Student(String name,int height,String major) {//天然拥有父类的属性this.name = name;this.height = height;this.">
+public class Test{ public static void main(String[] args) { Student s = new Student(&#34;王雪庆&#34;,172,&#34;Java&#34;); s.rest(); s.study(); } } class Person { String name; int height; public void rest(){ System.out.println(&#34;休息一会！&#34;); } } class Student extends Person { String major; //专业  public void study(){ System.out.println(&#34;雪儿，学习Java&#34;); } public Student(String name,int height,String major) { //天然拥有父类的属性  this.name = name; this.height = height; this.">
 <meta itemprop="datePublished" content="2021-03-01T19:20:00+08:00" />
 <meta itemprop="dateModified" content="2021-03-01T19:20:00+08:00" />
 <meta itemprop="wordCount" content="72">
@@ -27,7 +27,7 @@ public class Test{public static void main(String[] args) {Student s = new Stud
 图5-1 现实世界中的继承
 　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。
 【示例5-1】 使用extends实现继承
-public class Test{public static void main(String[] args) {Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);s.rest();s.study();}}class Person {String name;int height;public void rest(){System.out.println(&quot;休息一会！&quot;);} }class Student extends Person {String major; //专业public void study(){System.out.println(&quot;雪儿，学习Java&quot;);} public Student(String name,int height,String major) {//天然拥有父类的属性this.name = name;this.height = height;this." />
+public class Test{ public static void main(String[] args) { Student s = new Student(&#34;王雪庆&#34;,172,&#34;Java&#34;); s.rest(); s.study(); } } class Person { String name; int height; public void rest(){ System.out.println(&#34;休息一会！&#34;); } } class Student extends Person { String major; //专业  public void study(){ System.out.println(&#34;雪儿，学习Java&#34;); } public Student(String name,int height,String major) { //天然拥有父类的属性  this.name = name; this.height = height; this." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/posts/5.1.1-%E7%BB%A7%E6%89%BF%E7%9A%84%E5%AE%9E%E7%8E%B0/" />
 <meta property="article:published_time" content="2021-03-01T19:20:00+08:00" />
@@ -39,7 +39,7 @@ public class Test{public static void main(String[] args) {Student s = new Stud
 图5-1 现实世界中的继承
 　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。
 【示例5-1】 使用extends实现继承
-public class Test{public static void main(String[] args) {Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);s.rest();s.study();}}class Person {String name;int height;public void rest(){System.out.println(&quot;休息一会！&quot;);} }class Student extends Person {String major; //专业public void study(){System.out.println(&quot;雪儿，学习Java&quot;);} public Student(String name,int height,String major) {//天然拥有父类的属性this.name = name;this.height = height;this."/>
+public class Test{ public static void main(String[] args) { Student s = new Student(&#34;王雪庆&#34;,172,&#34;Java&#34;); s.rest(); s.study(); } } class Person { String name; int height; public void rest(){ System.out.println(&#34;休息一会！&#34;); } } class Student extends Person { String major; //专业  public void study(){ System.out.println(&#34;雪儿，学习Java&#34;); } public Student(String name,int height,String major) { //天然拥有父类的属性  this.name = name; this.height = height; this."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -98,34 +98,33 @@ public class Test{public static void main(String[] args) {Student s = new Stud
 <p>图5-1 现实世界中的继承</p>
 <p>　　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。</p>
 <p><strong>【示例5-1】</strong> 使用extends实现继承</p>
-<pre><code>public class Test{
-    public static void main(String[] args) {
-        Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);
-        s.rest();
-        s.study();
-    }
-}
-class Person {
-    String name;
-    int height;
-    public void rest(){
-        System.out.println(&quot;休息一会！&quot;);
-    }  
-}
-class Student extends Person {
-    String major; //专业
-    public void study(){
-        System.out.println(&quot;雪儿，学习Java&quot;);
-    }  
-    public Student(String name,int height,String major) {
-        //天然拥有父类的属性
-        this.name = name;
-        this.height = height;
-        this.major = major;
-    }
-}
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Student</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="s">&#34;王雪庆&#34;</span><span class="o">,</span><span class="n">172</span><span class="o">,</span><span class="s">&#34;Java&#34;</span><span class="o">);</span>
+        <span class="n">s</span><span class="o">.</span><span class="na">rest</span><span class="o">();</span>
+        <span class="n">s</span><span class="o">.</span><span class="na">study</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">rest</span><span class="o">(){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;休息一会！&#34;</span><span class="o">);</span>
+    <span class="o">}</span>  
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">major</span><span class="o">;</span> <span class="c1">//专业
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">study</span><span class="o">(){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;雪儿，学习Java&#34;</span><span class="o">);</span>
+    <span class="o">}</span>  
+    <span class="kd">public</span> <span class="nf">Student</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span><span class="kt">int</span> <span class="n">height</span><span class="o">,</span><span class="n">String</span> <span class="n">major</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//天然拥有父类的属性
+</span><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">height</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">major</span> <span class="o">=</span> <span class="n">major</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">

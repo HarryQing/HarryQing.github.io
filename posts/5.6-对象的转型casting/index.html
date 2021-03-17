@@ -11,10 +11,10 @@
 <meta itemprop="description" content="父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。
 　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!
 【示例5-13】 对象的转型
-public class TestCasting {public static void main(String[] args) {Object obj = new String(&quot;北京&quot;); // 向上可以自动转型// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。* 不然通不过编译器的检查。 */String str = (String) obj; // 向下转型System.out.println(str.charAt(0)); // 位于0索引位置的字符System.out.println(obj == str); // true.他们俩运行时是同一个对象}} 　执行结果如果5-18所示：
+public class TestCasting { public static void main(String[] args) { Object obj = new String(&#34;北京&#34;); // 向上可以自动转型 	// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型 	/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 * 不然通不过编译器的检查。 */ String str = (String) obj; // 向下转型 	System.out.println(str.charAt(0)); // 位于0索引位置的字符 	System.out.println(obj == str); // true.他们俩运行时是同一个对象 	} } 　执行结果如果5-18所示：
 　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。
 【示例5-14】 类型转换异常
-public class TestCasting2 {public static void main(String[] args) {Object obj = new String(&quot;北京尚学堂&quot;);//真实的子类类型是String，但是此处向下转型为StringBufferStringBuffer str = (StringBuffer) obj;System.">
+public class TestCasting2 { public static void main(String[] args) { Object obj = new String(&#34;北京尚学堂&#34;); //真实的子类类型是String，但是此处向下转型为StringBuffer 	StringBuffer str = (StringBuffer) obj; System.">
 <meta itemprop="datePublished" content="2021-03-04T18:20:00+08:00" />
 <meta itemprop="dateModified" content="2021-03-04T18:20:00+08:00" />
 <meta itemprop="wordCount" content="115">
@@ -26,10 +26,10 @@ public class TestCasting2 {public static void main(String[] args) {Object obj 
 <meta property="og:description" content="父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。
 　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!
 【示例5-13】 对象的转型
-public class TestCasting {public static void main(String[] args) {Object obj = new String(&quot;北京&quot;); // 向上可以自动转型// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。* 不然通不过编译器的检查。 */String str = (String) obj; // 向下转型System.out.println(str.charAt(0)); // 位于0索引位置的字符System.out.println(obj == str); // true.他们俩运行时是同一个对象}} 　执行结果如果5-18所示：
+public class TestCasting { public static void main(String[] args) { Object obj = new String(&#34;北京&#34;); // 向上可以自动转型 	// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型 	/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 * 不然通不过编译器的检查。 */ String str = (String) obj; // 向下转型 	System.out.println(str.charAt(0)); // 位于0索引位置的字符 	System.out.println(obj == str); // true.他们俩运行时是同一个对象 	} } 　执行结果如果5-18所示：
 　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。
 【示例5-14】 类型转换异常
-public class TestCasting2 {public static void main(String[] args) {Object obj = new String(&quot;北京尚学堂&quot;);//真实的子类类型是String，但是此处向下转型为StringBufferStringBuffer str = (StringBuffer) obj;System." />
+public class TestCasting2 { public static void main(String[] args) { Object obj = new String(&#34;北京尚学堂&#34;); //真实的子类类型是String，但是此处向下转型为StringBuffer 	StringBuffer str = (StringBuffer) obj; System." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/posts/5.6-%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E5%9E%8Bcasting/" />
 <meta property="article:published_time" content="2021-03-04T18:20:00+08:00" />
@@ -39,10 +39,10 @@ public class TestCasting2 {public static void main(String[] args) {Object obj 
 <meta name="twitter:description" content="父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。
 　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!
 【示例5-13】 对象的转型
-public class TestCasting {public static void main(String[] args) {Object obj = new String(&quot;北京&quot;); // 向上可以自动转型// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。* 不然通不过编译器的检查。 */String str = (String) obj; // 向下转型System.out.println(str.charAt(0)); // 位于0索引位置的字符System.out.println(obj == str); // true.他们俩运行时是同一个对象}} 　执行结果如果5-18所示：
+public class TestCasting { public static void main(String[] args) { Object obj = new String(&#34;北京&#34;); // 向上可以自动转型 	// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型 	/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 * 不然通不过编译器的检查。 */ String str = (String) obj; // 向下转型 	System.out.println(str.charAt(0)); // 位于0索引位置的字符 	System.out.println(obj == str); // true.他们俩运行时是同一个对象 	} } 　执行结果如果5-18所示：
 　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。
 【示例5-14】 类型转换异常
-public class TestCasting2 {public static void main(String[] args) {Object obj = new String(&quot;北京尚学堂&quot;);//真实的子类类型是String，但是此处向下转型为StringBufferStringBuffer str = (StringBuffer) obj;System."/>
+public class TestCasting2 { public static void main(String[] args) { Object obj = new String(&#34;北京尚学堂&#34;); //真实的子类类型是String，但是此处向下转型为StringBuffer 	StringBuffer str = (StringBuffer) obj; System."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -98,49 +98,46 @@ public class TestCasting2 {public static void main(String[] args) {Object obj 
 				<p>　　父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。</p>
 <p>　　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!</p>
 <p><strong>【示例5-13】</strong> 对象的转型</p>
-<pre><code>public class TestCasting {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京&quot;); // 向上可以自动转型
-        // obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型
-        /* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
-         * 不然通不过编译器的检查。 */
-        String str = (String) obj; // 向下转型
-        System.out.println(str.charAt(0)); // 位于0索引位置的字符
-        System.out.println(obj == str); // true.他们俩运行时是同一个对象
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-18所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京&#34;</span><span class="o">);</span> <span class="c1">// 向上可以自动转型
+</span><span class="c1"></span>		<span class="c1">// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型
+</span><span class="c1"></span>		<span class="cm">/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+</span><span class="cm">		 * 不然通不过编译器的检查。 */</span>
+		<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span> <span class="c1">// 向下转型
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span> <span class="c1">// 位于0索引位置的字符
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">obj</span> <span class="o">==</span> <span class="n">str</span><span class="o">);</span> <span class="c1">// true.他们俩运行时是同一个对象
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-18所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495254148771321.png" alt="enter description here"></p>
 <p>　　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。</p>
 <p><strong>【示例5-14】</strong> 类型转换异常</p>
-<pre><code>public class TestCasting2 {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京尚学堂&quot;);
-        //真实的子类类型是String，但是此处向下转型为StringBuffer
-        StringBuffer str = (StringBuffer) obj;
-        System.out.println(str.charAt(0));
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-19所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting2</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京尚学堂&#34;</span><span class="o">);</span>
+		<span class="c1">//真实的子类类型是String，但是此处向下转型为StringBuffer
+</span><span class="c1"></span>		<span class="n">StringBuffer</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">StringBuffer</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-19所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256025435935.png" alt="enter description here"></p>
 <p>　　为了避免出现这种异常，我们可以使用5.1.2中所学的instanceof运算符进行判断，如示例5-15所示。</p>
 <p><strong>【示例5-15】</strong> 向下转型中使用instanceof</p>
-<pre><code>public class TestCasting3 {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京&quot;);
-        if(obj instanceof String){
-            String str = (String)obj;
-            System.out.println(str.charAt(0));
-        }else if(obj instanceof StringBuffer){
-            StringBuffer str = (StringBuffer) obj;
-            System.out.println(str.charAt(0));
-        }
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-20所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting3</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京&#34;</span><span class="o">);</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">String</span><span class="o">){</span>
+			<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span><span class="n">obj</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+		<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">StringBuffer</span><span class="o">){</span>
+			<span class="n">StringBuffer</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">StringBuffer</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-20所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256138635602.png" alt="enter description here"></p>
 
 			</div>

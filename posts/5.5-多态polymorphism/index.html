@@ -10,7 +10,7 @@
 <meta itemprop="name" content="5.5 多态(polymorphism)">
 <meta itemprop="description" content="多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。
 多态的要点：  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。 【示例5-12】 多态和类型转换测试
-class Animal {public void shout() {System.out.println(&quot;叫了一声！&quot;);}}class Dog extends Animal {public void shout() {System.out.println(&quot;旺旺旺！&quot;);}public void seeDoor() {System.out.println(&quot;看门中....&quot;);}}class Cat extends Animal {public void shout() {System.out.println(&quot;喵喵喵喵！&quot;);}}public class TestPolym {public static void main(String[] args) {Animal a1 = new Cat(); // 向上可以自动转型//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。animalCry(a1);Animal a2 = new Dog();animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。// 否则通不过编译器的检查。Dog dog = (Dog)a2;//向下需要强制类型转换dog.">
+class Animal { public void shout() { System.out.println(&#34;叫了一声！&#34;); } } class Dog extends Animal { public void shout() { System.out.println(&#34;旺旺旺！&#34;); } public void seeDoor() { System.out.println(&#34;看门中....&#34;); } } class Cat extends Animal { public void shout() { System.out.println(&#34;喵喵喵喵！&#34;); } } public class TestPolym { public static void main(String[] args) { Animal a1 = new Cat(); // 向上可以自动转型 	//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。 	animalCry(a1); Animal a2 = new Dog(); animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。  //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 	// 否则通不过编译器的检查。 	Dog dog = (Dog)a2;//向下需要强制类型转换 	dog.">
 <meta itemprop="datePublished" content="2021-03-04T16:20:00+08:00" />
 <meta itemprop="dateModified" content="2021-03-04T16:20:00+08:00" />
 <meta itemprop="wordCount" content="120">
@@ -21,7 +21,7 @@ class Animal {public void shout() {System.out.println(&quot;叫了一声！&qu
 <meta property="og:title" content="5.5 多态(polymorphism)" />
 <meta property="og:description" content="多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。
 多态的要点：  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。 【示例5-12】 多态和类型转换测试
-class Animal {public void shout() {System.out.println(&quot;叫了一声！&quot;);}}class Dog extends Animal {public void shout() {System.out.println(&quot;旺旺旺！&quot;);}public void seeDoor() {System.out.println(&quot;看门中....&quot;);}}class Cat extends Animal {public void shout() {System.out.println(&quot;喵喵喵喵！&quot;);}}public class TestPolym {public static void main(String[] args) {Animal a1 = new Cat(); // 向上可以自动转型//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。animalCry(a1);Animal a2 = new Dog();animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。// 否则通不过编译器的检查。Dog dog = (Dog)a2;//向下需要强制类型转换dog." />
+class Animal { public void shout() { System.out.println(&#34;叫了一声！&#34;); } } class Dog extends Animal { public void shout() { System.out.println(&#34;旺旺旺！&#34;); } public void seeDoor() { System.out.println(&#34;看门中....&#34;); } } class Cat extends Animal { public void shout() { System.out.println(&#34;喵喵喵喵！&#34;); } } public class TestPolym { public static void main(String[] args) { Animal a1 = new Cat(); // 向上可以自动转型 	//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。 	animalCry(a1); Animal a2 = new Dog(); animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。  //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 	// 否则通不过编译器的检查。 	Dog dog = (Dog)a2;//向下需要强制类型转换 	dog." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/posts/5.5-%E5%A4%9A%E6%80%81polymorphism/" />
 <meta property="article:published_time" content="2021-03-04T16:20:00+08:00" />
@@ -30,7 +30,7 @@ class Animal {public void shout() {System.out.println(&quot;叫了一声！&qu
 <meta name="twitter:title" content="5.5 多态(polymorphism)"/>
 <meta name="twitter:description" content="多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。
 多态的要点：  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。 【示例5-12】 多态和类型转换测试
-class Animal {public void shout() {System.out.println(&quot;叫了一声！&quot;);}}class Dog extends Animal {public void shout() {System.out.println(&quot;旺旺旺！&quot;);}public void seeDoor() {System.out.println(&quot;看门中....&quot;);}}class Cat extends Animal {public void shout() {System.out.println(&quot;喵喵喵喵！&quot;);}}public class TestPolym {public static void main(String[] args) {Animal a1 = new Cat(); // 向上可以自动转型//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。animalCry(a1);Animal a2 = new Dog();animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。// 否则通不过编译器的检查。Dog dog = (Dog)a2;//向下需要强制类型转换dog."/>
+class Animal { public void shout() { System.out.println(&#34;叫了一声！&#34;); } } class Dog extends Animal { public void shout() { System.out.println(&#34;旺旺旺！&#34;); } public void seeDoor() { System.out.println(&#34;看门中....&#34;); } } class Cat extends Animal { public void shout() { System.out.println(&#34;喵喵喵喵！&#34;); } } public class TestPolym { public static void main(String[] args) { Animal a1 = new Cat(); // 向上可以自动转型 	//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。 	animalCry(a1); Animal a2 = new Dog(); animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。  //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 	// 否则通不过编译器的检查。 	Dog dog = (Dog)a2;//向下需要强制类型转换 	dog."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -92,54 +92,53 @@ class Animal {public void shout() {System.out.println(&quot;叫了一声！&qu
   3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。
 </code></pre>
 <p><strong>【示例5-12】</strong> 多态和类型转换测试</p>
-<pre><code>class Animal {
-    public void shout() {
-        System.out.println(&quot;叫了一声！&quot;);
-    }
-}
-class Dog extends Animal {
-    public void shout() {
-        System.out.println(&quot;旺旺旺！&quot;);
-    }
-    public void seeDoor() {
-        System.out.println(&quot;看门中....&quot;);
-    }
-}
-class Cat extends Animal {
-    public void shout() {
-        System.out.println(&quot;喵喵喵喵！&quot;);
-    }
-}
-public class TestPolym {
-    public static void main(String[] args) {
-        Animal a1 = new Cat(); // 向上可以自动转型
-        //传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。
-        animalCry(a1);
-        Animal a2 = new Dog();
-        animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;叫了一声！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;旺旺旺！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">seeDoor</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;看门中....&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;喵喵喵喵！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestPolym</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Animal</span> <span class="n">a1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="o">();</span> <span class="c1">// 向上可以自动转型
+</span><span class="c1"></span>		<span class="c1">//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。
+</span><span class="c1"></span>		<span class="n">animalCry</span><span class="o">(</span><span class="n">a1</span><span class="o">);</span>
+		<span class="n">Animal</span> <span class="n">a2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+		<span class="n">animalCry</span><span class="o">(</span><span class="n">a2</span><span class="o">);</span><span class="c1">//a2为编译类型，Dog对象才是运行时类型。
+</span><span class="c1"></span>
+		<span class="c1">//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+</span><span class="c1"></span>		<span class="c1">// 否则通不过编译器的检查。
+</span><span class="c1"></span>		<span class="n">Dog</span> <span class="n">dog</span> <span class="o">=</span> <span class="o">(</span><span class="n">Dog</span><span class="o">)</span><span class="n">a2</span><span class="o">;</span><span class="c1">//向下需要强制类型转换
+</span><span class="c1"></span>		<span class="n">dog</span><span class="o">.</span><span class="na">seeDoor</span><span class="o">();</span>
+	<span class="o">}</span>
 
-        //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
-        // 否则通不过编译器的检查。
-        Dog dog = (Dog)a2;//向下需要强制类型转换
-        dog.seeDoor();
-    }
+	<span class="c1">// 有了多态，只需要让增加的这个类继承Animal类就可以了。
+</span><span class="c1"></span>	<span class="kd">static</span> <span class="kt">void</span> <span class="nf">animalCry</span><span class="o">(</span><span class="n">Animal</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">shout</span><span class="o">();</span>
+	<span class="o">}</span>
 
-    // 有了多态，只需要让增加的这个类继承Animal类就可以了。
-    static void animalCry(Animal a) {
-        a.shout();
-    }
-
-    /* 如果没有多态，我们这里需要写很多重载的方法。
-     * 每增加一种动物，就需要重载一种动物的喊叫方法。非常麻烦。
-    static void animalCry(Dog d) {
-        d.shout();
-    }
-    static void animalCry(Cat c) {
-        c.shout();
-    }*/
-}
-</code></pre>
-<p>执行结果如图5-17所示：</p>
+	<span class="cm">/* 如果没有多态，我们这里需要写很多重载的方法。
+</span><span class="cm">	 * 每增加一种动物，就需要重载一种动物的喊叫方法。非常麻烦。
+</span><span class="cm">	static void animalCry(Dog d) {
+</span><span class="cm">		d.shout();
+</span><span class="cm">	}
+</span><span class="cm">	static void animalCry(Cat c) {
+</span><span class="cm">		c.shout();
+</span><span class="cm">	}*/</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-17所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495253451887350.png" alt="enter description here"></p>
 <p>图5-17 示例5-12运行效果图</p>
 <p>　　示例5-12给大家展示了多态最为多见的一种用法，即父类引用做方法的形参，实参可以是任意的子类对象，可以通过不同的子类对象实现不同的行为方式。</p>

@@ -29,45 +29,44 @@
 			<guid>https://HarryQing.github.io/posts/5.12.3-%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/</guid>
 			<description>组合模式是将对象组合成树形结构以表示“部分-整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
 【示例5-34】 对象的组合
-class Cpu {public void run() {System.out.println(&amp;quot;quickly.........&amp;quot;);}}class MainBoard {public void connect() {System.out.println(&amp;quot;connect...........&amp;quot;);}}class Memory {public void store() {System.out.println(&amp;quot;store........&amp;quot;);}}public class Computer {Cpu cpu;Memory memory;MainBoard mainBoard;public void work() {cpu.run();memory.store();mainBoard.connect();}public static void main(String[] args) {Computer computer = new Computer();computer.cpu = new Cpu();computer.mainBoard = new MainBoard();computer.</description>
+class Cpu { public void run() { System.out.println(&amp;#34;quickly.........&amp;#34;); } } class MainBoard { public void connect() { System.out.println(&amp;#34;connect...........&amp;#34;); } } class Memory { public void store() { System.out.println(&amp;#34;store........&amp;#34;); } } public class Computer { Cpu cpu; Memory memory; MainBoard mainBoard; public void work() { cpu.run(); memory.store(); mainBoard.connect(); } public static void main(String[] args) { Computer computer = new Computer(); computer.cpu = new Cpu(); computer.mainBoard = new MainBoard(); computer.</description>
 			<content type="html"><![CDATA[<p>　　组合模式是将对象组合成树形结构以表示“部分-整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。</p>
 <p><strong>【示例5-34】</strong> 对象的组合</p>
-<pre><code>class Cpu {
-    public void run() {
-        System.out.println(&quot;quickly.........&quot;);
-    }
-}
-class MainBoard {
-    public void connect() {
-        System.out.println(&quot;connect...........&quot;);
-    }
-}
-class Memory {
-    public void store() {
-        System.out.println(&quot;store........&quot;);
-    }
-}
-public class Computer {
-    Cpu cpu;
-    Memory memory;
-    MainBoard mainBoard;
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Cpu</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;quickly.........&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">MainBoard</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">connect</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;connect...........&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Memory</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">store</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;store........&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Computer</span> <span class="o">{</span>
+	<span class="n">Cpu</span> <span class="n">cpu</span><span class="o">;</span>
+	<span class="n">Memory</span> <span class="n">memory</span><span class="o">;</span>
+	<span class="n">MainBoard</span> <span class="n">mainBoard</span><span class="o">;</span>
 
-    public void work() {
-        cpu.run();
-        memory.store();
-        mainBoard.connect();
-    }
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">work</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">cpu</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+		<span class="n">memory</span><span class="o">.</span><span class="na">store</span><span class="o">();</span>
+		<span class="n">mainBoard</span><span class="o">.</span><span class="na">connect</span><span class="o">();</span>
+	<span class="o">}</span>
 
-    public static void main(String[] args) {
-        Computer computer = new Computer();
-        computer.cpu = new Cpu();
-        computer.mainBoard = new MainBoard();
-        computer.memory = new Memory();
-        computer.work();
-    }
-}
-</code></pre>
-<p>执行结果如图5-36所示：</p>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Computer</span> <span class="n">computer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Computer</span><span class="o">();</span>
+		<span class="n">computer</span><span class="o">.</span><span class="na">cpu</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cpu</span><span class="o">();</span>
+		<span class="n">computer</span><span class="o">.</span><span class="na">mainBoard</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MainBoard</span><span class="o">();</span>
+		<span class="n">computer</span><span class="o">.</span><span class="na">memory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Memory</span><span class="o">();</span>
+		<span class="n">computer</span><span class="o">.</span><span class="na">work</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-36所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495269438396479.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -82,7 +81,7 @@ public class Computer {
 　其实在Java开发中，还有另外一个方法可以实现同样的功能，那就是Java回调技术。回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，简单点说明就是：A类中调用B类中的C方法，然后B类中的C方法中反过来调用A类中的D方法，那么D这个方法就叫回调方法。
 回调的具体过程如下：  1. Class A实现接口CallBack —— 背景12. class A中包含class B的引用 ——背景23. class B有一个参数为CallBack的方法C ——背景34. 前三条是我们的准备条件，接下来A的对象调用B的方法C5. 然后class B就可以在C方法中调用A的方法D 　这样说大家可能还是不太理解，下面我们根据示例5-33来说明回调机制。该示例的生活背景为：有一天小刘遇到一个很难的问题“学习Java选哪家机构呢?”，于是就打电话问小高，小高一时也不太了解行情，就跟小刘说，我现在还有事，等忙完了给你咨询咨询，小刘也不会傻傻的拿着电话去等小高的答案，于是小刘对小高说，先挂电话吧，你知道答案后再打我电话告诉我吧，于是挂了电话。小高先去办自己的事情去了，过了几个小时，小高打电话给小刘，告诉他答案是“学Java当然去北京尚学堂”。
 【示例5-33】 回调机制示例
-/** * 回调接口 */interface CallBack { /** * 小高知道答案后告诉小刘时需要调用的方法，即回调方法* @param result 是问题的答案 */ public void answer(String result); }/** * 小刘类：实现了回调接口CallBack（背景一） */ class Liu implements CallBack { /** * 包含小高对象的引用 （背景二） */ private Gao gao; public Liu(Gao gao){ this.</description>
+/** * 回调接口 */ interface CallBack { /** * 小高知道答案后告诉小刘时需要调用的方法，即回调方法 * @param result 是问题的答案 */ public void answer(String result); } /** * 小刘类：实现了回调接口CallBack（背景一） */ class Liu implements CallBack { /** * 包含小高对象的引用 （背景二） */ private Gao gao; public Liu(Gao gao){ this.</description>
 			<content type="html"><![CDATA[<p>　　模板方法模式很常用，其目的是在一个方法中定义一个算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法的某些步骤。在标准的模板方法模式实现中，主要是使用继承的方式，来让父类在运行期间可以调用到子类的方法。 详见抽象类部分示例。</p>
 <p>　　其实在Java开发中，还有另外一个方法可以实现同样的功能，那就是Java回调技术。回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，简单点说明就是：A类中调用B类中的C方法，然后B类中的C方法中反过来调用A类中的D方法，那么D这个方法就叫回调方法。</p>
 <h2 id="回调的具体过程如下">回调的具体过程如下：</h2>
@@ -98,77 +97,76 @@ public class Computer {
 </code></pre>
 <p>　　这样说大家可能还是不太理解，下面我们根据示例5-33来说明回调机制。该示例的生活背景为：有一天小刘遇到一个很难的问题“学习Java选哪家机构呢?”，于是就打电话问小高，小高一时也不太了解行情，就跟小刘说，我现在还有事，等忙完了给你咨询咨询，小刘也不会傻傻的拿着电话去等小高的答案，于是小刘对小高说，先挂电话吧，你知道答案后再打我电话告诉我吧，于是挂了电话。小高先去办自己的事情去了，过了几个小时，小高打电话给小刘，告诉他答案是“学Java当然去北京尚学堂”。</p>
 <p><strong>【示例5-33】</strong> 回调机制示例</p>
-<pre><code>/** 
- * 回调接口  
- */
-interface CallBack {  
-    /** 
-     * 小高知道答案后告诉小刘时需要调用的方法，即回调方法
-     * @param result 是问题的答案 
-     */  
-    public void answer(String result);  
-}
-/** 
- * 小刘类：实现了回调接口CallBack（背景一） 
- */  
-class Liu implements CallBack {  
-    /** 
-     * 包含小高对象的引用 （背景二） 
-     */  
-    private Gao gao;   
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/** 
+</span><span class="cm"> * 回调接口  
+</span><span class="cm"> */</span>
+<span class="kd">interface</span> <span class="nc">CallBack</span> <span class="o">{</span>  
+	<span class="cm">/** 
+</span><span class="cm">	 * 小高知道答案后告诉小刘时需要调用的方法，即回调方法
+</span><span class="cm">	 * @param result 是问题的答案 
+</span><span class="cm">	 */</span>  
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">answer</span><span class="o">(</span><span class="n">String</span> <span class="n">result</span><span class="o">);</span>  
+<span class="o">}</span>
+<span class="cm">/** 
+</span><span class="cm"> * 小刘类：实现了回调接口CallBack（背景一） 
+</span><span class="cm"> */</span>  
+<span class="kd">class</span> <span class="nc">Liu</span> <span class="kd">implements</span> <span class="n">CallBack</span> <span class="o">{</span>  
+	<span class="cm">/** 
+</span><span class="cm">	 * 包含小高对象的引用 （背景二） 
+</span><span class="cm">	 */</span>  
+	<span class="kd">private</span> <span class="n">Gao</span> <span class="n">gao</span><span class="o">;</span>   
 
-    public Liu(Gao gao){  
-        this.gao = gao;  
-    }  
+	<span class="kd">public</span> <span class="nf">Liu</span><span class="o">(</span><span class="n">Gao</span> <span class="n">gao</span><span class="o">){</span>  
+		<span class="k">this</span><span class="o">.</span><span class="na">gao</span> <span class="o">=</span> <span class="n">gao</span><span class="o">;</span>  
+	<span class="o">}</span>  
 
-    /** 
-     * 小刘通过这个方法去问小高 
-     * @param question  小刘问的问题“学习Java选哪家机构呢？” 
-     */  
-    public void askQuestion(String question){  
-        //小刘问小高问题
-        gao.execute(Liu.this, question);          
-    }  
-    /** 
-     * 小高知道答案后调用此方法告诉小刘
-     */  
-    @Override
-    public void answer(String result) {
-        System.out.println(&quot;小高告诉小刘的答案是：&quot; + result);        
-    }  
-} 
-/** 
- * 小高类 
- */  
-class Gao {
-     /** 
-     * 相当于class B有一个参数为CallBack的方法C（背景三） 
-     */  
-    public void execute(CallBack callBack, String question){  
-        System.out.println(&quot;小刘问的问题是：&quot; + question);  
-        //模拟小高挂点后先办自己的事情花了很长时间  
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        //小高办完自己的事情后想到了答案 
-        String result = &quot;当然是雪儿呀！&quot;;  
-        //小高打电话把答案告诉小刘，相当于class B 反过来调用class A 的D方法 
-        callBack.answer(result);         
-    }  
-}
+	<span class="cm">/** 
+</span><span class="cm">	 * 小刘通过这个方法去问小高 
+</span><span class="cm">	 * @param question  小刘问的问题“学习Java选哪家机构呢？” 
+</span><span class="cm">	 */</span>  
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">askQuestion</span><span class="o">(</span><span class="n">String</span> <span class="n">question</span><span class="o">){</span>  
+		<span class="c1">//小刘问小高问题
+</span><span class="c1"></span>		<span class="n">gao</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">Liu</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">question</span><span class="o">);</span>          
+	<span class="o">}</span>  
+	<span class="cm">/** 
+</span><span class="cm">	 * 小高知道答案后调用此方法告诉小刘
+</span><span class="cm">	 */</span>  
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">answer</span><span class="o">(</span><span class="n">String</span> <span class="n">result</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;小高告诉小刘的答案是：&#34;</span> <span class="o">+</span> <span class="n">result</span><span class="o">);</span>        
+	<span class="o">}</span>  
+<span class="o">}</span> 
+<span class="cm">/** 
+</span><span class="cm"> * 小高类 
+</span><span class="cm"> */</span>  
+<span class="kd">class</span> <span class="nc">Gao</span> <span class="o">{</span>
+	 <span class="cm">/** 
+</span><span class="cm">	 * 相当于class B有一个参数为CallBack的方法C（背景三） 
+</span><span class="cm">	 */</span>  
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">(</span><span class="n">CallBack</span> <span class="n">callBack</span><span class="o">,</span> <span class="n">String</span> <span class="n">question</span><span class="o">){</span>  
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;小刘问的问题是：&#34;</span> <span class="o">+</span> <span class="n">question</span><span class="o">);</span>  
+		<span class="c1">//模拟小高挂点后先办自己的事情花了很长时间  
+</span><span class="c1"></span>		<span class="k">try</span> <span class="o">{</span>
+			<span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">10000</span><span class="o">);</span>
+		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+		<span class="o">}</span>
+		<span class="c1">//小高办完自己的事情后想到了答案 
+</span><span class="c1"></span>		<span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="s">&#34;当然是雪儿呀！&#34;</span><span class="o">;</span>  
+		<span class="c1">//小高打电话把答案告诉小刘，相当于class B 反过来调用class A 的D方法 
+</span><span class="c1"></span>		<span class="n">callBack</span><span class="o">.</span><span class="na">answer</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>         
+	<span class="o">}</span>  
+<span class="o">}</span>
 
-public class Test {
-    public static void main(String[] args) {
-        Gao  gao= new Gao();  
-        Liu liu = new Liu(gao);  
-        //小刘问问题
-        liu.askQuestion(&quot;雪庆的对象谁呀？&quot;); 
-    } 
-}
-</code></pre>
-<p>　　通过回调在接口中定义的方法，调用到具体的实现类中的方法，其本质是利用Java的动态绑定技术，在这种实现中，可以不把实现类写成单独的类，而使用内部类或匿名内部类来实现回调方法。</p>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Gao</span>  <span class="n">gao</span><span class="o">=</span> <span class="k">new</span> <span class="n">Gao</span><span class="o">();</span>  
+		<span class="n">Liu</span> <span class="n">liu</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Liu</span><span class="o">(</span><span class="n">gao</span><span class="o">);</span>  
+		<span class="c1">//小刘问问题
+</span><span class="c1"></span>		<span class="n">liu</span><span class="o">.</span><span class="na">askQuestion</span><span class="o">(</span><span class="s">&#34;雪庆的对象谁呀？&#34;</span><span class="o">);</span> 
+	<span class="o">}</span> 
+<span class="o">}</span>
+</code></pre></div><p>　　通过回调在接口中定义的方法，调用到具体的实现类中的方法，其本质是利用Java的动态绑定技术，在这种实现中，可以不把实现类写成单独的类，而使用内部类或匿名内部类来实现回调方法。</p>
 ]]></content>
 		</item>
 		
@@ -201,28 +199,26 @@ public class Test {
 　2. 要测试两个字符串除了大小写区别外是否是相等的，需要使用equalsIgnoreCase方法。
 　3. 判断字符串是否相等不要使用&amp;quot;==&amp;quot;。
 【示例5-31】 忽略大小写的字符串比较
-&amp;quot;Hello&amp;quot;.equalsIgnoreCase(&amp;quot;hellO&amp;quot;);//true 【示例5-32】 字符串的比较&amp;quot;==&amp;ldquo;与equals()方法
-public class TestStringEquals {public static void main(String[] args) {String g1 = &amp;quot;大爱雪儿&amp;quot;;String g2 = &amp;quot;大爱雪儿&amp;quot;;String g3 = new String(&amp;quot;大爱雪儿&amp;quot;);System.out.println(g1 == g2); // true 指向同样的字符串常量对象System.out.println(g1 == g3); // false g3是新创建的对象System.out.println(g1.equals(g3)); // true g1和g3里面的字符串内容是一样的}} 执行结果如图5-33所示：
+&amp;#34;Hello&amp;#34;.equalsIgnoreCase(&amp;#34;hellO&amp;#34;);//true 【示例5-32】 字符串的比较&amp;quot;==&amp;ldquo;与equals()方法
+public class TestStringEquals { public static void main(String[] args) { String g1 = &amp;#34;大爱雪儿&amp;#34;; String g2 = &amp;#34;大爱雪儿&amp;#34;; String g3 = new String(&amp;#34;大爱雪儿&amp;#34;); System.out.println(g1 == g2); // true 指向同样的字符串常量对象 	System.out.println(g1 == g3); // false g3是新创建的对象 	System.out.println(g1.equals(g3)); // true g1和g3里面的字符串内容是一样的 	} } 执行结果如图5-33所示：
 图5-33 示例5-32运行效果图</description>
 			<content type="html"><![CDATA[<p>　　1. equals方法用来检测两个字符串内容是否相等。如果字符串s和t内容相等，则s.equals(t)返回true，否则返回false。</p>
 <p>　　2. 要测试两个字符串除了大小写区别外是否是相等的，需要使用equalsIgnoreCase方法。</p>
 <p>　　3. 判断字符串是否相等不要使用&quot;==&quot;。</p>
 <p><strong>【示例5-31】</strong> 忽略大小写的字符串比较</p>
-<pre><code>&quot;Hello&quot;.equalsIgnoreCase(&quot;hellO&quot;);//true
-</code></pre>
-<p><strong>【示例5-32】</strong> 字符串的比较&quot;==&ldquo;与equals()方法</p>
-<pre><code>public class TestStringEquals {
-    public static void main(String[] args) {
-        String g1 = &quot;大爱雪儿&quot;;
-        String g2 = &quot;大爱雪儿&quot;;
-        String g3 = new String(&quot;大爱雪儿&quot;);
-        System.out.println(g1 == g2); // true  指向同样的字符串常量对象
-        System.out.println(g1 == g3); // false  g3是新创建的对象
-        System.out.println(g1.equals(g3)); // true  g1和g3里面的字符串内容是一样的
-    }
-}
-</code></pre>
-<p>执行结果如图5-33所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="s">&#34;Hello&#34;</span><span class="o">.</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="s">&#34;hellO&#34;</span><span class="o">);</span><span class="c1">//true
+</span></code></pre></div><p><strong>【示例5-32】</strong> 字符串的比较&quot;==&ldquo;与equals()方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestStringEquals</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">String</span> <span class="n">g1</span> <span class="o">=</span> <span class="s">&#34;大爱雪儿&#34;</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">g2</span> <span class="o">=</span> <span class="s">&#34;大爱雪儿&#34;</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">g3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;大爱雪儿&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">g1</span> <span class="o">==</span> <span class="n">g2</span><span class="o">);</span> <span class="c1">// true  指向同样的字符串常量对象
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">g1</span> <span class="o">==</span> <span class="n">g3</span><span class="o">);</span> <span class="c1">// false  g3是新创建的对象
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">g1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g3</span><span class="o">));</span> <span class="c1">// true  g1和g3里面的字符串内容是一样的
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-33所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495268338419387.png" alt="enter description here"></p>
 <p>图5-33 示例5-32运行效果图</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495268347551446.png" alt="enter description here"></p>
@@ -237,52 +233,50 @@ public class TestStringEquals {public static void main(String[] args) {String 
 			<guid>https://HarryQing.github.io/posts/5.11.4-string%E7%B1%BB%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
 			<description>String类是我们最常使用的类。字符串类的方法我们必须非常熟悉!我们列出常用的方法，请大家熟悉。
 【示例5-29】 String类常用方法一
-public class StringTest1 {public static void main(String[] args) {String s1 = &amp;quot;core Java&amp;quot;;String s2 = &amp;quot;Core Java&amp;quot;;System.out.println(s1.charAt(3));//提取下标为3的字符System.out.println(s2.length());//字符串的长度System.out.println(s1.equals(s2));//比较两个字符串是否相等System.out.println(s1.equalsIgnoreCase(s2));//比较两个字符串（忽略大小写）System.out.println(s1.indexOf(&amp;quot;Java&amp;quot;));//字符串s1中是否包含JavaSystem.out.println(s1.indexOf(&amp;quot;apple&amp;quot;));//字符串s1中是否包含appleString s = s1.replace(&#39; &#39;, &#39;&amp;amp;&#39;);//将s1中的空格替换成&amp;amp;System.out.println(&amp;quot;result is :&amp;quot; + s);}} 执行结果如图5-31所示：
+public class StringTest1 { public static void main(String[] args) { String s1 = &amp;#34;core Java&amp;#34;; String s2 = &amp;#34;Core Java&amp;#34;; System.out.println(s1.charAt(3));//提取下标为3的字符 	System.out.println(s2.length());//字符串的长度 	System.out.println(s1.equals(s2));//比较两个字符串是否相等 	System.out.println(s1.equalsIgnoreCase(s2));//比较两个字符串（忽略大小写） 	System.out.println(s1.indexOf(&amp;#34;Java&amp;#34;));//字符串s1中是否包含Java 	System.out.println(s1.indexOf(&amp;#34;apple&amp;#34;));//字符串s1中是否包含apple 	String s = s1.replace(&amp;#39; &amp;#39;, &amp;#39;&amp;amp;&amp;#39;);//将s1中的空格替换成&amp;amp; 	System.out.println(&amp;#34;result is :&amp;#34; + s); } } 执行结果如图5-31所示：
 【示例5-30】 String类常用方法二
-public class StringTest2 {public static void main(String[] args) {String s = &amp;quot;&amp;quot;;String s1 = &amp;quot;How are you?&amp;quot;;System.out.println(s1.startsWith(&amp;quot;How&amp;quot;));//是否以How开头System.out.println(s1.endsWith(&amp;quot;you&amp;quot;));//是否以you结尾s = s1.</description>
+public class StringTest2 { public static void main(String[] args) { String s = &amp;#34;&amp;#34;; String s1 = &amp;#34;How are you?</description>
 			<content type="html"><![CDATA[<p>　　String类是我们最常使用的类。字符串类的方法我们必须非常熟悉!我们列出常用的方法，请大家熟悉。</p>
 <p><img src="https://i.loli.net/2021/03/16/VvoiJlw8nDhZ26d.png" alt="image.png"></p>
 <p><strong>【示例5-29】</strong> String类常用方法一</p>
-<pre><code>public class StringTest1 {
-    public static void main(String[] args) {
-        String s1 = &quot;core Java&quot;;
-        String s2 = &quot;Core Java&quot;;
-        System.out.println(s1.charAt(3));//提取下标为3的字符
-        System.out.println(s2.length());//字符串的长度
-        System.out.println(s1.equals(s2));//比较两个字符串是否相等
-        System.out.println(s1.equalsIgnoreCase(s2));//比较两个字符串（忽略大小写）
-        System.out.println(s1.indexOf(&quot;Java&quot;));//字符串s1中是否包含Java
-        System.out.println(s1.indexOf(&quot;apple&quot;));//字符串s1中是否包含apple
-        String s = s1.replace(' ', '&amp;');//将s1中的空格替换成&amp;
-        System.out.println(&quot;result is :&quot; + s);
-    }
-}
-</code></pre>
-<p>执行结果如图5-31所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StringTest1</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">&#34;core Java&#34;</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">&#34;Core Java&#34;</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">3</span><span class="o">));</span><span class="c1">//提取下标为3的字符
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s2</span><span class="o">.</span><span class="na">length</span><span class="o">());</span><span class="c1">//字符串的长度
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">s2</span><span class="o">));</span><span class="c1">//比较两个字符串是否相等
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="n">s2</span><span class="o">));</span><span class="c1">//比较两个字符串（忽略大小写）
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">&#34;Java&#34;</span><span class="o">));</span><span class="c1">//字符串s1中是否包含Java
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">));</span><span class="c1">//字符串s1中是否包含apple
+</span><span class="c1"></span>		<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="na">replace</span><span class="o">(</span><span class="sc">&#39; &#39;</span><span class="o">,</span> <span class="sc">&#39;&amp;&#39;</span><span class="o">);</span><span class="c1">//将s1中的空格替换成&amp;
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;result is :&#34;</span> <span class="o">+</span> <span class="n">s</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-31所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495267731684048.png" alt="enter description here"></p>
 <p><strong>【示例5-30】</strong> String类常用方法二</p>
-<pre><code>public class StringTest2 {
-    public static void main(String[] args) {
-        String s = &quot;&quot;;
-        String s1 = &quot;How are you?&quot;;
-        System.out.println(s1.startsWith(&quot;How&quot;));//是否以How开头
-        System.out.println(s1.endsWith(&quot;you&quot;));//是否以you结尾
-        s = s1.substring(4);//提取子字符串：从下标为4的开始到字符串结尾为止
-        System.out.println(s);
-        s = s1.substring(4, 7);//提取子字符串：下标[4, 7) 不包括7
-        System.out.println(s);
-        s = s1.toLowerCase();//转小写
-        System.out.println(s);
-        s = s1.toUpperCase();//转大写
-        System.out.println(s);
-        String s2 = &quot;  How old are you!! &quot;;
-        s = s2.trim();//去除字符串首尾的空格。注意：中间的空格不能去除
-        System.out.println(s);
-        System.out.println(s2);//因为String是不可变字符串，所以s2不变
-    }
-}
-</code></pre>
-<p>执行结果如图5-32所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StringTest2</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">&#34;How are you?&#34;</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">startsWith</span><span class="o">(</span><span class="s">&#34;How&#34;</span><span class="o">));</span><span class="c1">//是否以How开头
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">endsWith</span><span class="o">(</span><span class="s">&#34;you&#34;</span><span class="o">));</span><span class="c1">//是否以you结尾
+</span><span class="c1"></span>		<span class="n">s</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">4</span><span class="o">);</span><span class="c1">//提取子字符串：从下标为4的开始到字符串结尾为止
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		<span class="n">s</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">4</span><span class="o">,</span> <span class="n">7</span><span class="o">);</span><span class="c1">//提取子字符串：下标[4, 7) 不包括7
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		<span class="n">s</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span><span class="c1">//转小写
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		<span class="n">s</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">();</span><span class="c1">//转大写
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">&#34;  How old are you!! &#34;</span><span class="o">;</span>
+		<span class="n">s</span> <span class="o">=</span> <span class="n">s2</span><span class="o">.</span><span class="na">trim</span><span class="o">();</span><span class="c1">//去除字符串首尾的空格。注意：中间的空格不能去除
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s2</span><span class="o">);</span><span class="c1">//因为String是不可变字符串，所以s2不变
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-32所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495267792980384.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -327,7 +321,7 @@ public class StringTest2 {public static void main(String[] args) {String s = &
 2. class文件常量池(Class Constant Pool) 　class常量池是在编译的时候每个class都有的，在编译阶段，存放的是常量(文本字符串、final常量等)和符号引用。
 3. 运行时常量池(Runtime Constant Pool) 　运行时常量池是在类加载完成之后，将每个class常量池中的符号引用值转存到运行时常量池中，也就是说，每个class都有一个运行时常量池，类在解析之后，将符号引用替换成直接引用，与全局常量池中的引用值保持一致。
 【示例5-28】 常量池
-String str1 = &amp;quot;abc&amp;quot;;String str2 = new String(&amp;quot;def&amp;quot;);String str3 = &amp;quot;abc&amp;quot;;String str4 = str2.intern();String str5 = &amp;quot;def&amp;quot;;System.out.println(str1 == str3);// trueSystem.out.println(str2 == str4);// falseSystem.out.println(str4 == str5);// true 　示例5-28的首先经过编译之后，在该类的class常量池中存放一些符号引用，然后类加载之后，将class常量池中存放的符号引用转存到运行时常量池中，然后经过验证，准备阶段之后，在堆中生成驻留字符串的实例对象(也就是上例中str1所指向的“abc”实例对象)，然后将这个对象的引用存到全局String Pool中，也就是String Pool中，最后在解析阶段，要把运行时常量池中的符号引用替换成直接引用，那么就直接查询String Pool，保证String Pool里的引用值与运行时常量池中的引用值一致，大概整个过程就是这样了。
+String str1 = &amp;#34;abc&amp;#34;; String str2 = new String(&amp;#34;def&amp;#34;); String str3 = &amp;#34;abc&amp;#34;; String str4 = str2.intern(); String str5 = &amp;#34;def&amp;#34;; System.out.println(str1 == str3);// true System.out.println(str2 == str4);// false System.out.println(str4 == str5);// true 　示例5-28的首先经过编译之后，在该类的class常量池中存放一些符号引用，然后类加载之后，将class常量池中存放的符号引用转存到运行时常量池中，然后经过验证，准备阶段之后，在堆中生成驻留字符串的实例对象(也就是上例中str1所指向的“abc”实例对象)，然后将这个对象的引用存到全局String Pool中，也就是String Pool中，最后在解析阶段，要把运行时常量池中的符号引用替换成直接引用，那么就直接查询String Pool，保证String Pool里的引用值与运行时常量池中的引用值一致，大概整个过程就是这样了。
 　回到示例5-28的那个程序，现在就很容易解释整个程序的内存分配过程了，首先，在堆中会有一个“abc”实例，全局String Pool中存放着“abc”的一个引用值，然后在运行第二句的时候会生成两个实例，一个是“def”的实例对象，并且String Pool中存储一个“def”的引用值，还有一个是new出来的一个“def”的实例对象，与上面那个是不同的实例，当在解析str3的时候查找String Pool，里面有“abc”的全局驻留字符串引用，所以str3的引用地址与之前的那个已存在的相同，str4是在运行的时候调用intern()函数，返回String Pool中“def”的引用值，如果没有就将str2的引用值添加进去，在这里，String Pool中已经有了“def”的引用值了，所以返回上面在new str2的时候添加到String Pool中的 “def”引用值，最后str5在解析的时候就也是指向存在于String Pool中的“def”的引用值，那么这样一分析之后，结果就容易理解了。</description>
 			<content type="html"><![CDATA[<p>　　在Java的内存分析中，我们会经常听到关于“常量池”的描述，实际上常量池也分了以下三种：</p>
 <h2 id="1-全局字符串常量池string-pool">1. 全局字符串常量池(String Pool)</h2>
@@ -337,16 +331,15 @@ String str1 = &amp;quot;abc&amp;quot;;String str2 = new String(&amp;quot;def&am
 <h2 id="3-运行时常量池runtime-constant-pool">3. 运行时常量池(Runtime Constant Pool)</h2>
 <p>　　运行时常量池是在类加载完成之后，将每个class常量池中的符号引用值转存到运行时常量池中，也就是说，每个class都有一个运行时常量池，类在解析之后，将符号引用替换成直接引用，与全局常量池中的引用值保持一致。</p>
 <p><strong>【示例5-28】</strong> 常量池</p>
-<pre><code>String str1 = &quot;abc&quot;;
-String str2 = new String(&quot;def&quot;);
-String str3 = &quot;abc&quot;;
-String str4 = str2.intern();
-String str5 = &quot;def&quot;;
-System.out.println(str1 == str3);// true
-System.out.println(str2 == str4);// false
-System.out.println(str4 == str5);// true
-</code></pre>
-<p>　　示例5-28的首先经过编译之后，在该类的class常量池中存放一些符号引用，然后类加载之后，将class常量池中存放的符号引用转存到运行时常量池中，然后经过验证，准备阶段之后，在堆中生成驻留字符串的实例对象(也就是上例中str1所指向的“abc”实例对象)，然后将这个对象的引用存到全局String Pool中，也就是String Pool中，最后在解析阶段，要把运行时常量池中的符号引用替换成直接引用，那么就直接查询String Pool，保证String Pool里的引用值与运行时常量池中的引用值一致，大概整个过程就是这样了。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">&#34;abc&#34;</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;def&#34;</span><span class="o">);</span>
+<span class="n">String</span> <span class="n">str3</span> <span class="o">=</span> <span class="s">&#34;abc&#34;</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">str4</span> <span class="o">=</span> <span class="n">str2</span><span class="o">.</span><span class="na">intern</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">str5</span> <span class="o">=</span> <span class="s">&#34;def&#34;</span><span class="o">;</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str1</span> <span class="o">==</span> <span class="n">str3</span><span class="o">);</span><span class="c1">// true
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str2</span> <span class="o">==</span> <span class="n">str4</span><span class="o">);</span><span class="c1">// false
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str4</span> <span class="o">==</span> <span class="n">str5</span><span class="o">);</span><span class="c1">// true
+</span></code></pre></div><p>　　示例5-28的首先经过编译之后，在该类的class常量池中存放一些符号引用，然后类加载之后，将class常量池中存放的符号引用转存到运行时常量池中，然后经过验证，准备阶段之后，在堆中生成驻留字符串的实例对象(也就是上例中str1所指向的“abc”实例对象)，然后将这个对象的引用存到全局String Pool中，也就是String Pool中，最后在解析阶段，要把运行时常量池中的符号引用替换成直接引用，那么就直接查询String Pool，保证String Pool里的引用值与运行时常量池中的引用值一致，大概整个过程就是这样了。</p>
 <p>　　回到示例5-28的那个程序，现在就很容易解释整个程序的内存分配过程了，首先，在堆中会有一个“abc”实例，全局String Pool中存放着“abc”的一个引用值，然后在运行第二句的时候会生成两个实例，一个是“def”的实例对象，并且String Pool中存储一个“def”的引用值，还有一个是new出来的一个“def”的实例对象，与上面那个是不同的实例，当在解析str3的时候查找String Pool，里面有“abc”的全局驻留字符串引用，所以str3的引用地址与之前的那个已存在的相同，str4是在运行的时候调用intern()函数，返回String Pool中“def”的引用值，如果没有就将str2的引用值添加进去，在这里，String Pool中已经有了“def”的引用值了，所以返回上面在new str2的时候添加到String Pool中的 “def”引用值，最后str5在解析的时候就也是指向存在于String Pool中的“def”的引用值，那么这样一分析之后，结果就容易理解了。</p>
 ]]></content>
 		</item>
@@ -362,34 +355,32 @@ System.out.println(str4 == str5);// true
 　3. Java字符串就是Unicode字符序列，例如字符串“Java”就是4个Unicode字符’J’、’a’、’v’、’a’组成的。
 　4. Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义的类String，每个用双引号括起来的字符串都是String类的一个实例。
 【示例5-25】 String类的实例
-String e = &amp;quot;&amp;quot; ; // 空字符串String greeting = &amp;quot; Hello World &amp;quot;; 　5. Java允许使用符号&amp;quot;+&amp;ldquo;把两个字符串连接起来。
+String e = &amp;#34;&amp;#34; ; // 空字符串 String greeting = &amp;#34; Hello World &amp;#34;; 　5. Java允许使用符号&amp;quot;+&amp;ldquo;把两个字符串连接起来。
 【示例5-26】 字符串连接
-String s1 = &amp;quot;Hello&amp;quot;;String s2 = &amp;quot;World! &amp;quot;;String s = s1 + s2; //HelloWorld! 　n-符号&amp;rdquo;+&amp;ldquo;把两个字符串按给定的顺序连接在一起，并且是完全按照给定的形式。
+String s1 = &amp;#34;Hello&amp;#34;; String s2 = &amp;#34;World! &amp;#34;; String s = s1 + s2; //HelloWorld! 　n-符号&amp;rdquo;+&amp;ldquo;把两个字符串按给定的顺序连接在一起，并且是完全按照给定的形式。
 　n-当&amp;rdquo;+&amp;ldquo;运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接。
 【示例5-27】 &amp;ldquo;+&amp;ldquo;连接符
-int age = 18;String str = &amp;quot;age is&amp;quot; + age; //str赋值为&amp;quot;age is 18&amp;quot;//这种特性通常被用在输出语句中：System.</description>
+int age = 18; String str = &amp;#34;age is&amp;#34; + age; //str赋值为&amp;#34;age is 18&amp;#34; //这种特性通常被用在输出语句中： System.</description>
 			<content type="html"><![CDATA[<p>　　1. String类又称作不可变字符序列。</p>
 <p>　　2. String位于java.lang包中，Java程序默认导入java.lang包下的所有类。</p>
 <p>　　3. Java字符串就是Unicode字符序列，例如字符串“Java”就是4个Unicode字符’J’、’a’、’v’、’a’组成的。</p>
 <p>　　4.  Java没有内置的字符串类型，而是在标准Java类库中提供了一个预定义的类String，每个用双引号括起来的字符串都是String类的一个实例。</p>
 <p><strong>【示例5-25】</strong> String类的实例</p>
-<pre><code>String e = &quot;&quot;  ; // 空字符串
-String greeting = &quot; Hello World &quot;;
-</code></pre>
-<p>　　5. Java允许使用符号&quot;+&ldquo;把两个字符串连接起来。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">e</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>  <span class="o">;</span> <span class="c1">// 空字符串
+</span><span class="c1"></span><span class="n">String</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s">&#34; Hello World &#34;</span><span class="o">;</span>
+</code></pre></div><p>　　5. Java允许使用符号&quot;+&ldquo;把两个字符串连接起来。</p>
 <p><strong>【示例5-26】</strong> 字符串连接</p>
-<pre><code>String s1 = &quot;Hello&quot;;
-String s2 = &quot;World! &quot;;
-String s = s1 + s2; //HelloWorld!
-</code></pre>
-<p>　　n-符号&rdquo;+&ldquo;把两个字符串按给定的顺序连接在一起，并且是完全按照给定的形式。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">&#34;Hello&#34;</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">&#34;World! &#34;</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span> <span class="c1">//HelloWorld!
+</span></code></pre></div><p>　　n-符号&rdquo;+&ldquo;把两个字符串按给定的顺序连接在一起，并且是完全按照给定的形式。</p>
 <p>　　n-当&rdquo;+&ldquo;运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接。</p>
 <p><strong>【示例5-27】</strong> &ldquo;+&ldquo;连接符</p>
-<pre><code>int age = 18;
-String str = &quot;age is&quot; + age;  //str赋值为&quot;age is 18&quot;
-//这种特性通常被用在输出语句中：
-System.out.println(&quot;age  is&quot; + age);</code></pre>
-]]></content>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">18</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;age is&#34;</span> <span class="o">+</span> <span class="n">age</span><span class="o">;</span>  <span class="c1">//str赋值为&#34;age is 18&#34;
+</span><span class="c1">//这种特性通常被用在输出语句中：
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;age  is&#34;</span> <span class="o">+</span> <span class="n">age</span><span class="o">);</span>
+</code></pre></div>]]></content>
 		</item>
 		
 		<item>
@@ -405,7 +396,7 @@ System.out.println(&quot;age  is&quot; + age);</code></pre>
 　iv. 外部类的静态方法、静态代码块不能访问非静态内部类，包括不能使用非静态内部类定义变量、创建实例。
 　v. 成员变量访问要点：
  1. 内部类里方法的局部变量：变量名。2. 内部类属性：this.变量名。3. 外部类属性：外部类名.this.变量名。 【示例5-20】 成员变量的访问要点
-class Outer {private int age = 10;class Inner {int age = 20;public void show() {int age = 30;System.out.println(&amp;quot;内部类方法里的局部变量age:&amp;quot; + age);// 30System.out.println(&amp;quot;内部类的成员变量age:&amp;quot; + this.age);// 20System.out.println(&amp;quot;外部类的成员变量age:&amp;quot; + Outer.this.age);// 10}}} 　vi.</description>
+class Outer { private int age = 10; class Inner { int age = 20; public void show() { int age = 30; System.out.println(&amp;#34;内部类方法里的局部变量age:&amp;#34; + age);// 30 	System.out.println(&amp;#34;内部类的成员变量age:&amp;#34; + this.age);// 20 	System.out.println(&amp;#34;外部类的成员变量age:&amp;#34; + Outer.this.age);// 10 	} } } 　vi.</description>
 			<content type="html"><![CDATA[<p>　　在Java中内部类主要分为成员内部类(非静态内部类、静态内部类)、匿名内部类、局部内部类。</p>
 <h2 id="成员内部类可以使用privatedefaultprotectedpublic任意进行修饰-类文件外部类内部类class">.成员内部类(可以使用private、default、protected、public任意进行修饰。 类文件：外部类$内部类.class)</h2>
 <h3 id="a-非静态内部类外部类里使用非静态内部类和平时使用其他类没什么不同">a) 非静态内部类(外部类里使用非静态内部类和平时使用其他类没什么不同)</h3>
@@ -421,20 +412,19 @@ class Outer {private int age = 10;class Inner {int age = 20;public void show
     3. 外部类属性：外部类名.this.变量名。
 </code></pre>
 <p><strong>【示例5-20】</strong> 成员变量的访问要点</p>
-<pre><code>class Outer {
-    private int age = 10;
-    class Inner {
-        int age = 20;
-        public void show() {
-            int age = 30;
-            System.out.println(&quot;内部类方法里的局部变量age:&quot; + age);// 30
-            System.out.println(&quot;内部类的成员变量age:&quot; + this.age);// 20
-            System.out.println(&quot;外部类的成员变量age:&quot; + Outer.this.age);// 10
-        }
-    }
-}
-</code></pre>
-<p>　　vi. 内部类的访问：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
+	<span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+		<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">20</span><span class="o">;</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">show</span><span class="o">()</span> <span class="o">{</span>
+			<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">30</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;内部类方法里的局部变量age:&#34;</span> <span class="o">+</span> <span class="n">age</span><span class="o">);</span><span class="c1">// 30
+</span><span class="c1"></span>			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;内部类的成员变量age:&#34;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">age</span><span class="o">);</span><span class="c1">// 20
+</span><span class="c1"></span>			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;外部类的成员变量age:&#34;</span> <span class="o">+</span> <span class="n">Outer</span><span class="o">.</span><span class="na">this</span><span class="o">.</span><span class="na">age</span><span class="o">);</span><span class="c1">// 10
+</span><span class="c1"></span>		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　vi. 内部类的访问：</p>
 <ol>
 <li>
 <p>外部类中定义内部类：</p>
@@ -446,25 +436,24 @@ class Outer {private int age = 10;class Inner {int age = 20;public void show
 </li>
 </ol>
 <p><strong>【示例5-21】</strong> 内部类的访问</p>
-<pre><code>public class TestInnerClass {
-    public static void main(String[] args) {
-        //先创建外部类实例，然后使用该外部类实例创建内部类实例
-        Outer.Inner inner = new Outer().new Inner();
-        inner.show();
-        Outer outer = new Outer();
-        Outer.Inner inn = outer.new Inner();
-        inn.show();
-    }
-}
-</code></pre>
-<p>执行结果如图5-25所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestInnerClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">//先创建外部类实例，然后使用该外部类实例创建内部类实例
+</span><span class="c1"></span>		<span class="n">Outer</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Outer</span><span class="o">().</span><span class="na">new</span> <span class="n">Inner</span><span class="o">();</span>
+		<span class="n">inner</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+		<span class="n">Outer</span> <span class="n">outer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Outer</span><span class="o">();</span>
+		<span class="n">Outer</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inn</span> <span class="o">=</span> <span class="n">outer</span><span class="o">.</span><span class="na">new</span> <span class="nf">Inner</span><span class="o">();</span>
+		<span class="n">inn</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-25所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495262283489060.png" alt="enter description here"></p>
 <h3 id="b-静态内部类">b) 静态内部类</h3>
 <p>　　i. 定义方式：</p>
-<p>static  class   ClassName {
-//类体
-}
-　　ii. 使用要点：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">static</span>  <span class="kd">class</span>   <span class="nc">ClassName</span> <span class="o">{</span>
+<span class="c1">//类体
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><p>　　ii. 使用要点：</p>
 <ol>
 <li>
 <p>当一个静态内部类对象存在，并不一定存在对应的外部类对象。 因此，静态内部类的实例方法不能直接访问外部类的实例方法。</p>
@@ -474,46 +463,43 @@ class Outer {private int age = 10;class Inner {int age = 20;public void show
 </li>
 </ol>
 <p><strong>【示例5-22】</strong> 静态内部类的访问</p>
-<pre><code>class Outer{
-    //相当于外部类的一个静态成员
-    static class Inner{
-    }
-}
-public class TestStaticInnerClass {
-    public static void main(String[] args) {
-        //通过 new 外部类名.内部类名() 来创建内部类对象
-        Outer.Inner inner =new Outer.Inner();
-    }
-}
-</code></pre>
-<h2 id="-匿名内部类">. 匿名内部类</h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Outer</span><span class="o">{</span>
+	<span class="c1">//相当于外部类的一个静态成员
+</span><span class="c1"></span>	<span class="kd">static</span> <span class="kd">class</span> <span class="nc">Inner</span><span class="o">{</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestStaticInnerClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">//通过 new 外部类名.内部类名() 来创建内部类对象
+</span><span class="c1"></span>		<span class="n">Outer</span><span class="o">.</span><span class="na">Inner</span> <span class="n">inner</span> <span class="o">=</span><span class="k">new</span> <span class="n">Outer</span><span class="o">.</span><span class="na">Inner</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="-匿名内部类">. 匿名内部类</h2>
 <p>　　适合那种只需要使用一次的类。比如：键盘监听操作等等。</p>
 <h2 id="语法">语法：</h2>
-<pre><code>new  父类构造器(实参类表) \实现接口 () {
-           //匿名内部类类体！
-}
-</code></pre>
-<p><strong>【示例5-23】</strong> 匿名内部类的使用</p>
-<pre><code>this.addWindowListener(new WindowAdapter(){
-        @Override
-        public void windowClosing(WindowEvent e) {
-            System.exit(0);
-        }
-    }
-);
-this.addKeyListener(new KeyAdapter(){
-        @Override
-        public void keyPressed(KeyEvent e) {
-            myTank.keyPressed(e);
-        }      
-        @Override
-        public void keyReleased(KeyEvent e) {
-            myTank.keyReleased(e);
-        }
-    }
-);
-</code></pre>
-<h2 id="注意">注意</h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span>  <span class="n">父类构造器</span><span class="o">(</span><span class="n">实参类表</span><span class="o">)</span> <span class="err">\</span><span class="n">实现接口</span> <span class="o">()</span> <span class="o">{</span>
+		   <span class="c1">//匿名内部类类体！
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><p><strong>【示例5-23】</strong> 匿名内部类的使用</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">this</span><span class="o">.</span><span class="na">addWindowListener</span><span class="o">(</span><span class="k">new</span> <span class="n">WindowAdapter</span><span class="o">(){</span>
+		<span class="nd">@Override</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">windowClosing</span><span class="o">(</span><span class="n">WindowEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="n">0</span><span class="o">);</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">);</span>
+<span class="k">this</span><span class="o">.</span><span class="na">addKeyListener</span><span class="o">(</span><span class="k">new</span> <span class="n">KeyAdapter</span><span class="o">(){</span>
+		<span class="nd">@Override</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">keyPressed</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">myTank</span><span class="o">.</span><span class="na">keyPressed</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+		<span class="o">}</span>      
+		<span class="nd">@Override</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">keyReleased</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">myTank</span><span class="o">.</span><span class="na">keyReleased</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">);</span>
+</code></pre></div><h2 id="注意">注意</h2>
 <p>　　1. 匿名内部类没有访问修饰符。</p>
 <p>　　2. 匿名内部类没有构造方法。因为它连名字都没有那又何来构造方法呢。</p>
 <h2 id="局部内部类">.局部内部类</h2>
@@ -521,22 +507,21 @@ this.addKeyListener(new KeyAdapter(){
 <p>　　局部内部类的的使用主要是用来解决比较复杂的问题，想创建一个类来辅助我们的解决方案，到那时又不希望这个类是公共可用的，所以就产生了局部内部类。局部内部类和成员内部类一样被编译，只是它的作用域发生了改变，它只能在该方法中被使用，出了该方法就会失效。</p>
 <p>　　局部内部类在实际开发中应用很少。</p>
 <p><strong>【示例5-24】</strong> 方法中的内部类</p>
-<pre><code>public class Test2 {
-    public void show() {
-        //作用域仅限于该方法
-        class Inner {
-            public void fun() {
-                System.out.println(&quot;helloworld&quot;);
-            }
-        }
-        new Inner().fun();
-    }
-    public static void main(String[] args) {
-        new Test2().show();
-    }
-}
-</code></pre>
-<p>执行结果如图5-26所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">show</span><span class="o">()</span> <span class="o">{</span>
+		<span class="c1">//作用域仅限于该方法
+</span><span class="c1"></span>		<span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+			<span class="kd">public</span> <span class="kt">void</span> <span class="nf">fun</span><span class="o">()</span> <span class="o">{</span>
+				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;helloworld&#34;</span><span class="o">);</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+		<span class="k">new</span> <span class="n">Inner</span><span class="o">().</span><span class="na">fun</span><span class="o">();</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">new</span> <span class="n">Test2</span><span class="o">().</span><span class="na">show</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-26所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495262685367524.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -551,7 +536,7 @@ this.addKeyListener(new KeyAdapter(){
 　内部类可以使用public、default、protected 、private以及static修饰。而外部顶级类(我们以前接触的类)只能使用public和default修饰。
 注意 　内部类只是一个编译时概念，一旦我们编译成功，就会成为完全不同的两个类。对于一个名为Outer的外部类和其内部定义的名为Inner的内部类。编译完成后会出现Outer.class和Outer$Inner.class两个类的字节码文件。所以内部类是相对独立的一种存在，其成员变量/方法名可以和外部类的相同。
 【示例5-19】 内部类介绍
-/**外部类Outer*/class Outer {private int age = 10;public void show(){System.out.println(age);//10}/**内部类Inner*/public class Inner {//内部类中可以声明与外部类同名的属性与方法private int age = 20;public void show(){System.out.println(age);//20}}} 　示例5-19编译后会产生两个不同的字节码文件，如图5-24所示：
+/**外部类Outer*/ class Outer { private int age = 10; public void show(){ System.out.println(age);//10 	} /**内部类Inner*/ public class Inner { //内部类中可以声明与外部类同名的属性与方法 	private int age = 20; public void show(){ System.out.println(age);//20 	} } } 　示例5-19编译后会产生两个不同的字节码文件，如图5-24所示：
 图5-24 内部类编译结果图
 内部类的作用： 　1. 内部类提供了更好的封装。只能让外部类直接访问，不允许同一个包中的其他类直接访问。
 　2. 内部类可以直接访问外部类的私有属性，内部类被当成其外部类的成员。 但外部类不能访问内部类的内部属性。
@@ -563,23 +548,22 @@ this.addKeyListener(new KeyAdapter(){
 <h2 id="注意">注意</h2>
 <p>　　内部类只是一个编译时概念，一旦我们编译成功，就会成为完全不同的两个类。对于一个名为Outer的外部类和其内部定义的名为Inner的内部类。编译完成后会出现Outer.class和Outer$Inner.class两个类的字节码文件。所以内部类是相对独立的一种存在，其成员变量/方法名可以和外部类的相同。</p>
 <p><strong>【示例5-19】</strong> 内部类介绍</p>
-<pre><code>/**外部类Outer*/
-class Outer {
-    private int age = 10;
-    public void show(){
-        System.out.println(age);//10
-    }
-    /**内部类Inner*/
-    public class Inner {
-        //内部类中可以声明与外部类同名的属性与方法
-        private int age = 20;
-        public void show(){
-            System.out.println(age);//20
-        }
-    }
-}
-</code></pre>
-<p>　　示例5-19编译后会产生两个不同的字节码文件，如图5-24所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**外部类Outer*/</span>
+<span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">show</span><span class="o">(){</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">age</span><span class="o">);</span><span class="c1">//10
+</span><span class="c1"></span>	<span class="o">}</span>
+	<span class="cm">/**内部类Inner*/</span>
+	<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span>
+		<span class="c1">//内部类中可以声明与外部类同名的属性与方法
+</span><span class="c1"></span>		<span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">20</span><span class="o">;</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">show</span><span class="o">(){</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">age</span><span class="o">);</span><span class="c1">//20
+</span><span class="c1"></span>		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　示例5-19编译后会产生两个不同的字节码文件，如图5-24所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495261579765732.png" alt="enter description here"></p>
 <p>图5-24 内部类编译结果图</p>
 <h2 id="内部类的作用">内部类的作用：</h2>
@@ -622,28 +606,28 @@ class Outer {
 			<guid>https://HarryQing.github.io/posts/5.9.3-%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%A4%9A%E7%BB%A7%E6%89%BF/</guid>
 			<description>　接口完全支持多继承。和类的继承类似，子接口扩展某个父接口，将会获得父接口中所定义的一切。
 【示例5-18】 接口的多继承
-interface A {void testa();}interface B {void testb();}/**接口可以多继承：接口C继承接口A和B*/interface C extends A, B {void testc();}public class Test implements C {public void testc() {}public void testa() {}public void testb() {}} </description>
+interface A { void testa(); } interface B { void testb(); } /**接口可以多继承：接口C继承接口A和B*/ interface C extends A, B { void testc(); } public class Test implements C { public void testc() { } public void testa() { } public void testb() { } } </description>
 			<content type="html"><![CDATA[<p>　　接口完全支持多继承。和类的继承类似，子接口扩展某个父接口，将会获得父接口中所定义的一切。</p>
 <p><strong>【示例5-18】</strong> 接口的多继承</p>
-<pre><code>interface A {
-    void testa();
-}
-interface B {
-    void testb();
-}
-/**接口可以多继承：接口C继承接口A和B*/
-interface C extends A, B {
-    void testc();
-}
-public class Test implements C {
-    public void testc() {
-    }
-    public void testa() {
-    }
-    public void testb() {
-    }
-}</code></pre>
-]]></content>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">interface</span> <span class="nc">A</span> <span class="o">{</span>
+	<span class="kt">void</span> <span class="nf">testa</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="kd">interface</span> <span class="nc">B</span> <span class="o">{</span>
+	<span class="kt">void</span> <span class="nf">testb</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="cm">/**接口可以多继承：接口C继承接口A和B*/</span>
+<span class="kd">interface</span> <span class="nc">C</span> <span class="kd">extends</span> <span class="n">A</span><span class="o">,</span> <span class="n">B</span> <span class="o">{</span>
+	<span class="kt">void</span> <span class="nf">testc</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">C</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">testc</span><span class="o">()</span> <span class="o">{</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">testa</span><span class="o">()</span> <span class="o">{</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">testb</span><span class="o">()</span> <span class="o">{</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>]]></content>
 		</item>
 		
 		<item>
@@ -652,7 +636,7 @@ public class Test implements C {
 			<pubDate>Fri, 05 Mar 2021 09:20:00 +0800</pubDate>
 			
 			<guid>https://HarryQing.github.io/posts/5.9.2-%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8E%A5%E5%8F%A3/</guid>
-			<description>声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] {常量定义； 方法定义；} 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
+			<description>声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] { 常量定义； 方法定义； } 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
 　2. 接口名：和类名采用相同命名机制。
 　3. extends：接口可以多继承。
 　4. 常量：接口中的属性只能是常量，总是：public static final 修饰。不写也是。
@@ -663,14 +647,13 @@ public class Test implements C {
 　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。
 　5. JDK1.8后，接口中包含普通的静态方法。
 【示例5-17】 接口的使用
-public class TestInterface {public static void main(String[] args) {Volant volant = new Angel();volant.fly();System.out.println(Volant.FLY_HIGHT);Honest honest = new GoodMan();honest.</description>
+public class TestInterface { public static void main(String[] args) { Volant volant = new Angel(); volant.fly(); System.out.println(Volant.FLY_HIGHT); Honest honest = new GoodMan(); honest.</description>
 			<content type="html"><![CDATA[<h2 id="声明格式">声明格式：</h2>
-<pre><code>[访问修饰符]  interface 接口名   [extends  父接口1，父接口2…]  {
-常量定义；  
-方法定义；
-}
-</code></pre>
-<h2 id="定义接口的详细说明">定义接口的详细说明：</h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="o">[</span><span class="n">访问修饰符</span><span class="o">]</span>  <span class="kd">interface</span> <span class="nc">接口名</span>   <span class="o">[</span><span class="kd">extends</span>  <span class="n">父接口1</span><span class="err">，</span><span class="n">父接口2</span><span class="err">…</span><span class="o">]</span>  <span class="o">{</span>
+<span class="n">常量定义</span><span class="err">；</span>  
+<span class="n">方法定义</span><span class="err">；</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="定义接口的详细说明">定义接口的详细说明：</h2>
 <p>　　1. 访问修饰符：只能是public或默认。</p>
 <p>　　2. 接口名：和类名采用相同命名机制。</p>
 <p>　　3. extends：接口可以多继承。</p>
@@ -683,47 +666,45 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 <p>　　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。</p>
 <p>　　5. JDK1.8后，接口中包含普通的静态方法。</p>
 <p><strong>【示例5-17】</strong> 接口的使用</p>
-<pre><code>public class TestInterface {
-    public static void main(String[] args) {
-        Volant volant = new Angel();
-        volant.fly();
-        System.out.println(Volant.FLY_HIGHT);
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestInterface</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Volant</span> <span class="n">volant</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Angel</span><span class="o">();</span>
+		<span class="n">volant</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Volant</span><span class="o">.</span><span class="na">FLY_HIGHT</span><span class="o">);</span>
 
-        Honest honest = new GoodMan();
-        honest.helpOther();
-    }
-}
-/**飞行接口*/
-interface Volant { 
-    int FLY_HIGHT = 100;  // 总是：public static final类型的；
-    void fly();   //总是：public abstract void fly();
-}
-/**善良接口*/
-interface Honest { 
-    void helpOther();
-}
-/**Angle类实现飞行接口和善良接口*/
-class Angel implements Volant, Honest{
-    public void fly() {
-        System.out.println(&quot;我是天使，飞起来啦！&quot;);
-    }
-    public void helpOther() {
-        System.out.println(&quot;扶老奶奶过马路！&quot;);
-    }
-}
-class GoodMan implements Honest {
-   public void helpOther() {
-        System.out.println(&quot;扶老奶奶过马路！&quot;);
-    }  
-}
-class BirdMan implements Volant {
-    public void fly() {
-        System.out.println(&quot;我是鸟人，正在飞！&quot;);
-    }
-}
-</code></pre>
-<p>　　
-执行结果如果5-23所示：</p>
+		<span class="n">Honest</span> <span class="n">honest</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GoodMan</span><span class="o">();</span>
+		<span class="n">honest</span><span class="o">.</span><span class="na">helpOther</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="cm">/**飞行接口*/</span>
+<span class="kd">interface</span> <span class="nc">Volant</span> <span class="o">{</span> 
+	<span class="kt">int</span> <span class="n">FLY_HIGHT</span> <span class="o">=</span> <span class="n">100</span><span class="o">;</span>  <span class="c1">// 总是：public static final类型的；
+</span><span class="c1"></span>	<span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>   <span class="c1">//总是：public abstract void fly();
+</span><span class="c1"></span><span class="o">}</span>
+<span class="cm">/**善良接口*/</span>
+<span class="kd">interface</span> <span class="nc">Honest</span> <span class="o">{</span> 
+	<span class="kt">void</span> <span class="nf">helpOther</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="cm">/**Angle类实现飞行接口和善良接口*/</span>
+<span class="kd">class</span> <span class="nc">Angel</span> <span class="kd">implements</span> <span class="n">Volant</span><span class="o">,</span> <span class="n">Honest</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;我是天使，飞起来啦！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">helpOther</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;扶老奶奶过马路！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">GoodMan</span> <span class="kd">implements</span> <span class="n">Honest</span> <span class="o">{</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">helpOther</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;扶老奶奶过马路！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>  
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">BirdMan</span> <span class="kd">implements</span> <span class="n">Volant</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;我是鸟人，正在飞！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如果5-23所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495260169113292.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -773,7 +754,7 @@ class BirdMan implements Volant {
 			<description>·抽象方法 　使用abstract修饰的方法，没有方法体，只有声明。定义的是一种“规范”，就是告诉子类必须要给抽象方法提供具体的实现。
 ·抽象类 　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。
 【示例5-16】 抽象类和抽象方法的基本用法
-//抽象类abstract class Animal {abstract public void shout(); //抽象方法}class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误public void shout() {System.out.println(&amp;quot;汪汪汪！&amp;quot;);}public void seeDoor(){System.out.println(&amp;quot;看门中....&amp;quot;);}}//测试抽象类public class TestAbstractClass {public static void main(String[] args) {Dog a = new Dog();a.shout();a.seeDoor();}} 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
+//抽象类 abstract class Animal { abstract public void shout(); //抽象方法 } class Dog extends Animal { //子类必须实现父类的抽象方法，否则编译错误 	public void shout() { System.out.println(&amp;#34;汪汪汪！&amp;#34;); } public void seeDoor(){ System.out.println(&amp;#34;看门中....&amp;#34;); } } //测试抽象类 public class TestAbstractClass { public static void main(String[] args) { Dog a = new Dog(); a.shout(); a.seeDoor(); } } 抽象类的使用要点: 　1. 有抽象方法的类只能定义成抽象类
 　2. 抽象类不能实例化，即不能用new来实例化抽象类。
 　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。
 　4. 抽象类只能用来被继承。</description>
@@ -782,29 +763,28 @@ class BirdMan implements Volant {
 <h2 id="抽象类">·抽象类</h2>
 <p>　　包含抽象方法的类就是抽象类。通过abstract方法定义规范，然后要求子类必须定义具体实现。通过抽象类，我们就可以做到严格限制子类的设计，使子类之间更加通用。</p>
 <p><strong>【示例5-16】</strong> 抽象类和抽象方法的基本用法</p>
-<pre><code>//抽象类
-abstract class Animal {
-    abstract public void shout();  //抽象方法
-}
-class Dog extends Animal { 
-    //子类必须实现父类的抽象方法，否则编译错误
-    public void shout() {
-        System.out.println(&quot;汪汪汪！&quot;);
-    }
-    public void seeDoor(){
-        System.out.println(&quot;看门中....&quot;);
-    }
-}
-//测试抽象类
-public class TestAbstractClass {
-    public static void main(String[] args) {
-        Dog a = new Dog();
-        a.shout();
-        a.seeDoor();
-    }
-}
-</code></pre>
-<h2 id="抽象类的使用要点">抽象类的使用要点:</h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//抽象类
+</span><span class="c1"></span><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+	<span class="kd">abstract</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">();</span>  <span class="c1">//抽象方法
+</span><span class="c1"></span><span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span> 
+	<span class="c1">//子类必须实现父类的抽象方法，否则编译错误
+</span><span class="c1"></span>	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;汪汪汪！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">seeDoor</span><span class="o">(){</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;看门中....&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="c1">//测试抽象类
+</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestAbstractClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Dog</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">shout</span><span class="o">();</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">seeDoor</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="抽象类的使用要点">抽象类的使用要点:</h2>
 <p>　　1. 有抽象方法的类只能定义成抽象类</p>
 <p>　　2. 抽象类不能实例化，即不能用new来实例化抽象类。</p>
 <p>　　3. 抽象类可以包含属性、方法、构造方法。但是构造方法不能用来new实例，只能用来被子类调用。</p>
@@ -852,56 +832,53 @@ final修饰类如图5-22所示。</description>
 			<description>父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。
 　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!
 【示例5-13】 对象的转型
-public class TestCasting {public static void main(String[] args) {Object obj = new String(&amp;quot;北京&amp;quot;); // 向上可以自动转型// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。* 不然通不过编译器的检查。 */String str = (String) obj; // 向下转型System.out.println(str.charAt(0)); // 位于0索引位置的字符System.out.println(obj == str); // true.他们俩运行时是同一个对象}} 　执行结果如果5-18所示：
+public class TestCasting { public static void main(String[] args) { Object obj = new String(&amp;#34;北京&amp;#34;); // 向上可以自动转型 	// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型 	/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 * 不然通不过编译器的检查。 */ String str = (String) obj; // 向下转型 	System.out.println(str.charAt(0)); // 位于0索引位置的字符 	System.out.println(obj == str); // true.他们俩运行时是同一个对象 	} } 　执行结果如果5-18所示：
 　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。
 【示例5-14】 类型转换异常
-public class TestCasting2 {public static void main(String[] args) {Object obj = new String(&amp;quot;北京尚学堂&amp;quot;);//真实的子类类型是String，但是此处向下转型为StringBufferStringBuffer str = (StringBuffer) obj;System.</description>
+public class TestCasting2 { public static void main(String[] args) { Object obj = new String(&amp;#34;北京尚学堂&amp;#34;); //真实的子类类型是String，但是此处向下转型为StringBuffer 	StringBuffer str = (StringBuffer) obj; System.</description>
 			<content type="html"><![CDATA[<p>　　父类引用指向子类对象，我们称这个过程为向上转型，属于自动类型转换。</p>
 <p>　　向上转型后的父类引用变量只能调用它编译类型的方法，不能调用它运行时类型的方法。这时，我们就需要进行类型的强制转换，我们称之为向下转型!</p>
 <p><strong>【示例5-13】</strong> 对象的转型</p>
-<pre><code>public class TestCasting {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京&quot;); // 向上可以自动转型
-        // obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型
-        /* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
-         * 不然通不过编译器的检查。 */
-        String str = (String) obj; // 向下转型
-        System.out.println(str.charAt(0)); // 位于0索引位置的字符
-        System.out.println(obj == str); // true.他们俩运行时是同一个对象
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-18所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京&#34;</span><span class="o">);</span> <span class="c1">// 向上可以自动转型
+</span><span class="c1"></span>		<span class="c1">// obj.charAt(0) 无法调用。编译器认为obj是Object类型而不是String类型
+</span><span class="c1"></span>		<span class="cm">/* 编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+</span><span class="cm">		 * 不然通不过编译器的检查。 */</span>
+		<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span> <span class="c1">// 向下转型
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span> <span class="c1">// 位于0索引位置的字符
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">obj</span> <span class="o">==</span> <span class="n">str</span><span class="o">);</span> <span class="c1">// true.他们俩运行时是同一个对象
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-18所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495254148771321.png" alt="enter description here"></p>
 <p>　　在向下转型过程中，必须将引用变量转成真实的子类类型(运行时类型)否则会出现类型转换异常ClassCastException。如示例5-14所示。</p>
 <p><strong>【示例5-14】</strong> 类型转换异常</p>
-<pre><code>public class TestCasting2 {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京尚学堂&quot;);
-        //真实的子类类型是String，但是此处向下转型为StringBuffer
-        StringBuffer str = (StringBuffer) obj;
-        System.out.println(str.charAt(0));
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-19所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting2</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京尚学堂&#34;</span><span class="o">);</span>
+		<span class="c1">//真实的子类类型是String，但是此处向下转型为StringBuffer
+</span><span class="c1"></span>		<span class="n">StringBuffer</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">StringBuffer</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-19所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256025435935.png" alt="enter description here"></p>
 <p>　　为了避免出现这种异常，我们可以使用5.1.2中所学的instanceof运算符进行判断，如示例5-15所示。</p>
 <p><strong>【示例5-15】</strong> 向下转型中使用instanceof</p>
-<pre><code>public class TestCasting3 {
-    public static void main(String[] args) {
-        Object obj = new String(&quot;北京&quot;);
-        if(obj instanceof String){
-            String str = (String)obj;
-            System.out.println(str.charAt(0));
-        }else if(obj instanceof StringBuffer){
-            StringBuffer str = (StringBuffer) obj;
-            System.out.println(str.charAt(0));
-        }
-    }
-}
-</code></pre>
-<p>　　执行结果如果5-20所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestCasting3</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;北京&#34;</span><span class="o">);</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">String</span><span class="o">){</span>
+			<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span><span class="n">obj</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+		<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">StringBuffer</span><span class="o">){</span>
+			<span class="n">StringBuffer</span> <span class="n">str</span> <span class="o">=</span> <span class="o">(</span><span class="n">StringBuffer</span><span class="o">)</span> <span class="n">obj</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　执行结果如果5-20所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495256138635602.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -914,7 +891,7 @@ public class TestCasting2 {public static void main(String[] args) {Object obj 
 			<guid>https://HarryQing.github.io/posts/5.5-%E5%A4%9A%E6%80%81polymorphism/</guid>
 			<description>多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。
 多态的要点：  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。2. 多态的存在要有3个必要条件：继承，方法重写，父类引用指向子类对象。3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。 【示例5-12】 多态和类型转换测试
-class Animal {public void shout() {System.out.println(&amp;quot;叫了一声！&amp;quot;);}}class Dog extends Animal {public void shout() {System.out.println(&amp;quot;旺旺旺！&amp;quot;);}public void seeDoor() {System.out.println(&amp;quot;看门中....&amp;quot;);}}class Cat extends Animal {public void shout() {System.out.println(&amp;quot;喵喵喵喵！&amp;quot;);}}public class TestPolym {public static void main(String[] args) {Animal a1 = new Cat(); // 向上可以自动转型//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。animalCry(a1);Animal a2 = new Dog();animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。// 否则通不过编译器的检查。Dog dog = (Dog)a2;//向下需要强制类型转换dog.</description>
+class Animal { public void shout() { System.out.println(&amp;#34;叫了一声！&amp;#34;); } } class Dog extends Animal { public void shout() { System.out.println(&amp;#34;旺旺旺！&amp;#34;); } public void seeDoor() { System.out.println(&amp;#34;看门中....&amp;#34;); } } class Cat extends Animal { public void shout() { System.out.println(&amp;#34;喵喵喵喵！&amp;#34;); } } public class TestPolym { public static void main(String[] args) { Animal a1 = new Cat(); // 向上可以自动转型 	//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。 	animalCry(a1); Animal a2 = new Dog(); animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。  //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。 	// 否则通不过编译器的检查。 	Dog dog = (Dog)a2;//向下需要强制类型转换 	dog.</description>
 			<content type="html"><![CDATA[<p>　　多态指的是同一个方法调用，由于对象不同可能会有不同的行为。现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人的“休息”方法，张三是睡觉，李四是旅游，高淇老师是敲代码，数学教授是做数学题; 同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。</p>
 <h2 id="多态的要点">多态的要点：</h2>
 <pre><code>  1. 多态是方法的多态，不是属性的多态(多态与属性无关)。
@@ -924,54 +901,53 @@ class Animal {public void shout() {System.out.println(&amp;quot;叫了一声�
   3. 父类引用指向子类对象后，用该父类引用调用子类重写的方法，此时多态就出现了。
 </code></pre>
 <p><strong>【示例5-12】</strong> 多态和类型转换测试</p>
-<pre><code>class Animal {
-    public void shout() {
-        System.out.println(&quot;叫了一声！&quot;);
-    }
-}
-class Dog extends Animal {
-    public void shout() {
-        System.out.println(&quot;旺旺旺！&quot;);
-    }
-    public void seeDoor() {
-        System.out.println(&quot;看门中....&quot;);
-    }
-}
-class Cat extends Animal {
-    public void shout() {
-        System.out.println(&quot;喵喵喵喵！&quot;);
-    }
-}
-public class TestPolym {
-    public static void main(String[] args) {
-        Animal a1 = new Cat(); // 向上可以自动转型
-        //传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。
-        animalCry(a1);
-        Animal a2 = new Dog();
-        animalCry(a2);//a2为编译类型，Dog对象才是运行时类型。
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;叫了一声！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;旺旺旺！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">seeDoor</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;看门中....&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">shout</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;喵喵喵喵！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestPolym</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Animal</span> <span class="n">a1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="o">();</span> <span class="c1">// 向上可以自动转型
+</span><span class="c1"></span>		<span class="c1">//传的具体是哪一个类就调用哪一个类的方法。大大提高了程序的可扩展性。
+</span><span class="c1"></span>		<span class="n">animalCry</span><span class="o">(</span><span class="n">a1</span><span class="o">);</span>
+		<span class="n">Animal</span> <span class="n">a2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+		<span class="n">animalCry</span><span class="o">(</span><span class="n">a2</span><span class="o">);</span><span class="c1">//a2为编译类型，Dog对象才是运行时类型。
+</span><span class="c1"></span>
+		<span class="c1">//编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
+</span><span class="c1"></span>		<span class="c1">// 否则通不过编译器的检查。
+</span><span class="c1"></span>		<span class="n">Dog</span> <span class="n">dog</span> <span class="o">=</span> <span class="o">(</span><span class="n">Dog</span><span class="o">)</span><span class="n">a2</span><span class="o">;</span><span class="c1">//向下需要强制类型转换
+</span><span class="c1"></span>		<span class="n">dog</span><span class="o">.</span><span class="na">seeDoor</span><span class="o">();</span>
+	<span class="o">}</span>
 
-        //编写程序时，如果想调用运行时类型的方法，只能进行强制类型转换。
-        // 否则通不过编译器的检查。
-        Dog dog = (Dog)a2;//向下需要强制类型转换
-        dog.seeDoor();
-    }
+	<span class="c1">// 有了多态，只需要让增加的这个类继承Animal类就可以了。
+</span><span class="c1"></span>	<span class="kd">static</span> <span class="kt">void</span> <span class="nf">animalCry</span><span class="o">(</span><span class="n">Animal</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">a</span><span class="o">.</span><span class="na">shout</span><span class="o">();</span>
+	<span class="o">}</span>
 
-    // 有了多态，只需要让增加的这个类继承Animal类就可以了。
-    static void animalCry(Animal a) {
-        a.shout();
-    }
-
-    /* 如果没有多态，我们这里需要写很多重载的方法。
-     * 每增加一种动物，就需要重载一种动物的喊叫方法。非常麻烦。
-    static void animalCry(Dog d) {
-        d.shout();
-    }
-    static void animalCry(Cat c) {
-        c.shout();
-    }*/
-}
-</code></pre>
-<p>执行结果如图5-17所示：</p>
+	<span class="cm">/* 如果没有多态，我们这里需要写很多重载的方法。
+</span><span class="cm">	 * 每增加一种动物，就需要重载一种动物的喊叫方法。非常麻烦。
+</span><span class="cm">	static void animalCry(Dog d) {
+</span><span class="cm">		d.shout();
+</span><span class="cm">	}
+</span><span class="cm">	static void animalCry(Cat c) {
+</span><span class="cm">		c.shout();
+</span><span class="cm">	}*/</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-17所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495253451887350.png" alt="enter description here"></p>
 <p>图5-17 示例5-12运行效果图</p>
 <p>　　示例5-12给大家展示了多态最为多见的一种用法，即父类引用做方法的形参，实参可以是任意的子类对象，可以通过不同的子类对象实现不同的行为方式。</p>
@@ -990,90 +966,88 @@ public class TestPolym {
 　2. 提供相应的get/set方法来访问相关属性，这些方法通常是public修饰的，以提供对属性的赋值与读取操作(注意：boolean变量的get方法是is开头!)。
 　3. 一些只用于本类的辅助性方法可以用private修饰，希望其他类调用的方法用public修饰。
 【示例5-10】 JavaBean的封装实例
-public class Person {// 属性一般使用private修饰private String name;private int age;private boolean flag;// 为属性提供public修饰的set/get方法public String getName() {return name;}public void setName(String name) {this.name = name;}public int getAge() {return age;}public void setAge(int age) {this.age = age;}public boolean isFlag() {// 注意：boolean类型的属性get方法是is开头的return flag;}public void setFlag(boolean flag) {this.</description>
+public class Person { // 属性一般使用private修饰 	private String name; private int age; private boolean flag; // 为属性提供public修饰的set/get方法 	public String getName() { return name; } public void setName(String name) { this.name = name; } public int getAge() { return age; } public void setAge(int age) { this.age = age; } public boolean isFlag() {// 注意：boolean类型的属性get方法是is开头的 	return flag; } public void setFlag(boolean flag) { this.</description>
 			<content type="html"><![CDATA[<h2 id="类的属性的处理">类的属性的处理:</h2>
 <p>　　1. 一般使用private访问权限。</p>
 <p>　　2.  提供相应的get/set方法来访问相关属性，这些方法通常是public修饰的，以提供对属性的赋值与读取操作(注意：boolean变量的get方法是is开头!)。</p>
 <p>　　3. 一些只用于本类的辅助性方法可以用private修饰，希望其他类调用的方法用public修饰。</p>
 <p><strong>【示例5-10】</strong> JavaBean的封装实例</p>
-<pre><code>public class Person {
-    // 属性一般使用private修饰
-    private String name;
-    private int age;
-    private boolean flag;
-    // 为属性提供public修饰的set/get方法
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public boolean isFlag() {// 注意：boolean类型的属性get方法是is开头的
-        return flag;
-    }
-    public void setFlag(boolean flag) {
-        this.flag = flag;
-    }
-}
-</code></pre>
-<p>　　下面我们使用封装来解决一下5.4.1中提到的年龄非法赋值的问题。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="c1">// 属性一般使用private修饰
+</span><span class="c1"></span>	<span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="kt">boolean</span> <span class="n">flag</span><span class="o">;</span>
+	<span class="c1">// 为属性提供public修饰的set/get方法
+</span><span class="c1"></span>	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isFlag</span><span class="o">()</span> <span class="o">{</span><span class="c1">// 注意：boolean类型的属性get方法是is开头的
+</span><span class="c1"></span>		<span class="k">return</span> <span class="n">flag</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFlag</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">flag</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">flag</span> <span class="o">=</span> <span class="n">flag</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　下面我们使用封装来解决一下5.4.1中提到的年龄非法赋值的问题。</p>
 <p><strong>【示例5-11】</strong> 封装的使用</p>
-<pre><code>class Person {
-    private String name;
-    private int age;
-    public Person() {
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="nf">Person</span><span class="o">()</span> <span class="o">{</span>
 
-    }
-    public Person(String name, int age) {
-        this.name = name;
-        // this.age = age;//构造方法中不能直接赋值，应该调用setAge方法
-        setAge(age);
-    }
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+		<span class="c1">// this.age = age;//构造方法中不能直接赋值，应该调用setAge方法
+</span><span class="c1"></span>		<span class="n">setAge</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+	<span class="o">}</span>
 
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setAge(int age) {
-        //在赋值之前先判断年龄是否合法
-        if (age &gt; 130 || age &lt; 0) {
-            this.age = 18;//不合法赋默认值18
-        } else {
-            this.age = age;//合法才能赋值给属性age
-        }
-    }
-    public int getAge() {
-        return age;
-    }
-    @Override
-    public String toString() {
-        return &quot;Person [name=&quot; + name + &quot;, age=&quot; + age + &quot;]&quot;;
-    }
-}
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">//在赋值之前先判断年龄是否合法
+</span><span class="c1"></span>		<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="n">130</span> <span class="o">||</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">18</span><span class="o">;</span><span class="c1">//不合法赋默认值18
+</span><span class="c1"></span>		<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span><span class="c1">//合法才能赋值给属性age
+</span><span class="c1"></span>		<span class="o">}</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="s">&#34;Person [name=&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;, age=&#34;</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">&#34;]&#34;</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
 
-public class Test2 {
-    public static void main(String[] args) {
-        Person p1 = new Person();
-        //p1.name = &quot;小红&quot;; //编译错误
-        //p1.age = -45;  //编译错误
-        p1.setName(&quot;小红&quot;);
-        p1.setAge(-45);
-        System.out.println(p1);
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test2</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Person</span> <span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+		<span class="c1">//p1.name = &#34;小红&#34;; //编译错误
+</span><span class="c1"></span>		<span class="c1">//p1.age = -45;  //编译错误
+</span><span class="c1"></span>		<span class="n">p1</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;小红&#34;</span><span class="o">);</span>
+		<span class="n">p1</span><span class="o">.</span><span class="na">setAge</span><span class="o">(-</span><span class="n">45</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p1</span><span class="o">);</span>
 
-        Person p2 = new Person(&quot;小白&quot;, 300);
-        System.out.println(p2);
-    }
-}
-</code></pre>
-<p>执行结果如图5-16所示：</p>
+		<span class="n">Person</span> <span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;小白&#34;</span><span class="o">,</span> <span class="n">300</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p2</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-16所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495253058271276.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -1150,7 +1124,7 @@ private访问权限修饰符：将Person类中属性改为private，其他类不
 　需要让用户知道的才暴露出来，不需要让用户知道的全部隐藏起来，这就是封装。说的专业一点，封装就是把对象的属性和操作结合为一个独立的整体，并尽可能隐藏对象的内部实现细节。
 　我们程序设计要追求“高内聚，低耦合”。 高内聚就是类的内部数据操作细节自己完成，不允许外部干涉;低耦合是仅暴露少量的方法给外部使用，尽量方便外部调用。
 编程中封装的具体优点：  1. 提高代码的安全性。2. 提高代码的复用性。3. “高内聚”：封装细节，便于修改内部代码，提高可维护性。4. “低耦合”：简化外部调用，便于调用者使用，便于扩展和协作。 【示例5-9】 没有封装的代码会出现一些问题
-class Person {String name;int age;@Overridepublic String toString() {return &amp;quot;Person [name=&amp;quot; + name + &amp;quot;, age=&amp;quot; + age + &amp;quot;]&amp;quot;;}}public class Test {public static void main(String[] args) {Person p = new Person();p.name = &amp;quot;小红&amp;quot;;p.age = -45;//年龄可以通过这种方式随意赋值，没有任何限制System.out.println(p);}} 　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</description>
+class Person { String name; int age; @Override public String toString() { return &amp;#34;Person [name=&amp;#34; + name + &amp;#34;, age=&amp;#34; + age + &amp;#34;]&amp;#34;; } } public class Test { public static void main(String[] args) { Person p = new Person(); p.name = &amp;#34;小红&amp;#34;; p.age = -45;//年龄可以通过这种方式随意赋值，没有任何限制 	System.out.println(p); } } 　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</description>
 			<content type="html"><![CDATA[<p>　　我要看电视，只需要按一下开关和换台就可以了。有必要了解电视机内部的结构吗?有必要碰碰显像管吗?制造厂家为了方便我们使用电视，把复杂的内部细节全部封装起来，只给我们暴露简单的接口，比如：电源开关。具体内部是怎么实现的，我们不需要操心。</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20171028/1509199502558961.png" alt="enter description here"></p>
 <p>　　需要让用户知道的才暴露出来，不需要让用户知道的全部隐藏起来，这就是封装。说的专业一点，封装就是把对象的属性和操作结合为一个独立的整体，并尽可能隐藏对象的内部实现细节。</p>
@@ -1165,24 +1139,23 @@ class Person {String name;int age;@Overridepublic String toString() {return
  4. “低耦合”：简化外部调用，便于调用者使用，便于扩展和协作。
 </code></pre>
 <p><strong>【示例5-9】</strong> 没有封装的代码会出现一些问题</p>
-<pre><code>class Person {
-    String name;
-    int age;
-    @Override
-    public String toString() {
-        return &quot;Person [name=&quot; + name + &quot;, age=&quot; + age + &quot;]&quot;;
-    }
-}
-public class Test {
-    public static void main(String[] args) {
-        Person p = new Person();
-        p.name = &quot;小红&quot;;
-        p.age = -45;//年龄可以通过这种方式随意赋值，没有任何限制
-        System.out.println(p);
-    }
-}
-</code></pre>
-<p>　　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="s">&#34;Person [name=&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;, age=&#34;</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">&#34;]&#34;</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Person</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+		<span class="n">p</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">&#34;小红&#34;</span><span class="o">;</span>
+		<span class="n">p</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="o">-</span><span class="n">45</span><span class="o">;</span><span class="c1">//年龄可以通过这种方式随意赋值，没有任何限制
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　我们都知道，年龄不可能是负数，也不可能超过130岁，但是如果没有使用封装的话，便可以给年龄赋值成任意的整数，这显然不符合我们的正常逻辑思维。执行结果如图5-7所示:</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495250202677298.png" alt="enter description here"></p>
 <p>　　再比如说，如果哪天我们需要将Person类中的age属性修改为String类型的，你会怎么办?你只有一处使用了这个类的话那还比较幸运，但如果你有几十处甚至上百处都用到了，那你岂不是要改到崩溃。而封装恰恰能解决这样的问题。如果使用封装，我们只需要稍微修改下Person类的setAge()方法即可，而无需修改使用了该类的客户代码。</p>
 ]]></content>
@@ -1197,7 +1170,7 @@ public class Test {
 			<description>·属性/方法查找顺序：(比如：查找变量h)  1. 查找当前类中有没有属性h2. 依次上溯每个父类，查看每个父类中是否有h，直到Object3. 如果没找到，则出现编译错误。4. 上面步骤，只要找到h变量，则这个过程终止。 ·构造方法调用顺序： 　构造方法第一句总是：super(…)来调用父类对应的构造方法。所以，流程就是：先向上追溯到Object，然后再依次向下执行类的初始化块和构造方法，直到当前子类为止。
 　注：静态初始化块调用顺序，与构造方法调用顺序一样，不再重复。
 【示例5-8】 构造方法向上追溯执行测试
-public class TestSuper02 { public static void main(String[] args) {System.out.println(&amp;quot;开始创建一个ChildClass对象......&amp;quot;);new ChildClass();}}class FatherClass {public FatherClass() {System.out.println(&amp;quot;创建FatherClass&amp;quot;);}}class ChildClass extends FatherClass {public ChildClass() {System.out.println(&amp;quot;创建ChildClass&amp;quot;);}} 执行结果如图5-6所示：</description>
+public class TestSuper02 { public static void main(String[] args) { System.out.println(&amp;#34;开始创建一个ChildClass对象......&amp;#34;); new ChildClass(); } } class FatherClass { public FatherClass() { System.out.println(&amp;#34;创建FatherClass&amp;#34;); } } class ChildClass extends FatherClass { public ChildClass() { System.out.println(&amp;#34;创建ChildClass&amp;#34;); } } 执行结果如图5-6所示：</description>
 			<content type="html"><![CDATA[<h2 id="属性方法查找顺序比如查找变量h">·属性/方法查找顺序：(比如：查找变量h)</h2>
 <pre><code>  1. 查找当前类中有没有属性h
 
@@ -1211,24 +1184,23 @@ public class TestSuper02 { public static void main(String[] args) {System.out.p
 <p>　　构造方法第一句总是：super(…)来调用父类对应的构造方法。所以，流程就是：先向上追溯到Object，然后再依次向下执行类的初始化块和构造方法，直到当前子类为止。</p>
 <p>　　注：静态初始化块调用顺序，与构造方法调用顺序一样，不再重复。</p>
 <p><strong>【示例5-8】</strong> 构造方法向上追溯执行测试</p>
-<pre><code>public class TestSuper02 { 
-    public static void main(String[] args) {
-        System.out.println(&quot;开始创建一个ChildClass对象......&quot;);
-        new ChildClass();
-    }
-}
-class FatherClass {
-    public FatherClass() {
-        System.out.println(&quot;创建FatherClass&quot;);
-    }
-}
-class ChildClass extends FatherClass {
-    public ChildClass() {
-        System.out.println(&quot;创建ChildClass&quot;);
-    }
-}
-</code></pre>
-<p>执行结果如图5-6所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestSuper02</span> <span class="o">{</span> 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;开始创建一个ChildClass对象......&#34;</span><span class="o">);</span>
+		<span class="k">new</span> <span class="n">ChildClass</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="nf">FatherClass</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;创建FatherClass&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">ChildClass</span> <span class="kd">extends</span> <span class="n">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="nf">ChildClass</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;创建ChildClass&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-6所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495187263836897.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -1243,35 +1215,34 @@ class ChildClass extends FatherClass {
 　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。
 　若是构造方法的第一行代码没有显式的调用super(&amp;hellip;)或者this(&amp;hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。
 【示例5-7】 super关键字的使用
-public class TestSuper01 { public static void main(String[] args) {new ChildClass().f();}}class FatherClass {public int value;public void f(){value = 100;System.out.println (&amp;quot;FatherClass.value=&amp;quot;+value);}}class ChildClass extends FatherClass {public int value;public void f() {super.f(); //调用父类对象的普通方法value = 200;System.out.println(&amp;quot;ChildClass.value=&amp;quot;+value);System.out.println(value);System.out.println(super.value); //调用父类对象的成员变量}} 执行结果如图5-5所示：</description>
+public class TestSuper01 { public static void main(String[] args) { new ChildClass().f(); } } class FatherClass { public int value; public void f(){ value = 100; System.out.println (&amp;#34;FatherClass.value=&amp;#34;+value); } } class ChildClass extends FatherClass { public int value; public void f() { super.f(); //调用父类对象的普通方法 	value = 200; System.out.println(&amp;#34;ChildClass.value=&amp;#34;+value); System.out.println(value); System.out.println(super.value); //调用父类对象的成员变量 	} } 执行结果如图5-5所示：</description>
 			<content type="html"><![CDATA[<p>　　super是直接父类对象的引用。可以通过super来访问父类中被子类覆盖的方法或属性。</p>
 <p>　　使用super调用普通方法，语句没有位置限制，可以在子类中随便调用。</p>
 <p>　　若是构造方法的第一行代码没有显式的调用super(&hellip;)或者this(&hellip;);那么Java默认都会调用super(),含义是调用父类的无参数构造方法。这里的super()可以省略。</p>
 <p><strong>【示例5-7】</strong> super关键字的使用</p>
-<pre><code>public class TestSuper01 { 
-    public static void main(String[] args) {
-        new ChildClass().f();
-    }
-}
-class FatherClass {
-    public int value;
-    public void f(){
-        value = 100;
-        System.out.println (&quot;FatherClass.value=&quot;+value);
-    }
-}
-class ChildClass extends FatherClass {
-    public int value;
-    public void f() {
-        super.f();  //调用父类对象的普通方法
-        value = 200;
-        System.out.println(&quot;ChildClass.value=&quot;+value);
-        System.out.println(value);
-        System.out.println(super.value); //调用父类对象的成员变量
-    }
-}
-</code></pre>
-<p>执行结果如图5-5所示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestSuper01</span> <span class="o">{</span> 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">new</span> <span class="n">ChildClass</span><span class="o">().</span><span class="na">f</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">f</span><span class="o">(){</span>
+		<span class="n">value</span> <span class="o">=</span> <span class="n">100</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span> <span class="o">(</span><span class="s">&#34;FatherClass.value=&#34;</span><span class="o">+</span><span class="n">value</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">ChildClass</span> <span class="kd">extends</span> <span class="n">FatherClass</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">f</span><span class="o">()</span> <span class="o">{</span>
+		<span class="kd">super</span><span class="o">.</span><span class="na">f</span><span class="o">();</span>  <span class="c1">//调用父类对象的普通方法
+</span><span class="c1"></span>		<span class="n">value</span> <span class="o">=</span> <span class="n">200</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;ChildClass.value=&#34;</span><span class="o">+</span><span class="n">value</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="kd">super</span><span class="o">.</span><span class="na">value</span><span class="o">);</span> <span class="c1">//调用父类对象的成员变量
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-5所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495186136513650.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -1286,46 +1257,45 @@ class ChildClass extends FatherClass {
 　Object类中定义有：public boolean equals(Object obj)方法，提供定义“对象内容相等”的逻辑。比如，我们在公安系统中认为id相同的人就是同一个人、学籍系统中认为学号相同的人就是同一个人。
 　Object 的 equals 方法默认就是比较两个对象的hashcode，是同一个对象的引用时返回 true 否则返回 false。但是，我们可以根据我们自己的要求重写equals方法。
 【示例5-6】 equals方法测试和自定义类重写equals方法
-public class TestEquals { public static void main(String[] args) {Person p1 = new Person(123,&amp;quot;王雪庆&amp;quot;);Person p2 = new Person(123,&amp;quot;张雪&amp;quot;); System.out.println(p1==p2); //false，不是同一个对象System.out.println(p1.equals(p2)); //true，id相同则认为两个对象内容相同String s1 = new String(&amp;quot;我爱你！&amp;quot;);String s2 = new String(&amp;quot;立刻有！&amp;quot;);System.out.println(s1==s2); //false, 两个字符串不是同一个对象System.out.println(s1.equals(s2)); //true, 两个字符串内容相同}}class Person {int id;String name;public Person(int id,String name) {this.</description>
+public class TestEquals { public static void main(String[] args) { Person p1 = new Person(123,&amp;#34;王雪庆&amp;#34;); Person p2 = new Person(123,&amp;#34;张雪&amp;#34;); System.out.println(p1==p2); //false，不是同一个对象 	System.out.println(p1.equals(p2)); //true，id相同则认为两个对象内容相同 	String s1 = new String(&amp;#34;我爱你！&amp;#34;); String s2 = new String(&amp;#34;立刻有！&amp;#34;); System.out.println(s1==s2); //false, 两个字符串不是同一个对象 	System.out.println(s1.equals(s2)); //true, 两个字符串内容相同 	} } class Person { int id; String name; public Person(int id,String name) { this.</description>
 			<content type="html"><![CDATA[<p>　　“==”代表比较双方是否相同。如果是基本类型则表示值相等，如果是引用类型则表示地址相等即是同一个对象。</p>
 <p>　　Object类中定义有：public boolean equals(Object obj)方法，提供定义“对象内容相等”的逻辑。比如，我们在公安系统中认为id相同的人就是同一个人、学籍系统中认为学号相同的人就是同一个人。</p>
 <p>　　Object 的 equals 方法默认就是比较两个对象的hashcode，是同一个对象的引用时返回 true 否则返回 false。但是，我们可以根据我们自己的要求重写equals方法。</p>
 <p><strong>【示例5-6】</strong> equals方法测试和自定义类重写equals方法</p>
-<pre><code>public class TestEquals { 
-    public static void main(String[] args) {
-        Person p1 = new Person(123,&quot;王雪庆&quot;);
-        Person p2 = new Person(123,&quot;张雪&quot;);     
-        System.out.println(p1==p2);     //false，不是同一个对象
-        System.out.println(p1.equals(p2));  //true，id相同则认为两个对象内容相同
-        String s1 = new String(&quot;我爱你！&quot;);
-        String s2 = new String(&quot;立刻有！&quot;);
-        System.out.println(s1==s2);         //false, 两个字符串不是同一个对象
-        System.out.println(s1.equals(s2));  //true,  两个字符串内容相同
-    }
-}
-class Person {
-    int id;
-    String name;
-    public Person(int id,String name) {
-        this.id=id;
-        this.name=name;
-    }
-    public boolean equals(Object obj) {
-        if(obj == null){
-            return false;
-        }else {
-            if(obj instanceof Person) {
-                Person c = (Person)obj;
-                if(c.id==this.id) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-}
-</code></pre>
-<p>　　JDK提供的一些类，如String、Date、包装类等，重写了Object的equals方法，调用这些类的equals方法， x.equals (y) ，当x和y所引用的对象是同一类对象且属性内容相等时（并不一定是相同对象），返回 true 否则返回 false。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestEquals</span> <span class="o">{</span> 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Person</span> <span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="n">123</span><span class="o">,</span><span class="s">&#34;王雪庆&#34;</span><span class="o">);</span>
+		<span class="n">Person</span> <span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="n">123</span><span class="o">,</span><span class="s">&#34;张雪&#34;</span><span class="o">);</span>     
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p1</span><span class="o">==</span><span class="n">p2</span><span class="o">);</span>     <span class="c1">//false，不是同一个对象
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">p2</span><span class="o">));</span>  <span class="c1">//true，id相同则认为两个对象内容相同
+</span><span class="c1"></span>		<span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;我爱你！&#34;</span><span class="o">);</span>
+		<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">&#34;立刻有！&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">==</span><span class="n">s2</span><span class="o">);</span>         <span class="c1">//false, 两个字符串不是同一个对象
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">s2</span><span class="o">));</span>  <span class="c1">//true,  两个字符串内容相同
+</span><span class="c1"></span>	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+	<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="nf">Person</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">=</span><span class="n">id</span><span class="o">;</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">=</span><span class="n">name</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+			<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+			<span class="k">if</span><span class="o">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">Person</span><span class="o">)</span> <span class="o">{</span>
+				<span class="n">Person</span> <span class="n">c</span> <span class="o">=</span> <span class="o">(</span><span class="n">Person</span><span class="o">)</span><span class="n">obj</span><span class="o">;</span>
+				<span class="k">if</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">id</span><span class="o">==</span><span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">)</span> <span class="o">{</span>
+					<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+				<span class="o">}</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+		<span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>　　JDK提供的一些类，如String、Date、包装类等，重写了Object的equals方法，调用这些类的equals方法， x.equals (y) ，当x和y所引用的对象是同一类对象且属性内容相等时（并不一定是相同对象），返回 true 否则返回 false。</p>
 ]]></content>
 		</item>
 		
@@ -1336,37 +1306,35 @@ class Person {
 			
 			<guid>https://HarryQing.github.io/posts/5.2.2-tostring%E6%96%B9%E6%B3%95/</guid>
 			<description>Object类中定义有public String toString()方法，其返回值是 String 类型。Object类中toString方法的源码为：
-public String toString() {return getClass().getName() + &amp;quot;@&amp;quot; + Integer.toHexString(hashCode());} 　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。
+public String toString() { return getClass().getName() + &amp;#34;@&amp;#34; + Integer.toHexString(hashCode()); } 　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。
 【示例5-5】 toString()方法测试和重写toString()方法
-class Person {String name;int age;@Overridepublic String toString() {return name+&amp;quot;,年龄：&amp;quot;+age;}}public class Test {public static void main(String[] args) {Person p=new Person();p.age=20;p.name=&amp;quot;李东&amp;quot;;System.out.println(&amp;quot;info:&amp;quot;+p);Test t = new Test();System.out.println(t);}} 执行结果如图5-4所示：</description>
+class Person { String name; int age; @Override public String toString() { return name+&amp;#34;,年龄：&amp;#34;+age; } } public class Test { public static void main(String[] args) { Person p=new Person(); p.age=20; p.name=&amp;#34;李东&amp;#34;; System.out.println(&amp;#34;info:&amp;#34;+p); Test t = new Test(); System.out.println(t); } } 执行结果如图5-4所示：</description>
 			<content type="html"><![CDATA[<p>　　Object类中定义有public String toString()方法，其返回值是 String 类型。Object类中toString方法的源码为：</p>
-<pre><code>public String toString() {
-    return getClass().getName() + &quot;@&quot; + Integer.toHexString(hashCode());
-}
-</code></pre>
-<p>　　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;@&#34;</span> <span class="o">+</span> <span class="n">Integer</span><span class="o">.</span><span class="na">toHexString</span><span class="o">(</span><span class="n">hashCode</span><span class="o">());</span>
+<span class="o">}</span>
+</code></pre></div><p>　　根据如上源码得知，默认会返回“类名+@+16进制的hashcode”。在打印输出或者用字符串连接对象时，会自动调用该对象的toString()方法。</p>
 <p><strong>【示例5-5】</strong> toString()方法测试和重写toString()方法</p>
-<pre><code>class Person {
-    String name;
-    int age;
-    @Override
-    public String toString() {
-        return name+&quot;,年龄：&quot;+age;
-    }
-}
-public class Test {
-    public static void main(String[] args) {
-        Person p=new Person();
-        p.age=20;
-        p.name=&quot;李东&quot;;
-        System.out.println(&quot;info:&quot;+p);
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+	<span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">name</span><span class="o">+</span><span class="s">&#34;,年龄：&#34;</span><span class="o">+</span><span class="n">age</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Person</span> <span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+		<span class="n">p</span><span class="o">.</span><span class="na">age</span><span class="o">=</span><span class="n">20</span><span class="o">;</span>
+		<span class="n">p</span><span class="o">.</span><span class="na">name</span><span class="o">=</span><span class="s">&#34;李东&#34;</span><span class="o">;</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;info:&#34;</span><span class="o">+</span><span class="n">p</span><span class="o">);</span>
 
-        Test t = new Test();
-        System.out.println(t);
-    }
-}
-</code></pre>
-<p>执行结果如图5-4所示：</p>
+		<span class="n">Test</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="o">();</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">t</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图5-4所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495183720428188.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -1379,17 +1347,17 @@ public class Test {
 			<guid>https://HarryQing.github.io/posts/5.2.1-object%E7%B1%BB%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/</guid>
 			<description>　Object类是所有Java类的根基类，也就意味着所有的Java对象都拥有Object类的属性和方法。如果在类的声明中未使用extends关键字指明其父类，则默认继承Object类。
 【示例5-4】 Object类
-public class Person {...}//等价于：public class Person extends Object {...} </description>
+public class Person { ... } //等价于： public class Person extends Object { ... } </description>
 			<content type="html"><![CDATA[<p>　　Object类是所有Java类的根基类，也就意味着所有的Java对象都拥有Object类的属性和方法。如果在类的声明中未使用extends关键字指明其父类，则默认继承Object类。</p>
 <p><strong>【示例5-4】</strong> Object类</p>
-<pre><code>public class Person {
-    ...
-}
-//等价于：
-public class Person extends Object {
-    ...
-}</code></pre>
-]]></content>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="o">...</span>
+<span class="o">}</span>
+<span class="c1">//等价于：
+</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="kd">extends</span> <span class="n">Object</span> <span class="o">{</span>
+	<span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div>]]></content>
 		</item>
 		
 		<item>
@@ -1400,7 +1368,7 @@ public class Person extends Object {
 			<guid>https://HarryQing.github.io/posts/5.1.4%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E5%86%99override/</guid>
 			<description>子类通过重写父类的方法，可以用自身的行为替换父类的行为。方法的重写是实现多态的必要条件。
 方法的重写需要符合下面的三个要点：  1.“==”： 方法名、形参列表相同。2.“≤”：返回值类型和声明异常类型，子类小于等于父类。3.“≥”： 访问权限，子类大于等于父类。 【示例5-3】 方法重写
-public class TestOverride {public static void main(String[] args) {Vehicle v1 = new Vehicle();Vehicle v2 = new Horse();Vehicle v3 = new Plane();v1.run();v2.run();v3.run();v2.stop();v3.stop();}}class Vehicle { // 交通工具类public void run() {System.out.println(&amp;quot;跑....&amp;quot;);}public void stop() {System.out.println(&amp;quot;停止不动&amp;quot;);}}class Horse extends Vehicle { // 马也是交通工具public void run() { // 重写父类方法System.</description>
+public class TestOverride { public static void main(String[] args) { Vehicle v1 = new Vehicle(); Vehicle v2 = new Horse(); Vehicle v3 = new Plane(); v1.run(); v2.run(); v3.run(); v2.stop(); v3.stop(); } } class Vehicle { // 交通工具类 	public void run() { System.out.println(&amp;#34;跑....&amp;#34;); } public void stop() { System.out.println(&amp;#34;停止不动&amp;#34;); } } class Horse extends Vehicle { // 马也是交通工具 	public void run() { // 重写父类方法 	System.</description>
 			<content type="html"><![CDATA[<p>　　子类通过重写父类的方法，可以用自身的行为替换父类的行为。方法的重写是实现多态的必要条件。</p>
 <h2 id="方法的重写需要符合下面的三个要点">方法的重写需要符合下面的三个要点：</h2>
 <pre><code>  1.“==”： 方法名、形参列表相同。
@@ -1410,43 +1378,42 @@ public class TestOverride {public static void main(String[] args) {Vehicle v1 
   3.“≥”： 访问权限，子类大于等于父类。
 </code></pre>
 <p><strong>【示例5-3】</strong> 方法重写</p>
-<pre><code>public class TestOverride {
-    public static void main(String[] args) {
-        Vehicle v1 = new Vehicle();
-        Vehicle v2 = new Horse();
-        Vehicle v3 = new Plane();
-        v1.run();
-        v2.run();
-        v3.run();
-        v2.stop();
-        v3.stop();
-    }
-}
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestOverride</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Vehicle</span> <span class="n">v1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vehicle</span><span class="o">();</span>
+		<span class="n">Vehicle</span> <span class="n">v2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Horse</span><span class="o">();</span>
+		<span class="n">Vehicle</span> <span class="n">v3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Plane</span><span class="o">();</span>
+		<span class="n">v1</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+		<span class="n">v2</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+		<span class="n">v3</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+		<span class="n">v2</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+		<span class="n">v3</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
 
-class Vehicle { // 交通工具类
-    public void run() {
-        System.out.println(&quot;跑....&quot;);
-    }
-    public void stop() {
-        System.out.println(&quot;停止不动&quot;);
-    }
-}
-class Horse extends Vehicle { // 马也是交通工具
-    public void run() { // 重写父类方法
-        System.out.println(&quot;四蹄翻飞，嘚嘚嘚...&quot;);
-    }
-}
+<span class="kd">class</span> <span class="nc">Vehicle</span> <span class="o">{</span> <span class="c1">// 交通工具类
+</span><span class="c1"></span>	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;跑....&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;停止不动&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Horse</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="o">{</span> <span class="c1">// 马也是交通工具
+</span><span class="c1"></span>	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="c1">// 重写父类方法
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;四蹄翻飞，嘚嘚嘚...&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
 
-class Plane extends Vehicle {
-    public void run() { // 重写父类方法
-        System.out.println(&quot;天上飞！&quot;);
-    }
-    public void stop() {
-        System.out.println(&quot;空中不能停，坠毁了！&quot;);
-    }
-}  
-</code></pre>
-<p>执行结果如图5-3所示：</p>
+<span class="kd">class</span> <span class="nc">Plane</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="c1">// 重写父类方法
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;天上飞！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;空中不能停，坠毁了！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>  
+</code></pre></div><p>执行结果如图5-3所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495182341450054.png" alt="enter description here"></p>
 ]]></content>
 		</item>
@@ -1478,18 +1445,17 @@ class Plane extends Vehicle {
 			<guid>https://HarryQing.github.io/posts/5.1.2-instanceof-%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
 			<description>instanceof是二元运算符，左边是对象，右边是类；当对象是右面类或子类所创建对象时，返回true；否则，返回false。比如：
 【示例5-2】 使用instanceof运算符进行类型判断
-public class Test{public static void main(String[] args) {Student s = new Student(&amp;quot;高淇&amp;quot;,172,&amp;quot;Java&amp;quot;);System.out.println(s instanceof Person);System.out.println(s instanceof Student);}} 两条语句的输出结果都是true</description>
+public class Test{ public static void main(String[] args) { Student s = new Student(&amp;#34;高淇&amp;#34;,172,&amp;#34;Java&amp;#34;); System.out.println(s instanceof Person); System.out.println(s instanceof Student); } } 两条语句的输出结果都是true</description>
 			<content type="html"><![CDATA[<p>　　instanceof是二元运算符，左边是对象，右边是类；当对象是右面类或子类所创建对象时，返回true；否则，返回false。比如：</p>
 <p><strong>【示例5-2】</strong> 使用instanceof运算符进行类型判断</p>
-<pre><code>public class Test{
-    public static void main(String[] args) {
-        Student s = new Student(&quot;高淇&quot;,172,&quot;Java&quot;);
-        System.out.println(s instanceof Person);
-        System.out.println(s instanceof Student);
-    }
-}
-</code></pre>
-<p>两条语句的输出结果都是true</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Student</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="s">&#34;高淇&#34;</span><span class="o">,</span><span class="n">172</span><span class="o">,</span><span class="s">&#34;Java&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span> <span class="k">instanceof</span> <span class="n">Person</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span> <span class="k">instanceof</span> <span class="n">Student</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>两条语句的输出结果都是true</p>
 ]]></content>
 		</item>
 		
@@ -1504,41 +1470,40 @@ public class Test{public static void main(String[] args) {Student s = new Stud
 图5-1 现实世界中的继承
 　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。
 【示例5-1】 使用extends实现继承
-public class Test{public static void main(String[] args) {Student s = new Student(&amp;quot;王雪庆&amp;quot;,172,&amp;quot;Java&amp;quot;);s.rest();s.study();}}class Person {String name;int height;public void rest(){System.out.println(&amp;quot;休息一会！&amp;quot;);} }class Student extends Person {String major; //专业public void study(){System.out.println(&amp;quot;雪儿，学习Java&amp;quot;);} public Student(String name,int height,String major) {//天然拥有父类的属性this.name = name;this.height = height;this.</description>
+public class Test{ public static void main(String[] args) { Student s = new Student(&amp;#34;王雪庆&amp;#34;,172,&amp;#34;Java&amp;#34;); s.rest(); s.study(); } } class Person { String name; int height; public void rest(){ System.out.println(&amp;#34;休息一会！&amp;#34;); } } class Student extends Person { String major; //专业  public void study(){ System.out.println(&amp;#34;雪儿，学习Java&amp;#34;); } public Student(String name,int height,String major) { //天然拥有父类的属性  this.name = name; this.height = height; this.</description>
 			<content type="html"><![CDATA[<p>　　继承让我们更加容易实现类的扩展。 比如，我们定义了人类，再定义Boy类就只需要扩展人类即可。实现了代码的重用，不用再重新发明轮子(don’t  reinvent  wheels)。</p>
 <p>　　从英文字面意思理解，extends的意思是“扩展”。子类是父类的扩展。现实世界中的继承无处不在。比如：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170519/1495179917567916.png" alt="enter description here"></p>
 <p>图5-1 现实世界中的继承</p>
 <p>　　上图中，哺乳动物继承了动物。意味着，动物的特性，哺乳动物都有；在我们编程中，如果新定义一个Student类，发现已经有Person类包含了我们需要的属性和方法，那么Student类只需要继承Person类即可拥有Person类的属性和方法。</p>
 <p><strong>【示例5-1】</strong> 使用extends实现继承</p>
-<pre><code>public class Test{
-    public static void main(String[] args) {
-        Student s = new Student(&quot;王雪庆&quot;,172,&quot;Java&quot;);
-        s.rest();
-        s.study();
-    }
-}
-class Person {
-    String name;
-    int height;
-    public void rest(){
-        System.out.println(&quot;休息一会！&quot;);
-    }  
-}
-class Student extends Person {
-    String major; //专业
-    public void study(){
-        System.out.println(&quot;雪儿，学习Java&quot;);
-    }  
-    public Student(String name,int height,String major) {
-        //天然拥有父类的属性
-        this.name = name;
-        this.height = height;
-        this.major = major;
-    }
-}
-</code></pre>
-]]></content>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Student</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="s">&#34;王雪庆&#34;</span><span class="o">,</span><span class="n">172</span><span class="o">,</span><span class="s">&#34;Java&#34;</span><span class="o">);</span>
+        <span class="n">s</span><span class="o">.</span><span class="na">rest</span><span class="o">();</span>
+        <span class="n">s</span><span class="o">.</span><span class="na">study</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">rest</span><span class="o">(){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;休息一会！&#34;</span><span class="o">);</span>
+    <span class="o">}</span>  
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">major</span><span class="o">;</span> <span class="c1">//专业
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">study</span><span class="o">(){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;雪儿，学习Java&#34;</span><span class="o">);</span>
+    <span class="o">}</span>  
+    <span class="kd">public</span> <span class="nf">Student</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span><span class="kt">int</span> <span class="n">height</span><span class="o">,</span><span class="n">String</span> <span class="n">major</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//天然拥有父类的属性
+</span><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">height</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">major</span> <span class="o">=</span> <span class="n">major</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>]]></content>
 		</item>
 		
 		<item>

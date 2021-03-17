@@ -8,7 +8,7 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="5.9.2 如何定义和使用接口?">
-<meta itemprop="description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] {常量定义； 方法定义；} 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
+<meta itemprop="description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] { 常量定义； 方法定义； } 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
 　2. 接口名：和类名采用相同命名机制。
 　3. extends：接口可以多继承。
 　4. 常量：接口中的属性只能是常量，总是：public static final 修饰。不写也是。
@@ -19,7 +19,7 @@
 　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。
 　5. JDK1.8后，接口中包含普通的静态方法。
 【示例5-17】 接口的使用
-public class TestInterface {public static void main(String[] args) {Volant volant = new Angel();volant.fly();System.out.println(Volant.FLY_HIGHT);Honest honest = new GoodMan();honest.">
+public class TestInterface { public static void main(String[] args) { Volant volant = new Angel(); volant.fly(); System.out.println(Volant.FLY_HIGHT); Honest honest = new GoodMan(); honest.">
 <meta itemprop="datePublished" content="2021-03-05T09:20:00+08:00" />
 <meta itemprop="dateModified" content="2021-03-05T09:20:00+08:00" />
 <meta itemprop="wordCount" content="135">
@@ -28,7 +28,7 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 
 <meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
 <meta property="og:title" content="5.9.2 如何定义和使用接口?" />
-<meta property="og:description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] {常量定义； 方法定义；} 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
+<meta property="og:description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] { 常量定义； 方法定义； } 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
 　2. 接口名：和类名采用相同命名机制。
 　3. extends：接口可以多继承。
 　4. 常量：接口中的属性只能是常量，总是：public static final 修饰。不写也是。
@@ -39,14 +39,14 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。
 　5. JDK1.8后，接口中包含普通的静态方法。
 【示例5-17】 接口的使用
-public class TestInterface {public static void main(String[] args) {Volant volant = new Angel();volant.fly();System.out.println(Volant.FLY_HIGHT);Honest honest = new GoodMan();honest." />
+public class TestInterface { public static void main(String[] args) { Volant volant = new Angel(); volant.fly(); System.out.println(Volant.FLY_HIGHT); Honest honest = new GoodMan(); honest." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://HarryQing.github.io/posts/5.9.2-%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8E%A5%E5%8F%A3/" />
 <meta property="article:published_time" content="2021-03-05T09:20:00+08:00" />
 <meta property="article:modified_time" content="2021-03-05T09:20:00+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="5.9.2 如何定义和使用接口?"/>
-<meta name="twitter:description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] {常量定义； 方法定义；} 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
+<meta name="twitter:description" content="声明格式： [访问修饰符] interface 接口名 [extends 父接口1，父接口2…] { 常量定义； 方法定义； } 定义接口的详细说明： 　1. 访问修饰符：只能是public或默认。
 　2. 接口名：和类名采用相同命名机制。
 　3. extends：接口可以多继承。
 　4. 常量：接口中的属性只能是常量，总是：public static final 修饰。不写也是。
@@ -57,7 +57,7 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。
 　5. JDK1.8后，接口中包含普通的静态方法。
 【示例5-17】 接口的使用
-public class TestInterface {public static void main(String[] args) {Volant volant = new Angel();volant.fly();System.out.println(Volant.FLY_HIGHT);Honest honest = new GoodMan();honest."/>
+public class TestInterface { public static void main(String[] args) { Volant volant = new Angel(); volant.fly(); System.out.println(Volant.FLY_HIGHT); Honest honest = new GoodMan(); honest."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -111,12 +111,11 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 			</header>
 			<div class="content">
 				<h2 id="声明格式">声明格式：<a href="#声明格式" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<pre><code>[访问修饰符]  interface 接口名   [extends  父接口1，父接口2…]  {
-常量定义；  
-方法定义；
-}
-</code></pre>
-<h2 id="定义接口的详细说明">定义接口的详细说明：<a href="#定义接口的详细说明" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="o">[</span><span class="n">访问修饰符</span><span class="o">]</span>  <span class="kd">interface</span> <span class="nc">接口名</span>   <span class="o">[</span><span class="kd">extends</span>  <span class="n">父接口1</span><span class="err">，</span><span class="n">父接口2</span><span class="err">…</span><span class="o">]</span>  <span class="o">{</span>
+<span class="n">常量定义</span><span class="err">；</span>  
+<span class="n">方法定义</span><span class="err">；</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="定义接口的详细说明">定义接口的详细说明：<a href="#定义接口的详细说明" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>　　1. 访问修饰符：只能是public或默认。</p>
 <p>　　2. 接口名：和类名采用相同命名机制。</p>
 <p>　　3. extends：接口可以多继承。</p>
@@ -129,47 +128,45 @@ public class TestInterface {public static void main(String[] args) {Volant vol
 <p>　　4. JDK1.7之前，接口中只能包含静态常量、抽象方法，不能有普通属性、构造方法、普通方法。</p>
 <p>　　5. JDK1.8后，接口中包含普通的静态方法。</p>
 <p><strong>【示例5-17】</strong> 接口的使用</p>
-<pre><code>public class TestInterface {
-    public static void main(String[] args) {
-        Volant volant = new Angel();
-        volant.fly();
-        System.out.println(Volant.FLY_HIGHT);
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestInterface</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">Volant</span> <span class="n">volant</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Angel</span><span class="o">();</span>
+		<span class="n">volant</span><span class="o">.</span><span class="na">fly</span><span class="o">();</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Volant</span><span class="o">.</span><span class="na">FLY_HIGHT</span><span class="o">);</span>
 
-        Honest honest = new GoodMan();
-        honest.helpOther();
-    }
-}
-/**飞行接口*/
-interface Volant { 
-    int FLY_HIGHT = 100;  // 总是：public static final类型的；
-    void fly();   //总是：public abstract void fly();
-}
-/**善良接口*/
-interface Honest { 
-    void helpOther();
-}
-/**Angle类实现飞行接口和善良接口*/
-class Angel implements Volant, Honest{
-    public void fly() {
-        System.out.println(&quot;我是天使，飞起来啦！&quot;);
-    }
-    public void helpOther() {
-        System.out.println(&quot;扶老奶奶过马路！&quot;);
-    }
-}
-class GoodMan implements Honest {
-   public void helpOther() {
-        System.out.println(&quot;扶老奶奶过马路！&quot;);
-    }  
-}
-class BirdMan implements Volant {
-    public void fly() {
-        System.out.println(&quot;我是鸟人，正在飞！&quot;);
-    }
-}
-</code></pre>
-<p>　　
-执行结果如果5-23所示：</p>
+		<span class="n">Honest</span> <span class="n">honest</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GoodMan</span><span class="o">();</span>
+		<span class="n">honest</span><span class="o">.</span><span class="na">helpOther</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="cm">/**飞行接口*/</span>
+<span class="kd">interface</span> <span class="nc">Volant</span> <span class="o">{</span> 
+	<span class="kt">int</span> <span class="n">FLY_HIGHT</span> <span class="o">=</span> <span class="n">100</span><span class="o">;</span>  <span class="c1">// 总是：public static final类型的；
+</span><span class="c1"></span>	<span class="kt">void</span> <span class="nf">fly</span><span class="o">();</span>   <span class="c1">//总是：public abstract void fly();
+</span><span class="c1"></span><span class="o">}</span>
+<span class="cm">/**善良接口*/</span>
+<span class="kd">interface</span> <span class="nc">Honest</span> <span class="o">{</span> 
+	<span class="kt">void</span> <span class="nf">helpOther</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="cm">/**Angle类实现飞行接口和善良接口*/</span>
+<span class="kd">class</span> <span class="nc">Angel</span> <span class="kd">implements</span> <span class="n">Volant</span><span class="o">,</span> <span class="n">Honest</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;我是天使，飞起来啦！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">helpOther</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;扶老奶奶过马路！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">GoodMan</span> <span class="kd">implements</span> <span class="n">Honest</span> <span class="o">{</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">helpOther</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;扶老奶奶过马路！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>  
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">BirdMan</span> <span class="kd">implements</span> <span class="n">Volant</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;我是鸟人，正在飞！&#34;</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如果5-23所示：</p>
 <p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495260169113292.png" alt="enter description here"></p>
 
 			</div>
