@@ -7,7 +7,63 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 14 Mar 2021 00:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2021 00:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.2Linux是什么，有哪些特点？</title>
+      <link>https://HarryQing.github.io/linuxs/1.2linux%E6%98%AF%E4%BB%80%E4%B9%88%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9/</link>
+      <pubDate>Thu, 18 Mar 2021 00:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/1.2linux%E6%98%AF%E4%BB%80%E4%B9%88%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9/</guid>
+      <description>与大家熟知的 Windows 操作系统软件一样，Linux 也是一个操作系统软件，其 logo 是一只企鹅（如图 1 所示）。与 Windows 不同之处在于，Linux 是一套开放源代码程序的、可以自由传播的类 Unix 操作系统软件。
+　Linux 在设计之初，就是基于 Intel x86 系列 CPU 架构计算机的，它是一个基于 POSIX 的多用户、多任务并且支持多线程和多 CPU 的操作系统，它是由世界各地成千上万的程序员设计和开发实现的，当初开发 Linux 系统的目的就是建立不受任何商业化软件版权制约的、全世界都能自由使用的类 Unix 操作系统兼容产品。
+　在过去的 20 年里，Linux 系统主要被应用于服务器端、嵌入式开发和 PC 桌面 3 大领域，其中服务器端领域是重中之重。例如，我们熟知的大型、超大型互联网企业（百度、腾讯、Sina、阿里等）都在使用 Linux 系统作为其服务器端的程序运行平台，全球及国内排名前 1000 的 90% 以上的网站使用的主流系统都是 Linux 系统。
+从上面的内容可以看出，Linux操作系统之所以如此流行，是因为它具备如下这些优秀的特点： 　1.Linux 不仅是免费的，更是开源的， 这意味着任何人都可以获得其代码并根据自己的需求进行修改。事实上，这已经孵化出专属 Linux 各发行版的巨大生态系统，我们将在《常见Linux发行版本》一节中展开探讨。
+　2.Linux 与 Unix 系统兼容， 该系统的构建采用了一些与 UNIX 操作系统相同的技术，具备 Unix 几乎所有的优秀特性（系统的稳定性和安全性尤为突出）。
+　3.和其他操作系统相比，Linux 更容易安装 ，且不会收到任何商业化版本的制约。
+　4.Linux 让开展各种实际有用且具有创造性的事情成为可能。 例如，我们可以在一个U盘上装载 Linux 的自生系统引导映像（live boot image），启动一台硬盘已经崩溃的计算机，之后查找并解决该问题。或者，因为 Linux 是一个真正的多用户操作系统，它具有非常好的私密性和稳定性，整个团队可以同时从本地或远程登录进行工作。</description>
+    </item>
+    
+    <item>
+      <title>markdown编辑器语法——文字颜色、大小、字体与背景色的设置</title>
+      <link>https://HarryQing.github.io/blog/markdown%E7%BC%96%E8%BE%91%E5%99%A8%E8%AF%AD%E6%B3%95%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2%E5%A4%A7%E5%B0%8F%E5%AD%97%E4%BD%93%E4%B8%8E%E8%83%8C%E6%99%AF%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Wed, 17 Mar 2021 23:37:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/blog/markdown%E7%BC%96%E8%BE%91%E5%99%A8%E8%AF%AD%E6%B3%95%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2%E5%A4%A7%E5%B0%8F%E5%AD%97%E4%BD%93%E4%B8%8E%E8%83%8C%E6%99%AF%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
+      <description>一、颜色 在markdown中采用如下方式能够控制文字的颜色：
+浅红色文字：&amp;lt;font color=&amp;#34;#dd0000&amp;#34;&amp;gt;浅红色文字：&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深红色文字：&amp;lt;font color=&amp;#34;#660000&amp;#34;&amp;gt;深红色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅绿色文字：&amp;lt;font color=&amp;#34;#00dd00&amp;#34;&amp;gt;浅绿色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深绿色文字：&amp;lt;font color=&amp;#34;#006600&amp;#34;&amp;gt;深绿色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅蓝色文字：&amp;lt;font color=&amp;#34;#0000dd&amp;#34;&amp;gt;浅蓝色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深蓝色文字：&amp;lt;font color=&amp;#34;#000066&amp;#34;&amp;gt;深蓝色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅黄色文字：&amp;lt;font color=&amp;#34;#dddd00&amp;#34;&amp;gt;浅黄色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深黄色文字：&amp;lt;font color=&amp;#34;#666600&amp;#34;&amp;gt;深黄色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅青色文字：&amp;lt;font color=&amp;#34;#00dddd&amp;#34;&amp;gt;浅青色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深青色文字：&amp;lt;font color=&amp;#34;#006666&amp;#34;&amp;gt;深青色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅紫色文字：&amp;lt;font color=&amp;#34;#dd00dd&amp;#34;&amp;gt;浅紫色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深紫色文字：&amp;lt;font color=&amp;#34;#660066&amp;#34;&amp;gt;深紫色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 效果如下： 二、大小 size为1：&amp;lt;font size=&amp;#34;1&amp;#34;&amp;gt;size为1&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为2：&amp;lt;font size=&amp;#34;2&amp;#34;&amp;gt;size为2&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为3：&amp;lt;font size=&amp;#34;3&amp;#34;&amp;gt;size为3&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为4：&amp;lt;font size=&amp;#34;4&amp;#34;&amp;gt;size为4&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为10：&amp;lt;font size=&amp;#34;10&amp;#34;&amp;gt;size为10&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 效果如下： 三、字体 &amp;lt;font face=&amp;#34;黑体&amp;#34;&amp;gt;我是黑体字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;宋体&amp;#34;&amp;gt;我是宋体字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;微软雅黑&amp;#34;&amp;gt;我是微软雅黑字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;fantasy&amp;#34;&amp;gt;我是fantasy字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;Helvetica&amp;#34;&amp;gt;我是Helvetica字&amp;lt;/font&amp;gt; 效果如下： 尝试了几个word中的字体都是可以的，我估计word中的字体基本都能够实现吧。
+四、背景色 &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#FF00FF&amp;gt;背景色的设置是按照十六进制颜色值：#7FFFD4&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#FF83FA&amp;gt;背景色的设置是按照十六进制颜色值：#FF83FA&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#D1EEEE&amp;gt;背景色的设置是按照十六进制颜色值：#D1EEEE&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#C0FF3E&amp;gt;背景色的设置是按照十六进制颜色值：#C0FF3E&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#54FF9F&amp;gt;背景色的设置是按照十六进制颜色值：#54FF9F&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; 效果如下： </description>
+    </item>
+    
+    <item>
+      <title>1.1操作系统是什么，操作系统概述</title>
+      <link>https://HarryQing.github.io/linuxs/1.1%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%98%AF%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Wed, 17 Mar 2021 23:12:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/1.1%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%98%AF%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid>
+      <description>Linux 也是众多操作系统之一，要想知道 Linux 是什么，首先得说一说什么是操作系统。
+　计算机是一台机器，它按照用户的要求接收信息、存储数据、处理数据，然后再将处理结果输出（文字、图片、音频、视频等）。计算机由硬件和软件组成 ：
+ 1.硬件是计算机赖以工作的实体，包括显示器、键盘、鼠标、硬盘、CPU、主板等；
+2.软件会按照用户的要求协调整台计算机的工作，比如 Windows、Linux、Mac OS、Android 等操作系统，以及 Office、QQ、迅雷、微信等应用程序。
+ 　操作系统（Operating System，OS） 是软件的一部分，它是硬件基础上的第一层软件，是硬件和其它软件沟通的桥梁（或者说接口、中间人、中介等）。
+　操作系统会控制其他程序运行，管理系统资源，提供最基本的计算功能，如管理及配置内存、决定系统资源供需的优先次序等，同时还提供一些基本的服务程序，例如：
+1) 文件系统 　提供计算机存储信息的结构，信息存储在文件中，文件主要存储在计算机的内部硬盘里，在目录的分层结构中组织文件。文件系统为操作系统提供了组织管理数据的方式。
+2) 设备驱动程序 　提供连接计算机的每个硬件设备的接口，设备驱动器使程序能够写入设备，而不需要了解执行每个硬件的细节。简单来说，就是让你能吃到鸡蛋，但不用养一只鸡。
+3) 用户接口 　操作系统需要为用户提供一种运行程序和访问文件系统的方法。如常用的 Windows 图形界面，可以理解为一种用户与操作系统交互的方式；智能手机的 Android 或 iOS 系统，也是一种操作系统的交互方式。
+4) 系统服务程序 　当计算机启动时，会自启动许多系统服务程序，执行安装文件系统、启动网络服务、运行预定任务等操作。
+　打个比方，操作系统就好像是一个政府，其它软件都会被它管控；操作系统在给其他软件提供各种便利的同时，还会约束其他软件不能为所欲为。
+　目前流行的服务器和 PC 端操作系统有 Linux、Windows、UNIX 等，手机操作系统有 Android、iOS、Windows Phone（简称 WP），嵌入式操作系统有 Windows CE、PalmOS、eCos、uClinux 等。
+　以上对操作系统的认知虽然只是“皮毛”，但它足以让我们学习 Linux 了。</description>
+    </item>
+    
+    <item>
+      <title>第一章 Linux简介</title>
+      <link>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Wed, 17 Mar 2021 23:01:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%AE%80%E4%BB%8B/</guid>
+      <description>一切皆有可能 新起点 新开始 加油 冲冲冲 </description>
+    </item>
+    
     <item>
       <title>hugo博客在GitHub上进行部署（二）</title>
       <link>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</link>
@@ -77,63 +133,6 @@ class Cpu { public void run() { System.out.println(&amp;#34;quickly.........&amp
 · 对扩展开放： 　就是指，应对需求变化要灵活。 要增加新功能时，不需要修改已有的代码，增加新代码即可。
 · 对修改关闭： 　就是指，核心部分经过精心设计后，不再因为需求变化而改变。
 　在实际开发中，我们无法完全做到，但应尽量遵守开闭原则。</description>
-    </item>
-    
-    <item>
-      <title>5.11.5 字符串相等的判断</title>
-      <link>https://HarryQing.github.io/posts/5.11.5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E7%AD%89%E7%9A%84%E5%88%A4%E6%96%AD/</link>
-      <pubDate>Sat, 06 Mar 2021 08:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.11.5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E7%AD%89%E7%9A%84%E5%88%A4%E6%96%AD/</guid>
-      <description>1. equals方法用来检测两个字符串内容是否相等。如果字符串s和t内容相等，则s.equals(t)返回true，否则返回false。
-　2. 要测试两个字符串除了大小写区别外是否是相等的，需要使用equalsIgnoreCase方法。
-　3. 判断字符串是否相等不要使用&amp;quot;==&amp;quot;。
-【示例5-31】 忽略大小写的字符串比较
-&amp;#34;Hello&amp;#34;.equalsIgnoreCase(&amp;#34;hellO&amp;#34;);//true 【示例5-32】 字符串的比较&amp;quot;==&amp;ldquo;与equals()方法
-public class TestStringEquals { public static void main(String[] args) { String g1 = &amp;#34;大爱雪儿&amp;#34;; String g2 = &amp;#34;大爱雪儿&amp;#34;; String g3 = new String(&amp;#34;大爱雪儿&amp;#34;); System.out.println(g1 == g2); // true 指向同样的字符串常量对象 	System.out.println(g1 == g3); // false g3是新创建的对象 	System.out.println(g1.equals(g3)); // true g1和g3里面的字符串内容是一样的 	} } 执行结果如图5-33所示：
-图5-33 示例5-32运行效果图</description>
-    </item>
-    
-    <item>
-      <title>5.11.4 String类常用的方法</title>
-      <link>https://HarryQing.github.io/posts/5.11.4-string%E7%B1%BB%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 05 Mar 2021 21:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.11.4-string%E7%B1%BB%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>String类是我们最常使用的类。字符串类的方法我们必须非常熟悉!我们列出常用的方法，请大家熟悉。
-【示例5-29】 String类常用方法一
-public class StringTest1 { public static void main(String[] args) { String s1 = &amp;#34;core Java&amp;#34;; String s2 = &amp;#34;Core Java&amp;#34;; System.out.println(s1.charAt(3));//提取下标为3的字符 	System.out.println(s2.length());//字符串的长度 	System.out.println(s1.equals(s2));//比较两个字符串是否相等 	System.out.println(s1.equalsIgnoreCase(s2));//比较两个字符串（忽略大小写） 	System.out.println(s1.indexOf(&amp;#34;Java&amp;#34;));//字符串s1中是否包含Java 	System.out.println(s1.indexOf(&amp;#34;apple&amp;#34;));//字符串s1中是否包含apple 	String s = s1.replace(&amp;#39; &amp;#39;, &amp;#39;&amp;amp;&amp;#39;);//将s1中的空格替换成&amp;amp; 	System.out.println(&amp;#34;result is :&amp;#34; + s); } } 执行结果如图5-31所示：
-【示例5-30】 String类常用方法二
-public class StringTest2 { public static void main(String[] args) { String s = &amp;#34;&amp;#34;; String s1 = &amp;#34;How are you?</description>
-    </item>
-    
-    <item>
-      <title>5.11.3阅读API文档</title>
-      <link>https://HarryQing.github.io/posts/5.11.3%E9%98%85%E8%AF%BBapi%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Fri, 05 Mar 2021 20:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.11.3%E9%98%85%E8%AF%BBapi%E6%96%87%E6%A1%A3/</guid>
-      <description>· 如何下载API文档 　1. 下载地址，点击进入： http://www.oracle.com/technetwork/java/javase/documentation/jdk8-doc-downloads-2133158.html
-图5-27 API下载界面图
-　2. 下载成功后，解压下载的压缩文件，点击进入docs/api下的index.html文件即可。
-图5-28 打开index.html文件
-·API文档如何阅读 图5-29 API文档
-· eclipse中将鼠标放到类或方法上，即可看到相关的注释说明;再按下F2即可将注释窗口固定。 图5-30 eclipse中的注释说明图</description>
-    </item>
-    
-    <item>
-      <title>5.11.2 String类和常量池</title>
-      <link>https://HarryQing.github.io/posts/5.11.2-string%E7%B1%BB%E5%92%8C%E5%B8%B8%E9%87%8F%E6%B1%A0/</link>
-      <pubDate>Fri, 05 Mar 2021 19:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.11.2-string%E7%B1%BB%E5%92%8C%E5%B8%B8%E9%87%8F%E6%B1%A0/</guid>
-      <description>在Java的内存分析中，我们会经常听到关于“常量池”的描述，实际上常量池也分了以下三种：
-1. 全局字符串常量池(String Pool) 　全局字符串常量池中存放的内容是在类加载完成后存到String Pool中的，在每个VM中只有一份，存放的是字符串常量的引用值(在堆中生成字符串对象实例)。
-2. class文件常量池(Class Constant Pool) 　class常量池是在编译的时候每个class都有的，在编译阶段，存放的是常量(文本字符串、final常量等)和符号引用。
-3. 运行时常量池(Runtime Constant Pool) 　运行时常量池是在类加载完成之后，将每个class常量池中的符号引用值转存到运行时常量池中，也就是说，每个class都有一个运行时常量池，类在解析之后，将符号引用替换成直接引用，与全局常量池中的引用值保持一致。
-【示例5-28】 常量池
-String str1 = &amp;#34;abc&amp;#34;; String str2 = new String(&amp;#34;def&amp;#34;); String str3 = &amp;#34;abc&amp;#34;; String str4 = str2.intern(); String str5 = &amp;#34;def&amp;#34;; System.out.println(str1 == str3);// true System.out.println(str2 == str4);// false System.out.println(str4 == str5);// true 　示例5-28的首先经过编译之后，在该类的class常量池中存放一些符号引用，然后类加载之后，将class常量池中存放的符号引用转存到运行时常量池中，然后经过验证，准备阶段之后，在堆中生成驻留字符串的实例对象(也就是上例中str1所指向的“abc”实例对象)，然后将这个对象的引用存到全局String Pool中，也就是String Pool中，最后在解析阶段，要把运行时常量池中的符号引用替换成直接引用，那么就直接查询String Pool，保证String Pool里的引用值与运行时常量池中的引用值一致，大概整个过程就是这样了。
-　回到示例5-28的那个程序，现在就很容易解释整个程序的内存分配过程了，首先，在堆中会有一个“abc”实例，全局String Pool中存放着“abc”的一个引用值，然后在运行第二句的时候会生成两个实例，一个是“def”的实例对象，并且String Pool中存储一个“def”的引用值，还有一个是new出来的一个“def”的实例对象，与上面那个是不同的实例，当在解析str3的时候查找String Pool，里面有“abc”的全局驻留字符串引用，所以str3的引用地址与之前的那个已存在的相同，str4是在运行的时候调用intern()函数，返回String Pool中“def”的引用值，如果没有就将str2的引用值添加进去，在这里，String Pool中已经有了“def”的引用值了，所以返回上面在new str2的时候添加到String Pool中的 “def”引用值，最后str5在解析的时候就也是指向存在于String Pool中的“def”的引用值，那么这样一分析之后，结果就容易理解了。</description>
     </item>
     
   </channel>
