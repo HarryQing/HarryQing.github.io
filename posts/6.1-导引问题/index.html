@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="6.1 导引问题">
+<meta itemprop="description" content="　在实际工作中，我们遇到的情况不可能是非常完美的。比如：你写的某个模块，用户输入不一定符合你的要求;你的程序要打开某个文件，这个文件可能不存在或者文件格式不对;你要读取数据库的数据，数据可能是空的;我们的程序再运行着，但是内存或硬盘可能满了等等。
+　软件程序在运行过程中，非常可能遇到刚刚提到的这些问题，我们称之为异常，英文是：Exception，意思是例外。遇到这些例外情况，或者叫异常，我们怎么让写的程序做出合理的处理，安全的退出，而不至于程序崩溃呢?我们本章就要讲解这些问题。
+　如果我们要拷贝一个文件，在没有异常机制的情况下，我们需要考虑各种异常情况，伪代码如下：
+【示例6-1】 伪代码使用if处理程序中可能出现的各种情况
+public class Test1 { public static void main(String[] args) { //将d:/a.txt复制到e:/a.txt  if(&#34;d:/a.txt&#34;这个文件存在){ if(e盘的空间大于a.txt文件长度){ if(文件复制一半IO流断掉){ 停止copy，输出：IO流出问题！ }else{ copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } }else{ System.out.println(&#34;e盘空间不够存放a.txt！&#34;); } }else{ System.out.println(&#34;a.txt不存在！&#34;); } } } 这种方式，有两个坏处：  1. 逻辑代码和错误处理代码放一起!2. 程序员本身需要考虑的例外情况较复杂，对程序员本身要求较高! 　那么，我们如何解决应对异常情况呢?Java的异常机制给我们提供了方便的处理方式。如上情况，如果是用Java的异常机制来处理，示意代码如下(仅限示意，不能运行)：
+try { copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } catch (Exception e) { e.printStackTrace(); } 异常机制本质  就是当程序出现错误，程序安全退出的机制。 ">
+<meta itemprop="datePublished" content="2021-03-08T16:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-03-08T16:20:00+08:00" />
+<meta itemprop="wordCount" content="49">
+
+
+
+<meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
+<meta property="og:title" content="6.1 导引问题" />
+<meta property="og:description" content="　在实际工作中，我们遇到的情况不可能是非常完美的。比如：你写的某个模块，用户输入不一定符合你的要求;你的程序要打开某个文件，这个文件可能不存在或者文件格式不对;你要读取数据库的数据，数据可能是空的;我们的程序再运行着，但是内存或硬盘可能满了等等。
+　软件程序在运行过程中，非常可能遇到刚刚提到的这些问题，我们称之为异常，英文是：Exception，意思是例外。遇到这些例外情况，或者叫异常，我们怎么让写的程序做出合理的处理，安全的退出，而不至于程序崩溃呢?我们本章就要讲解这些问题。
+　如果我们要拷贝一个文件，在没有异常机制的情况下，我们需要考虑各种异常情况，伪代码如下：
+【示例6-1】 伪代码使用if处理程序中可能出现的各种情况
+public class Test1 { public static void main(String[] args) { //将d:/a.txt复制到e:/a.txt  if(&#34;d:/a.txt&#34;这个文件存在){ if(e盘的空间大于a.txt文件长度){ if(文件复制一半IO流断掉){ 停止copy，输出：IO流出问题！ }else{ copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } }else{ System.out.println(&#34;e盘空间不够存放a.txt！&#34;); } }else{ System.out.println(&#34;a.txt不存在！&#34;); } } } 这种方式，有两个坏处：  1. 逻辑代码和错误处理代码放一起!2. 程序员本身需要考虑的例外情况较复杂，对程序员本身要求较高! 　那么，我们如何解决应对异常情况呢?Java的异常机制给我们提供了方便的处理方式。如上情况，如果是用Java的异常机制来处理，示意代码如下(仅限示意，不能运行)：
+try { copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } catch (Exception e) { e.printStackTrace(); } 异常机制本质  就是当程序出现错误，程序安全退出的机制。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/6.1-%E5%AF%BC%E5%BC%95%E9%97%AE%E9%A2%98/" />
+<meta property="article:published_time" content="2021-03-08T16:20:00+08:00" />
+<meta property="article:modified_time" content="2021-03-08T16:20:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="6.1 导引问题"/>
+<meta name="twitter:description" content="　在实际工作中，我们遇到的情况不可能是非常完美的。比如：你写的某个模块，用户输入不一定符合你的要求;你的程序要打开某个文件，这个文件可能不存在或者文件格式不对;你要读取数据库的数据，数据可能是空的;我们的程序再运行着，但是内存或硬盘可能满了等等。
+　软件程序在运行过程中，非常可能遇到刚刚提到的这些问题，我们称之为异常，英文是：Exception，意思是例外。遇到这些例外情况，或者叫异常，我们怎么让写的程序做出合理的处理，安全的退出，而不至于程序崩溃呢?我们本章就要讲解这些问题。
+　如果我们要拷贝一个文件，在没有异常机制的情况下，我们需要考虑各种异常情况，伪代码如下：
+【示例6-1】 伪代码使用if处理程序中可能出现的各种情况
+public class Test1 { public static void main(String[] args) { //将d:/a.txt复制到e:/a.txt  if(&#34;d:/a.txt&#34;这个文件存在){ if(e盘的空间大于a.txt文件长度){ if(文件复制一半IO流断掉){ 停止copy，输出：IO流出问题！ }else{ copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } }else{ System.out.println(&#34;e盘空间不够存放a.txt！&#34;); } }else{ System.out.println(&#34;a.txt不存在！&#34;); } } } 这种方式，有两个坏处：  1. 逻辑代码和错误处理代码放一起!2. 程序员本身需要考虑的例外情况较复杂，对程序员本身要求较高! 　那么，我们如何解决应对异常情况呢?Java的异常机制给我们提供了方便的处理方式。如上情况，如果是用Java的异常机制来处理，示意代码如下(仅限示意，不能运行)：
+try { copyFile(&#34;d:/a.txt&#34;,&#34;e:/a.txt&#34;); } catch (Exception e) { e.printStackTrace(); } 异常机制本质  就是当程序出现错误，程序安全退出的机制。 "/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>6.1 导引问题</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a>
+				<a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Mar 8, 2021</span></div>
+				<h1>6.1 导引问题</h1>
+			</header>
+			<div class="content">
+				<p>　　在实际工作中，我们遇到的情况不可能是非常完美的。比如：你写的某个模块，用户输入不一定符合你的要求;你的程序要打开某个文件，这个文件可能不存在或者文件格式不对;你要读取数据库的数据，数据可能是空的;我们的程序再运行着，但是内存或硬盘可能满了等等。</p>
+<p>　　 软件程序在运行过程中，非常可能遇到刚刚提到的这些问题，我们称之为异常，英文是：Exception，意思是例外。遇到这些例外情况，或者叫异常，我们怎么让写的程序做出合理的处理，安全的退出，而不至于程序崩溃呢?我们本章就要讲解这些问题。</p>
+<p>　　如果我们要拷贝一个文件，在没有异常机制的情况下，我们需要考虑各种异常情况，伪代码如下：</p>
+<p><strong>【示例6-1】</strong> 伪代码使用if处理程序中可能出现的各种情况</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test1</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//将d:/a.txt复制到e:/a.txt
+</span><span class="c1"></span>        <span class="k">if</span><span class="o">(</span><span class="s">&#34;d:/a.txt&#34;</span><span class="n">这个文件存在</span><span class="o">){</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">e盘的空间大于a</span><span class="o">.</span><span class="na">txt文件长度</span><span class="o">){</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">文件复制一半IO流断掉</span><span class="o">){</span>
+                    <span class="n">停止copy</span><span class="err">，</span><span class="n">输出</span><span class="err">：</span><span class="n">IO流出问题</span><span class="err">！</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="n">copyFile</span><span class="o">(</span><span class="s">&#34;d:/a.txt&#34;</span><span class="o">,</span><span class="s">&#34;e:/a.txt&#34;</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;e盘空间不够存放a.txt！&#34;</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;a.txt不存在！&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="这种方式有两个坏处">这种方式，有两个坏处：<a href="#这种方式有两个坏处" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<pre><code>  1. 逻辑代码和错误处理代码放一起!
+
+  2. 程序员本身需要考虑的例外情况较复杂，对程序员本身要求较高!
+</code></pre>
+<p>　　那么，我们如何解决应对异常情况呢?Java的异常机制给我们提供了方便的处理方式。如上情况，如果是用Java的异常机制来处理，示意代码如下(仅限示意，不能运行)：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">{</span>
+    <span class="n">copyFile</span><span class="o">(</span><span class="s">&#34;d:/a.txt&#34;</span><span class="o">,</span><span class="s">&#34;e:/a.txt&#34;</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="异常机制本质">异常机制本质<a href="#异常机制本质" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<pre><code>  就是当程序出现错误，程序安全退出的机制。</code></pre>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>49 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-03-08 16:20 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://HarryQing.github.io/posts/6.2-%E5%BC%82%E5%B8%B8exception%E7%9A%84%E6%A6%82%E5%BF%B5/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>6.2 异常(Exception)的概念</span>
+			</a>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>第六章 异常机制</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

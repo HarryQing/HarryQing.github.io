@@ -7,7 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 18 Mar 2021 00:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/linuxs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2021 23:43:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/linuxs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.2VMware虚拟机安装Linux系统(详解版)</title>
+      <link>https://HarryQing.github.io/linuxs/2.2vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85linux%E7%B3%BB%E7%BB%9F%E8%AF%A6%E8%A7%A3%E7%89%88/</link>
+      <pubDate>Thu, 18 Mar 2021 23:43:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/2.2vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85linux%E7%B3%BB%E7%BB%9F%E8%AF%A6%E8%A7%A3%E7%89%88/</guid>
+      <description>许多新手连 Windows 的安装都不太熟悉，更别提 Linux 的安装了；即使安装成功了，也有可能破坏现有的 Windows 系统，比如导致硬盘数据丢失、Windows 无法开机等。所以一直以来，安装 Linux 系统都是初学者的噩梦。
+　然而，通过虚拟机技术很容易冲破这种困境。由于虚拟机安装 Linux 所有的操作（例如硬盘分区、删除或修改数据）都是在虚拟硬盘中进行，因此不会对现有的数据和系统造成任何损失，即使安装失败了也无所谓。
+　所谓虚拟机（virtual machine），就是通过软件技术虚拟出来的一台计算机，它在使用层面和真实的计算机并没有什么区别。
+　常见的虚拟机软件有 VMware Workstation（简称 VMware）、VirtualBox、Microsoft Virtual PC 等，其中 VMware 市场占有率最高，所以本节以 VMware 为例来讲解 Linux 的安装。
+　VMware 可以使你在一台计算机上同时运行多个操作系统，例如同时运行 Windows、Linux 和 Mac OS。在计算机上直接安装多个操作系统，同一个时刻只能运行一个操作系统，重启才可以切换；而 Vmware 可以同时运行多个操作系统，可以像 Windows 应用程序一样来回切换。
+ 站在使用者的角度讲，虚拟机系统和真实安装的系统是一样的，甚至可以在一台计算机上将几个虚拟机系统连接为一个局域网或连接到互联网。
+ 　在虚拟机系统中，每一台虚拟产生的计算机都被称为“虚拟机”，而用来存储所有虚拟机的计算机则被称为“宿主机”。例如，你的 Windows 系统就是宿主机，而 VMware 安装的 Linux 则为虚拟机。
+VMware下载和安装 　绝大多数初学者使用的是 Windows，所以本节只讲解在 Windows 下安装 VMware 和 Linux。
+　VMware 有两个版本，分别是 VMware Workstation Pro 和 VMware Workstation Player。</description>
+    </item>
+    
+    <item>
+      <title>2.1虚拟机是什么</title>
+      <link>https://HarryQing.github.io/linuxs/2.1%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%98%AF%E4%B8%8A%E9%9D%A2/</link>
+      <pubDate>Thu, 18 Mar 2021 19:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/2.1%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%98%AF%E4%B8%8A%E9%9D%A2/</guid>
+      <description>简单的来说，虚拟机就是允许我们在当前操作系统中运行其他操作系统的软件，本质上和VS，QQ这些应用程序一样。
+　所以，只要我们在电脑上安装好虚拟机软件，就可以模拟出来若干台互联的虚拟PC设备，每一个都是一台真实的计算机。在此基础上，我可以给每台虚拟机的PC设备安装指定的操作系统，这样就可以实现在一台电脑上同时运行多个系统。
+图 1 Windows 10系统安装WMware Workstation虚拟软件窗口
+　如图 1 所示，展示的是在 Windows 10 桌面操作系统上安装的虚拟机软件 VMware Workstation（简称 VMware），这里通过配置 VMware 虚拟出了 2 台 PC 设备，且分别在这 2 台 PC 上安装了 Linux 系统（CentOS 发行版）和 Windows 系统。这 2 个虚拟机同时在一台电脑上独立运行，几乎互不干扰，并且可以同在一个局域网内，还可以互相通信。</description>
+    </item>
+    
+    <item>
+      <title>第二章 Linux安装</title>
+      <link>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%BA%8C%E7%AB%A0-linux%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 18 Mar 2021 19:00:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%BA%8C%E7%AB%A0-linux%E5%AE%89%E8%A3%85/</guid>
+      <description>打开 Linux 操作系统这扇门，你才是合格的软件工程师 </description>
+    </item>
+    
+    <item>
+      <title>1.4Linux桌面环境（桌面系统）-Unity</title>
+      <link>https://HarryQing.github.io/linuxs/linux%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E6%A1%8C%E9%9D%A2%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 18 Mar 2021 16:59:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/linux%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E6%A1%8C%E9%9D%A2%E7%B3%BB%E7%BB%9F/</guid>
+      <description>Unity 是由 Ubuntu 的母公司 Canonical 开发的一款外壳。之所以说它是外壳，是因为 Unity 运行在 GNOME 桌面环境之上，使用了所有 GNOME 的核心应用程序。
+　2010 年，Unity 第一个版本发布，此后经过数次改进，如今和其它的桌面环境一样，也可以安装到其它的 Linux 发行版上了。
+　Unity 使用了不同的界面风格，如果你用的是 Ubuntu Linux 发行版，你会注意到 Unity 与 KDE 和 GNOME 桌面环境有些不一样。
+　Unity 在左边有一个启动器，位于启动器顶部的是搜索图标，又叫“Dash”。在 Dash 上搜索文件时，不仅会给出来自硬盘的搜索结果，还会给出来自在线来源的搜索结果，比如 Google Drive、Facebook、Picasa、Flick 及其他。
+　Unity 还提供了隐藏启动器、触摸侧边栏就显示的选项，用户还可以调高/调低显示启动器菜单的灵敏度。
+　Unity 很简单、运行速度快，但 Unity 在系统设置下却没有定制桌面的太多选项，要想安装主题或者定制另外不同的选项，比如系统菜单是否应该总是可见，或者“从启动器图标一次点击最小化”，用户需要安装第三方工具。
+ CCSM 和 Unity Tweak Tool 是面向 Unity 桌面环境的非常流行的定制工具。
+ 对 Unity 优缺点的总结： 优点： 界面简洁直观，可以通过第三方工具来深度定制，而且使用了平视显示器（HUD）等新技术。
+缺点： 默认的定制功能比较差劲，通知机制一般。</description>
+    </item>
+    
+    <item>
+      <title>1.3Linux系统的优缺点</title>
+      <link>https://HarryQing.github.io/linuxs/1.3linux%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
+      <pubDate>Thu, 18 Mar 2021 12:47:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/1.3linux%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
+      <description>前面章节提到，相比 Windows 系统，Linux 系统有更好的稳定性，那么除此之外，Linux 系统还有那些优点（或者不足）呢？本节带领大家详细了解一下。
+1) 大量的可用软件及免费软件 　Linux 系统上有着大量的可用软件，且绝大多数是免费的，比如声名赫赫的 Apache、Samba、PHP、MySQL 等，构建成本低廉，是 Linux 被众多企业青睐的原因之一。当然，这和 Linux 出色的性能是分不开的，否则，节约成本就没有任何意义。
+　但不可否认的是，Linux 在办公应用和游戏娱乐方面的软件相比 Windows 系统还很匮乏，所以，即便打游戏、看影片用的也是 Windows，至于 Linux，就把它用在擅长的服务器领域吧。
+2) 良好的可移植性及灵活注 　Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这使得它便于裁剪和定制。我们可以把 Linux 放在 U 盘、光盘等存储介质中，也可以在嵌入式领域广泛应用。
+　如果读者希望不进行安装就体验 Linux 系统，则可以在网上下载一个 Live DVD 版的 Linux 镜像，刻成光盘放入光驱或者用虚拟机软件直接载入镜像文件，设置 CMOS/BIOS 为光盘启动，系统就会自动载入光盘文件，启动进入 Linux 系统。
+3) 优良的稳定性和安全性 　著名的黑客埃里克•雷蒙德（EricS.Raymond）有一句名言：“足够多的眼睛，就可让所有问题浮现”。举个例子，假如笔者在演讲，台下人山人海，明哥中午吃饭不小心，有几个饭粒粘在衣领上了，分分钟就会被大家发现，因为看的人太多了；如果台下就稀稀落落两三个人且离得很远，那就算明哥衣领上有一大块油渍也不会被发现。
+　Linux 开放源代码，将所有代码放在网上，全世界的程序员都看得到，有什么缺陷和漏洞，很快就会被发现，从而成就了它的稳定性和安全注。
+　提到 Linux 的安全性，我们可以做一个实验：在一台计算机上，在安装了 Windows 系统后不安装杀毒软件联网一个月，看看会有什么情况；同样，在安装了 Linux 系统后不安装杀毒软件联网一个月，我们比较一下，大家就明白了什么是 Linux 的安全性。Windows 系统不安装杀毒软件，相信大家都知道会有什么下场吧……
+4) 支持几乎所有的网络协议及开发语言 　经常有初学的朋友问我，Linux 是不是对 TCP/IP 协议支持不好、是不是 Java 开发环境不灵之类的问题。前面在 UNIX 发展史中已经介绍了，UNIX 系统是与 C 语言、TCP/IP 协议一同发展起来的，而 Linux 是 UNIX 的一种，C 语言又衍生出了现今主流的语言 PHP、Java、C++ 等，而哪一个网络协议与 TCP/IP 无关呢？所以，Linux 对网络协议和开发语言的支持很好。</description>
+    </item>
+    
     <item>
       <title>1.2Linux是什么，有哪些特点？</title>
       <link>https://HarryQing.github.io/linuxs/1.2linux%E6%98%AF%E4%BB%80%E4%B9%88%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9/</link>

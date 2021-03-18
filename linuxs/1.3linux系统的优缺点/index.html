@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="1.3Linux系统的优缺点">
+<meta itemprop="description" content="前面章节提到，相比 Windows 系统，Linux 系统有更好的稳定性，那么除此之外，Linux 系统还有那些优点（或者不足）呢？本节带领大家详细了解一下。
+1) 大量的可用软件及免费软件 　Linux 系统上有着大量的可用软件，且绝大多数是免费的，比如声名赫赫的 Apache、Samba、PHP、MySQL 等，构建成本低廉，是 Linux 被众多企业青睐的原因之一。当然，这和 Linux 出色的性能是分不开的，否则，节约成本就没有任何意义。
+　但不可否认的是，Linux 在办公应用和游戏娱乐方面的软件相比 Windows 系统还很匮乏，所以，即便打游戏、看影片用的也是 Windows，至于 Linux，就把它用在擅长的服务器领域吧。
+2) 良好的可移植性及灵活注 　Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这使得它便于裁剪和定制。我们可以把 Linux 放在 U 盘、光盘等存储介质中，也可以在嵌入式领域广泛应用。
+　如果读者希望不进行安装就体验 Linux 系统，则可以在网上下载一个 Live DVD 版的 Linux 镜像，刻成光盘放入光驱或者用虚拟机软件直接载入镜像文件，设置 CMOS/BIOS 为光盘启动，系统就会自动载入光盘文件，启动进入 Linux 系统。
+3) 优良的稳定性和安全性 　著名的黑客埃里克•雷蒙德（EricS.Raymond）有一句名言：“足够多的眼睛，就可让所有问题浮现”。举个例子，假如笔者在演讲，台下人山人海，明哥中午吃饭不小心，有几个饭粒粘在衣领上了，分分钟就会被大家发现，因为看的人太多了；如果台下就稀稀落落两三个人且离得很远，那就算明哥衣领上有一大块油渍也不会被发现。
+　Linux 开放源代码，将所有代码放在网上，全世界的程序员都看得到，有什么缺陷和漏洞，很快就会被发现，从而成就了它的稳定性和安全注。
+　提到 Linux 的安全性，我们可以做一个实验：在一台计算机上，在安装了 Windows 系统后不安装杀毒软件联网一个月，看看会有什么情况；同样，在安装了 Linux 系统后不安装杀毒软件联网一个月，我们比较一下，大家就明白了什么是 Linux 的安全性。Windows 系统不安装杀毒软件，相信大家都知道会有什么下场吧……
+4) 支持几乎所有的网络协议及开发语言 　经常有初学的朋友问我，Linux 是不是对 TCP/IP 协议支持不好、是不是 Java 开发环境不灵之类的问题。前面在 UNIX 发展史中已经介绍了，UNIX 系统是与 C 语言、TCP/IP 协议一同发展起来的，而 Linux 是 UNIX 的一种，C 语言又衍生出了现今主流的语言 PHP、Java、C&#43;&#43; 等，而哪一个网络协议与 TCP/IP 无关呢？所以，Linux 对网络协议和开发语言的支持很好。">
+<meta itemprop="datePublished" content="2021-03-18T12:47:00+08:00" />
+<meta itemprop="dateModified" content="2021-03-18T12:47:00+08:00" />
+<meta itemprop="wordCount" content="86">
+
+
+
+<meta itemprop="keywords" content="Linux,王雪庆," />
+<meta property="og:title" content="1.3Linux系统的优缺点" />
+<meta property="og:description" content="前面章节提到，相比 Windows 系统，Linux 系统有更好的稳定性，那么除此之外，Linux 系统还有那些优点（或者不足）呢？本节带领大家详细了解一下。
+1) 大量的可用软件及免费软件 　Linux 系统上有着大量的可用软件，且绝大多数是免费的，比如声名赫赫的 Apache、Samba、PHP、MySQL 等，构建成本低廉，是 Linux 被众多企业青睐的原因之一。当然，这和 Linux 出色的性能是分不开的，否则，节约成本就没有任何意义。
+　但不可否认的是，Linux 在办公应用和游戏娱乐方面的软件相比 Windows 系统还很匮乏，所以，即便打游戏、看影片用的也是 Windows，至于 Linux，就把它用在擅长的服务器领域吧。
+2) 良好的可移植性及灵活注 　Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这使得它便于裁剪和定制。我们可以把 Linux 放在 U 盘、光盘等存储介质中，也可以在嵌入式领域广泛应用。
+　如果读者希望不进行安装就体验 Linux 系统，则可以在网上下载一个 Live DVD 版的 Linux 镜像，刻成光盘放入光驱或者用虚拟机软件直接载入镜像文件，设置 CMOS/BIOS 为光盘启动，系统就会自动载入光盘文件，启动进入 Linux 系统。
+3) 优良的稳定性和安全性 　著名的黑客埃里克•雷蒙德（EricS.Raymond）有一句名言：“足够多的眼睛，就可让所有问题浮现”。举个例子，假如笔者在演讲，台下人山人海，明哥中午吃饭不小心，有几个饭粒粘在衣领上了，分分钟就会被大家发现，因为看的人太多了；如果台下就稀稀落落两三个人且离得很远，那就算明哥衣领上有一大块油渍也不会被发现。
+　Linux 开放源代码，将所有代码放在网上，全世界的程序员都看得到，有什么缺陷和漏洞，很快就会被发现，从而成就了它的稳定性和安全注。
+　提到 Linux 的安全性，我们可以做一个实验：在一台计算机上，在安装了 Windows 系统后不安装杀毒软件联网一个月，看看会有什么情况；同样，在安装了 Linux 系统后不安装杀毒软件联网一个月，我们比较一下，大家就明白了什么是 Linux 的安全性。Windows 系统不安装杀毒软件，相信大家都知道会有什么下场吧……
+4) 支持几乎所有的网络协议及开发语言 　经常有初学的朋友问我，Linux 是不是对 TCP/IP 协议支持不好、是不是 Java 开发环境不灵之类的问题。前面在 UNIX 发展史中已经介绍了，UNIX 系统是与 C 语言、TCP/IP 协议一同发展起来的，而 Linux 是 UNIX 的一种，C 语言又衍生出了现今主流的语言 PHP、Java、C&#43;&#43; 等，而哪一个网络协议与 TCP/IP 无关呢？所以，Linux 对网络协议和开发语言的支持很好。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/linuxs/1.3linux%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/" />
+<meta property="article:published_time" content="2021-03-18T12:47:00+08:00" />
+<meta property="article:modified_time" content="2021-03-18T12:47:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="1.3Linux系统的优缺点"/>
+<meta name="twitter:description" content="前面章节提到，相比 Windows 系统，Linux 系统有更好的稳定性，那么除此之外，Linux 系统还有那些优点（或者不足）呢？本节带领大家详细了解一下。
+1) 大量的可用软件及免费软件 　Linux 系统上有着大量的可用软件，且绝大多数是免费的，比如声名赫赫的 Apache、Samba、PHP、MySQL 等，构建成本低廉，是 Linux 被众多企业青睐的原因之一。当然，这和 Linux 出色的性能是分不开的，否则，节约成本就没有任何意义。
+　但不可否认的是，Linux 在办公应用和游戏娱乐方面的软件相比 Windows 系统还很匮乏，所以，即便打游戏、看影片用的也是 Windows，至于 Linux，就把它用在擅长的服务器领域吧。
+2) 良好的可移植性及灵活注 　Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这使得它便于裁剪和定制。我们可以把 Linux 放在 U 盘、光盘等存储介质中，也可以在嵌入式领域广泛应用。
+　如果读者希望不进行安装就体验 Linux 系统，则可以在网上下载一个 Live DVD 版的 Linux 镜像，刻成光盘放入光驱或者用虚拟机软件直接载入镜像文件，设置 CMOS/BIOS 为光盘启动，系统就会自动载入光盘文件，启动进入 Linux 系统。
+3) 优良的稳定性和安全性 　著名的黑客埃里克•雷蒙德（EricS.Raymond）有一句名言：“足够多的眼睛，就可让所有问题浮现”。举个例子，假如笔者在演讲，台下人山人海，明哥中午吃饭不小心，有几个饭粒粘在衣领上了，分分钟就会被大家发现，因为看的人太多了；如果台下就稀稀落落两三个人且离得很远，那就算明哥衣领上有一大块油渍也不会被发现。
+　Linux 开放源代码，将所有代码放在网上，全世界的程序员都看得到，有什么缺陷和漏洞，很快就会被发现，从而成就了它的稳定性和安全注。
+　提到 Linux 的安全性，我们可以做一个实验：在一台计算机上，在安装了 Windows 系统后不安装杀毒软件联网一个月，看看会有什么情况；同样，在安装了 Linux 系统后不安装杀毒软件联网一个月，我们比较一下，大家就明白了什么是 Linux 的安全性。Windows 系统不安装杀毒软件，相信大家都知道会有什么下场吧……
+4) 支持几乎所有的网络协议及开发语言 　经常有初学的朋友问我，Linux 是不是对 TCP/IP 协议支持不好、是不是 Java 开发环境不灵之类的问题。前面在 UNIX 发展史中已经介绍了，UNIX 系统是与 C 语言、TCP/IP 协议一同发展起来的，而 Linux 是 UNIX 的一种，C 语言又衍生出了现今主流的语言 PHP、Java、C&#43;&#43; 等，而哪一个网络协议与 TCP/IP 无关呢？所以，Linux 对网络协议和开发语言的支持很好。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>1.3Linux系统的优缺点</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a>
+				<a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>1.3Linux系统的优缺点</h1>
+		<div class="content">
+			<p>　　前面章节提到，相比 Windows 系统，Linux 系统有更好的稳定性，那么除此之外，Linux 系统还有那些优点（或者不足）呢？本节带领大家详细了解一下。</p>
+<h2 id="1-大量的可用软件及免费软件">1) 大量的可用软件及免费软件<a href="#1-大量的可用软件及免费软件" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　Linux 系统上有着大量的可用软件，且绝大多数是免费的，比如声名赫赫的 Apache、Samba、PHP、MySQL 等，构建成本低廉，是 Linux 被众多企业青睐的原因之一。当然，这和 Linux 出色的性能是分不开的，否则，节约成本就没有任何意义。</p>
+<p>　　但不可否认的是，Linux 在办公应用和游戏娱乐方面的软件相比 Windows 系统还很匮乏，所以，即便打游戏、看影片用的也是 Windows，至于 Linux，就把它用在擅长的服务器领域吧。</p>
+<h2 id="2-良好的可移植性及灵活注">2) 良好的可移植性及灵活注<a href="#2-良好的可移植性及灵活注" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这使得它便于裁剪和定制。我们可以把 Linux 放在 U 盘、光盘等存储介质中，也可以在嵌入式领域广泛应用。</p>
+<p>　　如果读者希望不进行安装就体验 Linux 系统，则可以在网上下载一个 Live DVD 版的 Linux 镜像，刻成光盘放入光驱或者用虚拟机软件直接载入镜像文件，设置 CMOS/BIOS 为光盘启动，系统就会自动载入光盘文件，启动进入 Linux 系统。</p>
+<h2 id="3-优良的稳定性和安全性">3) 优良的稳定性和安全性<a href="#3-优良的稳定性和安全性" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　
+　　著名的黑客埃里克•雷蒙德（EricS.Raymond）有一句名言：“足够多的眼睛，就可让所有问题浮现”。举个例子，假如笔者在演讲，台下人山人海，明哥中午吃饭不小心，有几个饭粒粘在衣领上了，分分钟就会被大家发现，因为看的人太多了；如果台下就稀稀落落两三个人且离得很远，那就算明哥衣领上有一大块油渍也不会被发现。</p>
+<p>　　Linux 开放源代码，将所有代码放在网上，全世界的程序员都看得到，有什么缺陷和漏洞，很快就会被发现，从而成就了它的稳定性和安全注。</p>
+<p>　　提到 Linux 的安全性，我们可以做一个实验：在一台计算机上，在安装了 Windows 系统后不安装杀毒软件联网一个月，看看会有什么情况；同样，在安装了 Linux 系统后不安装杀毒软件联网一个月，我们比较一下，大家就明白了什么是 Linux 的安全性。Windows 系统不安装杀毒软件，相信大家都知道会有什么下场吧……</p>
+<h2 id="4-支持几乎所有的网络协议及开发语言">4) 支持几乎所有的网络协议及开发语言<a href="#4-支持几乎所有的网络协议及开发语言" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　经常有初学的朋友问我，Linux 是不是对 TCP/IP 协议支持不好、是不是 Java 开发环境不灵之类的问题。前面在 UNIX 发展史中已经介绍了，UNIX 系统是与 C 语言、TCP/IP 协议一同发展起来的，而 Linux 是 UNIX 的一种，C 语言又衍生出了现今主流的语言 PHP、Java、C++ 等，而哪一个网络协议与 TCP/IP 无关呢？所以，Linux 对网络协议和开发语言的支持很好。</p>
+<p>　　Linux 的优点在此不一一列举，只说明这几点供读者参考。诚然，Linux 不可能没有缺点，如桌面应用还有待完善、Linux 的标准统一还需要推广、开源软件的盈利模式与发展还有待考验等，不过，瑕不掩瑜。</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
