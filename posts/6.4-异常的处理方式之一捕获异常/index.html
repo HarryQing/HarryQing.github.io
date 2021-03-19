@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="6.4 异常的处理方式之一：捕获异常">
+<meta itemprop="description" content="捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。
+图6-10 异常处理
+上面过程详细解析： 1. try： 　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。
+　一个try语句必须带有至少一个catch语句块或一个finally语句块 。
+注意事项 　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。
+2. catch： 　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。
+　n-常用方法，这些方法均继承自Throwable类 。
+ u-toString ()方法，显示异常的类名和产生异常的原因u-getMessage()方法，只显示产生异常的原因，但不显示类名。u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。 　n-catch捕获异常时的捕获顺序：
+　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。
+3. finally： 　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。
+　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。
+try-catch-finally语句块的执行过程： 　try-catch-finally程序块的执行流程以及执行结果比较复杂。
+　基本执行过程如下：
+　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。
+注意事项    即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。
+  finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。
+   【示例6-8】 典型代码(先不要敲!!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test8 { public static void main(String[] args) { FileReader reader = null; try { reader = new FileReader(&#34;d:/a.">
+<meta itemprop="datePublished" content="2021-03-12T19:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-03-12T19:20:00+08:00" />
+<meta itemprop="wordCount" content="111">
+
+
+
+<meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
+<meta property="og:title" content="6.4 异常的处理方式之一：捕获异常" />
+<meta property="og:description" content="捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。
+图6-10 异常处理
+上面过程详细解析： 1. try： 　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。
+　一个try语句必须带有至少一个catch语句块或一个finally语句块 。
+注意事项 　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。
+2. catch： 　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。
+　n-常用方法，这些方法均继承自Throwable类 。
+ u-toString ()方法，显示异常的类名和产生异常的原因u-getMessage()方法，只显示产生异常的原因，但不显示类名。u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。 　n-catch捕获异常时的捕获顺序：
+　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。
+3. finally： 　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。
+　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。
+try-catch-finally语句块的执行过程： 　try-catch-finally程序块的执行流程以及执行结果比较复杂。
+　基本执行过程如下：
+　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。
+注意事项    即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。
+  finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。
+   【示例6-8】 典型代码(先不要敲!!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test8 { public static void main(String[] args) { FileReader reader = null; try { reader = new FileReader(&#34;d:/a." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/6.4-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/" />
+<meta property="article:published_time" content="2021-03-12T19:20:00+08:00" />
+<meta property="article:modified_time" content="2021-03-12T19:20:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="6.4 异常的处理方式之一：捕获异常"/>
+<meta name="twitter:description" content="捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。
+图6-10 异常处理
+上面过程详细解析： 1. try： 　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。
+　一个try语句必须带有至少一个catch语句块或一个finally语句块 。
+注意事项 　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。
+2. catch： 　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。
+　n-常用方法，这些方法均继承自Throwable类 。
+ u-toString ()方法，显示异常的类名和产生异常的原因u-getMessage()方法，只显示产生异常的原因，但不显示类名。u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。 　n-catch捕获异常时的捕获顺序：
+　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。
+3. finally： 　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。
+　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。
+try-catch-finally语句块的执行过程： 　try-catch-finally程序块的执行流程以及执行结果比较复杂。
+　基本执行过程如下：
+　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。
+注意事项    即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。
+  finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。
+   【示例6-8】 典型代码(先不要敲!!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test8 { public static void main(String[] args) { FileReader reader = null; try { reader = new FileReader(&#34;d:/a."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>6.4 异常的处理方式之一：捕获异常</title>
+	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://HarryQing.github.io/">Mr.哈利-南山不寒</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://HarryQing.github.io/posts/">Java小讲堂</a>
+				<a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a>
+				<a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a>
+				<a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a>
+				<a href="https://HarryQing.github.io/about-hugo/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/HarryQing" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://HarryQing.github.io/posts/">Java小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/linuxs/">Linux小讲堂</a></li>
+			<li><a href="https://HarryQing.github.io/blogs/">HARRY先生的铺</a></li>
+			<li><a href="https://HarryQing.github.io/blog/">趣味知识乐分享</a></li>
+			<li><a href="https://HarryQing.github.io/about-hugo/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Mar 12, 2021</span></div>
+				<h1>6.4 异常的处理方式之一：捕获异常</h1>
+			</header>
+			<div class="content">
+				<p>　　捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273755315926.png" alt="enter description here"></p>
+<p>图6-10 异常处理</p>
+<h2 id="上面过程详细解析">上面过程详细解析：<a href="#上面过程详细解析" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h3 id="1-try">1. try：<a href="#1-try" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>　　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。</p>
+<p>　　一个try语句必须带有至少一个catch语句块或一个finally语句块 。</p>
+<h3 id="注意事项">注意事项<a href="#注意事项" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>　　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。</p>
+<h2 id="2-catch">2. catch：<a href="#2-catch" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。</p>
+<p>　　n-常用方法，这些方法均继承自Throwable类 。</p>
+<pre><code>      u-toString ()方法，显示异常的类名和产生异常的原因
+
+      u-getMessage()方法，只显示产生异常的原因，但不显示类名。
+
+      u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。
+</code></pre>
+<p>　　 n-catch捕获异常时的捕获顺序：</p>
+<p>　　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。</p>
+<h2 id="3-finally">3. finally：<a href="#3-finally" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>　　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。</p>
+<p>　　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。</p>
+<h3 id="try-catch-finally语句块的执行过程">try-catch-finally语句块的执行过程：<a href="#try-catch-finally语句块的执行过程" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>　　try-catch-finally程序块的执行流程以及执行结果比较复杂。</p>
+<p>　　基本执行过程如下：</p>
+<p>　　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。</p>
+<h3 id="注意事项-1">注意事项<a href="#注意事项-1" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<blockquote>
+<ol>
+<li>
+<p>即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。</p>
+</li>
+<li>
+<p>finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。</p>
+</li>
+</ol>
+</blockquote>
+<p><strong>【示例6-8】</strong> 典型代码(先不要敲!!)</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.FileNotFoundException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test8</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">FileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="s">&#34;d:/a.txt&#34;</span><span class="o">);</span>
+            <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="kt">char</span> <span class="n">c2</span> <span class="o">=</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;&#34;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">c2</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">FileNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+            <span class="k">try</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">reader</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>111 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-03-12 19:20 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://HarryQing.github.io/posts/6.5-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%BA%8C%E5%A3%B0%E6%98%8E%E5%BC%82%E5%B8%B8throws%E5%AD%90%E5%8F%A5/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>6.5 异常的处理方式之二：声明异常(throws子句)</span>
+			</a>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/6.3.4-checkedexception%E5%B7%B2%E6%A3%80%E6%9F%A5%E5%BC%82%E5%B8%B8/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>6.3.4 CheckedException已检查异常</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://HarryQing.github.io/">王雪庆</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://HarryQing.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://HarryQing.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

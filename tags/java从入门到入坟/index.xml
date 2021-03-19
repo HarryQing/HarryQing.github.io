@@ -26,6 +26,40 @@ VMware下载和安装 　绝大多数初学者使用的是 Windows，所以本�
     </item>
     
     <item>
+      <title>第七章 数组</title>
+      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Tue, 16 Mar 2021 16:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</guid>
+      <description>预告：后面很精彩，记得持续关注喔！ </description>
+    </item>
+    
+    <item>
+      <title>6.7 如何利用百度解决异常问题</title>
+      <link>https://HarryQing.github.io/posts/6.7-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E7%99%BE%E5%BA%A6%E8%A7%A3%E5%86%B3%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 15 Mar 2021 16:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/posts/6.7-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E7%99%BE%E5%BA%A6%E8%A7%A3%E5%86%B3%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/</guid>
+      <description>正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：
+ 1. 细心查看异常信息，确定异常种类和相关Java代码行号;2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;3. 前两步无法搞定，再问同学或同事;4. 前三步无法搞定，请示领导。 　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。</description>
+    </item>
+    
+    <item>
+      <title>6.6 自定义异常</title>
+      <link>https://HarryQing.github.io/posts/6.6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Sun, 14 Mar 2021 16:20:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/posts/6.6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/</guid>
+      <description>1.在程序中，可能会遇到JDK提供的任何标准异常类都无法充分描述清楚我们想要表达的问题，这种情况下可以创建自己的异常类，即自定义异常类。
+　2.自定义异常类只需从Exception类或者它的子类派生一个子类即可。
+　3.自定义异常类如果继承Exception类，则为受检查异常，必须对其进行处理;如果不想处理，可以让自定义异常类继承运行时异常RuntimeException类。
+　4.习惯上，自定义异常类应该包含2个构造器：一个是默认的构造器，另一个是带有详细信息的构造器。
+【示例6-10】 自定义异常类
+/**IllegalAgeException：非法年龄异常，继承Exception类*/ class IllegalAgeException extends Exception { //默认构造器  public IllegalAgeException() { } //带有详细信息的构造器，信息存储在message中  public IllegalAgeException(String message) { super(message); } } 【示例6-11】 自定义异常类的使用
+class Person { private String name; private int age; public void setName(String name) { this.name = name; } public void setAge(int age) throws IllegalAgeException { if (age &amp;lt; 0) { throw new IllegalAgeException(&amp;#34;人的年龄不应该为负数&amp;#34;); } this.age = age; } public String toString() { return &amp;#34;name is &amp;#34; + name + &amp;#34; and age is &amp;#34; + age; } } public class TestMyException { public static void main(String[] args) { Person p = new Person(); try { p.</description>
+    </item>
+    
+    <item>
       <title>hugo博客在GitHub上进行部署（二）</title>
       <link>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</link>
       <pubDate>Sun, 14 Mar 2021 00:20:00 +0800</pubDate>
@@ -39,102 +73,84 @@ git init git add -Agit commit -am&amp;quot;init&amp;quot;git branch -M maingi
     </item>
     
     <item>
-      <title>6.3 异常分类</title>
-      <link>https://HarryQing.github.io/posts/6.3-%E5%BC%82%E5%B8%B8%E5%88%86%E7%B1%BB/</link>
-      <pubDate>Tue, 09 Mar 2021 16:20:00 +0800</pubDate>
+      <title>6.5 异常的处理方式之二：声明异常(throws子句)</title>
+      <link>https://HarryQing.github.io/posts/6.5-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%BA%8C%E5%A3%B0%E6%98%8E%E5%BC%82%E5%B8%B8throws%E5%AD%90%E5%8F%A5/</link>
+      <pubDate>Sat, 13 Mar 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/6.3-%E5%BC%82%E5%B8%B8%E5%88%86%E7%B1%BB/</guid>
-      <description>JDK 中定义了很多异常类，这些类对应了各种各样可能出现的异常事件，所有异常对象都是派生于Throwable类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类。
-　Java对异常进行了分类，不同类型的异常分别用不同的Java类表示，所有异常的根类为java.lang.Throwable，Throwable下面又派生了两个子类：Error和Exception。Java异常类的层次结构如图6-2所示。</description>
+      <guid>https://HarryQing.github.io/posts/6.5-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%BA%8C%E5%A3%B0%E6%98%8E%E5%BC%82%E5%B8%B8throws%E5%AD%90%E5%8F%A5/</guid>
+      <description>当CheckedException产生时，不一定立刻处理它，可以再把异常throws出去。
+　在方法中使用try-catch-finally是由这个方法来处理异常。但是在一些情况下，当前方法并不需要处理发生的异常，而是向上传递给调用它的方法处理。
+　如果一个方法中可能产生某种异常，但是并不能确定如何处理这种异常，则应根据异常规范在方法的首部声明该方法可能抛出的异常。
+　如果一个方法抛出多个已检查异常，就必须在方法的首部列出所有的异常，之间以逗号隔开。
+【示例6-9】 典型代码(先不敲!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test9 { public static void main(String[] args) { try { readFile(&amp;#34;joke.txt&amp;#34;); } catch (FileNotFoundException e) { System.out.println(&amp;#34;所需文件不存在！&amp;#34;); } catch (IOException e) { System.out.println(&amp;#34;文件读写错误！&amp;#34;); } } public static void readFile(String fileName) throws FileNotFoundException, IOException { FileReader in = new FileReader(fileName); int tem = 0; try { tem = in.read(); while (tem != -1) { System.</description>
     </item>
     
     <item>
-      <title>6.2 异常(Exception)的概念</title>
-      <link>https://HarryQing.github.io/posts/6.2-%E5%BC%82%E5%B8%B8exception%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
-      <pubDate>Mon, 08 Mar 2021 22:20:00 +0800</pubDate>
+      <title>6.4 异常的处理方式之一：捕获异常</title>
+      <link>https://HarryQing.github.io/posts/6.4-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Fri, 12 Mar 2021 19:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/6.2-%E5%BC%82%E5%B8%B8exception%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
-      <description>异常指程序运行过程中出现的非正常现象，例如用户输入错误、除数为零、需要处理的文件不存在、数组下标越界等。
-　在Java的异常处理机制中，引进了很多用来描述和处理异常的类，称为异常类。异常类定义中包含了该类异常的信息和对异常进行处理的方法。
-　所谓异常处理，就是指程序在出现问题时依然可以正确的执行完。
-　我们开始看我们的第一个异常对象，并分析一下异常机制是如何工作的。
-【示例6-2】 异常的分析
-public class Test2 { public static void main(String[] args) { int i=1/0; //除数为0  System.out.println(i); } } Java是采用面向对象的方式来处理异常的。处理过程： 　1. 抛出异常：在执行一个方法时，如果发生异常，则这个方法生成代表该异常的一个对象，停止当前执行路径，并把异常对象提交给JRE。
-　2. 捕获异常：JRE得到该异常后，寻找相应的代码来处理该异常。JRE在方法的调用栈中查找，从生成异常的方法开始回溯，直到找到相应的异常处理代码为止。</description>
+      <guid>https://HarryQing.github.io/posts/6.4-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/</guid>
+      <description>捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。
+图6-10 异常处理
+上面过程详细解析： 1. try： 　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。
+　一个try语句必须带有至少一个catch语句块或一个finally语句块 。
+注意事项 　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。
+2. catch： 　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。
+　n-常用方法，这些方法均继承自Throwable类 。
+ u-toString ()方法，显示异常的类名和产生异常的原因u-getMessage()方法，只显示产生异常的原因，但不显示类名。u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。 　n-catch捕获异常时的捕获顺序：
+　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。
+3. finally： 　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。
+　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。
+try-catch-finally语句块的执行过程： 　try-catch-finally程序块的执行流程以及执行结果比较复杂。
+　基本执行过程如下：
+　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。
+注意事项    即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。
+  finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。
+   【示例6-8】 典型代码(先不要敲!!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test8 { public static void main(String[] args) { FileReader reader = null; try { reader = new FileReader(&amp;#34;d:/a.</description>
     </item>
     
     <item>
-      <title>6.1 导引问题</title>
-      <link>https://HarryQing.github.io/posts/6.1-%E5%AF%BC%E5%BC%95%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 08 Mar 2021 16:20:00 +0800</pubDate>
+      <title>6.3.4 CheckedException已检查异常</title>
+      <link>https://HarryQing.github.io/posts/6.3.4-checkedexception%E5%B7%B2%E6%A3%80%E6%9F%A5%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Fri, 12 Mar 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/6.1-%E5%AF%BC%E5%BC%95%E9%97%AE%E9%A2%98/</guid>
-      <description>　在实际工作中，我们遇到的情况不可能是非常完美的。比如：你写的某个模块，用户输入不一定符合你的要求;你的程序要打开某个文件，这个文件可能不存在或者文件格式不对;你要读取数据库的数据，数据可能是空的;我们的程序再运行着，但是内存或硬盘可能满了等等。
-　软件程序在运行过程中，非常可能遇到刚刚提到的这些问题，我们称之为异常，英文是：Exception，意思是例外。遇到这些例外情况，或者叫异常，我们怎么让写的程序做出合理的处理，安全的退出，而不至于程序崩溃呢?我们本章就要讲解这些问题。
-　如果我们要拷贝一个文件，在没有异常机制的情况下，我们需要考虑各种异常情况，伪代码如下：
-【示例6-1】 伪代码使用if处理程序中可能出现的各种情况
-public class Test1 { public static void main(String[] args) { //将d:/a.txt复制到e:/a.txt  if(&amp;#34;d:/a.txt&amp;#34;这个文件存在){ if(e盘的空间大于a.txt文件长度){ if(文件复制一半IO流断掉){ 停止copy，输出：IO流出问题！ }else{ copyFile(&amp;#34;d:/a.txt&amp;#34;,&amp;#34;e:/a.txt&amp;#34;); } }else{ System.out.println(&amp;#34;e盘空间不够存放a.txt！&amp;#34;); } }else{ System.out.println(&amp;#34;a.txt不存在！&amp;#34;); } } } 这种方式，有两个坏处：  1. 逻辑代码和错误处理代码放一起!2. 程序员本身需要考虑的例外情况较复杂，对程序员本身要求较高! 　那么，我们如何解决应对异常情况呢?Java的异常机制给我们提供了方便的处理方式。如上情况，如果是用Java的异常机制来处理，示意代码如下(仅限示意，不能运行)：
-try { copyFile(&amp;#34;d:/a.txt&amp;#34;,&amp;#34;e:/a.txt&amp;#34;); } catch (Exception e) { e.printStackTrace(); } 异常机制本质  就是当程序出现错误，程序安全退出的机制。 </description>
+      <guid>https://HarryQing.github.io/posts/6.3.4-checkedexception%E5%B7%B2%E6%A3%80%E6%9F%A5%E5%BC%82%E5%B8%B8/</guid>
+      <description>所有不是RuntimeException的异常，统称为Checked Exception，又被称为“已检查异常”，如IOException、SQLException等以及用户自定义的Exception异常。 这类异常在编译时就必须做出处理，否则无法通过编译。如图6-9所示。
+图6-9 CheckedException异常
+　如图6-9所示，异常的处理方式有两种：使用“try/catch”捕获异常、使用“throws”声明异常。</description>
     </item>
     
     <item>
-      <title>第六章 异常机制</title>
-      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6/</link>
-      <pubDate>Sun, 07 Mar 2021 23:20:00 +0800</pubDate>
+      <title>6.3.3 RuntimeException运行时异常</title>
+      <link>https://HarryQing.github.io/posts/6.3.3-runtimeexception%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Thu, 11 Mar 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6/</guid>
-      <description>预告：后面很精彩，记得持续关注喔！ </description>
+      <guid>https://HarryQing.github.io/posts/6.3.3-runtimeexception%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8/</guid>
+      <description>派生于RuntimeException的异常，如被 0 除、数组下标越界、空指针等，其产生比较频繁，处理麻烦，如果显式的声明或捕获将会对程序可读性和运行效率影响很大。 因此由系统自动检测并将它们交给缺省的异常处理程序(用户可不必对其处理)。
+　这类异常通常是由编程错误导致的，所以在编写程序时，并不要求必须使用异常处理机制来处理这类异常,经常需要通过增加“逻辑处理来避免这些异常”。
+【示例6-3】 ArithmeticException异常：试图除以0
+public class Test3 { public static void main(String[] args) { int b=0; System.out.println(1/b); } } 执行结果如图6-2所示：
+图6-4 ArithmeticException异常
+解决如上异常需要修改代码：
+public class Test3 { public static void main(String[] args) { int b=0; if(b!=0){ System.out.println(1/b); } } } 当程序访问一个空对象的成员变量或方法，或者访问一个空数组的成员时会发生空指针异常(NullPointerException)。怎么处理? 【示例6-4】 NullPointerException异常
+public class Test4 { public static void main(String[] args) { String str=null; System.out.println(str.charAt(0)); } } 执行结果如图6-5所示：
+图6-5 NullPointerException异常
+解决空指针异常，通常是增加非空判断：
+public class Test4 { public static void main(String[] args) { String str=null; if(str!</description>
     </item>
     
     <item>
-      <title>5.12.3 组合模式</title>
-      <link>https://HarryQing.github.io/posts/5.12.3-%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/</link>
-      <pubDate>Sun, 07 Mar 2021 16:20:00 +0800</pubDate>
+      <title>6.3.2 Exception</title>
+      <link>https://HarryQing.github.io/posts/6.3.2-exception/</link>
+      <pubDate>Wed, 10 Mar 2021 19:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/posts/5.12.3-%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/</guid>
-      <description>组合模式是将对象组合成树形结构以表示“部分-整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
-【示例5-34】 对象的组合
-class Cpu { public void run() { System.out.println(&amp;#34;quickly.........&amp;#34;); } } class MainBoard { public void connect() { System.out.println(&amp;#34;connect...........&amp;#34;); } } class Memory { public void store() { System.out.println(&amp;#34;store........&amp;#34;); } } public class Computer { Cpu cpu; Memory memory; MainBoard mainBoard; public void work() { cpu.run(); memory.store(); mainBoard.connect(); } public static void main(String[] args) { Computer computer = new Computer(); computer.cpu = new Cpu(); computer.mainBoard = new MainBoard(); computer.</description>
-    </item>
-    
-    <item>
-      <title>5.12.2 模板方法模式和回调机制</title>
-      <link>https://HarryQing.github.io/posts/5.12.2-%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%9B%9E%E8%B0%83%E6%9C%BA%E5%88%B6/</link>
-      <pubDate>Sat, 06 Mar 2021 12:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.12.2-%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%9B%9E%E8%B0%83%E6%9C%BA%E5%88%B6/</guid>
-      <description>模板方法模式很常用，其目的是在一个方法中定义一个算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法的某些步骤。在标准的模板方法模式实现中，主要是使用继承的方式，来让父类在运行期间可以调用到子类的方法。 详见抽象类部分示例。
-　其实在Java开发中，还有另外一个方法可以实现同样的功能，那就是Java回调技术。回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，简单点说明就是：A类中调用B类中的C方法，然后B类中的C方法中反过来调用A类中的D方法，那么D这个方法就叫回调方法。
-回调的具体过程如下：  1. Class A实现接口CallBack —— 背景12. class A中包含class B的引用 ——背景23. class B有一个参数为CallBack的方法C ——背景34. 前三条是我们的准备条件，接下来A的对象调用B的方法C5. 然后class B就可以在C方法中调用A的方法D 　这样说大家可能还是不太理解，下面我们根据示例5-33来说明回调机制。该示例的生活背景为：有一天小刘遇到一个很难的问题“学习Java选哪家机构呢?”，于是就打电话问小高，小高一时也不太了解行情，就跟小刘说，我现在还有事，等忙完了给你咨询咨询，小刘也不会傻傻的拿着电话去等小高的答案，于是小刘对小高说，先挂电话吧，你知道答案后再打我电话告诉我吧，于是挂了电话。小高先去办自己的事情去了，过了几个小时，小高打电话给小刘，告诉他答案是“学Java当然去北京尚学堂”。
-【示例5-33】 回调机制示例
-/** * 回调接口 */ interface CallBack { /** * 小高知道答案后告诉小刘时需要调用的方法，即回调方法 * @param result 是问题的答案 */ public void answer(String result); } /** * 小刘类：实现了回调接口CallBack（背景一） */ class Liu implements CallBack { /** * 包含小高对象的引用 （背景二） */ private Gao gao; public Liu(Gao gao){ this.</description>
-    </item>
-    
-    <item>
-      <title>5.12.1 开闭原则</title>
-      <link>https://HarryQing.github.io/posts/5.12.1-%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99/</link>
-      <pubDate>Sat, 06 Mar 2021 10:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.12.1-%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99/</guid>
-      <description>开闭原则(Open-Closed Principle)就是让设计的系统对扩展开放，对修改封闭。
-· 对扩展开放： 　就是指，应对需求变化要灵活。 要增加新功能时，不需要修改已有的代码，增加新代码即可。
-· 对修改关闭： 　就是指，核心部分经过精心设计后，不再因为需求变化而改变。
-　在实际开发中，我们无法完全做到，但应尽量遵守开闭原则。</description>
-    </item>
-    
-    <item>
-      <title>5.11.5 字符串相等的判断</title>
-      <link>https://HarryQing.github.io/posts/5.11.5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E7%AD%89%E7%9A%84%E5%88%A4%E6%96%AD/</link>
-      <pubDate>Sat, 06 Mar 2021 08:20:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/posts/5.11.5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E7%AD%89%E7%9A%84%E5%88%A4%E6%96%AD/</guid>
-      <description>1. equals方法用来检测两个字符串内容是否相等。如果字符串s和t内容相等，则s.equals(t)返回true，否则返回false。
-　2. 要测试两个字符串除了大小写区别外是否是相等的，需要使用equalsIgnoreCase方法。
-　3. 判断字符串是否相等不要使用&amp;quot;==&amp;quot;。
-【示例5-31】 忽略大小写的字符串比较
-&amp;#34;Hello&amp;#34;.equalsIgnoreCase(&amp;#34;hellO&amp;#34;);//true 【示例5-32】 字符串的比较&amp;quot;==&amp;ldquo;与equals()方法
-public class TestStringEquals { public static void main(String[] args) { String g1 = &amp;#34;大爱雪儿&amp;#34;; String g2 = &amp;#34;大爱雪儿&amp;#34;; String g3 = new String(&amp;#34;大爱雪儿&amp;#34;); System.out.println(g1 == g2); // true 指向同样的字符串常量对象 	System.out.println(g1 == g3); // false g3是新创建的对象 	System.out.println(g1.equals(g3)); // true g1和g3里面的字符串内容是一样的 	} } 执行结果如图5-33所示：
-图5-33 示例5-32运行效果图</description>
+      <guid>https://HarryQing.github.io/posts/6.3.2-exception/</guid>
+      <description>　Exception是程序本身能够处理的异常，如：空指针异常(NullPointerException)、数组下标越界异常(ArrayIndexOutOfBoundsException)、类型转换异常(ClassCastException)、算术异常(ArithmeticException)等。
+　Exception类是所有异常类的父类，其子类对应了各种各样可能出现的异常事件。 通常Java的异常可分为：
+ 1. RuntimeException 运行时异常2. CheckedException 已检查异常 </description>
     </item>
     
   </channel>

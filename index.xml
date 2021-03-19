@@ -137,16 +137,12 @@ VMware下载和安装 　绝大多数初学者使用的是 Windows，所以本�
     </item>
     
     <item>
-      <title>hugo博客在GitHub上进行部署（二）</title>
-      <link>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</link>
-      <pubDate>Sun, 14 Mar 2021 00:20:00 +0800</pubDate>
+      <title>第七章 数组</title>
+      <link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Tue, 16 Mar 2021 16:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/blog/hugo%E5%8D%9A%E5%AE%A2%E5%9C%A8github%E4%B8%8A%E8%BF%9B%E8%A1%8C%E9%83%A8%E7%BD%B2%E4%BA%8C/</guid>
-      <description>创建新文章 hugo new 你的文档名/你的文章名.md
-创建库 1.名称一定是：你的用户名.github.io 2.选择本地存储复制
-部署到云端 1.在config.toml中改参数 2.生成public: 打开文件根目录的cmd或git bash here输入
-hugo 3.进入public 4.在该页面下打开git bash here 5.相继输入以下代码
-git init git add -Agit commit -am&amp;quot;init&amp;quot;git branch -M maingit remote add origin https://github.com/你的用户名/你的用户名.github.io.git（假如是我：git remote add origin https://github.com/HarryQing/HarryQing.github.io.git）git push -f origin master（无响应则再次运行同一代码，最多两次）你的博客:https://你的用户名.github.io/假如是我的博客：https://harryqing.github.io/ 笔者 git initgit add -Agit commit -am&amp;quot;init&amp;quot;git branch -M maingit remote add origin https://github.com/HarryQing/HarryQing.github.io.gitgit push -f origin main </description>
+      <guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</guid>
+      <description>预告：后面很精彩，记得持续关注喔！ </description>
     </item>
     
   </channel>

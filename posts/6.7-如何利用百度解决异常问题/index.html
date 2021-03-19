@@ -7,27 +7,27 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="6.3 异常分类">
-<meta itemprop="description" content="JDK 中定义了很多异常类，这些类对应了各种各样可能出现的异常事件，所有异常对象都是派生于Throwable类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类。
-　Java对异常进行了分类，不同类型的异常分别用不同的Java类表示，所有异常的根类为java.lang.Throwable，Throwable下面又派生了两个子类：Error和Exception。Java异常类的层次结构如图6-2所示。">
-<meta itemprop="datePublished" content="2021-03-09T16:20:00+08:00" />
-<meta itemprop="dateModified" content="2021-03-09T16:20:00+08:00" />
-<meta itemprop="wordCount" content="3">
+<meta itemprop="name" content="6.7 如何利用百度解决异常问题">
+<meta itemprop="description" content="正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：
+ 1. 细心查看异常信息，确定异常种类和相关Java代码行号;2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;3. 前两步无法搞定，再问同学或同事;4. 前三步无法搞定，请示领导。 　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。">
+<meta itemprop="datePublished" content="2021-03-15T16:20:00+08:00" />
+<meta itemprop="dateModified" content="2021-03-15T16:20:00+08:00" />
+<meta itemprop="wordCount" content="10">
 
 
 
 <meta itemprop="keywords" content="Java从入门到入坟,王雪庆," />
-<meta property="og:title" content="6.3 异常分类" />
-<meta property="og:description" content="JDK 中定义了很多异常类，这些类对应了各种各样可能出现的异常事件，所有异常对象都是派生于Throwable类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类。
-　Java对异常进行了分类，不同类型的异常分别用不同的Java类表示，所有异常的根类为java.lang.Throwable，Throwable下面又派生了两个子类：Error和Exception。Java异常类的层次结构如图6-2所示。" />
+<meta property="og:title" content="6.7 如何利用百度解决异常问题" />
+<meta property="og:description" content="正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：
+ 1. 细心查看异常信息，确定异常种类和相关Java代码行号;2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;3. 前两步无法搞定，再问同学或同事;4. 前三步无法搞定，请示领导。 　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://HarryQing.github.io/posts/6.3-%E5%BC%82%E5%B8%B8%E5%88%86%E7%B1%BB/" />
-<meta property="article:published_time" content="2021-03-09T16:20:00+08:00" />
-<meta property="article:modified_time" content="2021-03-09T16:20:00+08:00" />
+<meta property="og:url" content="https://HarryQing.github.io/posts/6.7-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E7%99%BE%E5%BA%A6%E8%A7%A3%E5%86%B3%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/" />
+<meta property="article:published_time" content="2021-03-15T16:20:00+08:00" />
+<meta property="article:modified_time" content="2021-03-15T16:20:00+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="6.3 异常分类"/>
-<meta name="twitter:description" content="JDK 中定义了很多异常类，这些类对应了各种各样可能出现的异常事件，所有异常对象都是派生于Throwable类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类。
-　Java对异常进行了分类，不同类型的异常分别用不同的Java类表示，所有异常的根类为java.lang.Throwable，Throwable下面又派生了两个子类：Error和Exception。Java异常类的层次结构如图6-2所示。"/>
+<meta name="twitter:title" content="6.7 如何利用百度解决异常问题"/>
+<meta name="twitter:description" content="正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：
+ 1. 细心查看异常信息，确定异常种类和相关Java代码行号;2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;3. 前两步无法搞定，再问同学或同事;4. 前三步无法搞定，请示领导。 　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,7 +36,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>6.3 异常分类</title>
+	<title>6.7 如何利用百度解决异常问题</title>
 	<link rel="stylesheet" href="https://HarryQing.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
 	
 </head>
@@ -78,13 +78,20 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Mar 9, 2021</span></div>
-				<h1>6.3 异常分类</h1>
+				<div class="post-meta"><span>Mar 15, 2021</span></div>
+				<h1>6.7 如何利用百度解决异常问题</h1>
 			</header>
 			<div class="content">
-				<p>　　JDK 中定义了很多异常类，这些类对应了各种各样可能出现的异常事件，所有异常对象都是派生于Throwable类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类。</p>
-<p>　　Java对异常进行了分类，不同类型的异常分别用不同的Java类表示，所有异常的根类为java.lang.Throwable，Throwable下面又派生了两个子类：Error和Exception。Java异常类的层次结构如图6-2所示。</p>
-<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495272017528669.png" alt="enter description here"></p>
+				<p>　　正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：</p>
+<pre><code>  1. 细心查看异常信息，确定异常种类和相关Java代码行号;
+
+  2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;
+
+  3. 前两步无法搞定，再问同学或同事;
+
+  4. 前三步无法搞定，请示领导。
+</code></pre>
+<p>　　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。</p>
 
 			</div>
 			<hr class="post-end">
@@ -92,16 +99,16 @@
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://HarryQing.github.io/tags/java%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F">Java从入门到入坟</a></span><span class="tag"><a href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86">王雪庆</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>3 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-03-09 16:20 &#43;0800</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>10 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-03-15 16:20 &#43;0800</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://HarryQing.github.io/posts/6.3.1-error/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>6.3.1 Error</span>
+			<a class="next-post" href="https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>第七章 数组</span>
 			</a>
-			<a class="prev-post" href="https://HarryQing.github.io/posts/6.2-%E5%BC%82%E5%B8%B8exception%E7%9A%84%E6%A6%82%E5%BF%B5/">
-				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>6.2 异常(Exception)的概念</span>
+			<a class="prev-post" href="https://HarryQing.github.io/posts/6.6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>6.6 自定义异常</span>
 			</a>
 		</div>
 		<div id="comments" class="thin">

@@ -6,8 +6,460 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Tue, 09 Mar 2021 16:20:00 +0800</lastBuildDate>
+		<lastBuildDate>Tue, 16 Mar 2021 16:20:00 +0800</lastBuildDate>
 		<atom:link href="https://HarryQing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第七章 数组</title>
+			<link>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</link>
+			<pubDate>Tue, 16 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%95%B0%E7%BB%84/</guid>
+			<description>预告：后面很精彩，记得持续关注喔！ </description>
+			<content type="html"><![CDATA[<h2 id="预告后面很精彩记得持续关注喔">预告：后面很精彩，记得持续关注喔！</h2>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJ9L07ilSbT07YPKG-X108O_6L9vgSyNzVA&amp;usqp=CAU" alt="enter description here"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.7 如何利用百度解决异常问题</title>
+			<link>https://HarryQing.github.io/posts/6.7-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E7%99%BE%E5%BA%A6%E8%A7%A3%E5%86%B3%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/</link>
+			<pubDate>Mon, 15 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.7-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E7%99%BE%E5%BA%A6%E8%A7%A3%E5%86%B3%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/</guid>
+			<description>正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：
+ 1. 细心查看异常信息，确定异常种类和相关Java代码行号;2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;3. 前两步无法搞定，再问同学或同事;4. 前三步无法搞定，请示领导。 　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。</description>
+			<content type="html"><![CDATA[<p>　　正常学习和开发中，我们经常会遇到各种异常。大家在遇到异常时，需要遵循下面四步来解决：</p>
+<pre><code>  1. 细心查看异常信息，确定异常种类和相关Java代码行号;
+
+  2. 拷贝异常信息到百度，查看相关帖子，寻找解决思路;
+
+  3. 前两步无法搞定，再问同学或同事;
+
+  4. 前三步无法搞定，请示领导。
+</code></pre>
+<p>　　很多同学碰到异常一下就慌了，立刻开始请教别人搬救兵，殊不知这样做有两大坏处。第一、太不尊重别人，把别人当苦力。第二、失去提高自我的机会，自己解决一个异常，就意味着有能力解决一类异常。解决一类异常能大大提高自身能力。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.6 自定义异常</title>
+			<link>https://HarryQing.github.io/posts/6.6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/</link>
+			<pubDate>Sun, 14 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/</guid>
+			<description>1.在程序中，可能会遇到JDK提供的任何标准异常类都无法充分描述清楚我们想要表达的问题，这种情况下可以创建自己的异常类，即自定义异常类。
+　2.自定义异常类只需从Exception类或者它的子类派生一个子类即可。
+　3.自定义异常类如果继承Exception类，则为受检查异常，必须对其进行处理;如果不想处理，可以让自定义异常类继承运行时异常RuntimeException类。
+　4.习惯上，自定义异常类应该包含2个构造器：一个是默认的构造器，另一个是带有详细信息的构造器。
+【示例6-10】 自定义异常类
+/**IllegalAgeException：非法年龄异常，继承Exception类*/ class IllegalAgeException extends Exception { //默认构造器  public IllegalAgeException() { } //带有详细信息的构造器，信息存储在message中  public IllegalAgeException(String message) { super(message); } } 【示例6-11】 自定义异常类的使用
+class Person { private String name; private int age; public void setName(String name) { this.name = name; } public void setAge(int age) throws IllegalAgeException { if (age &amp;lt; 0) { throw new IllegalAgeException(&amp;#34;人的年龄不应该为负数&amp;#34;); } this.age = age; } public String toString() { return &amp;#34;name is &amp;#34; + name + &amp;#34; and age is &amp;#34; + age; } } public class TestMyException { public static void main(String[] args) { Person p = new Person(); try { p.</description>
+			<content type="html"><![CDATA[<p>　　1.在程序中，可能会遇到JDK提供的任何标准异常类都无法充分描述清楚我们想要表达的问题，这种情况下可以创建自己的异常类，即自定义异常类。</p>
+<p>　　2.自定义异常类只需从Exception类或者它的子类派生一个子类即可。</p>
+<p>　　3.自定义异常类如果继承Exception类，则为受检查异常，必须对其进行处理;如果不想处理，可以让自定义异常类继承运行时异常RuntimeException类。</p>
+<p>　　4.习惯上，自定义异常类应该包含2个构造器：一个是默认的构造器，另一个是带有详细信息的构造器。</p>
+<p><strong>【示例6-10】</strong> 自定义异常类</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**IllegalAgeException：非法年龄异常，继承Exception类*/</span>
+<span class="kd">class</span> <span class="nc">IllegalAgeException</span> <span class="kd">extends</span> <span class="n">Exception</span> <span class="o">{</span>
+    <span class="c1">//默认构造器
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="nf">IllegalAgeException</span><span class="o">()</span> <span class="o">{</span>
+     
+    <span class="o">}</span>
+    <span class="c1">//带有详细信息的构造器，信息存储在message中
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="nf">IllegalAgeException</span><span class="o">(</span><span class="n">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p><strong>【示例6-11】</strong> 自定义异常类的使用</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+ 
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+ 
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IllegalAgeException</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalAgeException</span><span class="o">(</span><span class="s">&#34;人的年龄不应该为负数&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+    <span class="o">}</span>
+ 
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">&#34;name is &#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34; and age is &#34;</span> <span class="o">+</span> <span class="n">age</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+ 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestMyException</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Person</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">p</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;Lincoln&#34;</span><span class="o">);</span>
+            <span class="n">p</span><span class="o">.</span><span class="na">setAge</span><span class="o">(-</span><span class="n">1</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IllegalAgeException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(-</span><span class="n">1</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-11所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495274668102315.png" alt="enter description here"></p>
+<h2 id="使用异常机制的建议">使用异常机制的建议</h2>
+<blockquote>
+<p>1.要避免使用异常处理代替错误处理，这样会降低程序的清晰性，并且效率低下。</p>
+<p>2.处理异常不可以代替简单测试&mdash;只在异常情况下使用异常机制。</p>
+<p>3.不要进行小粒度的异常处理&mdash;应该将整个任务包装在一个try语句块中。</p>
+<p>4.异常往往在高层处理(先了解!后面做项目会说!) 。</p>
+</blockquote>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.5 异常的处理方式之二：声明异常(throws子句)</title>
+			<link>https://HarryQing.github.io/posts/6.5-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%BA%8C%E5%A3%B0%E6%98%8E%E5%BC%82%E5%B8%B8throws%E5%AD%90%E5%8F%A5/</link>
+			<pubDate>Sat, 13 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.5-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%BA%8C%E5%A3%B0%E6%98%8E%E5%BC%82%E5%B8%B8throws%E5%AD%90%E5%8F%A5/</guid>
+			<description>当CheckedException产生时，不一定立刻处理它，可以再把异常throws出去。
+　在方法中使用try-catch-finally是由这个方法来处理异常。但是在一些情况下，当前方法并不需要处理发生的异常，而是向上传递给调用它的方法处理。
+　如果一个方法中可能产生某种异常，但是并不能确定如何处理这种异常，则应根据异常规范在方法的首部声明该方法可能抛出的异常。
+　如果一个方法抛出多个已检查异常，就必须在方法的首部列出所有的异常，之间以逗号隔开。
+【示例6-9】 典型代码(先不敲!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test9 { public static void main(String[] args) { try { readFile(&amp;#34;joke.txt&amp;#34;); } catch (FileNotFoundException e) { System.out.println(&amp;#34;所需文件不存在！&amp;#34;); } catch (IOException e) { System.out.println(&amp;#34;文件读写错误！&amp;#34;); } } public static void readFile(String fileName) throws FileNotFoundException, IOException { FileReader in = new FileReader(fileName); int tem = 0; try { tem = in.read(); while (tem != -1) { System.</description>
+			<content type="html"><![CDATA[<p>　　当CheckedException产生时，不一定立刻处理它，可以再把异常throws出去。</p>
+<p>　　在方法中使用try-catch-finally是由这个方法来处理异常。但是在一些情况下，当前方法并不需要处理发生的异常，而是向上传递给调用它的方法处理。</p>
+<p>　　如果一个方法中可能产生某种异常，但是并不能确定如何处理这种异常，则应根据异常规范在方法的首部声明该方法可能抛出的异常。</p>
+<p>　　如果一个方法抛出多个已检查异常，就必须在方法的首部列出所有的异常，之间以逗号隔开。</p>
+<p><strong>【示例6-9】</strong> 典型代码(先不敲!)</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.FileNotFoundException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+ 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test9</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">readFile</span><span class="o">(</span><span class="s">&#34;joke.txt&#34;</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">FileNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;所需文件不存在！&#34;</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;文件读写错误！&#34;</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">readFile</span><span class="o">(</span><span class="n">String</span> <span class="n">fileName</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">FileNotFoundException</span><span class="o">,</span>          
+    <span class="n">IOException</span> <span class="o">{</span>
+        <span class="n">FileReader</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="n">fileName</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">tem</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">tem</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">tem</span> <span class="o">!=</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">((</span><span class="kt">char</span><span class="o">)</span> <span class="n">tem</span><span class="o">);</span>
+                <span class="n">tem</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+            <span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="注意事项">注意事项</h2>
+<p>　　1. 方法重写中声明异常原则：子类重写父类方法时，如果父类方法有声明异常，那么子类声明的异常范围不能超过父类声明的范围。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.4 异常的处理方式之一：捕获异常</title>
+			<link>https://HarryQing.github.io/posts/6.4-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/</link>
+			<pubDate>Fri, 12 Mar 2021 19:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.4-%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8/</guid>
+			<description>捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。
+图6-10 异常处理
+上面过程详细解析： 1. try： 　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。
+　一个try语句必须带有至少一个catch语句块或一个finally语句块 。
+注意事项 　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。
+2. catch： 　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。
+　n-常用方法，这些方法均继承自Throwable类 。
+ u-toString ()方法，显示异常的类名和产生异常的原因u-getMessage()方法，只显示产生异常的原因，但不显示类名。u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。 　n-catch捕获异常时的捕获顺序：
+　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。
+3. finally： 　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。
+　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。
+try-catch-finally语句块的执行过程： 　try-catch-finally程序块的执行流程以及执行结果比较复杂。
+　基本执行过程如下：
+　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。
+注意事项    即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。
+  finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。
+   【示例6-8】 典型代码(先不要敲!!)
+import java.io.FileNotFoundException; import java.io.FileReader; import java.io.IOException; public class Test8 { public static void main(String[] args) { FileReader reader = null; try { reader = new FileReader(&amp;#34;d:/a.</description>
+			<content type="html"><![CDATA[<p>　　捕获异常是通过3个关键词来实现的：try-catch-finally。用try来执行一段程序，如果出现异常，系统抛出一个异常，可以通过它的类型来捕捉(catch)并处理它，最后一步是通过finally语句为异常处理提供一个统一的出口，finally所指定的代码都要被执行(catch语句可有多条;finally语句最多只能有一条，根据自己的需要可有可无)。如图6-10所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273755315926.png" alt="enter description here"></p>
+<p>图6-10 异常处理</p>
+<h2 id="上面过程详细解析">上面过程详细解析：</h2>
+<h3 id="1-try">1. try：</h3>
+<p>　　try语句指定了一段代码，该段代码就是异常捕获并处理的范围。在执行过程中，当任意一条语句产生异常时，就会跳过该条语句中后面的代码。代码中可能会产生并抛出一种或几种类型的异常对象，它后面的catch语句要分别对这些异常做相应的处理。</p>
+<p>　　一个try语句必须带有至少一个catch语句块或一个finally语句块 。</p>
+<h3 id="注意事项">注意事项</h3>
+<p>　　当异常处理的代码执行结束以后，不会回到try语句去执行尚未执行的代码。</p>
+<h2 id="2-catch">2. catch：</h2>
+<p>　　n-每个try语句块可以伴随一个或多个catch语句，用于处理可能产生的不同类型的异常对象。</p>
+<p>　　n-常用方法，这些方法均继承自Throwable类 。</p>
+<pre><code>      u-toString ()方法，显示异常的类名和产生异常的原因
+
+      u-getMessage()方法，只显示产生异常的原因，但不显示类名。
+
+      u-printStackTrace()方法，用来跟踪异常事件发生时堆栈的内容。
+</code></pre>
+<p>　　 n-catch捕获异常时的捕获顺序：</p>
+<p>　　u-如果异常类之间有继承关系，在顺序安排上需注意。越是顶层的类，越放在下面，再不然就直接把多余的catch省略掉。 也就是先捕获子类异常再捕获父类异常。</p>
+<h2 id="3-finally">3. finally：</h2>
+<p>　　n-有些语句，不管是否发生了异常，都必须要执行，那么就可以把这样的语句放到finally语句块中。</p>
+<p>　　n-通常在finally中关闭程序块已打开的资源，比如：关闭文件流、释放数据库连接等。</p>
+<h3 id="try-catch-finally语句块的执行过程">try-catch-finally语句块的执行过程：</h3>
+<p>　　try-catch-finally程序块的执行流程以及执行结果比较复杂。</p>
+<p>　　基本执行过程如下：</p>
+<p>　　程序首先执行可能发生异常的try语句块。如果try语句没有出现异常则执行完后跳至finally语句块执行;如果try语句出现异常，则中断执行并根据发生的异常类型跳至相应的catch语句块执行处理。catch语句块可以有多个，分别捕获不同类型的异常。catch语句块执行完后程序会继续执行finally语句块。finally语句是可选的，如果有的话，则不管是否发生异常，finally语句都会被执行。</p>
+<h3 id="注意事项-1">注意事项</h3>
+<blockquote>
+<ol>
+<li>
+<p>即使try和catch块中存在return语句，finally语句也会执行。是在执行完finally语句后再通过return退出。</p>
+</li>
+<li>
+<p>finally语句块只有一种情况是不会执行的，那就是在执行finally之前遇到了System.exit(0)结束程序运行。</p>
+</li>
+</ol>
+</blockquote>
+<p><strong>【示例6-8】</strong> 典型代码(先不要敲!!)</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.FileNotFoundException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test8</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">FileReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="s">&#34;d:/a.txt&#34;</span><span class="o">);</span>
+            <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="kt">char</span> <span class="n">c2</span> <span class="o">=</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;&#34;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">c2</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">FileNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+            <span class="k">try</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">reader</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>]]></content>
+		</item>
+		
+		<item>
+			<title>6.3.4 CheckedException已检查异常</title>
+			<link>https://HarryQing.github.io/posts/6.3.4-checkedexception%E5%B7%B2%E6%A3%80%E6%9F%A5%E5%BC%82%E5%B8%B8/</link>
+			<pubDate>Fri, 12 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.3.4-checkedexception%E5%B7%B2%E6%A3%80%E6%9F%A5%E5%BC%82%E5%B8%B8/</guid>
+			<description>所有不是RuntimeException的异常，统称为Checked Exception，又被称为“已检查异常”，如IOException、SQLException等以及用户自定义的Exception异常。 这类异常在编译时就必须做出处理，否则无法通过编译。如图6-9所示。
+图6-9 CheckedException异常
+　如图6-9所示，异常的处理方式有两种：使用“try/catch”捕获异常、使用“throws”声明异常。</description>
+			<content type="html"><![CDATA[<p>　　所有不是RuntimeException的异常，统称为Checked Exception，又被称为“已检查异常”，如IOException、SQLException等以及用户自定义的Exception异常。 这类异常在编译时就必须做出处理，否则无法通过编译。如图6-9所示。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273524104532.png" alt="enter description here"></p>
+<p>图6-9 CheckedException异常</p>
+<p>　　如图6-9所示，异常的处理方式有两种：使用“try/catch”捕获异常、使用“throws”声明异常。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.3.3 RuntimeException运行时异常</title>
+			<link>https://HarryQing.github.io/posts/6.3.3-runtimeexception%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8/</link>
+			<pubDate>Thu, 11 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.3.3-runtimeexception%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8/</guid>
+			<description>派生于RuntimeException的异常，如被 0 除、数组下标越界、空指针等，其产生比较频繁，处理麻烦，如果显式的声明或捕获将会对程序可读性和运行效率影响很大。 因此由系统自动检测并将它们交给缺省的异常处理程序(用户可不必对其处理)。
+　这类异常通常是由编程错误导致的，所以在编写程序时，并不要求必须使用异常处理机制来处理这类异常,经常需要通过增加“逻辑处理来避免这些异常”。
+【示例6-3】 ArithmeticException异常：试图除以0
+public class Test3 { public static void main(String[] args) { int b=0; System.out.println(1/b); } } 执行结果如图6-2所示：
+图6-4 ArithmeticException异常
+解决如上异常需要修改代码：
+public class Test3 { public static void main(String[] args) { int b=0; if(b!=0){ System.out.println(1/b); } } } 当程序访问一个空对象的成员变量或方法，或者访问一个空数组的成员时会发生空指针异常(NullPointerException)。怎么处理? 【示例6-4】 NullPointerException异常
+public class Test4 { public static void main(String[] args) { String str=null; System.out.println(str.charAt(0)); } } 执行结果如图6-5所示：
+图6-5 NullPointerException异常
+解决空指针异常，通常是增加非空判断：
+public class Test4 { public static void main(String[] args) { String str=null; if(str!</description>
+			<content type="html"><![CDATA[<p>　　派生于RuntimeException的异常，如被 0 除、数组下标越界、空指针等，其产生比较频繁，处理麻烦，如果显式的声明或捕获将会对程序可读性和运行效率影响很大。 因此由系统自动检测并将它们交给缺省的异常处理程序(用户可不必对其处理)。</p>
+<p>　　这类异常通常是由编程错误导致的，所以在编写程序时，并不要求必须使用异常处理机制来处理这类异常,经常需要通过增加“逻辑处理来避免这些异常”。</p>
+<p><strong>【示例6-3】</strong> ArithmeticException异常：试图除以0</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">b</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">1</span><span class="o">/</span><span class="n">b</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-2所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495272824431581.png" alt="enter description here"></p>
+<p>图6-4 ArithmeticException异常</p>
+<p>解决如上异常需要修改代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test3</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">b</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">b</span><span class="o">!=</span><span class="n">0</span><span class="o">){</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">1</span><span class="o">/</span><span class="n">b</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="当程序访问一个空对象的成员变量或方法或者访问一个空数组的成员时会发生空指针异常nullpointerexception怎么处理">当程序访问一个空对象的成员变量或方法，或者访问一个空数组的成员时会发生空指针异常(NullPointerException)。怎么处理?</h2>
+<p><strong>【示例6-4】</strong> NullPointerException异常</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">String</span> <span class="n">str</span><span class="o">=</span><span class="kc">null</span><span class="o">;</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-5所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495272942791321.png" alt="enter description here"></p>
+<p>图6-5 NullPointerException异常</p>
+<p>解决空指针异常，通常是增加非空判断：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test4</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">str</span><span class="o">=</span><span class="kc">null</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">str</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">));</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="在引用数据类型转换时有可能发生类型转换异常classcastexception">在引用数据类型转换时，有可能发生类型转换异常(ClassCastException)。</h2>
+<p><strong>【示例6-5】</strong> ClassCastException异常</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Animal</span><span class="o">{</span>
+     
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="o">{</span>
+     
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="o">{</span>
+     
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test5</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Animal</span> <span class="n">a</span><span class="o">=</span><span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+        <span class="n">Cat</span> <span class="n">c</span><span class="o">=(</span><span class="n">Cat</span><span class="o">)</span><span class="n">a</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-6所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273027294909.png" alt="enter description here"></p>
+<p>图6-6 ClassCastException异常</p>
+<p>解决ClassCastException的典型方式：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test5</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="k">instanceof</span> <span class="n">Cat</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">Cat</span> <span class="n">c</span> <span class="o">=</span> <span class="o">(</span><span class="n">Cat</span><span class="o">)</span> <span class="n">a</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="当程序访问一个数组的某个元素时如果这个元素的索引超出了0数组长度-1这个范围则会出现数组下标越界异常arrayindexoutofboundsexception">当程序访问一个数组的某个元素时，如果这个元素的索引超出了0~数组长度-1这个范围，则会出现数组下标越界异常(ArrayIndexOutOfBoundsException)。</h2>
+<p><strong>【示例6-6】</strong> ArrayIndexOutOfBoundsException异常</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test6</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">5</span><span class="o">];</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">5</span><span class="o">]);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-7所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273151308733.png" alt="enter description here"></p>
+<p>图6-7 ArrayIndexOutOfBoundsException异常</p>
+<p>解决数组索引越界异常的方式，增加关于边界的判断：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test6</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">5</span><span class="o">];</span>
+        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">5</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">a</span><span class="o">]);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="在使用包装类将字符串转换成基本数据类型时如果字符串的格式不正确则会出现数字格式异常numberformatexception">在使用包装类将字符串转换成基本数据类型时，如果字符串的格式不正确，则会出现数字格式异常(NumberFormatException)。</h2>
+<p><strong>【示例6-7】</strong> NumberFormatException异常</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test7</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;1234abcf&#34;</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">str</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>执行结果如图6-8所示：</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495273246414396.png" alt="enter description here"></p>
+<p>图6-8 NumberFormatException异常</p>
+<p>数字格式化异常的解决，可以引入正则表达式判断是否为数字：</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.util.regex.Matcher</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.regex.Pattern</span><span class="o">;</span>
+ 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test7</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;1234abcf&#34;</span><span class="o">;</span>
+        <span class="n">Pattern</span> <span class="n">p</span> <span class="o">=</span> <span class="n">Pattern</span><span class="o">.</span><span class="na">compile</span><span class="o">(</span><span class="s">&#34;^\\d+$&#34;</span><span class="o">);</span>
+        <span class="n">Matcher</span> <span class="n">m</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="na">matcher</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">m</span><span class="o">.</span><span class="na">matches</span><span class="o">())</span> <span class="o">{</span> <span class="c1">// 如果str匹配代表数字的正则表达式,才会转换
+</span><span class="c1"></span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">str</span><span class="o">));</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id="注意事项">注意事项</h2>
+<blockquote>
+<ol>
+<li>
+<p>在方法抛出异常之后，运行时系统将转为寻找合适的异常处理器(exception handler)。潜在的异常处理器是异常发生时依次存留在调用栈中的方法的集合。当异常处理器所能处理的异常类型与方法抛出的异常类型相符时，即为合适的异常处理器。</p>
+</li>
+<li>
+<p>运行时系统从发生异常的方法开始，依次回查调用栈中的方法，直至找到含有合适异常处理器的方法并执行。当运行时系统遍历调用栈而未找到合适的异常处理器，则运行时系统终止。同时，意味着Java程序的终止。</p>
+</li>
+</ol>
+</blockquote>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.3.2 Exception</title>
+			<link>https://HarryQing.github.io/posts/6.3.2-exception/</link>
+			<pubDate>Wed, 10 Mar 2021 19:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.3.2-exception/</guid>
+			<description>　Exception是程序本身能够处理的异常，如：空指针异常(NullPointerException)、数组下标越界异常(ArrayIndexOutOfBoundsException)、类型转换异常(ClassCastException)、算术异常(ArithmeticException)等。
+　Exception类是所有异常类的父类，其子类对应了各种各样可能出现的异常事件。 通常Java的异常可分为：
+ 1. RuntimeException 运行时异常2. CheckedException 已检查异常 </description>
+			<content type="html"><![CDATA[<p>　　Exception是程序本身能够处理的异常，如：空指针异常(NullPointerException)、数组下标越界异常(ArrayIndexOutOfBoundsException)、类型转换异常(ClassCastException)、算术异常(ArithmeticException)等。</p>
+<p>　　Exception类是所有异常类的父类，其子类对应了各种各样可能出现的异常事件。 通常Java的异常可分为：</p>
+<pre><code>  1. RuntimeException 运行时异常
+
+  2. CheckedException 已检查异常</code></pre>
+]]></content>
+		</item>
+		
+		<item>
+			<title>6.3.1 Error</title>
+			<link>https://HarryQing.github.io/posts/6.3.1-error/</link>
+			<pubDate>Wed, 10 Mar 2021 16:20:00 +0800</pubDate>
+			
+			<guid>https://HarryQing.github.io/posts/6.3.1-error/</guid>
+			<description>Error是程序无法处理的错误，表示运行应用程序中较严重问题。大多数错误与代码编写者执行的操作无关，而表示代码运行时 JVM(Java 虚拟机)出现的问题。例如，Java虚拟机运行错误(Virtual MachineError)，当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java虚拟机(JVM)一般会选择线程终止。
+　Error表明系统JVM已经处于不可恢复的崩溃状态中。我们不需要管它。
+图6-3 java.lang包中Error的类
+Error与Exception的区别 　1. 我开着车走在路上，一头猪冲在路中间，我刹车。这叫一个异常。
+　2. 我开着车在路上，发动机坏了，我停车，这叫错误。系统处于不可恢复的崩溃状态。发动机什么时候坏?我们普通司机能管吗?不能。发动机什么时候坏是汽车厂发动机制造商的事。</description>
+			<content type="html"><![CDATA[<p>　　Error是程序无法处理的错误，表示运行应用程序中较严重问题。大多数错误与代码编写者执行的操作无关，而表示代码运行时 JVM(Java 虚拟机)出现的问题。例如，Java虚拟机运行错误(Virtual MachineError)，当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java虚拟机(JVM)一般会选择线程终止。</p>
+<p>　　 Error表明系统JVM已经处于不可恢复的崩溃状态中。我们不需要管它。</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170520/1495272264904706.png" alt="enter description here"></p>
+<p>图6-3 java.lang包中Error的类</p>
+<h2 id="error与exception的区别">Error与Exception的区别</h2>
+<p>　　1. 我开着车走在路上，一头猪冲在路中间，我刹车。这叫一个异常。</p>
+<p>　　2.  我开着车在路上，发动机坏了，我停车，这叫错误。系统处于不可恢复的崩溃状态。发动机什么时候坏?我们普通司机能管吗?不能。发动机什么时候坏是汽车厂发动机制造商的事。</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>6.3 异常分类</title>
@@ -110,8 +562,19 @@ try { copyFile(&amp;#34;d:/a.txt&amp;#34;,&amp;#34;e:/a.txt&amp;#34;); } catch (
 			<pubDate>Sun, 07 Mar 2021 23:20:00 +0800</pubDate>
 			
 			<guid>https://HarryQing.github.io/posts/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6/</guid>
-			<description>预告：后面很精彩，记得持续关注喔！ </description>
-			<content type="html"><![CDATA[<h2 id="预告后面很精彩记得持续关注喔">预告：后面很精彩，记得持续关注喔！</h2>
+			<description>目录 6.1 导引问题 6.2 异常(Exception)的概念 6.3 异常分类 6.3.1 Error 6.3.2 Exception 6.3.3 RuntimeException运行时异常 6.3.4 CheckedException已检查异常 6.4 异常的处理方式之一：捕获异常 6.5 异常的处理方式之二：声明异常(throws子句) 6.6 自定义异常 6.7 如何利用百度解决异常问题 </description>
+			<content type="html"><![CDATA[<h1 id="目录">目录</h1>
+<h2 id="61-导引问题">6.1 导引问题</h2>
+<h2 id="62-异常exception的概念">6.2 异常(Exception)的概念</h2>
+<h2 id="63-异常分类">6.3 异常分类</h2>
+<h2 id="631-error">6.3.1 Error</h2>
+<h2 id="632-exception">6.3.2 Exception</h2>
+<h2 id="633-runtimeexception运行时异常">6.3.3 RuntimeException运行时异常</h2>
+<h2 id="634-checkedexception已检查异常">6.3.4 CheckedException已检查异常</h2>
+<h2 id="64-异常的处理方式之一捕获异常">6.4 异常的处理方式之一：捕获异常</h2>
+<h2 id="65-异常的处理方式之二声明异常throws子句">6.5 异常的处理方式之二：声明异常(throws子句)</h2>
+<h2 id="66-自定义异常">6.6 自定义异常</h2>
+<h2 id="67-如何利用百度解决异常问题">6.7 如何利用百度解决异常问题</h2>
 <p><img src="data:image/jpeg;base64,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" alt="enter description here"></p>
 ]]></content>
 		</item>
