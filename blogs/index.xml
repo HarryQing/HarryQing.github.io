@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Mar 2021 17:15:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Mar 2021 23:11:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chmod 777 到底是啥 ???看完这个你就完全懂了！</title>
+      <link>https://HarryQing.github.io/blogs/chmod-777-%E5%88%B0%E5%BA%95%E6%98%AF%E5%95%A5-%E7%9C%8B%E5%AE%8C%E8%BF%99%E4%B8%AA%E4%BD%A0%E5%B0%B1%E5%AE%8C%E5%85%A8%E6%87%82%E4%BA%86/</link>
+      <pubDate>Tue, 23 Mar 2021 23:11:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/blogs/chmod-777-%E5%88%B0%E5%BA%95%E6%98%AF%E5%95%A5-%E7%9C%8B%E5%AE%8C%E8%BF%99%E4%B8%AA%E4%BD%A0%E5%B0%B1%E5%AE%8C%E5%85%A8%E6%87%82%E4%BA%86/</guid>
+      <description>王雪庆
+Linux
+0X00 前言 可能对于Linux新手而言，很不解的一件事就是： 有时在访问文件xxx时，总是出现权限问题，但是上网一查，大佬们直接一句话： chmod 777 xxx 完事！ 相信你当时的心情是这样的：
+我勒个神奇 然后之后遇到权限就照葫芦画瓢的chmod 777，也算是美滋滋。 不过，作为一个打破砂锅的程序猿怎么能就知道chmod 777！ 当然提到chmod，我们一定先说清楚Linux的用户管理
+0X01 Linux用户与群组 1、用户 我们知道，Linux有一个超级用户——root，它就是整个Linux系统的完全掌控者啊，只要root想做就没有root不能做的。 因此为了安全性等种种考虑，Linux设计者设计了普通用户，比如刚安装Linux的时候会创建一个用户就是一个普通用户(假设叫 j )，当然你可以用adduser指令来增添一个新的用户(当然需要超级权限)：
+sudo adduser rjs此时就Linux就有了root，j，rjz三个用户，其中root是超级用户，j和rjs都是普通用户
+2、群组 既然有了许多的用户就有了群组的概念，因为你认知的人多了，也就自然而然的分组了，有的是家人，有的是朋友，有的是同学等等。家人，朋友，同学就是群组：
+有了用户和群组的概念，接下来就能好好讲权限问题了
+0X01 Linux文件权限 1、权限描述 既然有了用户之分，那么一个用户(比如： j)创建的文件一般来讲就不会给其它用户（比如：rjs）随便篡改，也就是不能给其他人写（w），当然看看（r）还是可以的，也不用那么小气对吧23333 所以Linux的对于同一个文件，不同的用户是有不同的权限的，权限分别有：读( r)，写(w)，运行(x)
+我们可以采用 ls -l 命令来查看文件权限：
+ls	-l会得到如下信息：
+可以看到，本目录下有一个文件夹：Tencent Files 一个文档：wget-log 每一个文件(文件夹)前都有这样的描述： drwxr-xr-x -rwx&amp;mdash;&amp;mdash;- 这就是文件的对于用户的权限！ 那这是什么意思呢？且往下看
+2、文件权限 上面的描述中一共有10位，其中第一位表示文件的属性： d：表示是一个文件夹 l：表示是一个链接 -：表示是一个普通的文件 注意：这是第一位和后面的不一样
+后面的就是我们的今天的主角——权限描述了。 可以看到是一串的 读( r)、写(w)、运行(x) 组成了，那为什么一排有好多个重复出现的 r、w 和 x 呢？ 那是因为访问权限是按照用户划分的：
+也就是说，从第2位开始，每三位分别表示 文件所有者、群组用户、其他用户 的权限 比如： drwxr-xr-x 表示文件夹 Tencent Files 对于所有者 j 是 可读可写可执行的(rwx)，而对于在同一个群组中的用户是 可写不可读可执行 的(r-x)，对于其他用户也是 可写不可读可执行 的(r-x) 有了这个，我们的今天的主角——chmod 终于要登场了！</description>
+    </item>
+    
     <item>
       <title>Linux该如何学习（新手入门必看）</title>
       <link>https://HarryQing.github.io/blogs/linux%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E5%BF%85%E7%9C%8B/</link>
