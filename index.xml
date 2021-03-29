@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 23 Mar 2021 23:11:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 12:45:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.3Linux远程管理协议（RFB、RDP、Telnet和SSH）</title>
+      <link>https://HarryQing.github.io/linuxs/2.3linux%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AErfbrdptelnet%E5%92%8Cssh/</link>
+      <pubDate>Wed, 24 Mar 2021 12:45:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/linuxs/2.3linux%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AErfbrdptelnet%E5%92%8Cssh/</guid>
+      <description>王雪庆
+　提到远程管理，通常指的是远程管理服务器，而非个人计算机。个人计算机可以随时拿来用，服务器通常放置在机房中，用户无法直接接触到服务器硬件，只能采用远程管理的方式。
+　远程管理，实际上就是计算机（服务器）之间通过网络进行数据传输（信息交换）的过程，与浏览器需要 HTTP 协议（超文本传输协议）浏览网页一样，远程管理同样需要远程管理协议的支持。
+目前，常用的远程管理协议有以下 4 种： ·RDP（remote desktop protocol）协议：远程桌面协议，大部分 Windows 系统都默认支持此协议，Windows 系统中的远程桌面管理就基于该协议。·RFB（Remote FrameBuffer）协议：图形化远程管理协议，VNC 远程管理工具就基于此协议。·Telnet：命令行界面远程管理协议，几乎所有的操作系统都默认支持此协议。此协议的特点是，在进行数据传送时使用明文传输的方式，也就是不对数据进行加密。·SSH（Secure Shell）协议：命令行界面远程管理协议，几乎所有操作系统都默认支持此协议。和 Telnet 不同，该协议在数据传输时会对数据进行加密并压缩，因此使用此协议传输数据既安全速度又快。RDP 对比 RFB 　RDP 协议和 RFB 协议都允许用户通过图形用户界面访问远程系统，但 RFB 协议倾向于传输图像，RDP 协议倾向于传输指令：
+·RFB 协议会在服务器端将窗口在显存中画好，然后将图像传给客户端，客户端只需要将得到的图像解码显示即可；·RDP 会将画图的工作交给客户端，服务器端需要根据客户端的显示能力做适当的调整。　因此，完成相同的操作，使用 RFB 协议传输的数据量会比 RDP 大，而 RDP 对客户端的要求比 RFB 更苛刻，RFB 适用于瘦客户端，而 RDP 适用于低速网络。
+ 　瘦客户端是相对于胖客户端而言的，比如，人们使用 QQ，需要下载客户端，这属于“胖客户”；反之，通过浏览器就可查阅网络上各种资料，无需再下载其他任何软件，这属于“瘦客户”。简单理解，瘦客户端指的是最大可能减轻客户端的负担，多数工作由服务器端完成；胖客户端则相反。
+ Telnet 对比 SSH 　Telnet 协议和 SSH 协议都是命令行远程管理协议，有共同的应用领域，常用于远程访问服务器。
+　相比 Telnet 协议，SSH 协议在发送数据时会对数据进行加密操作，数据传输更安全，因此 SSH 协议几乎在所有应用领域代替了 Telnet 协议。</description>
+    </item>
+    
     <item>
       <title>chmod 777 到底是啥 ???看完这个你就完全懂了！</title>
       <link>https://HarryQing.github.io/blogs/chmod-777-%E5%88%B0%E5%BA%95%E6%98%AF%E5%95%A5-%E7%9C%8B%E5%AE%8C%E8%BF%99%E4%B8%AA%E4%BD%A0%E5%B0%B1%E5%AE%8C%E5%85%A8%E6%87%82%E4%BA%86/</link>
@@ -148,15 +164,6 @@ VMware下载和安装 　绝大多数初学者使用的是 Windows，所以本�
 　打个比方，操作系统就好像是一个政府，其它软件都会被它管控；操作系统在给其他软件提供各种便利的同时，还会约束其他软件不能为所欲为。
 　目前流行的服务器和 PC 端操作系统有 Linux、Windows、UNIX 等，手机操作系统有 Android、iOS、Windows Phone（简称 WP），嵌入式操作系统有 Windows CE、PalmOS、eCos、uClinux 等。
 　以上对操作系统的认知虽然只是“皮毛”，但它足以让我们学习 Linux 了。</description>
-    </item>
-    
-    <item>
-      <title>第一章 Linux简介</title>
-      <link>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%AE%80%E4%BB%8B/</link>
-      <pubDate>Wed, 17 Mar 2021 23:01:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/linuxs/%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%AE%80%E4%BB%8B/</guid>
-      <description>一切皆有可能 新起点 新开始 加油 冲冲冲 </description>
     </item>
     
   </channel>
