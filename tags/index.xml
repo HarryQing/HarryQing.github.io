@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mr.哈利-南山不寒</title>
+    <title>Tags on Mr.哈利-未来可期</title>
     <link>https://HarryQing.github.io/tags/</link>
-    <description>Recent content in Tags on Mr.哈利-南山不寒</description>
+    <description>Recent content in Tags on Mr.哈利-未来可期</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 24 Mar 2021 12:45:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 22:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LInux</title>
-      <link>https://HarryQing.github.io/tags/linux/</link>
-      <pubDate>Wed, 24 Mar 2021 12:45:00 +0800</pubDate>
+      <title>liunx</title>
+      <link>https://HarryQing.github.io/tags/liunx/</link>
+      <pubDate>Tue, 30 Mar 2021 22:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/tags/linux/</guid>
+      <guid>https://HarryQing.github.io/tags/liunx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>王雪庆</title>
       <link>https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/</link>
-      <pubDate>Wed, 24 Mar 2021 12:45:00 +0800</pubDate>
+      <pubDate>Tue, 30 Mar 2021 22:20:00 +0800</pubDate>
       
       <guid>https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LInux</title>
+      <link>https://HarryQing.github.io/tags/linux/</link>
+      <pubDate>Wed, 24 Mar 2021 12:45:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
