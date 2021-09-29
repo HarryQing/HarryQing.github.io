@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 30 Mar 2021 22:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/liunx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux系统shell终端下载报错——“Ubuntu 20.04 LTS _Focal Fossa - Release amd64 (20200423)” 的盘片插入驱动器“/cdrom/”再按「回车」键</title>
-      <link>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8/cdrom/%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</link>
+      <link>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</link>
       <pubDate>Tue, 30 Mar 2021 22:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8/cdrom/%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</guid>
+      <guid>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</guid>
       <description>“Ubuntu 20.04 LTS _Focal Fossa - Release amd64 (20200423)” 的盘片插入驱动器“/cdrom/”再按「回车」键&amp;quot;
 首先：cd /etc/apt打开编辑sources.list： sudo nano source.list注释掉deb cdrom:开头的行ctrl+O写入，ctrl+X离开然后执行命令sudo apt-get update</description>
     </item>

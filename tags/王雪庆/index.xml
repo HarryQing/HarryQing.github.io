@@ -7,13 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 22:20:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2021 11:15:00 +0800</lastBuildDate><atom:link href="https://HarryQing.github.io/tags/%E7%8E%8B%E9%9B%AA%E5%BA%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hadoop完全分布式配置</title>
+      <link>https://HarryQing.github.io/blogs/hadoop%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Wed, 29 Sep 2021 11:15:00 +0800</pubDate>
+      
+      <guid>https://HarryQing.github.io/blogs/hadoop%E9%83%A8%E7%BD%B2/</guid>
+      <description>前期准备 1.三台Centos7虚拟机 CentOS-7-x86_64-DVD-1511.iso下载 2.下载jdk，Hadoop，Zookeeper 3.第一台 虚拟机根目录的home文件夹中创建Java和software文件夹 4.Java中加入jdk；software中添加Hadoop，Zookeeper压缩包 Hadoop完全分布式配置步骤详解 1. 关闭防火墙 systemctl stop firewalld 2.改变主机名 vim /etc/sysconfig/network 重新生效
+source /etc/sysconfig/network 3. 将ip和主机名进行映射 vim /etc/hosts 主机IP地址 主机名 例如：
+192.168.202.130 hadoop01 192.168.202.131 hadoop02 192.168.202.132 hadoop03 注意：三个节点都如此不再符截图 注意：三个节点在映射完成之后的内容应该是一模一样的
+4. 重启 reboot 5. 三个节点之间需要进行免密互通 ssh-keygen ssh-copy-id root@hadoop01 ssh-copy-id root@hadoop02 ssh-copy-id root@hadoop03 验证：在任意一个节点上能够免密登录其他两个节点
+ssh hadoop01 ssh hadoop02 ssh hadoop03 如果免密成功，则输入logout回到当前节点的命令界面
+6. 如果已经配置了Hadoop伪分布式,将其备份,即 将第一个节点的伪分布式重新命名 mv hadoop-2.7.1 hadoop-alone 7. 解压安装包 tar -xvf hadoop-2.7.1_64bit.tar.gz 8. 进入hadoop安装目录的etc/hadoop目录 cd /home/software/hadoop-2.7.1/etc/hadoop/ 9. 编辑hadoop-env.</description>
+    </item>
+    
     <item>
       <title>linux系统shell终端下载报错——“Ubuntu 20.04 LTS _Focal Fossa - Release amd64 (20200423)” 的盘片插入驱动器“/cdrom/”再按「回车」键</title>
-      <link>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8/cdrom/%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</link>
+      <link>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</link>
       <pubDate>Tue, 30 Mar 2021 22:20:00 +0800</pubDate>
       
-      <guid>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8/cdrom/%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</guid>
+      <guid>https://HarryQing.github.io/blogs/linux%E7%B3%BB%E7%BB%9Fshell%E7%BB%88%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%8A%A5%E9%94%99ubuntu-20.04-lts-_focal-fossa-release-amd64-20200423-%E7%9A%84%E7%9B%98%E7%89%87%E6%8F%92%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%99%A8%E5%86%8D%E6%8C%89%E5%9B%9E%E8%BD%A6%E9%94%AE/</guid>
       <description>“Ubuntu 20.04 LTS _Focal Fossa - Release amd64 (20200423)” 的盘片插入驱动器“/cdrom/”再按「回车」键&amp;quot;
 首先：cd /etc/apt打开编辑sources.list： sudo nano source.list注释掉deb cdrom:开头的行ctrl+O写入，ctrl+X离开然后执行命令sudo apt-get update</description>
     </item>
@@ -142,17 +156,6 @@ VMware下载和安装 　绝大多数初学者使用的是 Windows，所以本�
 　2.Linux 与 Unix 系统兼容， 该系统的构建采用了一些与 UNIX 操作系统相同的技术，具备 Unix 几乎所有的优秀特性（系统的稳定性和安全性尤为突出）。
 　3.和其他操作系统相比，Linux 更容易安装 ，且不会收到任何商业化版本的制约。
 　4.Linux 让开展各种实际有用且具有创造性的事情成为可能。 例如，我们可以在一个U盘上装载 Linux 的自生系统引导映像（live boot image），启动一台硬盘已经崩溃的计算机，之后查找并解决该问题。或者，因为 Linux 是一个真正的多用户操作系统，它具有非常好的私密性和稳定性，整个团队可以同时从本地或远程登录进行工作。</description>
-    </item>
-    
-    <item>
-      <title>markdown编辑器语法——文字颜色、大小、字体与背景色的设置</title>
-      <link>https://HarryQing.github.io/blog/markdown%E7%BC%96%E8%BE%91%E5%99%A8%E8%AF%AD%E6%B3%95%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2%E5%A4%A7%E5%B0%8F%E5%AD%97%E4%BD%93%E4%B8%8E%E8%83%8C%E6%99%AF%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
-      <pubDate>Wed, 17 Mar 2021 23:37:00 +0800</pubDate>
-      
-      <guid>https://HarryQing.github.io/blog/markdown%E7%BC%96%E8%BE%91%E5%99%A8%E8%AF%AD%E6%B3%95%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2%E5%A4%A7%E5%B0%8F%E5%AD%97%E4%BD%93%E4%B8%8E%E8%83%8C%E6%99%AF%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
-      <description>一、颜色 在markdown中采用如下方式能够控制文字的颜色：
-浅红色文字：&amp;lt;font color=&amp;#34;#dd0000&amp;#34;&amp;gt;浅红色文字：&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深红色文字：&amp;lt;font color=&amp;#34;#660000&amp;#34;&amp;gt;深红色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅绿色文字：&amp;lt;font color=&amp;#34;#00dd00&amp;#34;&amp;gt;浅绿色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深绿色文字：&amp;lt;font color=&amp;#34;#006600&amp;#34;&amp;gt;深绿色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅蓝色文字：&amp;lt;font color=&amp;#34;#0000dd&amp;#34;&amp;gt;浅蓝色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深蓝色文字：&amp;lt;font color=&amp;#34;#000066&amp;#34;&amp;gt;深蓝色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅黄色文字：&amp;lt;font color=&amp;#34;#dddd00&amp;#34;&amp;gt;浅黄色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深黄色文字：&amp;lt;font color=&amp;#34;#666600&amp;#34;&amp;gt;深黄色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅青色文字：&amp;lt;font color=&amp;#34;#00dddd&amp;#34;&amp;gt;浅青色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深青色文字：&amp;lt;font color=&amp;#34;#006666&amp;#34;&amp;gt;深青色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 浅紫色文字：&amp;lt;font color=&amp;#34;#dd00dd&amp;#34;&amp;gt;浅紫色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 深紫色文字：&amp;lt;font color=&amp;#34;#660066&amp;#34;&amp;gt;深紫色文字&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 效果如下： 二、大小 size为1：&amp;lt;font size=&amp;#34;1&amp;#34;&amp;gt;size为1&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为2：&amp;lt;font size=&amp;#34;2&amp;#34;&amp;gt;size为2&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为3：&amp;lt;font size=&amp;#34;3&amp;#34;&amp;gt;size为3&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为4：&amp;lt;font size=&amp;#34;4&amp;#34;&amp;gt;size为4&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; size为10：&amp;lt;font size=&amp;#34;10&amp;#34;&amp;gt;size为10&amp;lt;/font&amp;gt;&amp;lt;br /&amp;gt; 效果如下： 三、字体 &amp;lt;font face=&amp;#34;黑体&amp;#34;&amp;gt;我是黑体字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;宋体&amp;#34;&amp;gt;我是宋体字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;微软雅黑&amp;#34;&amp;gt;我是微软雅黑字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;fantasy&amp;#34;&amp;gt;我是fantasy字&amp;lt;/font&amp;gt; &amp;lt;font face=&amp;#34;Helvetica&amp;#34;&amp;gt;我是Helvetica字&amp;lt;/font&amp;gt; 效果如下： 尝试了几个word中的字体都是可以的，我估计word中的字体基本都能够实现吧。
-四、背景色 &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#FF00FF&amp;gt;背景色的设置是按照十六进制颜色值：#7FFFD4&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#FF83FA&amp;gt;背景色的设置是按照十六进制颜色值：#FF83FA&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#D1EEEE&amp;gt;背景色的设置是按照十六进制颜色值：#D1EEEE&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#C0FF3E&amp;gt;背景色的设置是按照十六进制颜色值：#C0FF3E&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=#54FF9F&amp;gt;背景色的设置是按照十六进制颜色值：#54FF9F&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt; 效果如下： </description>
     </item>
     
   </channel>
